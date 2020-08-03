@@ -1,5 +1,9 @@
 ## Classes, Instances, Attributes
 
+## Post-lecture:
+Here's <a href="https://flatironschool.zoom.us/rec/share/68pnIYuu6kFJW4mOq2faQKAFEoPdeaa813UW-_oMzEzCVia4ENxrmn7X58cYHBDC"> the lecture video </a>
+Here's <a href="https://github.com/learn-co-students/nyc04-seng-ft-071320/blob/master/07-intro-to-oo-in-ruby/W1Monday-2-classes-instances-instance-variables.txt"> the lecture chat </a>
+
 ## Learning Goals:
 - [ ] Pass arguments to `new` by defining an `initialize` method in class
 - [ ] Define instance variable
