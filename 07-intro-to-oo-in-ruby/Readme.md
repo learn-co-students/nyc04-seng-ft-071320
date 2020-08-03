@@ -3,11 +3,12 @@
 ## Housekeeping:
 - Roadmap document: expectations, labs, self-check, rubric
 - Lectures divided in two
-- Recording
+- Overwhelmed with the labs? Be fully present in the lectures
+- Recordings
 - Lecture Code: clone the [class repo](https://github.com/learn-co-students/nyc04-seng-ft-071320)!
-- Breaks: mid-lecture
 - Patricipation: this is an interactive class
 - Do not code along
+- Breaks: mid-lecture
 - Questions:
     - Ask lecture-related questions in zoom chat or raise your hands when I open time for qs
     - Ask lab-related questions in Slack
