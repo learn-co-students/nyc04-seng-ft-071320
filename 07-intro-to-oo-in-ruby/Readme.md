@@ -1,5 +1,9 @@
 # Intro to Object Oriented Programming in Ruby
 
+## Post-lecture:
+Here's <a href="https://flatironschool.zoom.us/rec/share/tOJIMprz_ENLes-c1ULUVZIHHLXBeaa8hnRL-vcIzxttyPv9Kc8glDZLaFNvi-wx"> the lecture video </a>
+Here's <a href="https://github.com/learn-co-students/nyc04-seng-ft-071320/blob/master/07-intro-to-oo-in-ruby/W1Monday-1-intro-to-oo.txt"> the lecture chat </a>
+
 ## Housekeeping:
 - Roadmap document: expectations, labs, self-check, rubric
 - Lectures divided in two
