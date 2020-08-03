@@ -39,11 +39,6 @@ In order to not leave you feeling tricked, I will gradually fill out this table 
     <td style="text-align:center" width="150px"> 🎂 </td>
 </tr>
 <tr>
-    <td style="text-align:center" width="150px"> <code>def name=(name)</code> </td>
-    <td style="text-align:center" width="150px"> <code>`attr_writer` </td>
-    <td style="text-align:center" width="150px"> ? </td>
-</tr>
-<tr>
     <td style="text-align:center" width="150px"> <code>def name</code> </td>
     <td style="text-align:center" width="150px"> <code>attr_reader</code> </td>
     <td style="text-align:center" width="150px"> ? </td>
