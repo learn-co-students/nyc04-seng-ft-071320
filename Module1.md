@@ -102,7 +102,7 @@ These are the skills you need to prioritize when studying this week. Please take
 - Afternoon lecture: 
     - What are "getter/reader" and "setter/writer" methods? How are they different? Why do we need them? What is the danger of mistaking them?
     - What is the difference between `attr_reader`, `attr_writer` and `attr_accessor`?
-    - If I create two instances of a Dog class with exactly same attributes, will they be the same attribute?
+    - If I create two instances of a Dog class with exactly same attributes, will they be the same object?
 
 #### Day labs list
 Introduction To Object-Orientation In Ruby:
