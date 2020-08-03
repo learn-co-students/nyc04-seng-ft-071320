@@ -79,7 +79,7 @@ These are the skills you need to prioritize when studying this week. Please take
 |12:30 - 1:30| Lunch break|
 |1:30 - 2:30| Day Labs: Introduction To Object-Orientation In Ruby|
 |2:30 - 2:15| [Lecture][lecture-link]: classes, instances and attributes|
-|2:15 - 5:30| Homework Labs |
+|3:15 - 5:30| Homework Labs |
 |5:30 - 6:00| Stand Down |
 
 #### Self-check questions
@@ -136,14 +136,15 @@ Topics In OO - Self In Ruby
 | - | - |
 |9:00 - 9:30| Take attendance on Slack |
 |9:00 - 10:00| Day Labs|
-|10:00 - 11:00| [Lecture][lecture-link]: self, class variables and class methods|
-|11:05 - 11:35| Discussion Questions: Object Orientation in Ruby|
-|11:35 - 12:30| Day Labs|
-|12:30 - 1:30| Lunch break|
-|1:30 - 1:45| Pairing Contract |
-|1:45 - 4:00| Pairing Lab: OO Person|
+|10:00 - 11:00| Mod 1 Logistics & Welcome|
+|11:00 - 11:30| Prework Feedback & Survey|
+|11:30 - 12:15| [Lecture][lecture-link]: self, class variables and class methods|
+|12:15 - 12:45| Discussion Questions: Object Orientation in Ruby|
+|12:45 - 1:45| Lunch break|
+|1:45 - 2:00| [Pairing Contract][pairing-contract-link]|
+|2:00 - 4:00| Pairing Lab: OO Person|
 |4:00 - 4:15| Feedback form + feedbacking your partner |
-|4:00 - 6:00| Homework Labs |
+|4:15 - 6:00| Homework Labs |
 
 #### Self-check questions
 - How do I recognize a class variable? How do I recognize an instance variable?
@@ -194,8 +195,7 @@ Topics In OO - Object Relationships In Ruby
 |11:15 - 12:30| Labs (Day or Homework)|
 |12:30 - 1:30| Lunch break|
 |1:30 - 2:30 | [Lecture][lecture-link]: Ruby relations (one-to-many)|
-|2:35 - 2:45 | Pairing contract |
-|2:45 - 4:45 | Pairing lab: OO My pets |
+|2:35 - 4:45 | Solo lab: OO My pets |
 |4:45 - 5:00 | Feedback form & feedbacking your partner |
 |5:00 - 5:30| Homework Labs |
 |5:30 - 6:00| Stand Down |
@@ -229,7 +229,9 @@ Topics In OO - Object Relationships In Ruby
 |10:00 - 11:00| [Lecture][lecture-link]: Ruby relations (many-to-many)|
 |11:05 - 12:30| Discussion Questions: Ruby Collections and Classes Group|
 |12:30 - 1:30| Lunch break|
-|1:30 - 4:00| Pairing Lab: OO Boating School|
+|1:30 - 1:45| Pairing Contract|
+|1:45 - 3:45| Pairing Lab: OO Boating School|
+|3:45 - 4:00| Feedback form & Feedbacking your partner|
 |4:00 - 6:00| Homework Labs |
 
 #### Self-check questions
@@ -257,15 +259,21 @@ Additional Practice: Object Oriented Ruby (Practice labs for Code Challenge)
 |9:00 - 9:30| Take attendance on Slack |
 |9:00 - 10:00| Day Labs|
 |10:00 - 11:30| [Lecture][lecture-link]: Boating School Review|
-|11:35 - 12:30| AMA: Mod5 folks|
+|11:45 - 12:30| AMA: Mod5 folks|
 |12:30 - 1:30| Lunch break|
 |1:30 - 3:30| Small group review: OO Kickstarter |
-|3:45 - 4:45| Kahoot quiz |
-|4:45 - 5:45| Feelings |
+|3:15 - 4:00| Homework Labs |
+|4:00 - 5:00| Feelings |
+|5:00 - 6:00| Kahoot quiz |
 
 
 #### Self-check questions
-- 
+- How am I feeling?
+- What is my process when approaching a lab?
+- How much time does a lab takes me? 
+- Where am I losing time when doing a lab?
+- How many times am I using `binding.pry` (the more, the better)?
+- How many instances of seed data should I create for each model? (2-4 for each main model and at 4 for joiners; you should have different number of joiners for different models; some models should have no joiners at all)
 
 #### Day labs list
 - Catch up on previous labs
@@ -301,3 +309,4 @@ We'll publish it on Thursday.
 
 
 [lecture-link]: https://flatironschool.zoom.us/j/92799283768?pwd=L20xVmc5VGFzUGRMcFRPaDdVazIzdz09
+[pairing-contract-link]: https://docs.google.com/document/d/1ce3zFnY_z3VoVQNmpqQHt1Bm00l8HThioPubD80Haq4/edit?usp=sharing
