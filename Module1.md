@@ -230,7 +230,7 @@ Topics In OO - Object Relationships In Ruby
 |11:05 - 12:30| Discussion Questions: Ruby Collections and Classes Group|
 |12:30 - 1:30| Lunch break|
 |1:30 - 1:45| Pairing Contract|
-|1:45 - 3:45| Pairing Lab: OO Boating School|
+|1:45 - 3:45| [Pairing Lab][pairing-feedback-link]: OO Boating School|
 |3:45 - 4:00| Feedback form & Feedbacking your partner|
 |4:00 - 6:00| Homework Labs |
 
@@ -310,3 +310,4 @@ We'll publish it on Thursday.
 
 [lecture-link]: https://flatironschool.zoom.us/j/92799283768?pwd=L20xVmc5VGFzUGRMcFRPaDdVazIzdz09
 [pairing-contract-link]: https://docs.google.com/document/d/1ce3zFnY_z3VoVQNmpqQHt1Bm00l8HThioPubD80Haq4/edit?usp=sharing
+[pairing-feedback-link]:  https://forms.gle/UWhEn24JATkV3M6r9
