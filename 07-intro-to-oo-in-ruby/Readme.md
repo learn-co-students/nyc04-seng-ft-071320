@@ -12,6 +12,7 @@
 - Questions:
     - Ask lecture-related questions in zoom chat or raise your hands when I open time for qs
     - Ask lab-related questions in Slack
+- [Lecture check-in](https://forms.gle/Xm4BM3LnnMfK7bY89)
 
 ## Learning Goals:
 
