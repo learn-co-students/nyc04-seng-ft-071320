@@ -295,7 +295,91 @@ Metaprogramming In Ruby: all
 
 Configuring Ruby Applications: all
 
+---
+
+## Week 2 Schedule
+
+Week two of every module is usually marked by two very important events: a code challenge and the beginning of the project week. 
+The days before the code challenge are calmer lab-wise. It is all about solidifying what you have learned so far, discovering new blank spots and asking more of the clarifying questions. Then, you have a code challenge and individual personalized feedback and a few days later you start the project week. 
+In Mod1 Week2 you will:
+- solidify what you learned in Mod1 Week1;
+- practice with different prompts;
+- learn about inheritance in Ruby;
+- write some SQL;
+- set up your first databases;
+- become familiar with ActiveRecord design pattern and use ActiveRecord gem for database management;
+- create non-trivial domain models;
+- get to know who your partner and deliverables are for the project week;
+
+### W2 Monday
+
+| Time | Activity |
+| - | - |
+|9:00 - 9:30| Take attendance on Slack |
+|9:00 - 12:30| Day Labs |
+|12:30 - 1:30| Lunch break|
+|1:30 - 3:30| Mock Code Challenge |
+|3:30 - 4:00| Break for breathing |
+|4:00 - 5:30| Small group review of the Mock Code Challenge |
+|5:30 - 6:00| Stand down |
+
+
+#### Self-check questions
+- Can I explain what I am doing when writing code for a deliverable?
+
+#### Day labs list
+- Catch up on previous labs
+
+#### Homework Labs
+- Take a good night sleep
+
+### W2 Tuesday
+
+| Time | Activity |
+| - | - |
+|9:00 - 9:30| Take attendance on Slack |
+|9:00 - 10:00| Day labs, or last moments to practice and grab coffee |
+|10:00 - 12:00| Code Challenge|
+|12:00 - 12:30| Day labs, or a breathing break |
+|12:30 - 1:30 | Lunch break|
+|1:30 - 4:00| Day labs & feedbacking |
+|4:00 - 5:00| Lecture: SQL |
+|5:00 - 6:00| Homework Labs |
+
+#### Self-check questions
+- 
+
+#### Day labs list
+Getting Started With SQL
+- Introduction To Getting Started With SQL
+- **What Is SQL** ⭐️
+- **SQL Intro And Installation** ⭐️
+- **SQL Database Basics** ⭐️
+- **SQL Databases And Text Editors** ⭐️
+- SQL Data Types
+- **SQL Inserting, Updating, Selecting And Deleting** ⭐️
+- **Basic SQL Queries** ⭐️
+- **Grouping And Sorting Data** ⭐️
+- **SQL Bear Organizer Lab** ⭐️
+- SQL Aggregate Functions
+- SQL Aggregate Functions Lab
+- **SQL Quiz** ⭐️
+- **Getting Started With SQL Bookend** ⭐️
+
+#### Homework Labs
+Table Relations With SQL:
+- Introduction To Table Relations With SQL
+- Edgar Codd And Table Relations
+- Table Relations
+- **SQL JOINS** ⭐️
+- **SQL Join Tables** ⭐️
+- SQL Crowdfunding Lab
+- SQL Complex Joins
+- Sql Relations Quiz
+- Table Relations With SQL Bookend
+
 Topics In OO - Object Inheritance In Ruby:
+
 - Introduction To Object Inheritance In Ruby
 - **Intro To Inheritance** ⭐️
 - **Intro To Inheritance Lab** ⭐️
