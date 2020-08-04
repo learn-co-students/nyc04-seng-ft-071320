@@ -1,7 +1,7 @@
 # Class & Methods
 
 ## LGs:
-- [ ] Revise what we did yesterday: create a class and an instance with data (attributes) and instance methods (a behavior)
+- [x] Revise what we did yesterday: create a class and an instance with data (attributes) and instance methods (a behavior)
 - [ ] Create class methods
 - [ ] Check what `self` is
 - [ ] Call methods on the implicit or explicit `self`
@@ -42,9 +42,9 @@ We invoke it by chaining it to the Dog variable: `chaos.bark`
 * Let's check what `self` is in the `initialize` method
 * Let's add each new dog to the box of all dogs:
 ```ruby
-    def initialize(name, breed)
-        @name = name
-        @breed = breed
+    def initialize(name_arg, breed_arg)
+        @name = name_arg
+        @breed = breed_breed
         @@all << self
     end
 ```
