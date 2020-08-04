@@ -211,7 +211,8 @@ Topics In OO - Object Relationships In Ruby
     - How do I draw Entity Relationship Diagram (ERD, or domain model) to represent this type of the relationship?
 - **Afternoon lecture**:
     - What does Signle Source of Truth Principle mean?
-    - What steps do I need to do to connect two 
+    - What steps do I need to do to connect two?
+    - Which instance should know about the other in the `initialize` method in a one-to-many relationship?
     - What is the naming convention for a class method and for an instance method?
 
 #### Day labs list
@@ -244,6 +245,7 @@ Topics In OO - Object Relationships In Ruby
 - How do I draw Entity Relationship Diagram (ERD, or domain model) to represent this type of the relationship?
 - How many models do I need to represent the relationship between e.g. flights and passengers? 
 - Where should the data about the passengers live? Where should the data about the flights live? 
+- Which instance(s) should know about the other one(s) in the `initialize` method in a many-to-many relationship?
 - Can I store same piece of data in two places? 
 
 #### Day labs list
