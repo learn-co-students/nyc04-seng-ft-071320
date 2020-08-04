@@ -195,25 +195,22 @@ Topics In OO - Object Relationships In Ruby
 | - | - |
 |9:00 - 9:30| Take attendance on Slack |
 |9:00 - 10:00| Day Labs|
-|10:00 - 10:45| [Lecture][lecture-link]: Ruby relations (domain modelling)|
-|10:45 - 11:15| Discussion Questions: Self|
-|11:15 - 12:30| Labs (Day or Homework)|
+|10:00 - 10:35| Discussion Questions: Self |
+|10:30 - 12:30| Labs|
 |12:30 - 1:30| Lunch break|
-|1:30 - 2:30 | [Lecture][lecture-link]: Ruby relations (one-to-many)|
-|2:35 - 4:45 | Solo lab: OO My pets |
-|4:45 - 5:00 | Feedback form & feedbacking your partner |
-|5:00 - 5:30| Homework Labs |
+|1:30 - 3:00 | [Lecture][lecture-link]: Ruby relations (domain modelling + one-to-many)|
+|3:00 - 3:15 | Pairing contract |
+|3:15 - 5:15 | Pairing lab: OO My pets |
+|5:15 - 5:30 | Feedback form & feedbacking your partner |
 |5:30 - 6:00| Stand Down |
 
 #### Self-check questions
-- **Morning lecture**:
-    - What examples (at least three) are there for one-to-many relationship type?
-    - How do I draw Entity Relationship Diagram (ERD, or domain model) to represent this type of the relationship?
-- **Afternoon lecture**:
-    - What does Signle Source of Truth Principle mean?
-    - What steps do I need to do to connect two?
-    - Which instance should know about the other in the `initialize` method in a one-to-many relationship?
-    - What is the naming convention for a class method and for an instance method?
+- What examples (at least three) are there for one-to-many relationship type?
+- How do I draw Entity Relationship Diagram (ERD, or domain model) to represent this type of the relationship?    
+- What does Signle Source of Truth Principle mean?
+- What steps do I need to do to connect two?
+- Which instance should know about the other in the `initialize` method in a one-to-many relationship?
+- What is the naming convention for a class method and for an instance method?
 
 #### Day labs list
 - Catch up on previous labs
