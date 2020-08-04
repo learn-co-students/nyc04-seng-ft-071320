@@ -1,5 +1,9 @@
 # Class & Methods
 
+## Post lecture
+Here's <a href="https://flatironschool.zoom.us/rec/play/7J0pJuH7-z83H4GX5QSDBf8vW9W7Lq6s0CBM-vpezE2wAncKMVGjY7YSYubfOz98OlhyYL_mwFjsoFOv?continueMode=true"> the lecture video </a>
+Here's <a href="https://github.com/learn-co-students/nyc04-seng-ft-071320/blob/master/07-intro-to-oo-in-ruby//Users/sylwiavargas/access-labs/nyc04-seng-ft-071320/09-self-class-methods-class-variables/W1-Wed-Self-class-methods.txt"> the lecture chat </a>
+
 ## LGs:
 - [x] Revise what we did yesterday: create a class and an instance with data (attributes) and instance methods (a behavior)
 - [ ] Create class methods
