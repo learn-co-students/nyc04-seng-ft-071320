@@ -1,0 +1,337 @@
+19:28:59	 From Dong Xia : after lunch sleepiness is kicking in
+19:29:40	 From Sylwia Vargas (she/her) : https://github.com/learn-co-students/nyc04-seng-ft-071320/tree/master/10-one-to-many
+19:30:09	 From Eric Kim : Hello, everyone
+19:30:17	 From wilson ng : Hi hi
+19:30:19	 From Isabel K. Lee (they/them) : eric!
+19:30:19	 From Dong Xia : hi
+19:30:25	 From Emmanuel Jose : Hi!
+19:30:27	 From Eric Kim : henlo
+19:30:43	 From Samir Triande : Hi guys
+19:30:48	 From Franklin Bado : Hello Eric
+19:30:50	 From Annie Zheng : 👋
+19:31:15	 From Ekaterina Zarudnaya : Hello Eric!
+19:31:16	 From Emmanuel Jose : 🍕
+19:31:18	 From Dong Xia : chicken
+19:31:20	 From Christy Tropila : cauliflower mash potatoes
+19:31:24	 From Nunny (she/her) : I just ordered Thai
+19:31:29	 From Ekaterina Zarudnaya : Do we need to clone the code or just pull?
+19:31:29	 From Anna Kim : dry chicken breast with artichokes and potatoes
+19:31:30	 From Steven williams : coffee
+19:31:36	 From Franklin Bado : Ice cream
+19:31:38	 From Samir Triande : Nothing. Haven’t eaten yet
+19:31:47	 From Samantha Balgobin : Made a vegan beef wrap
+19:32:05	 From Eric Kim : please eat Samir
+19:32:12	 From Anna Kim : gochujang!!
+19:32:12	 From Emmanuel Jose : ^^^
+19:32:19	 From Jade Decordova : rice and curried cabbage
+19:32:29	 From Jade Decordova : RT @ less meat
+19:32:46	 From Samantha Balgobin : I love curried cabbage
+19:34:55	 From Emmanuel Jose : We’ll come out stronger on the other side!
+19:35:26	 From Annie Zheng : <3
+19:36:16	 From Dong Xia : 👍
+19:37:21	 From Alex E (she/her) : better than before
+19:37:33	 From Nunny (she/her) : ^^^
+19:39:41	 From Jade Decordova : attr_accessor^
+19:40:42	 From Samir Triande : Typo ^^ attr_accessor
+19:44:00	 From Dong Xia : example
+19:44:02	 From Emmanuel Jose : A representation
+19:44:22	 From Patrick Pierre : A situation
+19:44:49	 From Dong Xia : my space
+19:44:57	 From Alex E (she/her) : the scope or directory
+19:45:05	 From Nunny (she/her) : A location
+19:46:05	 From Alex E (she/her) : Myspace <3 rip
+19:46:08	 From Dong Xia : lol
+19:46:11	 From Bella Evalle : videos
+19:46:13	 From Nunny (she/her) : Videos?
+19:46:13	 From ChenYun Zhang : videos
+19:46:17	 From Alex E (she/her) : channels
+19:46:23	 From Emmanuel Jose : User account
+19:46:24	 From Dong Xia : like button
+19:46:27	 From Franklin Bado : comments
+19:46:28	 From hortencia : chat
+19:46:28	 From Nunny (she/her) : Topics
+19:46:29	 From Bella Evalle : Subscribers
+19:46:31	 From Lida : subscriptios
+19:46:33	 From ChenYun Zhang : subscribers
+19:46:49	 From Nunny (she/her) : tweets
+19:46:50	 From Maysoon : Tweets
+19:46:54	 From Franklin Bado : Accounts - log in users-
+19:46:55	 From Waverley Leung : accounts
+19:46:55	 From Lida : account
+19:46:55	 From Bella Evalle : followers
+19:47:00	 From Jade Decordova : feed
+19:47:01	 From Emmanuel Jose : Media/photos
+19:47:01	 From Nunny (she/her) : Lists ?
+19:47:03	 From ChenYun Zhang : trending topics
+19:47:40	 From Nunny (she/her) : Videos belong to a channel
+19:47:45	 From Franklin Bado : Many to many
+19:47:50	 From Alex E (she/her) : One contains another, like an array?
+19:47:55	 From Dong Xia : ownership
+19:47:57	 From ChenYun Zhang : one to many
+19:48:04	 From Alex E (she/her) : is a channel an array of videos?
+19:48:21	 From Anna Kim : i feel like videos are grouped together and channels are formed
+19:48:21	 From Jade Decordova : Comments belong to videos?
+19:48:50	 From ChenYun Zhang : video has many viewers
+19:49:19	 From Nunny (she/her) : User has tweets
+19:49:36	 From ChenYun Zhang : user has followers
+19:49:51	 From Nunny (she/her) : Lists can be created using many users?
+19:54:48	 From Samantha Balgobin : This looks like biochemical pathways!
+19:57:36	 From ChenYun Zhang : teacher to students
+19:57:51	 From Isabel K. Lee (they/them) : What other one-to-many relationships can you come up with? Write in the chat:
+19:58:05	 From Anna Kim : Menu - food item
+19:58:09	 From wilson ng : Influencer to many followers
+19:58:10	 From Patrick Pierre : Company to employees
+19:58:23	 From ChenYun Zhang : one cashier to many customers
+19:58:28	 From Christy Tropila : Person to muscles
+19:58:32	 From Steven williams : Landlord to tenants
+19:59:46	 From Steven williams : Should we use awwap?
+19:59:49	 From Franklin Bado : Can we chain more relationships here
+20:00:13	 From Isabel K. Lee (they/them) : i’m leaving now to take my professional development~~
+20:00:19	 From ChenYun Zhang : donald trump
+20:00:19	 From hortencia : trump
+20:00:20	 From Maysoon : Elon Musk lol
+20:00:20	 From Nunny (she/her) : @dog
+20:00:21	 From Annie Zheng : Coffee dad
+20:00:23	 From Christy Tropila : kanye
+20:00:26	 From Kalkidan Taye : Trump
+20:00:28	 From Anna Kim : I don’t use Twitter :(
+20:00:29	 From Nunny (she/her) : Dog thoughts
+20:00:31	 From Nunny (she/her) : Something like that
+20:00:51	 From Samir Triande : Don’t have twitter
+20:00:52	 From Kalkidan Taye : I don’t use twitter… but trump is all over the news.
+20:01:00	 From Anna Kim : i love that one Nunny!
+20:01:52	 From Steven williams : Just Threw Up
+20:01:56	 From Steven williams : Twitter bot
+20:02:04	 From Ekaterina Zarudnaya : I don’t have twitter as well. Should we change that?
+20:02:20	 From Samantha Balgobin : Twitter is cancerous imo lol
+20:02:27	 From David Felix : yup
+20:02:35	 From Steven williams : Don’t!  You’ll waste days of your life
+20:02:39	 From Annie Zheng : coffee_dad is iconic at flatiron
+20:02:57	 From Emmanuel Jose : Is his feed an infinite loop?
+20:03:17	 From Jade Decordova : I don’t own twitter :T
+20:03:24	 From wilson ng : LOL
+20:03:26	 From Franklin Bado : coffe_dad.find coffee
+20:03:27	 From Samir Triande : ^^ looks like it @ Emmanuel
+20:03:30	 From ChenYun Zhang : is there a coffee mom
+20:03:35	 From Bella Evalle : LOL
+20:04:54	 From Sylwia Vargas (she/her) to Annie Zheng (Privately) : Feedback?
+20:05:14	 From Sylwia Vargas (she/her) to Annie Zheng (Privately) : should I do anything different?
+20:05:37	 From Annie Zheng to Sylwia Vargas (she/her) (Privately) : I think it was pretty good so far!
+20:07:19	 From Sylwia Vargas (she/her) to Annie Zheng (Privately) : Now I won’t be checking chat anymore
+20:07:32	 From Sylwia Vargas (she/her) to Annie Zheng (Privately) : Most probably people will ask about require vs requeire_rel
+20:07:58	 From Annie Zheng to Sylwia Vargas (she/her) (Privately) : okay 👌
+20:09:10	 From Dong Xia : user
+20:09:11	 From Franklin Bado : user
+20:09:11	 From Bella Evalle : user
+20:09:14	 From Christy Tropila : user
+20:09:15	 From Alex E (she/her) : user
+20:10:14	 From Anna Kim : define class
+20:10:21	 From Franklin Bado : Create a new user
+20:10:21	 From Kalkidan Taye : .user
+20:10:22	 From wilson ng : .new
+20:10:24	 From Dong Xia : return a user id
+20:10:29	 From wilson ng : And return instance ?
+20:11:42	 From Franklin Bado : Initialize this guy
+20:11:44	 From wilson ng : Require relative
+20:12:14	 From Anna Kim : go wilson!
+20:12:38	 From wilson ng : Ty ;o
+20:13:58	 From wilson ng : setters
+20:14:00	 From Dong Xia : initalize
+20:14:03	 From Kalkidan Taye : Initialize
+20:14:04	 From Anna Kim : set up initialize method
+20:14:20	 From Samir Triande : ^^
+20:14:26	 From Christy Tropila : setter
+20:16:42	 From Annie Zheng : Daisy ++
+20:16:49	 From Emmanuel Jose : ^^^
+20:17:11	 From Samir Triande : Thanks for that clear explanation @Daisy
+20:17:30	 From Kalkidan Taye : @samir anytime
+20:18:37	 From Nunny (she/her) : So its only a reader
+20:18:41	 From Christy Tropila : change to reader 
+20:18:44	 From Franklin Bado : Reader is being called upon
+20:18:45	 From Samantha Balgobin : Username is a reader
+20:18:50	 From Lida : attr_reader
+20:19:35	 From Jade Decordova : Should it be name_par
+20:21:40	 From Jade Decordova : In reader?
+20:22:39	 From Jade Decordova : Got it thanks
+20:24:20	 From Franklin Bado : Coffee is life
+20:24:22	 From Nunny (she/her) : “New coffee place is nice”
+20:24:23	 From Dong Xia : got beans?
+20:24:56	 From Franklin Bado : Wilson principle
+20:24:57	 From Emmanuel Jose : Tweet needs to be a class constant
+20:24:57	 From Nunny (she/her) : Tweet is a class?
+20:24:59	 From Kalkidan Taye : Its a class?
+20:25:03	 From Franklin Bado : Require relative
+20:25:32	 From Christy Tropila : needs to be initialized 
+20:27:22	 From Anna Kim : self
+20:27:23	 From Anna Kim : ?
+20:30:14	 From Bella Evalle : interesting
+20:30:22	 From Annie Zheng : tea_mom
+20:30:41	 From Franklin Bado : Loves bubletea
+20:30:50	 From Annie Zheng : Yesss!!
+20:30:59	 From Jade Decordova : This is getting more and more exciting!!!
+20:31:03	 From Annie Zheng : bubble tea for life
+20:31:14	 From Dong Xia : bubble tea coffee
+20:31:20	 From Annie Zheng : ^^
+20:31:30	 From Bella Evalle : Black sugar <3
+20:32:15	 From Alex E (she/her) : Yay!!
+20:32:18	 From Franklin Bado : Chain !!!
+20:32:19	 From wilson ng : niceeeeee
+20:32:25	 From Waverley Leung : *mindblown*
+20:32:42	 From David Felix : 🤯
+20:32:46	 From Franklin Bado : No
+20:32:48	 From Franklin Bado : Show us now
+20:32:55	 From Emmanuel Jose : Lol Franklin
+20:32:55	 From Jade Decordova : +=?
+20:32:55	 From Annie Zheng : The suspense is real
+20:32:56	 From Dong Xia : lol
+20:32:58	 From wilson ng : LOL
+20:33:03	 From Alex E (she/her) : cliff hanger XD
+20:33:22	 From Emmanuel Jose : Next tweet “Franklin loves documentation”
+20:33:29	 From Kalkidan Taye : lol
+20:33:32	 From Franklin Bado : Hehe, its the relationships time…
+20:33:35	 From Franklin Bado : Who has one?
+20:33:38	 From Franklin Bado : Who has Manny?
+20:33:42	 From Franklin Bado : Stay tune …
+20:33:43	 From Samantha Balgobin : Is it possible for you to push this so we can pull down the updates? I couldn’t catch up with the code along.
+20:33:44	 From Annie Zheng to Sylwia Vargas (she/her) (Privately) : i think they’re more engaged if you use folks they know as the examples lol
+20:33:49	 From Samantha Balgobin : @Sylwia
+20:33:59	 From Sylwia Vargas (she/her) to Annie Zheng (Privately) : lol thank you!!!
+20:34:05	 From Samantha Balgobin : With coding along*
+20:34:13	 From Sylwia Vargas (she/her) : That’s a great suggestion
+20:34:14	 From Sylwia Vargas (she/her) : yes
+20:34:20	 From Sylwia Vargas (she/her) : No!!!!
+20:34:23	 From Sylwia Vargas (she/her) : no coding along!!!!!!
+20:34:31	 From Sylwia Vargas (she/her) : I need you to be 1000000000% focused
+20:34:37	 From Sylwia Vargas (she/her) : Focus time is real
+20:34:45	 From Sylwia Vargas (she/her) : grab your coffee
+20:34:50	 From Sylwia Vargas (she/her) : ~ Coffee Dad
+20:35:45	 From Anna Kim : I thought instance of a class belonged within that class and so it wouldn’t work under another class
+20:35:48	 From Annie Zheng : What’s people’s favorite bubble tea flavor?
+20:36:13	 From Anna Kim : gasp*
+20:37:01	 From Nunny (she/her) : @Annie taro
+20:37:10	 From Christy Tropila : class methods
+20:37:13	 From Waverley Leung : @Annie depends on my mood
+20:37:16	 From Christy Tropila : the .
+20:37:31	 From Alex E (she/her) : the # calls on two classes?
+20:39:33	 From David Felix : Class method
+20:39:34	 From Kalkidan Taye : Class method
+20:39:34	 From Anna Kim : self meaning class
+20:39:37	 From Samir Triande : Class method
+20:39:38	 From ChenYun Zhang : class method
+20:39:40	 From Steven williams : Because it only applies to the class self
+20:49:00	 From Dong Xia : .user
+20:49:03	 From Franklin Bado : .user.username?
+20:50:05	 From Christy Tropila : .find ?
+20:50:30	 From Anna Kim : self.user
+20:51:22	 From Franklin Bado : Annie object
+20:51:25	 From ChenYun Zhang : the instance
+20:51:25	 From Anna Kim : self = tweet_annie
+20:51:27	 From Nunny (she/her) : tweet_annie ?
+20:51:27	 From Kalkidan Taye : instance
+20:51:31	 From Steven williams : Annie
+20:52:58	 From Nunny (she/her) : Can you check what attributes self has?
+20:55:27	 From Anna Kim : yes
+20:55:29	 From ChenYun Zhang : no
+20:55:30	 From Waverley Leung : no
+20:55:32	 From Nunny (she/her) : no
+20:55:32	 From Dong Xia : no
+20:55:32	 From Franklin Bado : no
+20:55:33	 From Jade Decordova : no
+20:55:34	 From David Felix : No?
+20:55:35	 From Samantha Balgobin : no
+20:55:56	 From Samantha Balgobin : -_-
+20:55:57	 From Anna Kim : default self
+20:55:58	 From Nunny (she/her) : lolololol
+20:56:07	 From wilson ng : Thank you ruby
+20:56:11	 From Lida : Ha ha ha ha
+20:56:35	 From Samantha Balgobin : Ruby is the annoying friend I don’t wanna have but is still cool sometimes
+20:56:49	 From Kalkidan Taye : ^^
+20:56:52	 From Anna Kim : yes
+20:56:53	 From Franklin Bado : yes
+20:56:55	 From ChenYun Zhang : yes
+20:56:56	 From Steven williams : n
+20:56:59	 From hortencia : ^^^
+20:57:00	 From Franklin Bado : Everything works in ruby
+20:57:00	 From David Felix : I don’t know anymore
+20:57:04	 From hortencia : ^^^^
+20:57:10	 From Nunny (she/her) : no
+20:57:11	 From Anna Kim : no
+20:57:11	 From Alex E (she/her) : no
+20:57:12	 From Lida : ruby strikes again
+20:57:15	 From Waverley Leung : no
+20:58:37	 From Samantha Balgobin : That was a good description Sylwia
+20:58:42	 From Emmanuel Jose : If self is in method signature, it’s the class? If self is in method body, it’s the instance?
+20:58:43	 From Anna Kim : You told us to add ‘self’ explicitly when you do operational methods though right? because it would change the value
+21:02:30	 From Steven williams : Store material in more than one place
+21:02:30	 From ChenYun Zhang : steal method from other class
+21:02:31	 From Anna Kim : cross reference stored data?
+21:02:34	 From Patrick Pierre : You don't store instances in a different class
+21:02:37	 From wilson ng : Don’t store each other’s instances
+21:02:39	 From Nunny (she/her) : That a model can only know its own
+21:02:40	 From David Felix : Don’t add stuff where they are not suppost
+21:02:54	 From Jade Decordova : Have another model manage other models?
+21:02:58	 From Lida : Cannot store instances in different class
+21:03:03	 From ChenYun Zhang : can’t steal child from other family
+21:03:08	 From Dong Xia : lol
+21:03:09	 From Samantha Balgobin : LOL
+21:03:13	 From Anna Kim : LOL CHENYUN
+21:03:21	 From Samantha Balgobin : That was gold
+21:03:26	 From Emmanuel Jose : 🤣 ChenYun
+21:03:27	 From Alex E (she/her) : ^^ yes you can chenyun
+21:03:37	 From Jade Decordova : LOL ChenYUN has JOKES
+21:03:43	 From Samantha Balgobin : That’s dark Alex
+21:03:54	 From Kalkidan Taye : Lol @chenyun
+21:04:12	 From Dong Xia : select
+21:04:13	 From Steven williams : Unique
+21:04:15	 From Waverley Leung : select!
+21:04:17	 From Jade Decordova : SELECT
+21:04:18	 From Nunny (she/her) : Select
+21:04:29	 From Franklin Bado : .each
+21:05:08	 From Anna Kim : self
+21:05:08	 From Dong Xia : self
+21:05:57	 From Anna Kim : wow
+21:06:15	 From Nunny (she/her) : :O
+21:06:39	 From Patrick Pierre : Gonna be rewatching this one
+21:06:45	 From Alex E (she/her) : ^^
+21:06:51	 From Jade Decordova : factualss
+21:06:52	 From hortencia : ^^^
+21:06:57	 From Samir Triande : ^^^
+21:07:01	 From Kalkidan Taye : ^^^
+21:07:03	 From Anna Kim : so you can invoke class methods from another class?
+21:10:29	 From Anna Kim : check annie’s tweets?
+21:10:29	 From Jade Decordova : Check tweets
+21:10:33	 From David Felix : Annie.tweets
+21:10:34	 From Christy Tropila : annie.tweets
+21:11:50	 From Patrick Pierre : wow
+21:12:02	 From Alex E (she/her) : mind blown
+21:12:03	 From Jade Decordova : Checkmate indeed
+21:12:07	 From Kalkidan Taye : lol
+21:12:12	 From Annie Zheng : here’s the post lecture check-in form : https://docs.google.com/forms/d/1NB2LaRnF4kGNDyago5F6bKnWJePjaKm1mKmk6wvHuzg/prefill
+21:12:14	 From Samir Triande : I think I broke my brain
+21:12:19	 From Ekaterina Zarudnaya : Thank you!
+21:12:29	 From Franklin Bado : My brain hurts
+21:12:30	 From Dong Xia : ✨
+21:12:31	 From Christy Tropila : thank you Sylwia ! :)
+21:12:37	 From Maysoon : Thank you
+21:12:58	 From ChenYun Zhang : @annie needs access
+21:13:00	 From Alex E (she/her) : post lecture check-in form says that I need to request access
+21:13:01	 From Patrick Pierre : How did you split screens in VS Code?
+21:13:25	 From Anna Kim : is this the [Tweets belong to User] relationship?
+21:13:26	 From Nunny (she/her) : @Annie it says we need access for the forms
+21:13:30	 From Alex E (she/her) : @Patrick, yes you can split screen.  Right-click on the file header
+21:13:39	 From Christy Tropila : are we going to discuss private methods in a different lecture
+21:14:03	 From Patrick Pierre : @Alex Thank you
+21:14:13	 From Sylwia Vargas (she/her) : https://forms.gle/uhFMVuioDZBhtjob9
+21:14:16	 From Alex E (she/her) : @Patrick or there’s an image of two boxes touching each other in the the top right corner
+21:14:49	 From Franklin Bado : Just a headache
+21:14:58	 From Franklin Bado : Ruby rocks
+21:16:46	 From Nunny (she/her) : Thank you!
+21:17:11	 From Ekaterina Zarudnaya : Thank you very much!
+21:17:25	 From ChenYun Zhang : we are having same partner for the pairing lab?
+21:17:46	 From Annie Zheng : nope
+21:17:55	 From Annie Zheng : We just sent out the new pairs
+21:18:13	 From Patrick Pierre : Sylwia, thank you for being so good at explaining OOP, I've learned it a few times before but have never understood it on this level beforeHonestly, Thank you!!!
+21:18:16	 From ChenYun Zhang : ok, thx
+21:18:25	 From Steven williams : Are we stocking around in this zoom?  Or should we just reach out to our partners?
+21:19:46	 From Annie Zheng : nope, you just reach out to your partner :)
+21:20:13	 From Steven williams : ty
