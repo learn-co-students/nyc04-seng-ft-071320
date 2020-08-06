@@ -76,7 +76,7 @@ Doctor -< Appointment >- Patient
       * .all
 * Create Class.all method for all the classes
 
-## Tasks (10 mins):
+## Tasks (8 mins):
 1. Create Patient class with: `initialize` method, `attr_` macro and `.all` method.
 1. Create Doctor class with: `initialize` method, `attr_` macro and `.all` method.
 
@@ -84,8 +84,8 @@ Doctor -< Appointment >- Patient
 
 ![](https://i.imgur.com/IXtlVuq.png)
 * A doctor has many patients and a patient has many doctors
-* A doctor has many appointments / appointment belongs to doctor (we already know how to model this)
-* A patient has many appointments / appointment belongs to patient (we already know how to model this)
+* A doctor has many appointments / appointment belongs to doctor (we already know how to model this -> one-to-many relationship)
+* A patient has many appointments / appointment belongs to patient (we already know how to model this -> one-to-many relationship)
 * A doctor has many patients through appointments
 * A patient has many doctors through appointments
 
@@ -95,9 +95,8 @@ Doctor -< Appointment >- Patient
 * Connecting all three classes using JOINER class:
     * Make sure to pass into a joiner instance the instances of the other two classes.
 
-## Tasks (10 mins):
-2. Create JOINER class with `initialize` method, `attr_` macros and `.all` method.
-3. Create `#doctors` method is Patient class that return all the doctors who has appoinment with a perticular patient (hint: you need a helper method)
+## Tasks:
+1. Create `#patients` method in Doctor class that returns all the patients who has appoinment with a perticular doctor (hint: you need a helper method)
 
 ## Implement both sides of a many to many relationship
 * many to many => one to many + one to many
