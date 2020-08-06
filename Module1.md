@@ -228,14 +228,13 @@ Topics In OO - Object Relationships In Ruby
 | Time | Activity |
 | - | - |
 |9:00 - 9:30| Take attendance on Slack |
-|9:00 - 10:00| Day Labs|
-|10:00 - 11:00| [Lecture][lecture-link]: Ruby relations (many-to-many)|
+|9:00 - 11:00| Labs|
 |11:05 - 12:30| Discussion Questions: Ruby Collections and Classes Group|
 |12:30 - 1:30| Lunch break|
-|1:30 - 1:45| Pairing Contract|
-|1:45 - 3:45| [Pairing Lab][pairing-feedback-link]: OO Boating School|
-|3:45 - 4:00| Feedback form & Feedbacking your partner|
-|4:00 - 6:00| Homework Labs |
+|1:30 - 3:30| [Lecture][lecture-link]: Ruby relations (many-to-many)|
+|3:30 - 3:45| Pairing Contract|
+|3:45 - 5:45| [Pairing Lab][pairing-feedback-link]: OO Boating School|
+|5:45 - 6:00| Feedback form & Feedbacking your partner|
 
 #### Self-check questions
 - What examples (at least three) are there for many-to-many relationship type?
@@ -245,10 +244,8 @@ Topics In OO - Object Relationships In Ruby
 - Which instance(s) should know about the other one(s) in the `initialize` method in a many-to-many relationship?
 - Can I store same piece of data in two places? 
 
-#### Day labs list
-- Catch up on previous labs
-
-#### Homework Labs
+#### Labs list
+- Catch up on previous labs or
 Additional Practice: Object Oriented Ruby (Practice labs for Code Challenge)
 - **OO Art Gallery** ⭐️
 - **Animal Zoo** ⭐️
