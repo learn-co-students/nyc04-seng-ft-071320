@@ -1,5 +1,10 @@
 ## One to Many Relationships
-===
+
+## Post lecture
+Here's <a href="https://flatironschool.zoom.us/rec/share/ypJLcp7u6D9ObbfCzULzRJw8B57fX6a80yBI-vYIykouxjMNbRWa6yxymgTukQKE"> the lecture video </a>
+Here's <a href="https://github.com/learn-co-students/nyc04-seng-ft-071320/blob/master/10-one-to-many/W1-Wednesday.txt"> the lecture chat </a>
+
+---
 
 ### LGs:
 
