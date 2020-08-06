@@ -1,12 +1,12 @@
-# One to Many Relationships
+# Many to Many Relationship
 ---
 
 ## LGs:
-- [ ] Revise one-to-many
-- [ ] Practice keeping groups of data related to classes on the class as a class variable
+- [x] Revise one-to-many
+- [ ] Practice keeping groups of data related to classes on the class as a class variable (`@@all`)
 - [ ] Practice domain modelling 
 - [ ] Demonstrate Single Source of Truth by not storing collections of objects on other objects and storing objects only in one place (the class where they belong to)
-- [ ] Implement both sides of a many to many relationships
+- [ ] Implement both sides of a many to many relationship
 
 
 ## Outline
@@ -16,37 +16,59 @@
     - "Class can only store information about their own instances"
     - "Can’t steal child from other family"
     - "Don’t add stuff where they are not supposed to be"
+    - `@@all`: you can only have instances of the same class
   * What is an example of one-to-many relationship:
     - Tweet belongs to a User, User has many Tweets;
     - Comment belongs to a Video, Video has many Comments;
-  * In one-to-many relationship (e.g. Tweet >- User), on which side do I treat the instance as a parameter to initialize to connect the two models?
+  * In one-to-many relationship (e.g. Tweet >- User), on which side do I treat the instance as a parameter to `initialize` to connect the two models?
+      ```
+      class Tweet
+          def initialize(message, user)
+            @message = message
+            @user = user
+          end
+      end
+      ```
     - when initializing Tweet, we pass a User instance as an argument;
     - when initializing Comment, we pass a Video instance as an argument;
   * In one-to-many relationship, can a User have 0 Tweets?
+    - YES!!!!
 
 ## How to think about relationships
 1. For every one (x), how many (y)? 
 2. For every one (y), how many (x)?
 
 ## Many-to-Many
+
+
 1. One-to-many
-- Tweet User
-- League Team Player
-- City School Student
+- Tweet >- User
+- League -< Team -< Player
+- City -< School -< Student
 
 2. Many-to-many
-3 mins to come up with examples
+<!-- 3 mins to come up with examples -->
+Movie -< Character >- Actor
+Game -< Session >- Player
+Driver -< Ride >- Passenger
+
+Material and products  
+Employees to jobs  
+Rental Car and owners
 
 ---
 
 ## Practice keeping groups of data related to classes on the class as a class variable
 
-Doctor and Patiens
+Doctor -< Appointment >- Patient
+
+<!-- YAGNI: You aren't gonna need it -->
 
 * How many classes do we need?
+    * 3 classes because it is a many-to-many relationship
 * Let's discuss the attributes
-    * Doctor: ?
-    * Patient: ?
+    * Doctor: name, specialty
+    * Patient: name
     * ?
 * Let's discuss the methods
     * What are the minimum methods we are going to need?
