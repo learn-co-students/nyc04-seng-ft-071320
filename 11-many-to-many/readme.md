@@ -1,6 +1,12 @@
 # Many to Many Relationship
 ---
 
+
+## Post lecture
+Here's <a href="https://flatironschool.zoom.us/rec/play/uJAlc-yu_Go3HdySsQSDA_FwW424e_ms1iVIqfoFzxu8ViYCO1WlM7RHZOCffYfMD-NFnCgYV-M_K90F?continueMode=true"> the lecture video </a>
+Here's <a href="https://github.com/learn-co-students/nyc04-seng-ft-071320/blob/master/07-intro-to-oo-in-ruby//Users/sylwiavargas/access-labs/nyc04-seng-ft-071320/09-self-class-methods-class-variables/W1-Thu-many-to-many.txt"> the lecture chat </a>
+
+
 ## LGs:
 - [x] Revise one-to-many
 - [ ] Practice keeping groups of data related to classes on the class as a class variable (`@@all`)
