@@ -1,0 +1,138 @@
+15:58:21	 From Hortencia Cisneros : good morning all
+15:58:40	 From Emmanuel Jose : Good Morning!
+16:03:30	 From Ekaterina Zarudnaya : Good morning! :)
+16:04:42	 From Emmanuel Jose : Is this being recorded?
+16:04:47	 From Emmanuel Jose : Thank you!
+16:05:16	 From Alex E (she/her) : ooo Georgian food <3
+16:05:23	 From hortencia : Uh ho
+16:09:45	 From Franklin Bado : Run.rb
+16:09:53	 From wilson ng : I’m really curious now, I didn’t run into that issue luckily. 🧐
+16:09:54	 From Waverley Leung : Run.rb
+16:09:56	 From Samantha Balgobin : Run.rb
+16:09:58	 From Dong Xia : run
+16:10:00	 From Christy Tropila : run
+16:10:01	 From Alex E (she/her) : run
+16:10:01	 From Anna Kim : run.rb pls~
+16:10:04	 From Lida : run
+16:10:22	 From hortencia : console
+16:10:41	 From hortencia : Later is fine
+16:17:31	 From Franklin Bado : BoatingTest
+16:17:31	 From Kalkidan Taye : student
+16:17:31	 From Dong Xia : boat
+16:17:34	 From hortencia : student
+16:17:36	 From Samir Triande : boat
+16:17:37	 From Jade Decordova : student
+16:17:38	 From Alex E (she/her) : student or instructor
+16:17:39	 From Lida : BoatingTest
+16:17:39	 From ChenYun Zhang : student
+16:20:51	 From Franklin Bado : attr_accessor
+16:21:38	 From Alex E (she/her) : how do you type in multiple places like that again?  How you just added the colons?
+16:21:49	 From Annie Zheng (she/her) : Option + click
+16:21:53	 From Samir Triande : Was just about to ask. That was dope
+16:22:11	 From Samir Triande : Thank you Annie
+16:22:16	 From hortencia : ^^^
+16:22:33	 From Lida : :)
+16:24:14	 From Franklin Bado : student_name right
+16:24:15	 From Dong Xia : student_name
+16:24:26	 From Dong Xia : in accessor
+16:24:26	 From Franklin Bado : ^^
+16:24:53	 From Annie Zheng (she/her) : Franklin ++
+16:24:55	 From Annie Zheng (she/her) : Dong++
+16:25:02	 From Jade Decordova : LOL
+16:25:08	 From Alex E (she/her) : did we include @@all << self in the botingtest.rb ?
+16:25:23	 From Emmanuel Jose : @Alex, yes
+16:25:28	 From Franklin Bado : I ll declare mine as Franklin += .. I got more to offer now
+16:25:40	 From Annie Zheng (she/her) : hahah love that ^
+16:26:19	 From Franklin Bado : Eric
+16:26:22	 From Dong Xia : sandy
+16:26:27	 From hortencia : patrick
+16:26:46	 From hortencia : Squid ward
+16:26:49	 From Annie Zheng (she/her) : Sandy is the squirrel in the astronaut costume
+16:27:15	 From Lida : Sandy = squirrel
+16:27:37	 From ChenYun Zhang : Sandy = “squirrel”
+16:27:39	 From Kalkidan Taye : She is my favorite…such an independent squirrel and she knows karate, and she is a scientist…
+16:27:46	 From Annie Zheng (she/her) : ^^
+16:27:57	 From Dong Xia : ka-ra-te—
+16:28:30	 From Waverley Leung : 🥋
+16:35:08	 From Jade Decordova : Invoke the method
+16:35:22	 From Samantha Balgobin : In run.rb?
+16:35:27	 From Franklin Bado : Invoke the method with a instructor in the rub file
+16:36:45	 From Alex E (she/her) : That’s so cool that it goes across files
+16:43:47	 From Franklin Bado : Passed
+16:47:38	 From Alex E (she/her) : so what would the code in the method be changed to?
+16:52:17	 From Anna Kim : should we get used to coming up with our own helper methods depending on the deliverables?
+16:52:48	 From Anna Kim : because in many methods, we had to do multiple loops because we didn’t create a helper method (i.e. all_tests)
+16:52:56	 From hortencia : ^^
+16:53:07	 From Alex E (she/her) : could passed_students also use select?         self.all_passed_tests.self {&:student}    ?
+16:53:36	 From Annie Zheng (she/her) : Helper method definitely helps makes your code drier and you can reuse helper methods
+16:53:48	 From Annie Zheng (she/her) : Sandi Metz <- the author
+16:54:09	 From Emmanuel Jose : Sylwia, can you slack that book?
+16:54:11	 From Anna Kim : thank you sylwia & annie
+16:54:16	 From Jade Decordova : Can you send me resources from her free or for purchase!!
+16:54:22	 From Emmanuel Jose : Thank you!
+16:54:55	 From Alex E (she/her) : could passed_students also use select?         self.all_passed_tests.self {&:student}    ?
+16:55:10	 From wilson ng : I sent the amazon link for the book
+16:55:14	 From Alex E (she/her) : could passed_students also use select?         self.all_passed_tests.select {&:student}    ?
+16:55:19	 From Alex E (she/her) : DX  ok
+16:55:20	 From Emmanuel Jose : We’re bending time
+16:55:22	 From Jade Decordova : I like it here
+16:55:22	 From Franklin Bado : Do the timer
+16:55:33	 From Jade Decordova : :D
+16:55:37	 From Emmanuel Jose : Thank you Wilson!
+16:56:54	 From Ekaterina Zarudnaya : I missed some questions?
+16:57:21	 From Alex E (she/her) : I am lol
+16:57:52	 From Ekaterina Zarudnaya : And what was the question about cloning?forking?
+16:59:18	 From Emmanuel Jose : Ekaterina, Franklin asked how both partners can submit the lab. Sylwia said to have both partners have the same copy of their code, and then do learn submit
+17:00:00	 From Ekaterina Zarudnaya : Emmanuel, thank you so much! I had this question too. :)
+17:00:24	 From Emmanuel Jose : No problem!
+17:00:25	 From Anna Kim : thank you~
+17:00:29	 From wilson ng : My hashsketball was like 300 lines  😂
+17:00:34	 From Anna Kim : ^ wilson!
+17:02:04	 From Emmanuel Jose : Is the screen frozen for anyone else?
+17:02:05	 From Christy Tropila :  cant see what you are typing
+17:02:07	 From Alex E (she/her) : Are you typing?
+17:02:10	 From Samantha Balgobin : I think you are stuck
+17:02:11	 From Dong Xia : i don’t see any thing
+17:02:12	 From ChenYun Zhang : i can’t see anything
+17:02:22	 From Dong Xia : good
+17:02:22	 From David Felix : good
+17:06:59	 From Christy Tropila : should the param be student_name ?
+17:08:43	 From Annie Zheng (she/her) : Christy ++
+17:12:43	 From Franklin Bado : On the read me right, it says “`Instructor#pass_student` should take in a student instance and test name.” So is it easier to go to BoatingTest since we have access to the test and the student by the bridge?
+17:13:12	 From ChenYun Zhang : line 48 has a comma
+17:13:27	 From ChenYun Zhang : ok
+17:14:48	 From Annie Zheng (she/her) : @Franklin, yes because we need information about the student and we’re in the instructor file right now. We need to go through BoatingTest since that’s where the single source of truth is
+17:24:19	 From Anna Kim : could you explain line 55-56 one more time?
+17:24:22	 From Anna Kim : just the logic part
+17:25:14	 From Samantha Balgobin : Isn’t name_str an instance and not a string?
+17:25:56	 From Anna Kim : @sam i think it is a student name
+17:27:03	 From Samantha Balgobin : @Anna thanks, I think I got confused bc I have a diff variable name
+17:27:22	 From Alex E (she/her) : Thank you so much Sylwia and Annie!
+17:27:35	 From Anna Kim : @sam np! i think sylwia added _str to avoid confusion too haha
+17:28:01	 From Anna Kim : @sam with other @name inst.variables
+17:28:19	 From Franklin Bado : Self …
+17:28:57	 From Samantha Balgobin : @Anna, yeah, the deliverable says that #pass_student should take in a student instance and test name. Maybe i missed something visually
+17:29:40	 From Emmanuel Jose : Sylwia, will the complete code be included in the lecture notes/readme?
+17:30:01	 From Emmanuel Jose : This one
+17:30:02	 From Anna Kim : GitHub solution doesn’t seem to have any of the helper methods
+17:30:22	 From Emmanuel Jose : Thank you!
+17:30:27	 From Anna Kim : she did!
+17:30:32	 From Anna Kim : thank youuu
+17:30:36	 From Samantha Balgobin : Can we go back to the pass_test method for a second
+17:31:48	 From Samantha Balgobin : Gotcha, yeah I did it with the student instance passed so I got confused lol, thank you
+17:33:06	 From Samantha Balgobin : Thank you very much Sylwia!
+17:33:19	 From Ekaterina Zarudnaya : Thank you very much!
+17:33:44	 From Ekaterina Zarudnaya : Cash Register please!
+17:33:48	 From Anna Kim : ^
+17:33:49	 From Emmanuel Jose : I would love walkthrough videos with the practice labs!
+17:34:27	 From Ekaterina Zarudnaya : Could you please make a video for Register lab/
+17:34:28	 From Ekaterina Zarudnaya : ?
+17:34:54	 From Anna Kim : thank you so much~
+17:34:58	 From Kalkidan Taye : Thank you!
+17:35:01	 From Waverley Leung : Thank you so much!
+17:35:08	 From Christy Tropila : Thank you :)!
+17:35:10	 From Emmanuel Jose : Thank you Sylwia and Annie!
+17:35:17	 From David Felix : Thank you!
+17:35:21	 From Anna Kim : ooh how should we access this boating lab
+17:35:24	 From Ekaterina Zarudnaya : Thank you so much!
+17:35:27	 From ChenYun Zhang : bye

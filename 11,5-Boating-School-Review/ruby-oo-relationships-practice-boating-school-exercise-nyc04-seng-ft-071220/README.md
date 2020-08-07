@@ -1,8 +1,16 @@
-# mod1-code-review-boating-school
+# OO Boating School review
+
+## Post review
+Here's <a href="https://flatironschool.zoom.us/rec/play/75Qvd73--Dk3G9ySsASDC_8oW42_e6us0HVL-qdezB62VCRWZ1uuNLFDZbDWMNYhxv5LGcSfS8q8FMgY?continueMode=true&_x_zm_rtaid=Ih2ejevRRZiXLcBCkBEFpg.1596815408554.11328992d839805c03884210ee45272d&_x_zm_rhtaid=265"> the lecture video </a>
+Here's <a href="https://github.com/learn-co-students/nyc04-seng-ft-071320/blob/master/10-one-to-many/W1-Friday.txt"> the lecture chat </a>
+
+---
 
 Welcome to Boating School,  a Spongebob activity that simulates a system that tracks Boating Tests.  We have three models - `Student`, `Instructor`, and `BoatingTest`.
 
 Associations:
+
+Student -< BoatingTest >- Instructor
 
 ![alt text][chart]
 
