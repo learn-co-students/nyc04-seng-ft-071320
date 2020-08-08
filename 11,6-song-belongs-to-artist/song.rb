@@ -18,5 +18,5 @@ end
 
 # one-to-many relationship: why are we adding the instance that "has many" to the one that "belongs to"?
 
-# User -< Tweets
+# User -< Tweet
 # :name     :message, :user
