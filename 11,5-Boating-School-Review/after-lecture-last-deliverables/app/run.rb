@@ -1,8 +1,8 @@
-require_relative '../config/environment.rb'
+require 'pry'
+require 'require_all'
 
-def reload
-  load 'config/environment.rb'
-end
+require_all 'models'
+
 
 spongebob = Student.new("Spongebob")
 patrick= Student.new("Patrick")
@@ -23,11 +23,15 @@ test2 = BoatingTest.new(patrick, "101 boats", "passed", krabs)
 # success => I will get patrick
 # failure => I will get patrick and spongebob or nothing or ....
 
-sandy.pass_student("Eric", "101 animal crossing")
-sandy.pass_student("Patrick", "boating for pros")
-# success => I will be able to create a new boating test for Eric 
+# sandy.test_outcome("Eric", "101 animal crossing", "passed")
 
-krabs.pass_student("Spongebob", "101 boats")
+sandy.test_outcome("Spongebob", "101 boats", "passed")
+
+# sandy.pass_student("Eric", "101 animal crossing")
+# sandy.pass_student("Patrick", "boating for pros")
+# # success => I will be able to create a new boating test for Eric 
+
+# krabs.pass_student("Spongebob", "101 boats")
 # 2nd success => I will be able to update spongebob's test 
 
 binding.pry
@@ -37,5 +41,4 @@ power_steering_failure = patrick.add_boating_test("Power Steering 202", "failed"
 power_steering_pass = patrick.add_boating_test("Power Steering 201", "passed", krabs)
 
 binding.pry
-0 #leave this here to ensure binding.pry isn't the last line
-
+0
