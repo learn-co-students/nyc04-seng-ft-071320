@@ -46,6 +46,7 @@ class Instructor
     end
 
     def find_test(test_name_str)
+
         BoatingTest.all.select{|test| test.test_name == test_name_str}
     end
 
