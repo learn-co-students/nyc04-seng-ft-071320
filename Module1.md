@@ -328,17 +328,20 @@ In Mod1 Week2 you will:
 
 | Time | Activity |
 | - | - |
-|9:00 - 9:30| Take attendance on Slack |
-|9:00 - 10:00| Day labs, or last moments to practice and grab coffee |
-|10:00 - 12:00| Code Challenge|
-|12:00 - 12:30| Day labs, or a breathing break |
-|12:30 - 1:30 | Lunch break|
-|1:30 - 3:30| Day labs & feedbacking |
-|3:30 - 5:00| Lecture: SQL |
-|5:00 - 6:00| Homework Labs |
+9:00 - 9:30 Take attendance on Slack 
+9:00 - 10:00 Day labs, or last moments to practice and grab coffee 
+10:00 - 12:00 Code Challenge
+12:00 - 12:30 Day labs, or a breathing break 
+12:30 - 1:30  Lunch break
+1:30 - 3:30 Day labs & feedbacking 
+3:30 - 5:00 Lecture: SQL 
+5:00 - 6:00 Homework Labs 
 
 #### Self-check questions
-- 
+- What are primary keys? What are foreign keys? How are they related with one another?
+- What is the purpose of SQL?
+- Why do we need to use databases?
+- How do we CRUD on rows of a table?
 
 #### Day labs list
 Getting Started With SQL
