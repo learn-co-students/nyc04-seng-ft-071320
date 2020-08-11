@@ -333,8 +333,8 @@ In Mod1 Week2 you will:
 |10:00 - 12:00| Code Challenge|
 |12:00 - 12:30| Day labs, or a breathing break |
 |12:30 - 1:30 | Lunch break|
-|1:30 - 4:00| Day labs & feedbacking |
-|4:00 - 5:00| Lecture: SQL |
+|1:30 - 3:30| Day labs & feedbacking |
+|3:30 - 5:00| Lecture: SQL |
 |5:00 - 6:00| Homework Labs |
 
 #### Self-check questions
