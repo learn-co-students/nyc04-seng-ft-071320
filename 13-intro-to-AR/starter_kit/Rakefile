@@ -9,7 +9,7 @@ task :console do
   Pry.start
 end
 
-desc "print 100 cowboys"
-task :cowboy_printer do
-  puts "🤠" * 100 
+desc "code benders magic"
+task :magic do
+  puts "⚡️ ⚡️ ⚡️ ⚡️ ⚡️ "
 end

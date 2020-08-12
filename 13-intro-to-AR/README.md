@@ -6,7 +6,7 @@ Intro to ActiveRecord
 - [ ] Practice creating migrations for updating the database structure
 - [ ] Explain how `rake` works and how to run rake tasks
 - [ ] Distinguish between and define "model", "class", and "table"
-- [ ] Practice with ActiveRecord::Base instance and class methods
+- [ ] Practice with `ActiveRecord::Base` instance and class methods
 - [ ] Perform persistent CRUD actions on one model using ActiveRecord
 
 ### Outline
