@@ -1,26 +1,58 @@
 Active Record Relationships
-===
+---
 
 ## SWBATs
 - [ ] Build on the knowledge of OO Ruby associations to use them in AR
-- [ ] Draw a three-model ERD prior to coding
+- [ ] Draw an ERD prior to coding
 - [ ] Design domain model thoughtfully
-- [ ] Remember that it is the joiner's responsibility to know about the other `id`'s
+- [ ] Remember that it is the joiner's responsibility to know about the other's `id`s
 - [ ] Become comfortable with the syntax of the association macros (`belongs_to`, `has_many`, `has_many through`) 
 - [ ] Understand that macros give us methods but the associations happen in the database
 
 ### Outline
 * Review what we covered so far:
     - What is AR?
+      - MAGIC!!!!!!!!!!
+      - a bridge/interpreter between the SQL world and the Ruby Lalaland
+      - orm
+      - gem -> extension
+      - design pattern
     - What does AR do?
+      - a bridge/interpreter between the SQL world and the Ruby Lalaland
+      - it creates associations between models and tables/database
     - When to use SQL and when AR?
+      - up to you but in the project week use AR
     - What's the difference between a model and a table?
-    - Can database have many tables?
+      - model/class -> objects/instances
+      - table -> stores the data
+    - Can a database have many tables?
+      - YES! As many as you **need**
+    - What is meant by migration?
+      - migration is a blueprint for ActiveRecord to create/change/delete SQL tables
     - Naming conventions in Ruby and AR
+      - model name: singular 
+      - everything else: plural
     - Project file structure
+    - What is `rake`?
+      - it's a gem
+      - task manager
+      - allows us to automate tasks
     - What is `rake console`?
+      - one of the rake tasks
+      - similar to pry 
+      - it calls on PRY.start -> it knows about our whole app and the database
+      - SUPERPRY!!!
     - Difference between `.new` and `.create`
+      - `.new` -> creates a RUBY instance and then you need to use `.save` in order for it to persists in the database
+      - `.create` -> new+save
     - What is CRUD and what are the examples of methods for each letter?
+      - CRUD -> acronym that stands for "create read update delete"
+      - create: .create
+      - read: 
+          - find_by -> accepts a hash (key-value pair) and we perform a search based on an attr
+          - find -> based on id
+      - update: .update (both on an instance and a class)
+      - delete: .destroy (both on an instance and a class)
 
 ### Setting up relationships
 
