@@ -31,6 +31,7 @@ The goal of this obstacle course is for you to practice CRUD and to end with two
 **hint** you can do that in one file!
 
 **HEADS UP**: for all the next steps you can stay in the same `rake console` session!
+
 5. Run `rake remind_me_about:creating_an_instance` and follow the instructions to create 3 instances of `Person class` and save them to the database
 6. Run `rake remind_me_about:reading_instances` and follow the instructions to read more about each Person
 7. Oho! One of the folks just had birthday! Run `rake remind_me_about:updating_an_instance` and follow the instructions to change their age
