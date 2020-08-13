@@ -1,6 +1,10 @@
 Active Record Relationships
 ---
 
+## Post lecture
+Here's <a href="https://flatironschool.zoom.us/rec/play/u8csd-CtqDI3TobG4QSDBP4qW42-J6ys1yAfq_oFxE-yUiRSYFSvN7JHNudYc4jRFXBtF_Xcp2AbPPkN?autoplay=true&startTime=1597341766000"> the lecture video </a>
+Here's <a href="https://github.com/learn-co-students/nyc04-seng-ft-071320/blob/master/10-one-to-many/W2-Thu.txt"> the lecture chat </a>
+
 ## SWBATs
 - [ ] Build on the knowledge of OO Ruby associations to use them in AR
 - [ ] Draw an ERD prior to coding

@@ -1,0 +1,258 @@
+20:00:02	 From Anna Kim : my first coding dream was i was inside vscode terminal… i kept hitting errors
+20:01:36	 From Dong Xia : i had a dream yesterday that I was invited to Space to play tennis lol
+20:01:59	 From Anna Kim : ^^^ are you a tennis player?
+20:02:14	 From Maysoon : Lol Dong that might be part of the future
+20:02:20	 From Dong Xia : yup
+20:02:27	 From Isabel K. Lee (they/them) : i can’t believe there are so many anime heads in this group LOL
+20:02:37	 From eisea904@newschool.edu : ^^
+20:02:45	 From Anna Kim : ouch
+20:05:05	 From Annie Zheng (she/her) : Macros are methods **
+20:05:09	 From Jade Decordova : Yes MAM
+20:05:27	 From Anna Kim : wooooo
+20:05:27	 From Dong Xia : coffee cake
+20:05:32	 From Maysoon : lol
+20:05:35	 From Emmanuel Jose : Sylwia leveling up!
+20:05:43	 From Patrick Pierre : An ORM for Ruby
+20:05:44	 From Wilson Ng : magic
+20:05:45	 From Dong Xia : a bridge
+20:05:45	 From Christy Tropila : an orm
+20:05:51	 From Anna Kim : an object relational mapper
+20:05:52	 From Steven williams : An ORM
+20:06:11	 From Anna Kim : interpreter between languages
+20:06:15	 From Ekaterina Zarudnaya : I lost my chat, lol ><
+20:06:36	 From Ekaterina Zarudnaya : Bridge between Ruby and SQL
+20:06:44	 From Wilson Ng : creates associations between models
+20:06:45	 From Maysoon : Yes your right confusion lol
+20:07:32	 From Dong Xia : migrate
+20:07:37	 From Kalkidan Taye : db
+20:07:38	 From Anna Kim : tables
+20:07:40	 From ChenYun Zhang : database
+20:07:41	 From Nunny (she/her) : databases
+20:08:09	 From Jade Decordova : <3 all my smart classmates!!<3
+20:08:21	 From Isabel K. Lee (they/them) : jade ++
+20:08:51	 From Dong Xia : single and plural
+20:09:21	 From Maysoon : Is it possible to use Active Record without SQL?
+20:09:21	 From Christy Tropila : a model is an object
+20:09:27	 From Hortencia : id
+20:09:59	 From Christy Tropila : table is stored attributes
+20:10:09	 From Emmanuel Jose : Tables use raw data
+20:10:10	 From Maysoon : Thank you
+20:11:17	 From Christy Tropila : true
+20:11:18	 From Dong Xia : yes
+20:11:19	 From Wilson Ng : yes
+20:11:20	 From Emmanuel Jose : yes
+20:11:21	 From Nunny (she/her) : yes
+20:11:23	 From Samir Triande : yes
+20:11:28	 From Anna Kim : can you explain that concept one more time?
+20:11:47	 From Anna Kim : the difference between model and table
+20:12:30	 From Isabel K. Lee (they/them) : okay so i googled it and i’m not 100% that you can use active record without SQL, but i found an interesting wikipedia entry about the history of active record. 🤔
+20:12:30	 From Isabel K. Lee (they/them) : https://en.wikipedia.org/wiki/Active_record_pattern
+20:13:09	 From Maysoon : Thank you Isabel
+20:13:34	 From Isabel K. Lee (they/them) : maysoon ++
+20:13:45	 From Annie Zheng (she/her) : Anna ++
+20:13:58	 From Ekaterina Zarudnaya : Thank you!
+20:14:36	 From Isabel K. Lee (they/them) : Gemfile stores all the extensions for the project. Running `bundle` installs all the necessary gems to make the project run.
+20:15:09	 From Emmanuel Jose : Similar to Pry
+20:15:12	 From Dong Xia : pry
+20:15:14	 From Wilson Ng : task manager
+20:15:15	 From Samantha Balgobin : Allows you to drop into pry
+20:15:18	 From ChenYun Zhang : it calls pry.start
+20:15:29	 From Patrick Pierre : It allows us to automate stuff with tasks
+20:15:44	 From Jade Decordova : SUPERPRY
+20:15:56	 From Wilson Ng : it does SQL logs
+20:16:05	 From Emmanuel Jose : Jade +++
+20:16:06	 From ChenYun Zhang : it allows us to initiate new instances
+20:16:45	 From Isabel K. Lee (they/them) : Rake is a gem that allows us to automate tasks.
+20:16:58	 From Isabel K. Lee (they/them) : `rake console` is one of the tasks that we can access with Rake!
+20:17:02	 From Christy Tropila : if you use .new you must all use a .save method.create combines these two steps
+20:17:05	 From Nunny (she/her) : Create an instance
+20:17:38	 From Anna Kim : .create actually stores the data in the table?
+20:17:59	 From Christy Tropila : cread read update delete
+20:18:09	 From Anna Kim : Christy ++
+20:18:45	 From Anna Kim : dynamic web apps have CRUD
+20:18:58	 From Isabel K. Lee (they/them) : anna ++
+20:19:13	 From Wilson Ng : find_by
+20:19:16	 From Dong Xia : .find
+20:19:26	 From Anna Kim : (by attribute)
+20:19:26	 From Wilson Ng : based on attributes
+20:19:28	 From Jade Decordova : Christy fired up 🥳🥳🥳
+20:19:31	 From Nunny (she/her) : Search by attributes
+20:20:23	 From Anna Kim : destroy
+20:20:24	 From Wilson Ng : destroy
+20:20:24	 From Nunny (she/her) : .destroy
+20:20:25	 From Dong Xia : destroy
+20:20:34	 From Annie Zheng (she/her) : 🔥 🔥 🔥
+20:22:16	 From Nunny (she/her) : Rake db status?
+20:22:19	 From Dong Xia : db migrate status
+20:22:22	 From Christy Tropila : db migrate:status
+20:24:13	 From Isabel K. Lee (they/them) : Creating instances only in pry is not very sustainable. So we’re going to create a separate file just to store the seed data. This file will be called `seeds.rb` in the `db` folder.
+20:25:02	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : 5 mins until Break
+20:25:06	 From Isabel K. Lee (they/them) : Since the seed file is a ruby file, we can write ruby code in it.
+20:25:59	 From Isabel K. Lee (they/them) : When you run `rake db:seed`, there isn’t a response in the terminal, so you can add a puts statement at the end to make sure that your seed file was run.
+20:26:12	 From Anna Kim : did sylwia write task :seed in the rakefile?
+20:26:27	 From Anna Kim : ah ok thank you
+20:26:42	 From Annie Zheng (she/her) : recap: nope, task seed is give to us from active record
+20:26:43	 From Isabel K. Lee (they/them) : ^ that task is given to us from active record
+20:26:47	 From Isabel K. Lee (they/them) : yup yup
+20:26:47	 From Annie Zheng (she/her) : LOL
+20:26:49	 From Isabel K. Lee (they/them) : heh
+20:26:50	 From Isabel K. Lee (they/them) : sorry!!
+20:27:42	 From Anna Kim : @isabel @annie so I don’t have to ever declare that task :seed in AR? learn.co mentioned     desc 'seed the database with some dummy data'
+  task :seed do
+    require_relative './db/seeds.rb'
+  end
+20:27:54	 From Isabel K. Lee (they/them) : Before creating seed data, check the attributes for your class in the schema file.
+20:27:55	 From Anna Kim : if it’s already built it, that’s great
+20:28:08	 From Anna Kim : oh..
+20:28:58	 From Isabel K. Lee (they/them) : `rake db:seed` is always given! and as long as you create your seed data file in `db` with the `seeds.rb` file name, it should run.
+20:29:25	 From Anna Kim : ^^^ thank you so much
+20:29:28	 From Dong Xia : cool
+20:29:51	 From Sylwia Vargas (she/her) to Annie Zheng (she/her) (Privately) : thx thx
+20:29:51	 From ChenYun Zhang : that’s cool
+20:31:31	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : :)
+20:32:55	 From ChenYun Zhang : happy new year
+20:33:03	 From Annie Zheng (she/her) : blast off 🚀
+20:33:11	 From Hortencia : ^^^
+20:33:33	 From Wilson Ng : 😂😂
+20:33:36	 From Wilson Ng : bye 2020
+20:35:24	 From Annie Zheng (she/her) : Many to many relationships NEED a joiner!!
+20:35:40	 From Isabel K. Lee (they/them) : ^^^^^^^^^^^^^
+20:35:43	 From Kalkidan Taye : lolololol
+20:36:18	 From Kalkidan Taye : Sylwia is funny already, but Sylwia caffeinated lololol
+20:36:33	 From Annie Zheng (she/her) : Sylwia ++ haha
+20:36:35	 From Isabel K. Lee (they/them) : ☕️💁🏻‍♀️
+20:36:38	 From Samir Triande : ^^
+20:37:08	 From Ekaterina Zarudnaya : And even faster…)
+20:37:09	 From Annie Zheng (she/her) : “Don’t even though the keyboard before you draw your domain model”
+20:37:14	 From Annie Zheng (she/her) : touch*
+20:37:38	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : Slow down a bit
+20:38:36	 From Emmanuel Jose : Anyone else an only child?
+20:39:16	 From Annie Zheng (she/her) : #middlechild
+20:39:24	 From Hortencia : ^^^^
+20:39:25	 From Isabel K. Lee (they/them) : You can find the plural version of any noun by calling `.pluralize` on a string in pry!
+20:39:45	 From Patrick Pierre : How does the plant parenthood model relate to the person and plant models in terms of has many and belongs to?
+20:39:56	 From Isabel K. Lee (they/them) to Sylwia Vargas (she/her) (Privately) : hey sylwia, do you mind slowing down a bit? ☺️
+20:40:18	 From Annie Zheng (she/her) : Patrick ++
+20:41:50	 From Annie Zheng (she/her) : Person has_many Plant through PlantParenthood
+
+Plant has_many Person through PlantParenthood 
+
+PlantParenthood belongs_to Plant 
+PlantParenthood belongs_to Person
+20:42:39	 From Sylwia Vargas (she/her) to Annie Zheng (she/her) (Privately) : Is this ok
+20:42:43	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : Yes!
+20:42:43	 From Sylwia Vargas (she/her) to Annie Zheng (she/her) (Privately) : or more
+20:42:52	 From Kalkidan Taye : lol
+20:43:24	 From Jade Decordova : Responsibility
+20:45:11	 From Wilson Ng : rake db:create_migration NAME= _____
+20:45:22	 From Anna Kim : wilson ++
+20:45:29	 From Jade Decordova : Wilson++
+20:45:53	 From Nunny (she/her) : 😯
+20:46:24	 From Isabel K. Lee (they/them) : When you run `rake db:create_migration NAME=` you want to write the name of the table in lowercase with underscores separating the words.
+20:46:26	 From Kalkidan Taye : table
+20:46:27	 From ChenYun Zhang : TABLE
+20:46:28	 From Nunny (she/her) : Create table
+20:46:44	 From Isabel K. Lee (they/them) : So… PlantParenthood, the class, becomes create_plant_parenthoods, the table
+20:47:12	 From Nunny (she/her) : String? Boolean?
+20:49:09	 From Nunny (she/her) : To migrate it ?
+20:49:21	 From Kalkidan Taye : Create rb file
+20:49:21	 From Nunny (she/her) : To check the status. right.
+20:49:23	 From Wilson Ng : rake db:seed ?
+20:50:06	 From Samir Triande : Singular ??
+20:50:14	 From Emmanuel Jose : Annie +++
+20:50:15	 From Isabel K. Lee (they/them) : 1. Write the table. 2. Create the model. 3. Run the migration. 4.Seed the data.
+20:50:18	 From Anna Kim : model  => singular
+20:50:18	 From Kalkidan Taye : Because it is a model
+20:50:19	 From Nunny (she/her) : Bc model are singular
+20:50:21	 From Patrick Pierre : Model is singular
+20:50:22	 From ChenYun Zhang : model singular
+20:50:23	 From Isabel K. Lee (they/them) : ^^^^^^^^^^^^^^^^^^^^^^
+20:50:33	 From Annie Zheng (she/her) : cohort ++
+20:50:49	 From Samir Triande : Annie ++++
+20:50:54	 From Kalkidan Taye : ^^^^^
+20:51:38	 From Kalkidan Taye : Check your schema
+20:51:39	 From Nunny (she/her) : Go to schema?
+20:51:39	 From Waverley Leung : schema
+20:51:39	 From Wilson Ng : schema file
+20:51:40	 From Anna Kim : person.column_name
+20:51:41	 From Christy Tropila : scgema
+20:51:53	 From Isabel K. Lee (they/them) : Always check your schema before writing your seed data!
+20:52:00	 From Isabel K. Lee (they/them) : So that you can avoid easy-to-smash bugs.
+20:52:58	 From Nunny (she/her) : privacy++
+20:53:03	 From Hortencia : ^^^
+20:53:05	 From Emmanuel Jose : Age is just a number
+20:53:09	 From Hortencia : ^^^
+20:53:12	 From Christy Tropila : ^
+20:53:19	 From ChenYun Zhang : it’s INTEGER
+20:53:24	 From Annie Zheng (she/her) : ^^^
+20:53:33	 From Kalkidan Taye : lol
+20:53:41	 From Emmanuel Jose : ChenYun 😆
+20:53:52	 From Isabel K. Lee (they/them) : chenyun ++ coding jokes
+20:54:33	 From Nunny (she/her) : 🤯😬😯
+20:54:42	 From Samir Triande : ^^^
+20:55:07	 From Isabel K. Lee (they/them) : Every time you run `rake db:seed` it’ll execute the code in your seed data. So if you keep running `rake db:seed` it’ll duplicate the instances. So make sure to write `ModelName.destroy_all` at the top of the file!!!
+20:55:19	 From Franklin Bado : Run the seed again
+20:55:33	 From Emmanuel Jose : Franklin +++
+20:55:35	 From Dong Xia : ++
+20:55:37	 From Kalkidan Taye : ^^^
+20:55:46	 From ChenYun Zhang : Franklin++
+20:55:51	 From Annie Zheng (she/her) : Franklin ++
+20:56:13	 From Annie Zheng (she/her) : **drum roll**
+20:57:01	 From Kalkidan Taye : find_by
+20:57:04	 From Nunny (she/her) : 😯
+20:57:11	 From Wilson Ng : does the id for instances resets after destroy_all every time?
+20:57:12	 From Kalkidan Taye : Can you do that with the find_by?
+20:57:46	 From Anna Kim : is this like passing in an instances? instead of an element?
+20:57:51	 From ChenYun Zhang : yes
+20:57:52	 From Kalkidan Taye : yes
+20:57:55	 From Kalkidan Taye : hash
+20:57:56	 From ChenYun Zhang : hash
+21:00:16	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : break
+21:01:44	 From Sylwia Vargas (she/her) to Annie Zheng (she/her) (Privately) : thxxxx
+21:01:53	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : :)
+21:03:48	 From Annie Zheng (she/her) : @wilson’s question: https://stackoverflow.com/questions/39056615/after-destroying-all-records-why-are-new-objects-being-created-with-an-id-higher
+21:04:08	 From Sylwia Vargas (she/her) : ^^^^^
+21:04:12	 From Sylwia Vargas (she/her) : Please read!!!!!!!!!!!!
+21:04:52	 From Annie Zheng (she/her) : Woot woot 🌟
+21:05:28	 From Wilson Ng : nice tyty!!!!
+21:05:51	 From Christy Tropila : no
+21:05:53	 From Dong Xia : yes
+21:06:17	 From Annie Zheng (she/her) : developer’s favorite answer => “it depends”
+21:08:51	 From Kalkidan Taye : You are using the class
+21:09:02	 From Annie Zheng (she/her) : Daisy ++
+21:09:16	 From Jade Decordova : Daisy ++
+21:15:24	 From Anna Kim : new macros!
+21:16:01	 From Kalkidan Taye : oooohhhhhh
+21:16:07	 From Kalkidan Taye : !!!!
+21:16:19	 From Nunny (she/her) : 🧐
+21:16:26	 From Dong Xia : magic
+21:17:12	 From Wilson Ng : through:
+21:17:54	 From Kalkidan Taye : Wilson++++
+21:17:57	 From Annie Zheng (she/her) : ++
+21:18:29	 From Patrick Pierre : The GOAT Wilson strikes again
+21:18:39	 From Emmanuel Jose : ^^^
+21:18:43	 From Kalkidan Taye : Just when you thought you were done after the coding challenge lol, add database too it and do it again.
+21:18:55	 From Samir Triande : ^^
+21:18:56	 From Wilson Ng : 💀
+21:19:00	 From Emmanuel Jose : I wish we had this magic last week
+21:19:05	 From Patrick Pierre : fatcs
+21:19:08	 From Annie Zheng (she/her) : #growth 🌱
+21:19:52	 From Wilson Ng : omg
+21:19:56	 From Kalkidan Taye : !!!!!!!!!!!!!!
+21:20:02	 From Anna Kim : is there a specific find function?
+21:20:02	 From Kalkidan Taye : I am flipping out over here
+21:20:06	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : Last 10 mins
+21:20:08	 From Anna Kim : wow
+21:20:17	 From ChenYun Zhang : 🤯
+21:20:44	 From Nunny (she/her) : No lol
+21:20:45	 From Patrick Pierre : What is meant by migration?
+21:22:08	 From Hortencia to Sylwia Vargas (she/her) (Privately) : Can you explain why you wrote through: as a pose to :through
+21:23:22	 From Maysoon : Would you please send me the updated GitHub link for this lesson once lecture is over?
+21:26:20	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : Last 4 mins, will send feedback in 2 mins
+21:26:53	 From Maysoon : Never mind I think I can just refresh on GitHub sorry about that
+21:27:07	 From Annie Zheng (she/her) : 🌟 🌟🌟Post Lecture Feedback Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+21:27:10	 From Isabel K. Lee (they/them) : https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+21:27:15	 From Annie Zheng (she/her) : Isabel ++
+21:27:17	 From Isabel K. Lee (they/them) : ^^^^^^^^^^^^^^^^^^^^^^^
+21:29:15	 From Maysoon : Thank you
+21:31:16	 From Nunny (she/her) to Sylwia Vargas (she/her) (Privately) : Hi Sylwia! I just sent you a DM on slack
