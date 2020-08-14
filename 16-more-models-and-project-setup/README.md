@@ -25,8 +25,8 @@ More Models + Project Setup
 Category :name 
   |
   ^
-Plant -<     PlantParenthood >- Parent
-:life_points      |
+Plant -< PlantParenthood >- Parent
+                  |
                   ^
                 Watering
 ```

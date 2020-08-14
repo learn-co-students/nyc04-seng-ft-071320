@@ -9,7 +9,13 @@ task :console do
   Pry.start
 end
 
+desc "run our app"
+task :start do 
+  Interface.new.welcome
+end
+
 desc "code benders magic"
 task :magic do
   puts "⚡️ ⚡️ ⚡️ ⚡️ ⚡️ "
 end
+

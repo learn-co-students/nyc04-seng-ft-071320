@@ -4,6 +4,13 @@ class Plant < ActiveRecord::Base
   has_many :people, through: :plant_parenthoods
   belongs_to :category
 
+
+  def self.all_names
+    Plant.all.map do |plant|
+      {plant.name => plant.id}
+    end
+  end
+  
 end
 
 
