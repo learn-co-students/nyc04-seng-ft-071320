@@ -2,6 +2,7 @@ class Plant < ActiveRecord::Base
 
   has_many :plant_parenthoods
   has_many :people, through: :plant_parenthoods
+  belongs_to :category
 
 end
 
