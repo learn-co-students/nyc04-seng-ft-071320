@@ -10,6 +10,8 @@ More Models + Project Setup
 - [ ] Uderstand the beauty of TTY Prompt
 
 
+
+
 ### Current ERD:
 
 ```
@@ -19,14 +21,30 @@ More Models + Project Setup
              :bought(date)                        :age
 ```
 
+### PlantParenthood App
+CRUD:
+* CREATE
+- a User will be able to create [something]
+* READ
+- a User will be able to see all available plants
+- a User will be able to see plants of specific category only
+*categories include*: "succulent", "leafy", "outdoor", "indoor", "herb"
+* UPDATE
+- a User will be able to increase their affection towards the plant
+* DELETE
+-  ...?
+
+
+
+
 ### GOAL:
 
 ```
-Category :name 
+Category
   |
   ^
-Plant -<     PlantParenthood >- Parent
-:life_points      |
-                  ^
-                Watering
+Plant -< PlantParenthood >- Parent   
 ```
+
+TASK:
+- pseudocode the steps I need to take to implement a new model into the existing setup
