@@ -1,4 +1,4 @@
-class Dog < ActiveRecord::Base
+class Plant < ActiveRecord::Base
 
 end
 

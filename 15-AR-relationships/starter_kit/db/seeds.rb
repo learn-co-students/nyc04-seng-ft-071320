@@ -1,3 +1,3 @@
-Dog.destroy_all
-Vet.destroy_all 
-Appointment.destroy_all
+Plant.destroy_all
+Person.destroy_all 
+
