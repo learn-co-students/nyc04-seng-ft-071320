@@ -64,7 +64,8 @@
 20:16:06	 From ChenYun Zhang : it allows us to initiate new instances
 20:16:45	 From Isabel K. Lee (they/them) : Rake is a gem that allows us to automate tasks.
 20:16:58	 From Isabel K. Lee (they/them) : `rake console` is one of the tasks that we can access with Rake!
-20:17:02	 From Christy Tropila : if you use .new you must all use a .save method.create combines these two steps
+20:17:02	 From Christy Tropila : if you use .new you must all use a .save method
+.create combines these two steps
 20:17:05	 From Nunny (she/her) : Create an instance
 20:17:38	 From Anna Kim : .create actually stores the data in the table?
 20:17:59	 From Christy Tropila : cread read update delete
@@ -86,7 +87,6 @@
 20:22:19	 From Dong Xia : db migrate status
 20:22:22	 From Christy Tropila : db migrate:status
 20:24:13	 From Isabel K. Lee (they/them) : Creating instances only in pry is not very sustainable. So we’re going to create a separate file just to store the seed data. This file will be called `seeds.rb` in the `db` folder.
-20:25:02	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : 5 mins until Break
 20:25:06	 From Isabel K. Lee (they/them) : Since the seed file is a ruby file, we can write ruby code in it.
 20:25:59	 From Isabel K. Lee (they/them) : When you run `rake db:seed`, there isn’t a response in the terminal, so you can add a puts statement at the end to make sure that your seed file was run.
 20:26:12	 From Anna Kim : did sylwia write task :seed in the rakefile?
@@ -107,9 +107,7 @@
 20:28:58	 From Isabel K. Lee (they/them) : `rake db:seed` is always given! and as long as you create your seed data file in `db` with the `seeds.rb` file name, it should run.
 20:29:25	 From Anna Kim : ^^^ thank you so much
 20:29:28	 From Dong Xia : cool
-20:29:51	 From Sylwia Vargas (she/her) to Annie Zheng (she/her) (Privately) : thx thx
 20:29:51	 From ChenYun Zhang : that’s cool
-20:31:31	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : :)
 20:32:55	 From ChenYun Zhang : happy new year
 20:33:03	 From Annie Zheng (she/her) : blast off 🚀
 20:33:11	 From Hortencia : ^^^
@@ -125,13 +123,11 @@
 20:37:08	 From Ekaterina Zarudnaya : And even faster…)
 20:37:09	 From Annie Zheng (she/her) : “Don’t even though the keyboard before you draw your domain model”
 20:37:14	 From Annie Zheng (she/her) : touch*
-20:37:38	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : Slow down a bit
 20:38:36	 From Emmanuel Jose : Anyone else an only child?
 20:39:16	 From Annie Zheng (she/her) : #middlechild
 20:39:24	 From Hortencia : ^^^^
 20:39:25	 From Isabel K. Lee (they/them) : You can find the plural version of any noun by calling `.pluralize` on a string in pry!
 20:39:45	 From Patrick Pierre : How does the plant parenthood model relate to the person and plant models in terms of has many and belongs to?
-20:39:56	 From Isabel K. Lee (they/them) to Sylwia Vargas (she/her) (Privately) : hey sylwia, do you mind slowing down a bit? ☺️
 20:40:18	 From Annie Zheng (she/her) : Patrick ++
 20:41:50	 From Annie Zheng (she/her) : Person has_many Plant through PlantParenthood
 
@@ -139,9 +135,6 @@ Plant has_many Person through PlantParenthood
 
 PlantParenthood belongs_to Plant 
 PlantParenthood belongs_to Person
-20:42:39	 From Sylwia Vargas (she/her) to Annie Zheng (she/her) (Privately) : Is this ok
-20:42:43	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : Yes!
-20:42:43	 From Sylwia Vargas (she/her) to Annie Zheng (she/her) (Privately) : or more
 20:42:52	 From Kalkidan Taye : lol
 20:43:24	 From Jade Decordova : Responsibility
 20:45:11	 From Wilson Ng : rake db:create_migration NAME= _____
@@ -207,9 +200,6 @@ PlantParenthood belongs_to Person
 20:57:52	 From Kalkidan Taye : yes
 20:57:55	 From Kalkidan Taye : hash
 20:57:56	 From ChenYun Zhang : hash
-21:00:16	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : break
-21:01:44	 From Sylwia Vargas (she/her) to Annie Zheng (she/her) (Privately) : thxxxx
-21:01:53	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : :)
 21:03:48	 From Annie Zheng (she/her) : @wilson’s question: https://stackoverflow.com/questions/39056615/after-destroying-all-records-why-are-new-objects-being-created-with-an-id-higher
 21:04:08	 From Sylwia Vargas (she/her) : ^^^^^
 21:04:12	 From Sylwia Vargas (she/her) : Please read!!!!!!!!!!!!
@@ -241,18 +231,14 @@ PlantParenthood belongs_to Person
 21:19:56	 From Kalkidan Taye : !!!!!!!!!!!!!!
 21:20:02	 From Anna Kim : is there a specific find function?
 21:20:02	 From Kalkidan Taye : I am flipping out over here
-21:20:06	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : Last 10 mins
 21:20:08	 From Anna Kim : wow
 21:20:17	 From ChenYun Zhang : 🤯
 21:20:44	 From Nunny (she/her) : No lol
 21:20:45	 From Patrick Pierre : What is meant by migration?
-21:22:08	 From Hortencia to Sylwia Vargas (she/her) (Privately) : Can you explain why you wrote through: as a pose to :through
 21:23:22	 From Maysoon : Would you please send me the updated GitHub link for this lesson once lecture is over?
-21:26:20	 From Annie Zheng (she/her) to Sylwia Vargas (she/her) (Privately) : Last 4 mins, will send feedback in 2 mins
 21:26:53	 From Maysoon : Never mind I think I can just refresh on GitHub sorry about that
 21:27:07	 From Annie Zheng (she/her) : 🌟 🌟🌟Post Lecture Feedback Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
 21:27:10	 From Isabel K. Lee (they/them) : https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
 21:27:15	 From Annie Zheng (she/her) : Isabel ++
 21:27:17	 From Isabel K. Lee (they/them) : ^^^^^^^^^^^^^^^^^^^^^^^
 21:29:15	 From Maysoon : Thank you
-21:31:16	 From Nunny (she/her) to Sylwia Vargas (she/her) (Privately) : Hi Sylwia! I just sent you a DM on slack
