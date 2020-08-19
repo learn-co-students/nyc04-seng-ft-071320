@@ -1,4 +1,4 @@
-# Using pry
+# Practicing Pry with ActiveRecord
 
 In this lab, the models are `Dog`, `Vet`, and `Appointment`.
 
