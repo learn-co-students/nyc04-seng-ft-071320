@@ -1,0 +1,252 @@
+19:29:00	 From Sylwia Vargas (she/her) : yayyyy
+19:29:05	 From Sylwia Vargas (she/her) : The internet
+19:29:06	 From Sylwia Vargas (she/her) : yayyyy
+19:29:13	 From Sylwia Vargas (she/her) : www.theinternet.com
+19:29:42	 From Sylwia Vargas (she/her) : While we are waiting
+19:29:46	 From Sylwia Vargas (she/her) : what do you all think about
+19:29:49	 From Sylwia Vargas (she/her) : The internet
+19:29:52	 From Sylwia Vargas (she/her) : :D
+19:29:58	 From ChenYun Zhang : it’s so cool :D
+19:30:03	 From Dong Xia : **pop up ads****pop up ads****pop up ads****pop up ads****pop up ads****pop up ads****pop up ads****pop up ads****pop up ads****pop up ads**
+19:30:12	 From Sylwia Vargas (she/her) : ohhh
+19:30:13	 From Franklin Bado : I need some quick cash, where can I get an ATM??
+19:30:18	 From eisea904@newschool.edu : lol dong
+19:30:19	 From Sylwia Vargas (she/her) : I see some dissatisfied crowd there
+19:30:35	 From Emmanuel Jose : Get those coins, Franklin
+19:30:39	 From Sylwia Vargas (she/her) : Oh @Franklin, Steven and Wilson’s app will help you!
+19:30:52	 From Franklin Bado : If only there was an app that can help me
+19:31:03	 From Wilson Ng : LOL
+19:31:03	 From Emmanuel Jose : Hi Sylwia!
+19:31:20	 From Franklin Bado : Sylwia is back
+19:31:33	 From ChenYun Zhang : sad as hell
+19:31:38	 From Franklin Bado : It is been like ages since I last saw you,,, how are you doing?
+19:32:00	 From Dong Xia : avatar mode ON
+19:32:17	 From Wilson Ng : cool-guy-cry
+19:32:37	 From ChenYun Zhang : 🤡
+19:32:41	 From Anna Kim : woot woot~
+19:32:48	 From Waverley Leung : ^^
+19:33:52	 From Anna Kim : README goals ++
+19:36:16	 From Christy Tropila : if anyone is using windows
+
+sudo apt-get install chromium-chromedriver
+19:36:31	 From Annie Zheng (she/her) : Christy ++
+19:38:01	 From Annie Zheng (she/her) : please answer the prompts appropriately :)
+19:39:16	 From Annie Zheng (she/her) : Go to the breakout rooms and follow the spider quiz instruction found in the README.ms
+19:47:24	 From Sylwia Vargas (she/her) : https://github.com/learn-co-students/nyc04-seng-ft-071320
+19:56:29	 From Kalkidan Taye : I did this and it didn’t work
+19:56:29	 From Isabel K. Lee (they/them) : nunny ++
+19:56:39	 From Waverley Leung : I had the same message pop up!
+19:56:39	 From Wilson Ng : she’s a hacker
+19:56:39	 From Kalkidan Taye : She does lol
+19:56:40	 From Emmanuel Jose : Nunny +++
+19:56:45	 From eisea904@newschool.edu : Nunny ++
+19:56:57	 From Ekaterina Zarudnaya : Lida nice to see you!
+19:57:00	 From Anna Kim : Nunny ++++
+19:57:00	 From Emmanuel Jose : Nunny in Avatar Mode!
+19:57:05	 From Isabel K. Lee (they/them) : @lida i love your braids!!
+19:57:13	 From Wilson Ng : blog talk
+19:57:21	 From Anna Kim : mac expert!!
+19:57:21	 From Lida : Hi all!
+19:57:22	 From Isabel K. Lee (they/them) : nunny ++ HACKER
+19:57:44	 From Ekaterina Zarudnaya : Hacker! ++
+19:57:45	 From Sayana Nimaeva : @Nunny Im going to need your help too. I have the same error
+19:57:48	 From Isabel K. Lee (they/them) : nunny’s name starts with the same letter as neo…………… 🤔
+19:57:59	 From Lida : I did an update and know all parts are running!
+19:58:03	 From Hortencia : ^^^^
+19:58:13	 From Annie Zheng (she/her) : Nunny ++
+19:59:20	 From Franklin Bado : bundle
+19:59:35	 From eisea904@newschool.edu : this is why I hate spiders   >.<
+19:59:37	 From Jade Decordova : bundle
+19:59:38	 From Kalkidan Taye : Followed all of these steps, and it didn’t work :(
+19:59:42	 From Anna Kim : lol alex!
+20:00:04	 From Nunny (she/her) : Lol @everyone
+20:00:18	 From Kalkidan Taye : Yay!!!
+20:00:28	 From Annie Zheng (she/her) : 👏 👏 👏 👏 👏
+20:00:31	 From Kalkidan Taye : Nunny+++
+20:00:43	 From Kalkidan Taye : Jade++ on the bundle
+20:01:13	 From Alex E (she/her) : is there a “class” button? “Command + ‘class’” ?
+20:01:19	 From Hortencia : user
+20:02:19	 From Jade Decordova : Wilson++
+20:02:20	 From Emmanuel Jose : Wilson +++
+20:02:32	 From Annie Zheng (she/her) : Wilson ++
+20:02:39	 From Wilson Ng : tyty
+20:02:42	 From Wilson Ng : that’s cool
+20:02:46	 From Franklin Bado : Modules
+20:02:55	 From Annie Zheng (she/her) : Franklin ++
+20:02:58	 From Emmanuel Jose : Franklin +++
+20:03:05	 From Isabel K. Lee (they/them) : what are modules?????????
+20:03:11	 From Jade Decordova : Method libraries
+20:03:21	 From Kalkidan Taye : Shared methods?
+20:03:46	 From Emmanuel Jose : Jade +++ Daisy +++
+20:03:57	 From Annie Zheng (she/her) : Jade ++ wilson ++ Sam++ Daisy ++
+20:04:23	 From Wilson Ng : 🤡
+20:04:37	 From Franklin Bado : Modules again
+20:04:44	 From Wilson Ng : i love tools
+20:04:50	 From Annie Zheng (she/her) : nunny ++
+20:04:56	 From Waverley Leung : Nunny ++
+20:04:57	 From Jade Decordova : Nunny A+
+20:05:00	 From Emmanuel Jose : Go Nunny!
+20:05:05	 From Samir Triande : Nunny is on fire +++
+20:05:06	 From Franklin Bado : 🕵🏻
+20:05:26	 From Annie Zheng (she/her) : Sam++
+20:05:28	 From Isabel K. Lee (they/them) : sam ++
+20:05:30	 From Isabel K. Lee (they/them) : clowns ++
+20:05:32	 From Nunny (she/her) : Samantha++ cohort ++
+20:05:37	 From Isabel K. Lee (they/them) : nunny ++
+20:05:58	 From Isabel K. Lee (they/them) : sylwia’s one million desktop files ++
+20:06:01	 From Kalkidan Taye : lol
+20:06:08	 From ChenYun Zhang : a developer’s desktop
+20:07:34	 From Wilson Ng : i really lol’ed when i read that joke
+20:07:46	 From Kalkidan Taye : Which one?
+20:07:51	 From Wilson Ng : j3
+20:07:58	 From Kalkidan Taye : Lol yes
+20:07:59	 From Franklin Bado : Joke.all.last
+20:08:21	 From Wilson Ng : u1.jokes
+20:08:56	 From Wilson Ng : 🇨🇭 big plus
+20:09:02	 From Kalkidan Taye : I like this joke too…puns are the best
+20:09:05	 From Wilson Ng : 😂
+20:09:32	 From Emmanuel Jose : The app/tools/colors.rb file has global variables, should we consider using them for our projects?
+20:10:09	 From Annie Zheng (she/her) : Manny ++
+20:11:34	 From Jade Decordova : <3
+20:12:34	 From Annie Zheng (she/her) : Place methods related to navigation -> interface
+20:12:50	 From Annie Zheng (she/her) : anything that pertains to the individual models -> in the model
+20:13:14	 From Annie Zheng (she/her) : Guard clause <— read about it!
+20:13:30	 From Annie Zheng (she/her) : super cool ^
+20:14:54	 From Emmanuel Jose : Annie, where can we read more about guard clauses?
+20:15:37	 From Annie Zheng (she/her) : @Manny — https://anthonygharvey.com/ruby/guard_clauses_vs_nested_if_statements
+20:15:47	 From Emmanuel Jose : Thank you Annie!
+20:16:34	 From Annie Zheng (she/her) : On the internet, there are two side: a) the client b) the server
+20:16:55	 From Annie Zheng (she/her) : client sends the request and the server sends back a response
+20:18:03	 From Annie Zheng (she/her) : Command + option + I <— opens up your console on chrome
+20:18:30	 From Annie Zheng (she/her) : on the console, you can go to the network tabs and check out what requests are being made
+20:18:42	 From Annie Zheng (she/her) : 200 response — okay
+20:18:51	 From Annie Zheng (she/her) : 400 response — sad 😔
+20:20:11	 From Annie Zheng (she/her) : Response can come back in the form of an HTML
+20:21:20	 From Anna Kim : hash
+20:21:20	 From Ekaterina Zarudnaya : hash
+20:21:20	 From Nunny (she/her) : hashes
+20:21:23	 From Dong Xia : array of hashes
+20:21:23	 From Wilson Ng : nested data structure
+20:21:24	 From Kalkidan Taye : Hash
+20:21:26	 From Lida : hash
+20:21:40	 From Franklin Bado : Pigeons……
+20:21:43	 From Franklin Bado : No…..
+20:21:43	 From Anna Kim : ^^^
+20:21:50	 From Annie Zheng (she/her) : Hashes never leaves youuu
+20:21:51	 From Lida : Hashketball!
+20:22:00	 From Nunny (she/her) : Franklin plz I still have nightmares 🐦
+20:22:23	 From Franklin Bado : Json Deluro in hashes….
+20:22:28	 From Kalkidan Taye : lol
+20:22:47	 From Annie Zheng (she/her) : json — javascript object notation
+20:24:10	 From Anna Kim : everything in the internet can be parsed to string?
+20:24:22	 From Sylwia Vargas (she/her) : everything is a string
+20:24:28	 From Sylwia Vargas (she/her) : And then it gets translated into non-string
+20:24:34	 From Anna Kim : oooooh ok. ty^++
+20:24:37	 From Annie Zheng (she/her) : Three things: 
+1. There’s a client sending a request and the server who sends back a response
+2. Everything in the internet is a string and can be parsed into json 
+3. 200 response means “ok”
+20:25:15	 From Jade Decordova : Its amazing how many views on YouTube these timers get
+20:25:41	 From Annie Zheng (she/her) : Maybe that can be an easy source of revenue?
+20:25:52	 From Annie Zheng (she/her) : 🤔
+20:26:00	 From Jade Decordova : 🤔
+20:26:06	 From Nunny (she/her) : @jade I was thinking the same
+20:26:52	 From Jade Decordova : I would watch an Island breeze timer with a Pina colada just sitting there
+20:28:00	 From Annie Zheng (she/her) : API — an external database (super simplified definition)
+20:28:23	 From Annie Zheng (she/her) : Find books!
+20:28:23	 From Samir Triande : Never used
+20:28:31	 From Annie Zheng (she/her) : LOOL Samir
+20:28:38	 From Anna Kim : format is very fixed?
+20:29:21	 From Annie Zheng (she/her) : @Anna API format?
+20:30:23	 From Anna Kim : that was my guess why sylwia chose google books lol
+20:30:32	 From Anna Kim : (not a question)
+20:30:33	 From Annie Zheng (she/her) : Ohh gotcha
+20:32:28	 From Annie Zheng (she/her) : require ‘json’ — handles json
+20:33:33	 From Annie Zheng (she/her) : require ‘rest-client’ — handles HTTP requests
+20:33:39	 From Patrick Pierre : ok
+20:33:40	 From Nunny (she/her) : It means OKay
+20:33:40	 From Jade Decordova : approved
+20:33:45	 From Dong Xia : its good
+20:33:56	 From Franklin Bado : I actually waited for something nice to happen
+20:34:07	 From Nunny (she/her) : “200 response — okay 400 response — sad 😔” - Annie
+20:35:22	 From Annie Zheng (she/her) : JSON.parse —> turns as string to a hash
+20:35:54	 From Franklin Bado : .keys
+20:36:00	 From Annie Zheng (she/her) : “Be brave” -sylwia
+20:36:02	 From Anna Kim : parsed.items[0]
+20:36:03	 From Franklin Bado : Open doors
+20:36:23	 From Franklin Bado : Go into kind
+20:36:31	 From Annie Zheng (she/her) : Franklin ++ Anna++
+20:36:59	 From Christy Tropila : wow what a throwback
+20:37:05	 From Jade Decordova : array
+20:37:16	 From Annie Zheng (she/her) : Jade++
+20:37:24	 From Franklin Bado : Parse.destroy
+20:37:31	 From Wilson Ng : 🧐
+20:37:59	 From Anna Kim : gotta keep checking where i am in…
+20:38:14	 From Anna Kim : Sylwia +++
+20:38:19	 From Christy Tropila : +++
+20:38:26	 From Anna Kim : can we do PP?
+20:38:37	 From Franklin Bado : ^^^
+20:40:01	 From Dong Xia : is RestClient similar to NET::HTTP  ?
+20:40:30	 From ChenYun Zhang : hahahaha
+20:40:31	 From Annie Zheng (she/her) : yup, I think it’s similar
+20:40:36	 From Samir Triande : ahahahha
+20:48:15	 From Annie Zheng (she/her) : You can pass in a second argument to specify what type of data you want to get back {accept: :json}
+20:49:47	 From Annie Zheng (she/her) : LOOL
+20:49:49	 From Dong Xia : lol
+20:49:53	 From Kalkidan Taye : lol….I love it
+20:49:59	 From David Felix : HahA
+20:50:12	 From Wilson Ng : 💀
+20:50:13	 From Annie Zheng (she/her) : Dead
+20:50:14	 From Kalkidan Taye : lolololol
+20:50:18	 From ChenYun Zhang : hahahaha
+20:50:20	 From Dong Xia : good jikes
+20:50:23	 From Franklin Bado : We need to create a joke api and give it to Sylwia
+20:50:33	 From ChenYun Zhang : that’s good app
+20:51:29	 From Annie Zheng (she/her) : using an api will allow you to have a lighter database so you’re only saving what the user wants to save instead of storing all of the data in the backend, i.e. having to seed all of your jokes
+20:52:27	 From ChenYun Zhang : doesn’t the choice always true?
+20:53:30	 From Annie Zheng (she/her) : Chenyun ++
+20:53:33	 From ChenYun Zhang : .negative is false,  ok, thank you
+21:02:48	 From Kalkidan Taye : Lol ….psychology jokes
+21:04:09	 From Nunny (she/her) : 🤨
+21:04:55	 From ChenYun Zhang : it’s an array?
+21:05:20	 From Annie Zheng (she/her) : Chenyun ++
+21:05:50	 From Annie Zheng (she/her) : the response for the server is different when we asked for “random” and when we asked for “hipster"
+21:06:03	 From Annie Zheng (she/her) : So there needs to be a conditional to handle the two different cases
+21:06:16	 From ChenYun Zhang : .sample
+21:07:26	 From Anna Kim : ^^
+21:07:31	 From Emmanuel Jose : ChenYun +++
+21:09:32	 From Franklin Bado : Womp womp sounds like a good joke
+21:20:22	 From Wilson Ng : .html?
+21:21:45	 From Anna Kim : << ?
+21:21:50	 From Anna Kim : do you have to push into the array?
+21:22:15	 From Franklin Bado : .flatten ?
+21:22:28	 From Annie Zheng (she/her) : Franklin ++ Anna++
+21:22:35	 From Anna Kim : + might work
+21:23:26	 From Franklin Bado : Do you need to flatten because of line 4 ? Like you have it inside a array structure?
+21:24:58	 From Anna Kim : can  you do $scraped_jokes + doc.css(“.body-ul li”)
+21:25:08	 From Anna Kim : you might have to create a new variable name
+21:25:51	 From Annie Zheng (she/her) : @Anna I’ll put your suggest in the parking lot and ask Sylwia to try it later so this lecture doesn’t run longer :)
+21:26:03	 From Anna Kim : @franklin i think so. we can play around with the array structure!
+21:26:20	 From Annie Zheng (she/her) : 🌟 🌟🌟Post Lecture Feedback Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+21:26:22	 From Anna Kim : @annie ty! yes, don’t wanna run over time!
+21:27:23	 From Kalkidan Taye : awesome
+21:27:30	 From Anna Kim : coool
+21:27:58	 From Anna Kim : omg creepy
+21:27:59	 From Franklin Bado : creepy
+21:28:00	 From Kalkidan Taye : Omg!!!!!!!!!!!!!!!!!!!!!!!!!!
+21:28:14	 From Anna Kim : hacking 101! lolss
+21:28:14	 From Franklin Bado : Lol 101 hacking
+21:28:17	 From ChenYun Zhang : hack time
+21:28:19	 From Franklin Bado : I want those lectures
+21:28:21	 From Dong Xia : more hacking
+21:28:49	 From Annie Zheng (she/her) : 🌟 🌟🌟Post Lecture Feedback Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+21:29:09	 From Kalkidan Taye : Was this recorded. I don’t see the red button.
+21:29:10	 From Annie Zheng (she/her) : check-in*
+21:29:38	 From Ekaterina Zarudnaya : Thank you Sylwia!
+21:29:49	 From Kalkidan Taye : TY this was fun. I need to review this…later
+21:30:35	 From Emmanuel Jose : Thank you  Sylwia!
+21:30:59	 From ChenYun Zhang : Thank you Sylwia, bye Sylwia🤡
+21:31:06	 From Waverley Leung : Thank you Sylwia!
+21:31:22	 From Nunny (she/her) : Sylvia ++ thank youu
+21:32:07	 From Lida : Bye!
+21:32:11	 From Anna Kim : Thank you +++
