@@ -7,12 +7,12 @@ class JokeApp
     login_or_signup
     wanna_see_favs
     joke_prompt
-    goodbye
   end
 
   private
 
   def welcome
+    system 'clear'
     puts "Howdy! Are you ready for some jokes?"
     sleep(0.3)
   end
@@ -41,14 +41,13 @@ class JokeApp
     subject.downcase == "random" ? joke = Joke.all.sample : joke = Joke.where("content LIKE ?", "%" + subject + "%").sample
     # if the response is nil or not:
     joke.nil? ? no_jokes_available : joke_available(joke)
-    # ask if to show another joke
-    another_one?
   end
 
   def no_jokes_available
     alert_theme(["There are no jokes about it!\n", "Let's try again!"])
+    choice = yes_no("Do you wanna continue?")
     sleep(0.3)
-    joke_prompt
+    choice ? joke_prompt : goodbye
   end
 
   def joke_available(joke_instance)
@@ -58,13 +57,13 @@ class JokeApp
 
   def save_joke?(joke_instance)
     preference = yes_no("Do you want do save this joke?")
-    return @user.save_joke(joke_instance) if preference
+    preference ? @user.save_joke(joke_instance) : another_one?
   end
 
   def another_one?
     prompt = $next_joke_arr.sample
     answer = yes_no(prompt)
-    answer ? joke_prompt : nil
+    answer ? joke_prompt : goodbye
   end
 
   def goodbye
