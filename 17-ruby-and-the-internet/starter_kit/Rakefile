@@ -1,0 +1,19 @@
+require_relative 'config/environment'
+require_relative './bin/joke_spider'
+require 'sinatra/activerecord/rake'
+
+desc 'starts a console'
+task :c do
+  ActiveRecord::Base.logger = Logger.new(STDOUT)
+  Pry.start
+end
+
+desc "🤡 starts the app 🤡"
+task :jokes do 
+  JokeApp.new.run
+end
+
+desc "🕷 lets a spider help you talk about code 🕷 "
+task :spider do 
+  JokeSpider.crawl!
+end

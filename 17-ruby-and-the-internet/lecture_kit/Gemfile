@@ -1,0 +1,25 @@
+# frozen_string_literal: true
+source "https://rubygems.org"
+
+# database
+gem 'activerecord'
+gem "sinatra-activerecord"
+gem "sqlite3"
+
+# config
+gem "require_all"
+gem "rake"
+
+# testing
+gem "pry"
+gem 'activerecord-reset-pk-sequence'
+gem "faker"
+
+# pretty cli
+gem "tty-prompt"
+gem "colorize"
+
+# internet connections
+gem "rest-client"
+gem "json"
+gem "kimurai"
