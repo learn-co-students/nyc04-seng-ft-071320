@@ -79,8 +79,6 @@
 20:01:37	 From Nunny (she/her) : Dr. Grey
 20:01:52	 From Annie Zheng : Dr. Pepper
 20:01:58	 From Wilson Ng : omg Dr.Grey
-20:03:39	 From Annie Zheng to Sylwia Vargas (she/her) (Privately) : Nunny just got a call that they need to take, so they might be better in a group of three
-20:03:55	 From Sylwia Vargas (she/her) to Annie Zheng (Privately) : ok
 20:05:41	 From Alex E (she/her) : Where can we re-download the git repository?  I lost the file I put it in originally.
 20:05:51	 From Annie Zheng : run `git pull origin master` to get the updated code that Sylwia just uploaded
 20:14:32	 From Samantha Balgobin : y
@@ -263,7 +261,8 @@ require_all ‘<folder name>’
 21:20:01	 From Annie Zheng : Awwapp.com
 21:20:01	 From Anna Kim : ^ awwapp !
 21:20:05	 From Annie Zheng : ^
-21:21:12	 From Patrick Pierre : Oh ok I asked to see if there were any other sites that we can use for thisThank you @Annie
+21:21:12	 From Patrick Pierre : Oh ok I asked to see if there were any other sites that we can use for this
+Thank you @Annie
 21:21:22	 From hortencia : Still recording
 21:21:32	 From Isabel K. Lee (they/them) : plz fill out post-lecture check in before moving on to the pairing labs!
 21:21:32	 From Isabel K. Lee (they/them) : https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
@@ -272,8 +271,6 @@ require_all ‘<folder name>’
 21:21:58	 From Annie Zheng : I use Adobe InDesign for drawing but that’s exta
 21:22:04	 From Annie Zheng : extra*
 21:22:06	 From Jade Decordova : that was insightful
-21:24:06	 From Maysoon to Sylwia Vargas (she/her) (Privately) : Is it possible to not do pairing lab today to keep working on catching up?
 21:25:07	 From ChenYun Zhang : thank you
 21:26:21	 From Lida : Thank you
-21:26:36	 From Sylwia Vargas (she/her) to Maysoon (Privately) : It’s okay :)
 21:29:40	 From Isabel K. Lee (they/them) : for maysoon: take a 10-15 minute break. come back, then sylwia will give you action items to work on!

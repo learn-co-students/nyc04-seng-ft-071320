@@ -82,7 +82,6 @@
 18:47:40	 From Maysoon : class
 18:47:49	 From Maysoon : Not sure though
 18:50:50	 From Anna Kim : aww
-18:50:54	 From Isabel K. Lee (they/them) to Sylwia Vargas (she/her) (Privately) : hello sylwia! we are a bit over time for lunch. (:
 18:51:06	 From Nunny (she/her) : But now they are in the all variable?
 18:51:29	 From ChenYun Zhang : @@all is an array
 18:51:30	 From Anna Kim : @nunny: i think they are stored in the @@all

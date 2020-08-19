@@ -17,9 +17,7 @@
 17:18:42	 From Anna Kim : and just went back and cloned it down
 17:19:03	 From Samir Triande : Tully, Tibetan Mastiff(Bestfriend dog but stays with me some times)
 17:19:05	 From hortencia : I don’t have a dog I use to have a cat her name was kitty
-17:19:09	 From Isabel K. Lee (they/them) to Sylwia Vargas (she/her) (Privately) : we are just missing nunny and josh, but i tagged them
 17:19:13	 From Ekaterina Zarudnaya : Are we going to code along the lecture?
-17:19:33	 From Sylwia Vargas (she/her) to Isabel K. Lee (they/them) (Privately) : Ok thx
 17:19:55	 From Ekaterina Zarudnaya : Thank you!
 17:26:37	 From Anna Kim : should we do git pull origin master every morning>
 17:26:38	 From Anna Kim : ?
@@ -124,12 +122,11 @@
 17:54:02	 From wilson ng : Cool!!
 17:54:16	 From Anna Kim : do we need to know object_id # and the path file location?
 17:54:53	 From Emmanuel Jose : What happens if we use comparison operators like < > ?
-17:54:53	 From hortencia to Sylwia Vargas (she/her) (Privately) : When typing can you scroll up can’t see the bottomless line thanks
 17:55:16	 From Sayana Nimaeva : Do we need ()?
-17:55:41	 From hortencia to Sylwia Vargas (she/her) (Privately) : In the terminal
 17:55:56	 From Anna Kim : so to confirm understand, all primitive objects (integers, strings, array) are defined instances under class right?
 17:57:21	 From Dong Xia : Def bark
-17:57:26	 From Christy Tropila : def barking end
+17:57:26	 From Christy Tropila : def barking 
+end
 17:57:34	 From Isabel K. Lee (they/them) : go for it dong!
 17:58:17	 From Kalkidan Taye : Good job dong!
 17:58:18	 From Emmanuel Jose : Yay Dong!

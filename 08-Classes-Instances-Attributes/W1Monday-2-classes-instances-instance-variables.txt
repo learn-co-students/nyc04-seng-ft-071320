@@ -39,8 +39,6 @@
 20:52:03	 From Kalkidan Taye : You have to do the name= method.
 20:52:05	 From Franklin Bado : David is on fire today
 20:52:10	 From Kalkidan Taye : Yes he is!!!
-20:52:52	 From hortencia to Sylwia Vargas (she/her) (Privately) : Do you have to create a new “def “every time you create a new name ?
-20:54:35	 From Sylwia Vargas (she/her) to hortencia (Privately) : you, you need to write a method for every attribute :)
 20:55:44	 From David Felix : “I feel nothing anymore” lol
 20:55:50	 From Kalkidan Taye : lol
 20:55:56	 From Franklin Bado : ^^
@@ -156,10 +154,6 @@
 21:37:07	 From Ekaterina Zarudnaya : Thank you!
 21:37:10	 From Alex E (she/her) : This was so helpful Sylwia.  I feel a lot better going into this next collection of labs, thank you!
 21:37:32	 From Sylwia Vargas (she/her) : https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
-21:40:11	 From Sylwia Vargas (she/her) to Isabel K. Lee (they/them) (Privately) : I will put you in group with the folks — could you please tell them to addd 2 features and 2 behaviors to the dog?
-21:40:33	 From Isabel K. Lee (they/them) to Sylwia Vargas (she/her) (Privately) : yup sounds good
-21:40:42	 From Isabel K. Lee (they/them) to Sylwia Vargas (she/her) (Privately) : when you say feature, do you mean like
-21:40:46	 From Isabel K. Lee (they/them) to Sylwia Vargas (she/her) (Privately) : 2 attributes?
 21:40:53	 From Anna Kim : thank you
 21:43:46	 From Ekaterina Zarudnaya : Me to
 21:43:58	 From Ekaterina Zarudnaya : Could you please add me to the group?
