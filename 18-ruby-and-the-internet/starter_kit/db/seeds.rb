@@ -1,4 +1,4 @@
-# require_relative '../config/dad_jokes_scraper'
+require_relative '../config/dad_jokes_scraper'
 
 User.destroy_all
 Joke.destroy_all

@@ -23,3 +23,9 @@ gem "colorize"
 gem "rest-client"
 gem "json"
 gem "kimurai"
+
+# scraping helpers in case a user's browser does not support the drivers
+gem 'chromedriver-helper'
+gem "selenium-webdriver"
+gem 'webdrivers'
+gem 'capybara'

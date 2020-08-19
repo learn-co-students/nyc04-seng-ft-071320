@@ -4,7 +4,7 @@ class JokeSpider < Kimurai::Base
     @@answers = {first: "", second: "", third: "", fourth: ""}
     @@q_hash = [
         {num: "first", q: "What's your name?", xpath: "/html/body/div[3]/main/div[1]/div[2]/div[2]/div/div/div/div[1]/section/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/button"}, 
-        {num: "second", q: "Seed.rb, line 19: what does this line do?", xpath: "/html/body/div[3]/main/div[1]/div[2]/div[2]/div/div/div/div[2]/section/div/div/div/div/div/div/div[2]/div[3]/div/div/div[2]/div/div/button"}, 
+        {num: "second", q: "Seed.rb, line 21: what does this line do?", xpath: "/html/body/div[3]/main/div[1]/div[2]/div[2]/div/div/div/div[2]/section/div/div/div/div/div/div/div[2]/div[3]/div/div/div[2]/div/div/button"}, 
         {num: "third", q: "joke_app.rb, line 3: what are Themes and CliControls?", xpath: "/html/body/div[3]/main/div[1]/div[2]/div[2]/div/div/div/div[3]/section/div/div/div/div/div/div/div[2]/div[3]/div/div/div[2]/div/div/button"}, 
         {num: "fourth", q: 'joke_app.rb, line 49: where is "alert_theme" method located?', xpath: "/html/body/div[3]/main/div[1]/div[3]/div[2]/div/div/div/div[4]/section/div/div/div/div/div/div/div[2]/div[3]/div/div/div[1]/div/div[1]/div/div/button"}]
     @name= 'scavenger'

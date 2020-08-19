@@ -37,10 +37,40 @@ class JokeApp
 
   def get_joke(subject)    
     system 'clear'
+
+    if subject.downcase == "random" 
+      url = joke_url
+    else 
+      url = joke_url+"search?term=#{subject}"
+    end 
+
+    response = RestClient.get(url, {accept: :json})
+    body = response.body
+    parsed = JSON.parse(body)
+
+    if subject.downcase == "random" 
+      joke = parsed["joke"]
+    else 
+      joke = parsed["results"].map{|hash| hash["joke"]}.sample
+    end 
+
+    if joke.length == 0 || joke == nil
+      puts "womp womp"
+    else 
+      puts joke 
+      choice = yes_no("Do you love this joke?")
+      if choice 
+        joke_ins = Joke.find_or_create_by(content: joke)
+        FavJoke.create(user_id: @user.id, joke_id: joke_ins.id)
+      else
+        goodbye
+      end
+    end
+
     # get a random joke or find a joke that contains subject
-    subject.downcase == "random" ? joke = Joke.all.sample : joke = Joke.where("content LIKE ?", "%" + subject + "%").sample
-    # if the response is nil or not:
-    joke.nil? ? no_jokes_available : joke_available(joke)
+    # subject.downcase == "random" ? joke = Joke.all.sample : joke = Joke.where("content LIKE ?", "%" + subject + "%").sample
+    # # if the response is nil or not:
+    # joke.nil? ? no_jokes_available : joke_available(joke)
   end
 
   def no_jokes_available

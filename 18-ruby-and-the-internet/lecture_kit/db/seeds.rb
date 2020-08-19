@@ -13,6 +13,18 @@ j2 = Joke.create(content: "Two bytes meet.  The first byte asks, “Are you ill?
 j3 = Joke.create(content: "What’s the best thing about Switzerland? I’m not sure, but their flag is a big plus")
 j4 = Joke.create(content: "How do you keep a bagel from getting away? You put lox on it")
 
+$scraped_jokes = []
+
+DadJokesScraper.crawl!
+
+$scraped_jokes.flatten.each do |joke|
+    content = joke.text
+    Joke.find_or_create_by(content: content)
+    puts "This joke was created: #{content}"
+end 
+
+
+
 ###### MAGIC TIME! #######
 ### you could either create a joiner instance:
 # joiner = UserJoke.create(user_id: u1.id, joke_id: j1.id)
