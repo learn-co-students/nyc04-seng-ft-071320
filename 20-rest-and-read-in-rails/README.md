@@ -8,6 +8,7 @@
 - [Outline 🗺](#outline)
 - [Helpful Bookmarks 🤓](#helpful-bookmarks)
 - [Rails folder structure 🏠](#rails-folder-structure)
+- [Rails process 🌮](#rails-process)
 - [Rails Commands Reference 👾](#rails-commands-reference)
 
 --- 
@@ -101,6 +102,17 @@ Please read these questions carefully **before** the lecture so that you will kn
 - `app/models` -- a folder where you'll place all your models
 - `app/assets` -- this is where you'd place css stylesheets (we will talk about it twice in weeks 2 and 3)
 
+--- 
+
+## Rails process
+1. `rails new` (or `git clone` and `bundle install`)
+2. `rails g model`, `rails db:migrate`
+3. fill out models, fill out seeds
+4. `rails db:seed`
+5. routes
+6. controllers
+7. views
+8. `rails s` and test it manually ✨
 
 ---
 
