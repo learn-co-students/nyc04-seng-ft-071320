@@ -2,7 +2,6 @@
 
 ## Table of contents
 - [Mod2 what we will be building 🔧](#mod2-what-we-will-be-building)
-- [Learning Goals 📚](#learning-goals)
 - [Self-check after-lecture questions 🧐](#self-check-after-lecture-questions)
 - [Rails folder structure 🏠](#rails-folder-structure)
 - [Rails Commands Reference 👾](#rails-commands-reference)
@@ -15,16 +14,6 @@ This mod we will be building a helpful resource for all Code Benders and their f
 ![ERD](the-code-bending-dict-ERD.png)
 
 We will add to this app every lecture, step by step, and we will come back to it again in Mod3.
-
----
- 
-## Learning Goals
-* Create a new Rails application
-* Generate a model
-* Create routes
-* Generate a controller
-* Create actions/methods for a RESTful controller
-* Create views
 
 ---
 
