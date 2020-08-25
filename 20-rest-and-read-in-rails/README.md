@@ -1,4 +1,4 @@
-# Read in Rails
+# Rest and Read in Rails
 
 ## Table of contents
 - [Mod2 what we will be building 🔧](#mod2-what-we-will-be-building)
