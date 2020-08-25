@@ -1,0 +1,225 @@
+19:28:31	 From Franklin Bado : Hello…
+19:28:42	 From Annie Zheng (she/her) : Hi 👋
+19:29:11	 From Franklin Bado : We are quiet, this is weird ..
+19:33:56	 From Samantha Balgobin : That’s awesome, thank you!
+19:34:09	 From Emmanuel Jose : We love it!
+19:34:13	 From Kalkidan Taye : ^^
+19:34:26	 From Ekaterina Zarudnaya : I love that idea!
+19:38:54	 From Annie Zheng (she/her) : when you run `rails new` `bundle` is run for you so you’re able to see all the gems that are installed
+19:42:58	 From Annie Zheng (she/her) : `rails g` — give information about rails generators
+19:43:36	 From Annie Zheng (she/her) : ex: `rails g migration` <— creates a migration
+19:44:05	 From Annie Zheng (she/her) : 🌟 MODELS ARE SINGULAR, EVERYTHING ELSE IS PLURAL 🌟
+19:44:10	 From Ekaterina Zarudnaya : Sylwia I don’t see the bottom of the terminal
+19:44:13	 From Dong Xia : why rails generate not in rails -T?
+19:44:22	 From Ekaterina Zarudnaya : Thank you!
+19:44:29	 From Ekaterina Zarudnaya : Much better
+19:45:47	 From Eric Kim : @Dong - I think it’s because it’s using a different Gem rather than being a rake task, it’s using the Spring gem to generate the migrations
+19:46:49	 From Franklin Bado : Model is singular
+19:47:03	 From Christy Tropila : amazing
+19:47:10	 From Annie Zheng (she/her) : `rails d <action> <name of action>` — deletes
+19:47:43	 From Samantha Balgobin : Is this Hogwarts
+19:48:05	 From Emmanuel Jose : ^^^ Dark Arts magic
+19:48:41	 From Annie Zheng (she/her) : `Rails g migration` — only creates the migration file
+19:49:05	 From Annie Zheng (she/her) : `Rails g model` — creates the migration file + model file and makes sure they’re connected
+19:51:21	 From Annie Zheng (she/her) : if you don’t pick a datatype for model attributes, it defaults to string
+19:51:56	 From Wilson Ng : didn’t migrate yet
+19:51:58	 From Christy Tropila : rails db:migrate
+19:52:03	 From Franklin Bado : Rake db:migrate
+19:52:06	 From Jade Decordova : ^^^^
+19:53:33	 From Eric Kim : ty ty
+19:54:02	 From Annie Zheng (she/her) : You can create instances in two ways: seeds file + in the rails console
+19:55:39	 From Christy Tropila : we need a controller
+19:56:01	 From Franklin Bado : How do you get that console at the bottom of the page?
+19:56:19	 From Franklin Bado : I don’t have it ..
+19:56:21	 From Wilson Ng : certain versions?
+19:56:25	 From stevenwilliams : What if it’s not?
+19:56:48	 From Franklin Bado : This is only a nice to know for us…
+19:56:57	 From stevenwilliams : Should we update rails version?
+19:57:00	 From Wilson Ng : ^rails console always works
+19:57:05	 From Nunny (she/her) : ^^^
+19:57:12	 From ChenYun Zhang : ^^^^^^^^^
+19:57:17	 From Annie Zheng (she/her) : honestly you don’t need it, I’d just use the terminal
+19:57:22	 From Nunny (she/her) : ^^^^
+19:57:25	 From Franklin Bado : Got it .. aim for a 404 error
+19:57:26	 From ChenYun Zhang : ^^^^^^^
+19:57:29	 From Wilson Ng : lmfao
+19:57:30	 From Christy Tropila : ^^^^^^^^^^^^^\
+19:57:41	 From Emmanuel Jose : It’s not worth the squeeze
+19:57:48	 From Christy Tropila : lol
+19:57:49	 From Franklin Bado : But it is..
+19:57:58	 From Emmanuel Jose : Franklin don’t touch or squeez
+19:58:00	 From Eric Kim : I usually just keep two terminals running - one for the server and the other for console
+19:58:00	 From Wilson Ng : tequila juice
+19:58:07	 From stevenwilliams : To confirm.  This function is not available for labs?  But it is available for projects?
+19:58:10	 From Emmanuel Jose : LOL Wilson
+19:58:15	 From Franklin Bado : You can have 3 terminals… think of the possibilities
+19:58:22	 From Annie Zheng (she/her) : ~ commercial break~
+20:01:23	 From Eric Kim : I think the gem responsible for it is called web-console
+20:03:12	 From Annie Zheng (she/her) : `no route matches` error means that you have to: check routes file `config/routes`
+20:03:40	 From Wilson Ng : path
+20:03:45	 From Annie Zheng (she/her) : You have to tell the application, where to do and what to do by writing it in the routes file
+20:03:53	 From Annie Zheng (she/her) : go*
+20:05:13	 From Annie Zheng (she/her) : `uninitialized controller` error —you have to check if the controller exists
+20:05:16	 From Nunny (she/her) : Thats cooool
+20:05:20	 From Emmanuel Jose : ^^^
+20:05:28	 From Patrick Pierre : ^^^
+20:10:35	 From Annie Zheng (she/her) : MVC: 
+- design pattern: step solution to a known problem 
+- Model - View - Controller 
+- It solves the problem of merge conflict by providing organization and splitting the responsibility. 
+- Model — talking to the database, any database manipulation 
+- View — Whenever the client will be seeing 
+- Controller — the middle person, it receives the request and communicates it with the model and relays it to the view
+20:10:50	 From Patrick Pierre : What is meant by convention over configuration?
+20:11:26	 From Annie Zheng (she/her) : “Fat models, slim controller” 
+- Keep the business logic that’s associated in the model class instead of the controller
+20:12:47	 From Eric Kim : The idea of models being singular and tables being plural does not need to be followed - it’s just convention/easier to do so
+20:13:02	 From Annie Zheng (she/her) : Rails magic works because it relies heavily on convention i.e. the way you write certain things, so you have to follow the rules closely
+20:14:07	 From Nunny (she/her) : You need a view ?
+20:14:10	 From Emmanuel Jose : Waiter needs to come to the table.
+20:15:09	 From Eric Kim : Controller created the Views
+20:15:42	 From Franklin Bado : Just .erb?
+20:16:15	 From Annie Zheng (she/her) : Recap: you can write just `erb` or `html.erb`
+20:16:58	 From Eric Kim : https://www.stuartellis.name/articles/erb/
+20:17:04	 From Nunny (she/her) : Instance variable
+20:17:04	 From Anna Kim : instance variable
+20:17:05	 From Kalkidan Taye : Instance variable
+20:17:36	 From Anna Kim : instance of /students
+20:17:39	 From Annie Zheng (she/her) : @students is an instance variable of the controller class
+20:18:22	 From Annie Zheng (she/her) : Garbage collection — memory management, as soon as you don’t need something, ruby gets rid of it for you to free up space
+20:18:26	 From Nunny (she/her) : yes
+20:18:27	 From Franklin Bado : Yes
+20:18:28	 From Kalkidan Taye : yes
+20:18:28	 From Anna Kim : yes
+20:18:29	 From ChenYun Zhang : yes
+20:20:18	 From Ekaterina Zarudnaya : one
+20:20:25	 From Ekaterina Zarudnaya : For 1 page
+20:20:39	 From eisea904@newschool.edu : Does h1, h2, etc just determine the font?
+20:20:49	 From Franklin Bado : Yes
+20:20:51	 From Hortencia : Yes
+20:20:56	 From Annie Zheng (she/her) : you should only have one h1 tag for accessibility, and everything else should be in cascading order
+20:21:06	 From Eric Kim : Yes and no
+20:21:09	 From Nunny (she/her) : @Alex they are Headers so its with the sizing
+20:21:21	 From Eric Kim : For screen readers, I believe that the tags do matter in importance
+20:22:10	 From Annie Zheng (she/her) : in the erb file, to use bye bug, you have to place it between ice cream cones <%
+20:22:28	 From Franklin Bado : Loop them
+20:23:00	 From Kalkidan Taye : You are missing your do? After map.
+20:23:11	 From Franklin Bado : no
+20:23:14	 From Jade Decordova : ^^
+20:23:20	 From Franklin Bado : Angry squid
+20:23:22	 From Annie Zheng (she/her) : Daisy ++
+20:23:22	 From Emmanuel Jose : Daisy +++
+20:23:36	 From Jade Decordova : Daisy +++
+20:23:52	 From Wilson Ng : ooooooh
+20:23:52	 From Nunny (she/her) : Ice cream keeps it hidden
+20:24:32	 From Hortencia : ^^^
+20:25:01	 From Annie Zheng (she/her) : <%= : angry squid shoots out ink, i.e. shows on the page 
+<%: you want to hide your ice cream from other. i.e. doesn’t show on the page, only evaluates the ruby code 
+
+— Sylwia’s blog
+20:25:22	 From Nunny (she/her) : The text
+20:25:25	 From Maysoon (She/Her) : link
+20:25:45	 From Anna Kim : we need to add :id
+20:25:45	 From Franklin Bado : You need a route
+20:25:46	 From Kalkidan Taye : No route
+20:26:04	 From Annie Zheng (she/her) : Anna ++ Franklin++ Daisy++
+20:26:44	 From Eric Kim : If my grandma sees something like that, she’s gonna get a heart attack
+20:26:49	 From Annie Zheng (she/her) : ^^
+20:26:52	 From Eric Kim : Please don’t give my grandma a heart attack
+20:27:02	 From Annie Zheng (she/her) : 😂
+20:27:12	 From Franklin Bado : She is gonna use byebug Eric…
+20:27:26	 From Emmanuel Jose : Is the text after “href” a relative path?
+20:27:54	 From Eric Kim : Yep, a relative path
+20:28:09	 From Emmanuel Jose : Thank you!
+20:28:09	 From Nunny (she/her) : The number of the student there
+20:28:15	 From Samantha Balgobin : Before and after “student.first_name” do we only need one angry squid? It looks like there an angry squid and an ice cream cone.
+20:28:16	 From eisea904@newschool.edu : ice cream cone?
+20:28:25	 From Franklin Bado : Quotes for the id only
+20:28:27	 From eisea904@newschool.edu : Oh squid, right? Yeah like that
+20:29:59	 From Anna Kim : https://medium.com/swlh/cheatsheet-which-erb-tag-should-i-use-4b3de261f15f
+20:30:05	 From Annie Zheng (she/her) : ^^
+20:30:08	 From Anna Kim : to see sylwia’s post on angry squid and ice cream cone!! :D
+20:30:40	 From Samantha Balgobin : Oh that answered my question, thanks anna
+20:31:00	 From Anna Kim : [also on the readme i think as sylwia mentioned - gotta look through those resources she added this morning]
+20:31:38	 From Anna Kim : @annie we don’t need to put <% %> around HTML tags like <a href ?
+20:34:04	 From Annie Zheng (she/her) : Recap: have as few of the erb tag as possible, only when you’re evaluating ruby code, you should use the erb tags
+20:34:25	 From Annie Zheng (she/her) : index: see all instances
+20:34:45	 From Annie Zheng (she/her) : show: see only a specific instance
+20:35:01	 From Nunny (she/her) : ^^^^^
+20:35:13	 From Nunny (she/her) : Find. by
+20:35:20	 From Annie Zheng (she/her) : Nunny++
+20:35:23	 From Kalkidan Taye : ^^
+20:35:27	 From Emmanuel Jose : Nunny +++
+20:39:25	 From Annie Zheng (she/her) : Rails gives you access to the params and breaks it down into key-value pairs and then you can get access to the id
+20:40:04	 From Wilson Ng : so with byebug - we don’t have to exit and enter again? that’s cool
+20:40:14	 From Annie Zheng (she/her) : nope, you can just continue!
+20:40:26	 From Samantha Balgobin : ^ this is great
+20:40:26	 From Wilson Ng : 🆒 ty
+20:40:31	 From Eric Kim : c to continue
+20:41:47	 From Samantha Balgobin : So is continue just refreshing the code after you make changes?
+20:42:06	 From Wilson Ng : can we do params.id instead of params[:id]?
+20:42:30	 From Eric Kim : No, but you can do params[“id”]
+20:42:55	 From Wilson Ng : 👍
+20:43:08	 From ChenYun Zhang : squid?
+20:43:10	 From Anna Kim : squidddd
+20:43:25	 From Wilson Ng : the helpful squid
+20:44:10	 From Anna Kim : shouldn’t we add space “ “ ?
+20:44:18	 From Franklin Bado : Don’t you need two have it in two lines?
+20:46:19	 From Franklin Bado : Fat and slim like Eric said
+20:46:20	 From Nunny (she/her) : “Fat models, slim controller”
+20:46:23	 From ChenYun Zhang : “Fat models, slim controller” -Annie
+20:46:55	 From Annie Zheng (she/her) : @sam, I think continue just exits out of the bye bug loop and goes on with the application. I don’t think it takes into consideration the code you wrote during bye bug but only the code you wrote before bye bug
+20:48:04	 From Anna Kim : we don’t have to write any macros inside Model Student for all the methods to work in View students?
+20:48:29	 From Annie Zheng (she/her) : You do have to write the macros inside of the models to show the connections
+20:48:47	 From Samantha Balgobin : Thank you annie!
+20:48:59	 From Anna Kim : ^ are the macros the same as the AR ones?
+20:49:04	 From Maysoon (She/Her) : bold
+20:49:10	 From Annie Zheng (she/her) : @Anna yup!
+20:49:16	 From Anna Kim : ^ty!!
+20:49:20	 From Emmanuel Jose : Maysoon +++
+20:49:21	 From Annie Zheng (she/her) : Maysoon ++
+20:49:39	 From Kalkidan Taye : So just to confirm are the Models, views, and controllers linked so they are able to access methods in models and values as a whole?
+20:49:55	 From Eric Kim : If you have an instance of a model
+20:50:02	 From Eric Kim : in the controller or the views
+20:50:12	 From Eric Kim : you can always call methods on it
+20:50:23	 From Eric Kim : (assuming it’s inside the appropriate ERB tags
+20:51:30	 From Kalkidan Taye : Ok. Thank you Eric.
+20:52:43	 From Anna Kim : a href
+20:52:55	 From Annie Zheng (she/her) : Sylwia seemed so excited to see the syntax error haha
+20:53:00	 From Anna Kim : ^^
+20:54:04	 From Eric Kim : In Mod 4, your computer needs to support 2 servers running at the same time
+20:54:15	 From Hortencia : Same error I have
+20:54:33	 From Emmanuel Jose : Sylwia referencing herself +++
+20:54:45	 From Anna Kim : @eric what does that mean?
+20:55:10	 From Hortencia : Getting same error
+20:55:22	 From Ekaterina Zarudnaya : 2 servers! %)
+20:55:46	 From Annie Zheng (she/her) : `<link_to (text to click on) (path) />` rails tag, wrap it in <%= for it to appear on the page
+20:57:06	 From Annie Zheng (she/her) : Oops, no angled bracket < around the link_to
+20:57:32	 From Wilson Ng : so that changes the prefix when we run rails routes…that’s cool
+20:57:44	 From Emmanuel Jose : ^^^
+20:58:31	 From Franklin Bado : Aim for errors yay!
+21:00:40	 From Franklin Bado : Rails got tired
+21:00:42	 From Wilson Ng : the action wants to show one student
+21:01:05	 From Nunny (she/her) : Bc it wants the instance that show runs
+21:01:06	 From Hortencia : ^^^
+21:01:24	 From Anna Kim : students_path?
+21:02:22	 From Christy Tropila : student_var.id?
+21:02:51	 From Hortencia : Christy ++++++++++
+21:03:03	 From Sylwia Vargas (she/her) : CHRISTY!!!!!! YES
+21:04:12	 From Christy Tropila : Ruby also has our back and you can just type in student_var
+21:04:20	 From Emmanuel Jose : Christy +++ Dream Team live-coding +++
+21:04:24	 From Christy Tropila : lol
+21:04:32	 From Anna Kim : ^ i saw that you can also just type in student
+21:04:33	 From Bella Evalle : Yay! Christy +++
+21:04:59	 From Annie Zheng (she/her) : Recap: dynamic routes need you to pass in the associated id
+21:07:47	 From Eric Kim : CONVENTION OVER CONFIGURATION
+21:07:53	 From Annie Zheng (she/her) : ^^
+21:07:57	 From Annie Zheng (she/her) : 🌟 🌟🌟Post Lecture Feedback Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+21:08:46	 From stevenwilliams : Are there going to be post lecture notes?
+21:09:18	 From Annie Zheng (she/her) : 🌟 🌟🌟Post Lecture Check-in Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+21:09:36	 From Emmanuel Jose : Thank you Dream Team!
+21:09:47	 From Jacinta (Jacie) Calixte : thank you
+21:10:19	 From David Felix : Thank you!
+21:10:52	 From Patrick Pierre : Thank you Sylwia and Eric
+21:10:52	 From Maysoon (She/Her) : Thank you
+21:13:08	 From Ekaterina Zarudnaya : Thank you very much Sylwia and Eric!
