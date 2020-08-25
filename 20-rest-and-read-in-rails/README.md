@@ -1,5 +1,9 @@
 # Rest and Read in Rails
 
+## Post-lecture
+- [video](https://flatironschool.zoom.us/rec/play/7MElcbj8qDw3EoKU5gSDB_9xW47uK_-sh3Ie_qJZmkq2AHcFNlugZLUbZurqUh1rbjh6qMOzpEXKc3JI?autoplay=true&startTime=1598376742000)
+- [chat](https://github.com/learn-co-students/nyc04-seng-ft-071320/blob/master/20-rest-and-read-in-rails/M2W1D2.txt)
+
 ## Table of contents
 - [Mod2 what we will be building 🔧](#mod2-what-we-will-be-building)
 - [Learning Goals 📚](#learning-goals)
