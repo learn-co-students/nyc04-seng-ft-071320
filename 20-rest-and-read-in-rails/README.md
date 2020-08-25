@@ -9,7 +9,7 @@
 --- 
 
 ## Mod2: what we will be building
-This mod we will be building a helpful resource for all Code Benders and their friends: a dictionary of confusing tech terms. You are all invited to join in -- initially by submitting definitions or words, and afterwards, as contributors to this open source project.
+In this mod we will be building a helpful resource for all Code Benders and their friends: a dictionary of confusing tech terms. You are all invited to join in -- initially by submitting definitions or words, and afterwards, as contributors to this open source project.
 
 ![ERD](the-code-bending-dict-ERD.png)
 
