@@ -1,0 +1,8 @@
+<h1> All the students</h1>
+
+<ul>
+    <% @students.map do |student_var|%>
+        <li> <%= link_to student_var.full_name, student_path(student_var.id) %> </li>
+    <%end%>
+
+</ul>
