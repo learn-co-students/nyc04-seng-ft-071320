@@ -1,2 +1,5 @@
 <h1> <%= @student.full_name %></h1>
+
 <p> <strong> Age:</strong> <%= @student.age %>  years old </p>
+
+<%= button_to "say bye to #{@student.first_name}", @student, :method => :delete %>
