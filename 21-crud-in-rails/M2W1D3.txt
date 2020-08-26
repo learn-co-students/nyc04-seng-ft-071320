@@ -1,0 +1,117 @@
+20:02:19	 From Franklin Bado : We are excellent
+20:02:23	 From Franklin Bado : Thanks for asking
+20:10:53	 From Emmanuel Jose : YES
+20:10:55	 From Kalkidan Taye : yes
+20:12:08	 From Jade Decordova : love the feedback integration Sylwia++
+20:12:16	 From Emmanuel Jose : ^^^
+20:13:06	 From ChenYun Zhang : is the slash before students/:id necessary?
+20:13:45	 From Isabel K. Lee (they/them) : @chenyun yup! because it’s going to come after your website URL. so like, www.flatironschool.com/students/:id
+20:14:01	 From Franklin Bado : students#show is missing a closing quote
+20:14:09	 From ChenYun Zhang : ty
+20:14:50	 From stevenwilliams : Can you provide us with copy of this please?/
+20:15:02	 From stevenwilliams : ty
+20:15:08	 From Franklin Bado : The edit path will have the same url right?
+20:15:23	 From Hortencia : lol
+20:17:17	 From ChenYun Zhang : link two
+20:18:58	 From Isabel K. Lee (they/them) : 3 ways to create links:
+20:19:09	 From Isabel K. Lee (they/them) : - write a string and interpolate the id
+20:19:18	 From Isabel K. Lee (they/them) : - use a helper path and pass in an instance
+20:20:20	 From Isabel K. Lee (they/them) : - call on the instance variable directly
+20:21:05	 From Isabel K. Lee (they/them) : ~~ CONVENTION OVER CONFIGURATION ~~
+20:23:11	 From Isabel K. Lee (they/them) : calling on the index method in the controller => ‘students’
+20:23:18	 From Kalkidan Taye : @students?
+20:23:19	 From Wilson Ng : redirect back to index?
+20:23:24	 From Isabel K. Lee (they/them) : calling on the show method in the controller for a specific instance => ‘student’
+20:26:05	 From Eric Kim : You need an argument in the path_helper if your URL has a dynamic variable (:id)
+20:27:21	 From Eric Kim : There HAS to be an easier way!
+20:27:44	 From Emmanuel Jose : View
+20:27:50	 From stevenwilliams : views
+20:28:28	 From Isabel K. Lee (they/them) : `form_for` generates a form for us
+20:28:36	 From Isabel K. Lee (they/them) : `label` generates a label for the input field
+20:28:46	 From Isabel K. Lee (they/them) : `text_field` generates an input field where a user can enter text
+20:28:48	 From Nunny (she/her) : controller
+20:29:08	 From Kalkidan Taye : Model
+20:29:09	 From Wilson Ng : the chef
+20:36:17	 From Isabel K. Lee (they/them) : when you write out your routes, plz follow the order on restular
+20:36:29	 From Isabel K. Lee (they/them) : save this in your bookmarks: http://www.restular.com
+20:36:30	 From Eric Kim : http://www.restular.com/ <- Wow, what a great publicly available resource to use in projects or whatever else comes your way regarding RESTful routing
+20:37:31	 From Kalkidan Taye : Overall what is recommended/standard: writing the paths out or using the resources. Generally speaking.
+20:37:57	 From Isabel K. Lee (they/them) : plz write out your paths~~~
+20:37:58	 From Eric Kim : We recommend writing out the routes over using resources
+20:38:08	 From Kalkidan Taye : Ok, thank you.
+20:39:16	 From Kalkidan Taye : get
+20:39:26	 From ChenYun Zhang : .new
+20:39:29	 From Lida : get
+20:39:57	 From Wilson Ng : 👏👏👏👏👏
+20:40:41	 From Jade Decordova : love the imagery!!
+20:40:51	 From Nunny (she/her) : ^^^^^^^^
+20:41:11	 From Eric Kim : POSTing to a bulletin board is the imagery I use
+20:42:16	 From ChenYun Zhang : post
+20:42:27	 From Franklin Bado : Post but you need to use get first right?
+20:42:51	 From Kalkidan Taye : ^^^
+20:43:26	 From Kalkidan Taye : lol
+20:43:29	 From Annie Zheng (she/her) : 😂
+20:43:35	 From Franklin Bado : Rails is a player
+20:43:35	 From Wilson Ng : omg that got me
+20:43:35	 From Isabel K. Lee (they/them) : sylwia has the best humor 😂
+20:43:39	 From Emmanuel Jose : “In world of two routes..”
+20:44:08	 From Jade Decordova : Sylwia teaching comedy is A1
+20:44:23	 From Ekaterina Zarudnaya : 😂
+20:52:41	 From Eric Kim : It’s a form FOR a student, so the text fields in that form should be about the student
+20:53:43	 From ChenYun Zhang : br
+20:55:01	 From Franklin Bado : Button
+20:56:21	 From ChenYun Zhang : does the form_tag have the token?
+20:56:25	 From Eric Kim : Yep
+20:56:52	 From Isabel K. Lee (they/them) : wow annie’s so old!!
+20:57:10	 From Wilson Ng : twilight
+20:57:12	 From ChenYun Zhang : the unit is s
+20:57:32	 From Franklin Bado : @Isable Years have been kind to her
+20:57:56	 From Annie Zheng (she/her) : LOOL
+20:58:41	 From Isabel K. Lee (they/them) : you can access a byebug by including it in a method, and then triggering it by navigating to the page in the browser that calls on that method.
+20:58:42	 From Franklin Bado : The token is unique for the form? Or unique as per submission?
+20:58:54	 From Eric Kim : Unique per page refresh
+20:59:17	 From Isabel K. Lee (they/them) : for example, to access a byebug inside `def create` you can go to the `new` view file and try to create a new instance. the page will then load forever, and then you will be in the byebug session in your rails server.
+20:59:25	 From ChenYun Zhang : why is sometime, when we do byebug and enter params, we have hash of hash
+20:59:38	 From Eric Kim : Rails shenanigans
+20:59:55	 From Eric Kim : In more technical talk, it’s called nested parameters
+21:00:20	 From Eric Kim : and it’s denoted by the [] notation in the name attribute of the input
+21:00:44	 From Eric Kim : <input … name = “eric[chicken]” />
+21:00:53	 From Eric Kim : means that the value of what I type in that input
+21:01:09	 From Eric Kim : comes through as params[:eric][:chicken]
+21:02:18	 From ChenYun Zhang : how do you know if you are going to have the nested param or just a hash?
+21:05:15	 From Isabel K. Lee (they/them) : strong params prevents users from posting whatever they want when they create an instance
+21:07:52	 From Isabel K. Lee (they/them) : after we called the `permit` method on `params.require(:student)` it changed the permitted status of that student instance to `true`
+21:08:48	 From Isabel K. Lee (they/them) : sylwia: please read the README!!!!!!!!! there are a lot of breadcrumbs for you
+21:09:30	 From Isabel K. Lee (they/them) : student_params is a hash!
+21:11:09	 From Isabel K. Lee (they/them) : lmaooooo i love it!!!!!!
+21:15:21	 From Emmanuel Jose : Always Ready!
+21:15:25	 From Nunny (she/her) : Bedazzle
+21:22:57	 From Isabel K. Lee (they/them) : we’re going to use the button_to rails helper, which takes up to 3 arguments.
+21:23:49	 From Isabel K. Lee (they/them) : the first argument is a string. it’s going to be the text that shows up inside the button.
+21:24:44	 From Nunny (she/her) : cool
+21:24:55	 From Isabel K. Lee (they/them) : the second argument is the instance. and the third argument is going to be the method.
+21:25:10	 From Isabel K. Lee (they/them) : ~~ sylwia cannot be destroyed ~~
+21:29:48	 From stevenwilliams : Question for later:  Sorry if covered, but how do we create a hard param?
+21:29:49	 From Isabel K. Lee (they/them) : lecture check-in form: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+21:30:55	 From Franklin Bado : For the delete_to if you don’t pass the last arg, the method to be delete, does it still work?
+21:31:14	 From stevenwilliams : Ahhh. Thanks
+21:34:21	 From Maysoon (She/Her) : Thank you that was great
+21:34:22	 From Franklin Bado : Thanks Sylwia, Ill stick to the conventions
+21:34:27	 From Kalkidan Taye : Thank you Sylwia.
+21:34:37	 From Nunny (she/her) : Thank you!
+21:34:45	 From Ekaterina Zarudnaya : Thank you very much Sylwia!
+21:35:25	 From Sylwia Vargas (she/her) : lecture check-in form: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+21:35:42	 From Emmanuel Jose : Thank you Sylwia! I love the visual slides!
+21:35:46	 From Kalkidan Taye : ^^
+21:36:56	 From ChenYun Zhang : One more question, besides button_to, form_for, and link_to, what other URL helpers should we also get familiar with?
+21:36:56	 From Sylwia Vargas (she/her) : rails d
+21:37:02	 From Sylwia Vargas (she/her) : rails g model
+21:37:42	 From Sylwia Vargas (she/her) : @ChenYun -> ahhhh plenty!
+21:37:48	 From Sylwia Vargas (she/her) : But that’s optional!
+21:38:46	 From ChenYun Zhang : thank you!!!
+21:39:22	 From Maysoon (She/Her) : Thank you
+21:39:22	 From Emmanuel Jose : Thank you!
+21:39:48	 From Ekaterina Zarudnaya : Thank you very much!
+21:40:03	 From Patrick Pierre : Thank you
+21:40:04	 From ChenYun Zhang : Thank you Sylwia!!! Bye.
+21:44:18	 From Sylwia Vargas (she/her) : --no-test-framework

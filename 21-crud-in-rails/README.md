@@ -1,5 +1,9 @@
 # CRUD in Rails
 
+## Post-lecture
+- [video](https://flatironschool.zoom.us/rec/share/x9NsC6r--VtJYZGO5AbgC5MZBtniX6a81nce-qAFzht1BLaDM18fs_iNpJku3nG4?startTime=1598464952000)
+- [chat](https://github.com/learn-co-students/nyc04-seng-ft-071320/blob/master/21-crud-in-rails/M2W1D3.txt)
+- [slides](https://docs.google.com/presentation/d/1nvHO7oUfWKUgU3qF25couGCIJuNaHAkvTWGzfernVKQ/edit?usp=sharing)
 
 ## Table of contents
 - [Learning Goals 📚](#learning-goals)
