@@ -1,0 +1,128 @@
+19:31:19	 From Emmanuel Jose : Great philosophy!
+19:34:25	 From Jacinta (Jacie) Calixte : twitter
+19:34:31	 From Franklin Bado : Myspace
+19:34:50	 From Dong Xia : neopet
+19:35:06	 From Alex E (she/her) : Myspace <3 😭
+19:38:22	 From Eric Kim : singular
+19:38:22	 From Jacinta (Jacie) Calixte : YAAAAYYYYYY
+19:39:10	 From Jade Decordova : WOWZERS
+19:39:18	 From Wilson Ng : ;0
+19:39:22	 From Annie Zheng (she/her) : 🌟 `rails g resource` -> give you model, migration, controller, views, and routes
+19:39:28	 From Lida : Yeeessss!
+19:41:16	 From Jade Decordova : Shouldn’t word def be 1 -1
+19:41:46	 From Annie Zheng (she/her) : @jade what do you mean?
+19:42:58	 From Lida : yay!!
+19:44:12	 From Franklin Bado : Show the command again plz
+19:45:54	 From Franklin Bado : Thanks
+19:45:58	 From Franklin Bado : Migrate now
+19:46:17	 From Eric Kim : Whenever you add in foreign keys to your model, rather than saying `word_id:integer`, you can write `word:belongs_to`
+19:47:20	 From Eric Kim : If you use the `word:belongs_to`, your model will get generated with the ActiveRecord macros
+19:48:47	 From Anna Kim : does resources come with all 7 actions?
+19:48:52	 From Annie Zheng (she/her) : ^ yup
+19:49:22	 From Patrick Pierre : Oh ok so we should focus on writing out all the routes ourselves
+19:49:26	 From Annie Zheng (she/her) : So if you only want to use two, you should use the only keyword
+19:49:29	 From Sylwia Vargas (she/her) : yes
+19:49:44	 From Jade Decordova : Hybriding CRUD
+19:49:48	 From Annie Zheng (she/her) : @Patrick yup, so you get used to writing routes in the case your need a custom one
+19:49:57	 From Annie Zheng (she/her) : you*
+19:57:10	 From Franklin Bado : Can you create a fav again plz
+19:57:28	 From Wilson Ng : LOL
+19:57:55	 From Emmanuel Jose : Could the “def full name” method be written in the student controller?
+19:58:10	 From Franklin Bado : Thanks
+19:58:10	 From Anna Kim : can you do rails g resource student favorite:has_many ?
+19:58:13	 From Eric Kim : @emmanuel - no
+19:58:59	 From Annie Zheng (she/her) : recap @Manny’s question: fat model, skinny controller. Any db manipulation should be in the model file
+19:59:13	 From Eric Kim : ^^^ - Also, the `self` inside the StudentsController class is different from the `self` inside the Student
+19:59:26	 From Emmanuel Jose : Thank you Sylwia!
+20:00:05	 From Annie Zheng (she/her) : Recap @Anna’s question: there’s only belongs_to, no has_many :<
+20:00:11	 From Anna Kim : Thank you @annie @sylwia. avoided many errors for my end
+20:02:38	 From Jade Decordova : Active record is magic
+20:02:45	 From Jade Decordova : Rail is Merlin tier Magic
+20:02:56	 From Jade Decordova : Rails^
+20:03:51	 From Annie Zheng (she/her) : Rails is magic but know how the magic works ✨
+20:04:26	 From Annie Zheng (she/her) : Serverrrr
+20:05:25	 From Annie Zheng (she/her) : yay, TTD!
+20:05:31	 From Annie Zheng (she/her) : TDD*
+20:07:24	 From Annie Zheng (she/her) : ~practice makes perfect~
+20:10:58	 From Franklin Bado : Byebug
+20:11:00	 From Franklin Bado : No @
+20:11:09	 From Annie Zheng (she/her) : Franklin ++
+20:11:14	 From Alex E (she/her) : why @byebug?
+20:11:26	 From Annie Zheng (she/her) : it was a typo
+20:11:47	 From Alex E (she/her) : Oh there was an @ when there shouldn’t have been.  I see now
+20:11:50	 From Eric Kim : THERE HAS TO BE AN EASIER WAY!
+20:12:03	 From Annie Zheng (she/her) : SHOW US THE BETTER WAY
+20:12:37	 From Anna Kim : select tag!
+20:12:52	 From Annie Zheng (she/her) : Anna ++
+20:17:06	 From Patrick Pierre : Could we also just write out the html and embed the ruby on the value attribute or do we have to do it this way?
+20:17:31	 From Annie Zheng (she/her) : you can write out html code, but this is meant to make your life easier
+20:17:44	 From Eric Kim : ^
+20:19:59	 From Christy Tropila : in the model
+20:20:01	 From ChenYun Zhang : you have that in your model
+20:20:25	 From Annie Zheng (she/her) : Chenyun++
+20:20:39	 From Jade Decordova : ^^
+20:22:14	 From Franklin Bado : Can we rename the f.labels ?
+20:22:38	 From Eric Kim : Yep!
+20:23:03	 From Franklin Bado : Nice !! Thanks
+20:23:29	 From Franklin Bado : Rails magic
+20:23:40	 From Jacinta (Jacie) Calixte : its how we wrote it
+20:23:47	 From Eric Kim : Human magic
+20:23:50	 From ChenYun Zhang : ^^^^^^^^
+20:23:50	 From Annie Zheng (she/her) : LOL
+20:23:53	 From Jacinta (Jacie) Calixte : LOL
+20:24:05	 From Franklin Bado : Science… Human science
+20:24:08	 From Anna Kim : downcase?
+20:24:16	 From Jade Decordova : capitalize
+20:24:52	 From Annie Zheng (she/her) : I would stay way from naming your method the same as a method that already exists in ruby
+20:25:00	 From Eric Kim : Titleize -> Capitalizes the first letter of each words and then some
+20:25:01	 From Anna Kim : ^
+20:25:08	 From Alex E (she/her) : what are “strong” params?
+20:25:20	 From Jade Decordova : OH Gracias
+20:25:52	 From Anna Kim : ty @annie
+20:26:59	 From Eric Kim : params.require(:MODEL_NAME).permit(:ATTRIBUTE1, :ATTRIBUTE2, :ATTRIBUTE3, …)
+20:27:58	 From Anna Kim : do you have to .save it?
+20:28:01	 From Ekaterina Zarudnaya : Question regarding titleize..  Capitalize and then..? Didn’t understand the 2nd part.
+20:28:11	 From Jacinta (Jacie) Calixte : it give it an authorization key with strong params right?
+20:28:24	 From Eric Kim : It does a little more than capitalize, but it’s not relevant right now
+20:29:00	 From Ekaterina Zarudnaya : Thank you
+20:30:23	 From Wilson Ng : oooh so I can’t do :admin => true 😔
+20:30:31	 From Annie Zheng (she/her) : Recap @Alex’s question: 1. It safeguards your forms from getting hacked, prevents certain attributes on the form to be changed. 2. We can specific which attributes are allowed to get accepted or not.
+20:30:43	 From Nunny (she/her) : ^^^
+20:30:58	 From Eric Kim : Pulled from the docs:
+20:30:59	 From Eric Kim : This means that you'll have to make a conscious decision about which attributes to permit for mass update
+20:31:11	 From Annie Zheng (she/her) : ++
+20:33:01	 From Franklin Bado : Student index?
+20:35:32	 From Jade Decordova : Self.student.id?
+20:36:08	 From Eric Kim : Self in this case is an instance of a controller
+20:36:39	 From Jade Decordova : Thx
+20:37:26	 From Annie Zheng (she/her) : params.require(:MODEL_NAME).permit(:ATTRIBUTE1, :ATTRIBUTE2, :ATTRIBUTE3, …)    - Eric
+20:37:53	 From Eric Kim : They’re just a bunch of symbols being passed in as arguments
+20:42:05	 From Franklin Bado : Squid angry !
+20:42:38	 From Annie Zheng (she/her) : <%# %> how to comment in erb files
+20:44:46	 From Eric Kim : Has_many macro, when called on an instance, will always return an array of instance
+20:45:59	 From Wilson Ng : missing the iterator
+20:46:00	 From Kalkidan Taye : Where is the iterator
+20:46:05	 From ChenYun Zhang : angry squid
+20:46:07	 From Anna Kim : angry squid?
+20:46:09	 From Annie Zheng (she/her) : Daisy ++
+20:46:13	 From Wilson Ng : oui oui
+20:46:15	 From Annie Zheng (she/her) : Anna ++ Chenyun ++
+20:46:18	 From Kalkidan Taye : Wilson++
+20:46:33	 From Wilson Ng : friends++
+20:46:38	 From Franklin Bado : Don’t you have to iterate one more time?
+20:46:39	 From Samantha Balgobin : .word.content? Instead of .word
+20:46:47	 From Annie Zheng (she/her) : Sam ++
+20:47:09	 From Anna Kim : awesome group flash back
+20:47:15	 From Eric Kim : My grandma does not like to see <#WordInstances>
+20:47:27	 From Annie Zheng (she/her) : 👵
+20:48:55	 From Franklin Bado : Hr?
+20:48:59	 From Jade Decordova : Why does it return the literal @student.favorite.
+20:49:21	 From Eric Kim : Horizontal Rule
+20:51:06	 From Annie Zheng (she/her) : @jade because there wasn’t a angry squid around it
+20:58:19	 From Ekaterina Zarudnaya : Is there alphabetize in Ruby?😁
+20:58:45	 From Eric Kim : sort_by
+20:58:53	 From Annie Zheng (she/her) : v cool 👏
+20:59:05	 From Annie Zheng (she/her) : 🌟 🌟🌟Post Lecture Check-in Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+21:00:14	 From Eric Kim : My poor grandma
+21:00:50	 From Eric Kim : It’s monkey patching
+21:04:35	 From Ekaterina Zarudnaya : Thank you very much Sylwia!

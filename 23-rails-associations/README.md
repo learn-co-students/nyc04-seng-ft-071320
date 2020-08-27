@@ -1,4 +1,11 @@
-# CRUD in Rails
+# Associations in Rails
+
+## Post-lecture
+- [video](https://flatironschool.zoom.us/rec/share/6pZTHerI8j9OeaOc1W3tfokZEq-5eaa81nVNr_MIyE0uBZUTQNF1otUKJy611qnm?startTime=1598549537000)
+- [chat](https://github.com/learn-co-students/nyc04-seng-ft-071320/tree/master/23-rails-associations/M2W1D4.txt)
+- [slides](https://docs.google.com/presentation/d/1nvHO7oUfWKUgU3qF25couGCIJuNaHAkvTWGzfernVKQ/edit?usp=sharing)
+
+---
 
 ## Table of contents
 - [Learning Goals 📚](#learning-goals)
