@@ -2,4 +2,19 @@
 
 <p> <strong> Age:</strong> <%= @student.age %>  years old </p>
 
+<h2> All of the favorite words of <%= @student.first_name.capitalize %> </h2>
+
+<%# 1. I want to access all of Eric's favorites
+    2. I will loop over them to get to the word
+    3. I want to display each word as an li
+%>
+
+<ul>
+<% @student.favorites.each do |fave_var| %>
+    <li><%=  fave_var.word %> | <%= fave_var.priority_level %> </li>
+<% end %>
+</ul>
+
+<hr>
+
 <%= button_to "say bye to #{@student.first_name}", @student, :method => :delete %>

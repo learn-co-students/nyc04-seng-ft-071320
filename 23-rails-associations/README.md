@@ -66,7 +66,7 @@ Please read these questions carefully **before** the lecture so that you will kn
 * `rails g migration <migration-name> <attribute:data-type> <attribute:data-type>` - generate a migration
 * `rails g model <model-name> <attribute:data-type> <attribute:data-type>` - generate a model and a migration to create the table with specified columns
 * `rails g controller <model-name-pluralized>` - generate a controller
-* `rails g resource <model-name-pluralized>` - generate a controller, a model, a migration, routes and views
+* `rails g resource <model-name>` - generate a controller, a model, a migration, routes and views
 * `rails routes` - display all the routes in your app, also can viewed at http://localhost:3000/rails/info/routes
 * `rails db:migrate` - run all pending migrations (same as `rake db:migrate` in Mod 1)
 
