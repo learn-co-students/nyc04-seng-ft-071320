@@ -1,6 +1,5 @@
 # CRUD in Rails
 
-
 ## Table of contents
 - [Learning Goals 📚](#learning-goals)
 - [Self-check after-lecture questions 🧐](#self-check-after-lecture-questions)
@@ -49,7 +48,7 @@ Please read these questions carefully **before** the lecture so that you will kn
 ---
 
 ## Helpful Bookmarks
-- slide deck: <https://docs.google.com/presentation/d/1nvHO7oUfWKUgU3qF25couGCIJuNaHAkvTWGzfernVKQ/edit?usp=sharing>
+- [slide deck](https://docs.google.com/presentation/d/1nvHO7oUfWKUgU3qF25couGCIJuNaHAkvTWGzfernVKQ/edit?usp=sharing)
 - [cheat sheet for forms](http://devhints.io/rails-forms)
 
 ---
