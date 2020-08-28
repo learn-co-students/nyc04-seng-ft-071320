@@ -1,4 +1,9 @@
 <h2>Here are All the Campers</h2>
 
-<%# Display a list all of the campers %>
-
+<ul>
+    <% @campers.map do |camper_inst| %>
+        <li>
+            <%= link_to camper_inst.name, camper_path(camper_inst) %>
+        </li>
+    <% end %>
+</ul>
