@@ -28,7 +28,7 @@
 
 - Conventionally, a `belongs_to` should always be followed by the singular name of the object. 
     - `belongs_to :word` and NOT `belongs_to :words`
-    - The instance method that the `belongs` gives us will ALWAYS return a single instance.
+    - The instance method that the `belongs_to` gives us will ALWAYS return a single instance.
     - You cannot write `belongs_to :word, through: :x`.
 
 
