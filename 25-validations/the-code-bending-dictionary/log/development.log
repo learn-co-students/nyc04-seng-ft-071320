@@ -7151,3 +7151,1508 @@ Processing by WordsController#show as HTML
 Completed 200 OK in 25ms (Views: 17.8ms | ActiveRecord: 0.2ms | Allocations: 6181)
 
 
+Started GET "/students" for ::1 at 2020-08-31 19:35:43 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#index as HTML
+  Rendering students/index.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  ↳ app/views/students/index.erb:4:in `map'
+  Rendered students/index.erb within layouts/application (Duration: 18.7ms | Allocations: 6605)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 39.4ms | ActiveRecord: 1.0ms | Allocations: 17509)
+
+
+Started GET "/students/8" for ::1 at 2020-08-31 19:35:46 +0200
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:29:in `get_student'
+  Rendering students/show.erb within layouts/application
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 8]]
+  ↳ app/views/students/show.erb:13
+  Rendered students/show.erb within layouts/application (Duration: 14.7ms | Allocations: 4750)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 20.4ms | ActiveRecord: 1.0ms | Allocations: 9911)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 19:35:50 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 9.6ms | Allocations: 2691)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 6937)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 19:36:00 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.7ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 4901)
+
+
+Started POST "/students" for ::1 at 2020-08-31 19:36:14 +0200
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"FUppNxQFnaCOENJD9461YA3eLscucXRd6HaOudjE6FwSgAC1aDD5gIMtMz3jPh3UEN12myDiAS7zE/2xTdK90Q==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>""}, "commit"=>"Ready!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:13:in `create'
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", ""], ["last_name", ""], ["created_at", "2020-08-31 17:36:14.433530"], ["updated_at", "2020-08-31 17:36:14.433530"]]
+  ↳ app/controllers/students_controller.rb:13:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:13:in `create'
+Redirected to http://localhost:3000/students
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms | Allocations: 2982)
+
+
+Started GET "/students" for ::1 at 2020-08-31 19:36:14 +0200
+Processing by StudentsController#index as HTML
+  Rendering students/index.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  ↳ app/views/students/index.erb:4:in `map'
+  Rendered students/index.erb within layouts/application (Duration: 1.5ms | Allocations: 873)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 4949)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/students/11" for ::1 at 2020-08-31 19:40:04 +0200
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:29:in `get_student'
+  Rendering students/show.erb within layouts/application
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 11]]
+  ↳ app/views/students/show.erb:13
+  Rendered students/show.erb within layouts/application (Duration: 2.2ms | Allocations: 1138)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.3ms | Allocations: 5941)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Kami"], ["last_name", "G"], ["age", 22], ["created_at", "2020-08-31 18:04:18.296516"], ["updated_at", "2020-08-31 18:04:18.296516"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/models/student.rb:12:in `block in <class:Student>'
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 11]]
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 8]]
+  [1m[36mStudent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 6]]
+  [1m[36mFavorite Destroy (1.0ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 1]]
+  [1m[36mFavorite Destroy (0.1ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 2]]
+  [1m[36mFavorite Destroy (0.1ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 3]]
+  [1m[36mStudent Destroy (0.1ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 9]]
+  [1m[36mStudent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 12]]
+  [1m[36mStudent Destroy (0.5ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 10]]
+  [1m[36mStudent Destroy (0.5ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 7]]
+  [1m[36mFavorite Destroy (0.2ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 4]]
+  [1m[36mFavorite Destroy (0.1ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 5]]
+  [1m[36mFavorite Destroy (0.1ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 6]]
+  [1m[36mStudent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 12]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 12]]
+  [1m[36mDefinition Destroy (0.3ms)[0m  [1m[31mDELETE FROM "definitions" WHERE "definitions"."id" = ?[0m  [["id", 1]]
+  [1m[36mWord Destroy (0.1ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 13]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 13]]
+  [1m[36mDefinition Destroy (0.2ms)[0m  [1m[31mDELETE FROM "definitions" WHERE "definitions"."id" = ?[0m  [["id", 3]]
+  [1m[36mDefinition Destroy (0.0ms)[0m  [1m[31mDELETE FROM "definitions" WHERE "definitions"."id" = ?[0m  [["id", 2]]
+  [1m[36mWord Destroy (0.1ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 13]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 14]]
+  [1m[36mDefinition Load (0.2ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 14]]
+  [1m[36mDefinition Destroy (0.2ms)[0m  [1m[31mDELETE FROM "definitions" WHERE "definitions"."id" = ?[0m  [["id", 4]]
+  [1m[36mWord Destroy (0.1ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 14]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 15]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 15]]
+  [1m[36mDefinition Destroy (0.3ms)[0m  [1m[31mDELETE FROM "definitions" WHERE "definitions"."id" = ?[0m  [["id", 5]]
+  [1m[36mWord Destroy (0.1ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 15]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 16]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 16]]
+  [1m[36mDefinition Destroy (0.2ms)[0m  [1m[31mDELETE FROM "definitions" WHERE "definitions"."id" = ?[0m  [["id", 6]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 16]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 17]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 17]]
+  [1m[36mDefinition Destroy (0.3ms)[0m  [1m[31mDELETE FROM "definitions" WHERE "definitions"."id" = ?[0m  [["id", 7]]
+  [1m[36mWord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 17]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 18]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 18]]
+  [1m[36mDefinition Destroy (0.2ms)[0m  [1m[31mDELETE FROM "definitions" WHERE "definitions"."id" = ?[0m  [["id", 8]]
+  [1m[36mWord Destroy (0.1ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 18]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 19]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 19]]
+  [1m[36mDefinition Destroy (0.3ms)[0m  [1m[31mDELETE FROM "definitions" WHERE "definitions"."id" = ?[0m  [["id", 9]]
+  [1m[36mWord Destroy (0.1ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 19]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 20]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 20]]
+  [1m[36mDefinition Destroy (0.2ms)[0m  [1m[31mDELETE FROM "definitions" WHERE "definitions"."id" = ?[0m  [["id", 10]]
+  [1m[36mWord Destroy (0.1ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 20]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 21]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 21]]
+  [1m[36mDefinition Destroy (0.3ms)[0m  [1m[31mDELETE FROM "definitions" WHERE "definitions"."id" = ?[0m  [["id", 11]]
+  [1m[36mWord Destroy (0.1ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 21]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 22]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 22]]
+  [1m[36mDefinition Destroy (0.3ms)[0m  [1m[31mDELETE FROM "definitions" WHERE "definitions"."id" = ?[0m  [["id", 12]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 22]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Eric"], ["last_name", "Kim"], ["age", 50000], ["created_at", "2020-08-31 18:07:46.933289"], ["updated_at", "2020-08-31 18:07:46.933289"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/models/student.rb:12:in `block in <class:Student>'
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 13]]
+  [1m[36mStudent Destroy (0.5ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 13]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  [1m[36mDefinition Load (0.2ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Eric"], ["last_name", "Kim"], ["age", 50000], ["created_at", "2020-08-31 18:08:03.755074"], ["updated_at", "2020-08-31 18:08:03.755074"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Annie"], ["last_name", "Zheng"], ["age", 8999999], ["created_at", "2020-08-31 18:08:03.762751"], ["updated_at", "2020-08-31 18:08:03.762751"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Isabel"], ["last_name", "Lee"], ["age", 8999999], ["created_at", "2020-08-31 18:08:03.767956"], ["updated_at", "2020-08-31 18:08:03.767956"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Nunny"], ["last_name", "Reyes"], ["age", 8999999], ["created_at", "2020-08-31 18:08:03.772672"], ["updated_at", "2020-08-31 18:08:03.772672"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.7ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Model"], ["created_at", "2020-08-31 18:08:03.804849"], ["updated_at", "2020-08-31 18:08:03.804849"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.4ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "controller"], ["created_at", "2020-08-31 18:08:03.811950"], ["updated_at", "2020-08-31 18:08:03.811950"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.6ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "params"], ["created_at", "2020-08-31 18:08:03.818134"], ["updated_at", "2020-08-31 18:08:03.818134"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "strong params"], ["created_at", "2020-08-31 18:08:03.822302"], ["updated_at", "2020-08-31 18:08:03.822302"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "request"], ["created_at", "2020-08-31 18:08:03.825563"], ["updated_at", "2020-08-31 18:08:03.825563"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "response"], ["created_at", "2020-08-31 18:08:03.828779"], ["updated_at", "2020-08-31 18:08:03.828779"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ice-cream cone"], ["created_at", "2020-08-31 18:08:03.831919"], ["updated_at", "2020-08-31 18:08:03.831919"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.5ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "angry squid"], ["created_at", "2020-08-31 18:08:03.835346"], ["updated_at", "2020-08-31 18:08:03.835346"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "route"], ["created_at", "2020-08-31 18:08:03.839463"], ["updated_at", "2020-08-31 18:08:03.839463"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.4ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "view"], ["created_at", "2020-08-31 18:08:03.842869"], ["updated_at", "2020-08-31 18:08:03.842869"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.4ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "mvc"], ["created_at", "2020-08-31 18:08:03.846094"], ["updated_at", "2020-08-31 18:08:03.846094"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.3ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 5], ["student_id", 14], ["word_id", 33], ["created_at", "2020-08-31 18:08:03.856613"], ["updated_at", "2020-08-31 18:08:03.856613"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.3ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 3], ["student_id", 14], ["word_id", 28], ["created_at", "2020-08-31 18:08:03.860164"], ["updated_at", "2020-08-31 18:08:03.860164"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.4ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 3], ["student_id", 14], ["word_id", 27], ["created_at", "2020-08-31 18:08:03.863787"], ["updated_at", "2020-08-31 18:08:03.863787"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.5ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["priority_level", 5], ["word_id", 30], ["created_at", "2020-08-31 18:08:03.871698"], ["updated_at", "2020-08-31 18:08:03.871698"]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Destroy (0.3ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Destroy (0.2ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Destroy (0.3ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDefinition Load (0.2ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions"[0m
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 15]]
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 15]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 14]]
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 14]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 16]]
+  [1m[36mStudent Destroy (0.5ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 16]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 17]]
+  [1m[36mStudent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 17]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 23]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 23]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 23]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 24]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 24]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 24]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 25]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 25]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 25]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 26]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 26]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 26]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 27]]
+  [1m[36mDefinition Load (0.2ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 27]]
+  [1m[36mWord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 27]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 28]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 28]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 28]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 29]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 29]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 29]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 30]]
+  [1m[36mDefinition Load (0.2ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 30]]
+  [1m[36mWord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 30]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 31]]
+  [1m[36mDefinition Load (0.3ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 31]]
+  [1m[36mWord Destroy (1.0ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 31]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 32]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 32]]
+  [1m[36mWord Destroy (0.4ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 32]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 33]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 33]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 33]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Eric"], ["last_name", "Kim"], ["age", 50000], ["created_at", "2020-08-31 18:08:42.393622"], ["updated_at", "2020-08-31 18:08:42.393622"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Annie"], ["last_name", "Zheng"], ["age", 8999999], ["created_at", "2020-08-31 18:08:42.399833"], ["updated_at", "2020-08-31 18:08:42.399833"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.6ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Isabel"], ["last_name", "Lee"], ["age", 8999999], ["created_at", "2020-08-31 18:08:42.404440"], ["updated_at", "2020-08-31 18:08:42.404440"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Nunny"], ["last_name", "Reyes"], ["age", 8999999], ["created_at", "2020-08-31 18:08:42.408590"], ["updated_at", "2020-08-31 18:08:42.408590"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.2ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Model"], ["created_at", "2020-08-31 18:08:42.412028"], ["updated_at", "2020-08-31 18:08:42.412028"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "controller"], ["created_at", "2020-08-31 18:08:42.433869"], ["updated_at", "2020-08-31 18:08:42.433869"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.5ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "params"], ["created_at", "2020-08-31 18:08:42.437693"], ["updated_at", "2020-08-31 18:08:42.437693"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "strong params"], ["created_at", "2020-08-31 18:08:42.442822"], ["updated_at", "2020-08-31 18:08:42.442822"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.2ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "request"], ["created_at", "2020-08-31 18:08:42.446127"], ["updated_at", "2020-08-31 18:08:42.446127"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.2ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "response"], ["created_at", "2020-08-31 18:08:42.448877"], ["updated_at", "2020-08-31 18:08:42.448877"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ice-cream cone"], ["created_at", "2020-08-31 18:08:42.451591"], ["updated_at", "2020-08-31 18:08:42.451591"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "angry squid"], ["created_at", "2020-08-31 18:08:42.454876"], ["updated_at", "2020-08-31 18:08:42.454876"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.8ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "route"], ["created_at", "2020-08-31 18:08:42.458330"], ["updated_at", "2020-08-31 18:08:42.458330"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.4ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "view"], ["created_at", "2020-08-31 18:08:42.465849"], ["updated_at", "2020-08-31 18:08:42.465849"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "mvc"], ["created_at", "2020-08-31 18:08:42.470268"], ["updated_at", "2020-08-31 18:08:42.470268"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.4ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 5], ["student_id", 18], ["word_id", 44], ["created_at", "2020-08-31 18:08:42.475116"], ["updated_at", "2020-08-31 18:08:42.475116"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.8ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 3], ["student_id", 18], ["word_id", 39], ["created_at", "2020-08-31 18:08:42.480420"], ["updated_at", "2020-08-31 18:08:42.480420"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.5ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 3], ["student_id", 18], ["word_id", 38], ["created_at", "2020-08-31 18:08:42.489583"], ["updated_at", "2020-08-31 18:08:42.489583"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.5ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["priority_level", 5], ["word_id", 41], ["created_at", "2020-08-31 18:08:42.497463"], ["updated_at", "2020-08-31 18:08:42.497463"]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Destroy (0.4ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Destroy (0.3ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 11]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Destroy (0.3ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDefinition Load (0.2ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions"[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 19]]
+  [1m[36mStudent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 19]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 18]]
+  [1m[36mStudent Destroy (0.5ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 18]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 20]]
+  [1m[36mStudent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 20]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 21]]
+  [1m[36mStudent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 21]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 34]]
+  [1m[36mDefinition Load (0.3ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 34]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 34]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 35]]
+  [1m[36mDefinition Load (0.2ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 35]]
+  [1m[36mWord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 35]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 36]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 36]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 36]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 37]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 37]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 37]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 38]]
+  [1m[36mDefinition Load (0.2ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 38]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 38]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 39]]
+  [1m[36mDefinition Load (0.2ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 39]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 39]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 40]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 40]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 40]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 41]]
+  [1m[36mDefinition Load (0.2ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 41]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 41]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 42]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 42]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 42]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 43]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 43]]
+  [1m[36mWord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 43]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."word_id" = ?[0m  [["word_id", 44]]
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 44]]
+  [1m[36mWord Destroy (0.2ms)[0m  [1m[31mDELETE FROM "words" WHERE "words"."id" = ?[0m  [["id", 44]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Eric"], ["last_name", "Kim"], ["age", 50000], ["created_at", "2020-08-31 18:10:00.408704"], ["updated_at", "2020-08-31 18:10:00.408704"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions"[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 22]]
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 22]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Eric"], ["last_name", "Kim"], ["age", 50000], ["created_at", "2020-08-31 18:10:28.738674"], ["updated_at", "2020-08-31 18:10:28.738674"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Sylwia"], ["last_name", "Vargas"], ["age", 30], ["created_at", "2020-08-31 18:10:28.749571"], ["updated_at", "2020-08-31 18:10:28.749571"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Annie"], ["last_name", "Zheng"], ["age", 8999999], ["created_at", "2020-08-31 18:10:28.757297"], ["updated_at", "2020-08-31 18:10:28.757297"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Isabel"], ["last_name", "Lee"], ["age", 8999999], ["created_at", "2020-08-31 18:10:28.762344"], ["updated_at", "2020-08-31 18:10:28.762344"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Nunny"], ["last_name", "Reyes"], ["age", 8999999], ["created_at", "2020-08-31 18:10:28.768199"], ["updated_at", "2020-08-31 18:10:28.768199"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Model"], ["created_at", "2020-08-31 18:10:28.799698"], ["updated_at", "2020-08-31 18:10:28.799698"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.6ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "controller"], ["created_at", "2020-08-31 18:10:28.807551"], ["updated_at", "2020-08-31 18:10:28.807551"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.4ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "params"], ["created_at", "2020-08-31 18:10:28.819556"], ["updated_at", "2020-08-31 18:10:28.819556"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.4ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "strong params"], ["created_at", "2020-08-31 18:10:28.826732"], ["updated_at", "2020-08-31 18:10:28.826732"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "request"], ["created_at", "2020-08-31 18:10:28.831557"], ["updated_at", "2020-08-31 18:10:28.831557"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.6ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "response"], ["created_at", "2020-08-31 18:10:28.836703"], ["updated_at", "2020-08-31 18:10:28.836703"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ice-cream cone"], ["created_at", "2020-08-31 18:10:28.846232"], ["updated_at", "2020-08-31 18:10:28.846232"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.4ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "angry squid"], ["created_at", "2020-08-31 18:10:28.850616"], ["updated_at", "2020-08-31 18:10:28.850616"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "route"], ["created_at", "2020-08-31 18:10:28.855601"], ["updated_at", "2020-08-31 18:10:28.855601"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.6ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "view"], ["created_at", "2020-08-31 18:10:28.859287"], ["updated_at", "2020-08-31 18:10:28.859287"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.5ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "mvc"], ["created_at", "2020-08-31 18:10:28.866330"], ["updated_at", "2020-08-31 18:10:28.866330"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.5ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 5], ["student_id", 23], ["word_id", 55], ["created_at", "2020-08-31 18:10:28.877432"], ["updated_at", "2020-08-31 18:10:28.877432"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.4ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 3], ["student_id", 23], ["word_id", 50], ["created_at", "2020-08-31 18:10:28.882407"], ["updated_at", "2020-08-31 18:10:28.882407"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.5ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 3], ["student_id", 23], ["word_id", 49], ["created_at", "2020-08-31 18:10:28.886994"], ["updated_at", "2020-08-31 18:10:28.886994"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.5ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 5], ["student_id", 24], ["word_id", 52], ["created_at", "2020-08-31 18:10:28.891353"], ["updated_at", "2020-08-31 18:10:28.891353"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.3ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 5], ["student_id", 24], ["word_id", 51], ["created_at", "2020-08-31 18:10:28.895028"], ["updated_at", "2020-08-31 18:10:28.895028"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.4ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 5], ["student_id", 24], ["word_id", 48], ["created_at", "2020-08-31 18:10:28.898195"], ["updated_at", "2020-08-31 18:10:28.898195"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.3ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "A blueprint for creating instances; manages data in the database"], ["word_id", 45], ["created_at", "2020-08-31 18:10:28.911553"], ["updated_at", "2020-08-31 18:10:28.911553"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.3ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Communicates between the model (database) and views (user interface/website/browser)"], ["word_id", 46], ["created_at", "2020-08-31 18:10:28.914951"], ["updated_at", "2020-08-31 18:10:28.914951"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.5ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "A controller is the waiter; between the model and the view. It determines what the user will be doing/seeing based on the request"], ["word_id", 46], ["created_at", "2020-08-31 18:10:28.917982"], ["updated_at", "2020-08-31 18:10:28.917982"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.4ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "A hash with all the spicy user's input from the url input field or forms"], ["word_id", 47], ["created_at", "2020-08-31 18:10:28.923792"], ["updated_at", "2020-08-31 18:10:28.923792"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.3ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Rails safeguard against the meanies of the world -- it's a nested hash"], ["word_id", 48], ["created_at", "2020-08-31 18:10:28.928216"], ["updated_at", "2020-08-31 18:10:28.928216"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.4ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Client sends a requests to get information to/from the server"], ["word_id", 49], ["created_at", "2020-08-31 18:10:28.931581"], ["updated_at", "2020-08-31 18:10:28.931581"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.6ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "What server sends back to the user (client) after it processes the data"], ["word_id", 50], ["created_at", "2020-08-31 18:10:28.936587"], ["updated_at", "2020-08-31 18:10:28.936587"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.7ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "'<% %>': Ice cream cone evaluates ruby code but does not print"], ["word_id", 51], ["created_at", "2020-08-31 18:10:28.943262"], ["updated_at", "2020-08-31 18:10:28.943262"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.3ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "'<%= %>': angry squid shoots ink or evaluates ruby code and prints"], ["word_id", 52], ["created_at", "2020-08-31 18:10:28.966002"], ["updated_at", "2020-08-31 18:10:28.966002"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.5ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "A route is a path that allows you access a page of your preference; it connects with an appropriate method and renders an appropriate view"], ["word_id", 53], ["created_at", "2020-08-31 18:10:28.969969"], ["updated_at", "2020-08-31 18:10:28.969969"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.3ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "The HTML files (what is displayed on the browser)"], ["word_id", 54], ["created_at", "2020-08-31 18:10:28.974656"], ["updated_at", "2020-08-31 18:10:28.974656"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.3ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Model-View-Controller, its a design pattern for building web applications  (chef, waiter, serving/dining table)"], ["word_id", 55], ["created_at", "2020-08-31 18:10:28.979349"], ["updated_at", "2020-08-31 18:10:28.979349"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Franklin"], ["last_name", "Bado"], ["age", 13000], ["created_at", "2020-08-31 18:21:58.691393"], ["updated_at", "2020-08-31 18:21:58.691393"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Wilson"], ["last_name", "Ng"], ["age", 192878935], ["created_at", "2020-08-31 18:23:06.606015"], ["updated_at", "2020-08-31 18:23:06.606015"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", "Wilson"], ["LIMIT", 1]]
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", "Ng"], ["LIMIT", 1]]
+  [1m[36mStudent Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."age" = ? LIMIT ?[0m  [["age", 192878935], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words" ORDER BY "words"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.5ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 2], ["student_id", 25], ["word_id", 45], ["created_at", "2020-08-31 18:30:01.198280"], ["updated_at", "2020-08-31 18:30:01.198280"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words" ORDER BY "words"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.4ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 5000], ["student_id", 23], ["word_id", 45], ["created_at", "2020-08-31 18:30:15.762717"], ["updated_at", "2020-08-31 18:30:15.762717"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words" ORDER BY "words"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words" ORDER BY "words"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/students" for ::1 at 2020-08-31 20:34:35 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#index as HTML
+  Rendering students/index.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  ↳ app/views/students/index.erb:4:in `map'
+  Rendered students/index.erb within layouts/application (Duration: 11.5ms | Allocations: 5849)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 33.1ms | ActiveRecord: 1.4ms | Allocations: 17187)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:34:37 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 6.6ms | Allocations: 2695)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 6946)
+
+
+Started POST "/students" for ::1 at 2020-08-31 20:35:08 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"E/Dc1isuTzlLpB+hpT1hVVHfka8u+5JdwuS0TUXODmAUOrVUVxsrGUaZ/t+xjcnhTNzJ8yBo5y7ZgcdF0Nhb7Q==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>""}, "commit"=>"Ready!"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ (byebug):1:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ (byebug):1:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ (byebug):1:in `create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ (byebug):1:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:14:in `create'
+Redirected to http://localhost:3000/students
+Completed 302 Found in 237113ms (ActiveRecord: 1.3ms | Allocations: 57477)
+
+
+Started GET "/students" for ::1 at 2020-08-31 20:39:05 +0200
+Processing by StudentsController#index as HTML
+  Rendering students/index.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  ↳ app/views/students/index.erb:4:in `map'
+  Rendered students/index.erb within layouts/application (Duration: 2.1ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 5187)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:39:13 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 2.4ms | Allocations: 859)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 10.8ms | ActiveRecord: 0.5ms | Allocations: 11076)
+
+
+Started POST "/students" for ::1 at 2020-08-31 20:39:15 +0200
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"scgI1leH58XvRTt7jj5CLXuDqD+dGACJNPiN5N9+edS2AmFUK7KD5eJ42gWajuqZZoDwY5OLdfovnf7sSmgsWQ==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>""}, "commit"=>"Ready!"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[36mStudent Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:14:in `create'
+Redirected to http://localhost:3000/students
+Completed 302 Found in 10ms (ActiveRecord: 0.5ms | Allocations: 6210)
+
+
+Started GET "/students" for ::1 at 2020-08-31 20:39:15 +0200
+Processing by StudentsController#index as HTML
+  Rendering students/index.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  ↳ app/views/students/index.erb:4:in `map'
+  Rendered students/index.erb within layouts/application (Duration: 1.4ms | Allocations: 946)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 5019)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:43:14 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.4ms | Allocations: 859)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 6.7ms | ActiveRecord: 0.7ms | Allocations: 11079)
+
+
+Started POST "/students" for ::1 at 2020-08-31 20:43:25 +0200
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"h7YI1Of7/DtRL8XGXnZAqOOM4ZzHfqIgxeW7dddEtnuAfGFWm86YG1wSJLhKxugc/o+5wMnt11PegMh9QlLj9g==", "student"=>{"first_name"=>"Test", "last_name"=>"Test", "age"=>"14"}, "commit"=>"Ready!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ (byebug):1:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", "Test"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", "Test"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `create'
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Test"], ["last_name", "Test"], ["age", 14], ["created_at", "2020-08-31 18:43:36.304901"], ["updated_at", "2020-08-31 18:43:36.304901"]]
+  ↳ (byebug):1:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ (byebug):1:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? AND "students"."id" != ? LIMIT ?[0m  [["first_name", "Test"], ["id", 30], ["LIMIT", 1]]
+  ↳ (byebug):1:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? AND "students"."id" != ? LIMIT ?[0m  [["last_name", "Test"], ["id", 30], ["LIMIT", 1]]
+  ↳ (byebug):1:in `create'
+Started GET "/students" for ::1 at 2020-08-31 20:47:20 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#index as HTML
+  Rendering students/index.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  ↳ app/views/students/index.erb:4:in `map'
+  Rendered students/index.erb within layouts/application (Duration: 6.9ms | Allocations: 5892)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 18.8ms | ActiveRecord: 0.7ms | Allocations: 16797)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:47:22 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 4.5ms | Allocations: 2695)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 6948)
+
+
+Started POST "/students" for ::1 at 2020-08-31 20:47:26 +0200
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"6XyK0CLyL3rtnkYRTptZo7XjiaObMAB21Ro5h0+ekkPutuNSXsdLWuCjp29aK/EXqODR/5WjdQXOf0qP2ojHzg==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>""}, "commit"=>"Ready!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 41ms (ActiveRecord: 0.8ms | Allocations: 10032)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:47:26 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.2ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 4887)
+
+
+Started POST "/students" for ::1 at 2020-08-31 20:47:30 +0200
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"3sbNhWjIXMrqiNIaXCH+PpJeCi7Ucd6lWJCRJLr2avbZDKQHFP046ue1M2RIkVaKj11Sctriq9ZD9eIsL+A/ew==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>""}, "commit"=>"Ready!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 17ms (ActiveRecord: 0.8ms | Allocations: 9271)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:47:30 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 2.1ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 4887)
+
+
+Started POST "/students" for ::1 at 2020-08-31 20:47:31 +0200
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"VyhKFXZt0FLVn+0gPDaZdG81Gtx1F1rrVbSG6Hu70zNQ4iOXCli0ctiiDF4ohjHAcjZCgHuEL5hO0fXg7q2Gvg==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>""}, "commit"=>"Ready!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 14ms (ActiveRecord: 0.8ms | Allocations: 9268)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:47:31 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 2.3ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 4886)
+
+
+Started POST "/students" for ::1 at 2020-08-31 20:47:32 +0200
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"VBHo16CDocGJMY4Kg8oXPDJ+cQ2dRyKz6c2DF5vUrJ1T24FV3LbF4YQMb3SXer+IL30pUZPUV8DyqPAfDsL5EA==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>""}, "commit"=>"Ready!"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 14ms (ActiveRecord: 0.7ms | Allocations: 9255)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:47:32 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.6ms | Allocations: 792)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 4884)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:47:44 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 2.0ms | Allocations: 792)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 4890)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:47:45 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.4ms | Allocations: 792)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 4891)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:47:46 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.7ms | Allocations: 792)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms | Allocations: 4890)
+
+
+Started POST "/students" for ::1 at 2020-08-31 20:48:23 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"lTuraOOuqN/rYm2sivWojcaq1RWWJU9soc/2xGEWwnuS8cLqn5vM/+ZfjNKeRQA526mNSZi2Oh+6qoXM9ACX9g==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>""}, "commit"=>"Ready!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 142043ms (ActiveRecord: 1.7ms | Allocations: 52093)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:50:45 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.9ms | Allocations: 803)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 5063)
+
+
+Started POST "/students" for ::1 at 2020-08-31 20:50:54 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"vMP2CR1kUn5JU8/pzjFQB7+jVQ1LSGt1V2lWQMfCVP67CZ+LYVE2XkRuLpfagfizoqANUUXbHgZMDCVIUtQBcw==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>""}, "commit"=>"Ready!"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:17:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:17:in `create'
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 26ms (ActiveRecord: 1.5ms | Allocations: 15965)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:50:54 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.6ms | Allocations: 803)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 101967ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 10589)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:52:48 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.9ms | Allocations: 859)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 9.1ms | ActiveRecord: 0.5ms | Allocations: 11072)
+
+
+Started POST "/students" for ::1 at 2020-08-31 20:52:51 +0200
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"Zlszczupe+nkobOUjjYDkzy4/sH9CdQthtK2zb8AJrhhkVrxR5wfyemcUuqahqsnIbumnfOaoV6dt8XFKhZzNQ==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>""}, "commit"=>"Ready!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:17:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:17:in `create'
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 141868ms (ActiveRecord: 0.8ms | Allocations: 13455)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:55:12 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.0ms | Allocations: 792)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 10075)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:55:14 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#new as HTML
+Completed 500 Internal Server Error in 24246ms (ActiveRecord: 0.0ms | Allocations: 162249)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `new'
+app/controllers/students_controller.rb:10:in `new'
+Started POST "/students" for ::1 at 2020-08-31 20:55:39 +0200
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/students/new" for ::1 at 2020-08-31 20:55:45 +0200
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"30n2ZG7Pst02mHxzrP5GLwXGjBE7CuTEZJxfoF+REkDYg5/mEvrW/TulnQ24Tu6bGMXUTTWZkbd/+SyoyodHzQ==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>""}, "commit"=>"Ready!"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (2.4ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[35m (4.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:17:in `create'
+  [1m[36mStudent Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:17:in `create'
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 706ms (ActiveRecord: 20.6ms | Allocations: 4575935)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 59.1ms | Allocations: 449511)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 360ms (Views: 159.6ms | ActiveRecord: 9.4ms | Allocations: 2713778)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:56:02 +0200
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 56.3ms | Allocations: 449510)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 326ms (Views: 145.6ms | ActiveRecord: 10.6ms | Allocations: 2706379)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:56:30 +0200
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.8ms | Allocations: 859)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2081ms (Views: 9.4ms | ActiveRecord: 0.5ms | Allocations: 161987)
+
+
+Started POST "/students" for ::1 at 2020-08-31 20:56:49 +0200
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"j7bcaw+WgE0KzGRXsW36NI5wp6QyghSJ66nPV7O5t0GIfLXpc6PkbQfxhSml3VKAk3P/+DwRYfrwzLxfJq/izA==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>""}, "commit"=>"Ready!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:16:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:17:in `create'
+  [1m[36mStudent Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:17:in `create'
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 20ms (ActiveRecord: 1.1ms | Allocations: 9969)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:56:49 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 2.3ms | Allocations: 792)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 85787ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 13956)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 20:59:54 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 3.1ms | Allocations: 1474)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.1ms | Allocations: 8707)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1> Add a new student! </h1>
+    2: 
+    3: <% @errors.each do |error|%>
+    4:   <p style= "color: red"> error </p>
+    5: <% end %>
+    6: 
+  
+app/views/students/new.erb:3
+Started PUT "/__web_console/repl_sessions/a32af2ba09ee5f10885d0fc5db399cda" for ::1 at 2020-08-31 21:00:05 +0200
+Started PUT "/__web_console/repl_sessions/a32af2ba09ee5f10885d0fc5db399cda" for ::1 at 2020-08-31 21:00:05 +0200
+Started GET "/students/new" for ::1 at 2020-08-31 21:00:09 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.3ms | Allocations: 1253)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1740)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1> Add a new student! </h1>
+    2: 
+    3: <% @errors.each do |error|%>
+    4:   <p style= "color: red"> error </p>
+    5: <% end %>
+    6: 
+  
+app/views/students/new.erb:3
+Started GET "/students/new" for ::1 at 2020-08-31 21:00:39 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 2.9ms | Allocations: 1145)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 6176)
+
+
+Started POST "/students" for ::1 at 2020-08-31 21:00:43 +0200
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"EOOWfmoIsixKmb0Q8NqT4fvbPSNvWZCG3XO9zpOEgSYXKf/8Fj3WDEekXG7kajtV5thlf2HK5fXGFs7GBpLUqw==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>""}, "commit"=>"Ready!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:17:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:17:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:17:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:17:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:18:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:18:in `create'
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 23ms (ActiveRecord: 0.8ms | Allocations: 9965)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 21:00:43 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.6ms | Allocations: 799)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 4928)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 21:01:05 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.4ms | Allocations: 1102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 6140)
+
+
+Started POST "/students" for ::1 at 2020-08-31 21:01:07 +0200
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"b/AsXJkHchgqDLE1B5XXgfyuFjiTszwfA6cgTN799MBoOkXe5TIWOCcxUEsTJX814a1OZJ0gSWwYwlNES+uhTQ==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>""}, "commit"=>"Ready!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:17:in `create'
+  [1m[36mStudent Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:17:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:17:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:17:in `create'
+  [1m[36mStudent Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:18:in `create'
+  [1m[36mStudent Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:18:in `create'
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 19ms (ActiveRecord: 1.2ms | Allocations: 9815)
+
+
+Started GET "/students/new" for ::1 at 2020-08-31 21:01:07 +0200
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.9ms | Allocations: 803)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 4923)
+
+
+Started GET "/definitions/new" for ::1 at 2020-08-31 21:03:20 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DefinitionsController#new as HTML
+  Rendering definitions/new.erb within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/views/definitions/new.erb:7
+  Rendered definitions/new.erb within layouts/application (Duration: 7.3ms | Allocations: 4457)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 24.0ms | ActiveRecord: 1.2ms | Allocations: 15367)
+
+
+Started POST "/definitions" for ::1 at 2020-08-31 21:03:37 +0200
+Processing by DefinitionsController#create as HTML
+  Parameters: {"authenticity_token"=>"GXMEGaE80P3MRKmeq8GXCgM6sApC3Prp5pk5zc2C2bceuW2b3Qm03cF5SOC/cT++HjnoVkxPj5r9/ErFWJSMOg==", "definition"=>{"content"=>"It's like an Ikea manual", "word_id"=>"45"}, "commit"=>"Ready!"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 632)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: student):
+  
+app/controllers/definitions_controller.rb:38:in `definition_params'
+app/controllers/definitions_controller.rb:14:in `create'
+Started POST "/definitions" for ::1 at 2020-08-31 21:04:02 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DefinitionsController#create as HTML
+  Parameters: {"authenticity_token"=>"GXMEGaE80P3MRKmeq8GXCgM6sApC3Prp5pk5zc2C2bceuW2b3Qm03cF5SOC/cT++HjnoVkxPj5r9/ErFWJSMOg==", "definition"=>{"content"=>"It's like an Ikea manual", "word_id"=>"45"}, "commit"=>"Ready!"}
+[31mUnpermitted parameter: :word_id[0m
+Started GET "/definitions/new" for ::1 at 2020-08-31 21:08:25 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DefinitionsController#new as HTML
+  Rendering definitions/new.erb within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/views/definitions/new.erb:7
+  Rendered definitions/new.erb within layouts/application (Duration: 11.9ms | Allocations: 5080)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 42.5ms | ActiveRecord: 1.2ms | Allocations: 21137)
+
+
+Started GET "/definitions/new" for ::1 at 2020-08-31 21:08:29 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DefinitionsController#new as HTML
+  Rendering definitions/new.erb within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/views/definitions/new.erb:7
+  Rendered definitions/new.erb within layouts/application (Duration: 5.8ms | Allocations: 4071)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 11.8ms | ActiveRecord: 0.9ms | Allocations: 13739)
+
+
+Started POST "/definitions" for ::1 at 2020-08-31 21:08:35 +0200
+Processing by DefinitionsController#create as HTML
+  Parameters: {"authenticity_token"=>"1kjbChTqgYL2RHcaOhpD80ciuedfFUr7q73H3DaNsKfRgrKIaN/lovt5lmQuqutHWiHhu1GGP4iw2LTUo5vlKg==", "definition"=>{"content"=>"1 2 3", "word_id"=>"45"}, "commit"=>"Ready!"}
+[31mUnpermitted parameter: :word_id[0m
+Redirected to http://localhost:3000/definitions
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms | Allocations: 3641)
+
+
+Started GET "/definitions" for ::1 at 2020-08-31 21:08:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/definitions"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/definitions" for ::1 at 2020-08-31 21:09:06 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/definitions"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/definitions/ew" for ::1 at 2020-08-31 21:09:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/definitions/ew"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/definitions/new" for ::1 at 2020-08-31 21:09:12 +0200
+Processing by DefinitionsController#new as HTML
+  Rendering definitions/new.erb within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/views/definitions/new.erb:7
+  Rendered definitions/new.erb within layouts/application (Duration: 8.5ms | Allocations: 4082)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 16.5ms | ActiveRecord: 1.1ms | Allocations: 13911)
+
+
+Started POST "/definitions" for ::1 at 2020-08-31 21:09:16 +0200
+Processing by DefinitionsController#create as HTML
+  Parameters: {"authenticity_token"=>"DHdK3mwqDkmhmM66TwgdGVJG0QIMhqsLHdDMbaLNTDALvSNcEB9qaaylL8RbuLWtT0WJXgIV3ngGtb9lN9sZvQ==", "definition"=>{"content"=>"1 2 3\r\n", "word_id"=>"45"}, "commit"=>"Ready!"}
+[31mUnpermitted parameter: :word_id[0m
+Redirected to http://localhost:3000/words
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 1753)
+
+
+Started GET "/words" for ::1 at 2020-08-31 21:09:16 +0200
+Processing by WordsController#index as HTML
+  Rendering words/index.erb within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/views/words/index.erb:4:in `map'
+  Rendered words/index.erb within layouts/application (Duration: 3.1ms | Allocations: 1480)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 6149)
+
+
+Started GET "/words/45" for ::1 at 2020-08-31 21:09:18 +0200
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/words_controller.rb:29:in `get_word'
+  Rendering words/show.erb within layouts/application
+  [1m[36mDefinition Load (0.3ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions" WHERE "definitions"."word_id" = ? ORDER BY created_at DESC[0m  [["word_id", 45]]
+  ↳ app/views/words/show.erb:5
+  Rendered words/show.erb within layouts/application (Duration: 8.0ms | Allocations: 3868)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 0.5ms | Allocations: 8890)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words" ORDER BY "words"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/students/11" for ::1 at 2020-08-31 21:13:47 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:40:in `get_student'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.8ms | Allocations: 3353)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Student with 'id'=11):
+  
+app/controllers/students_controller.rb:40:in `get_student'
+Started GET "/students/" for ::1 at 2020-08-31 21:13:54 +0200
+Processing by StudentsController#index as HTML
+  Rendering students/index.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  ↳ app/views/students/index.erb:4:in `map'
+  Rendered students/index.erb within layouts/application (Duration: 8.0ms | Allocations: 5404)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.2ms | Allocations: 10043)
+
+
+Started GET "/students/25" for ::1 at 2020-08-31 21:13:57 +0200
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:40:in `get_student'
+  Rendering students/show.erb within layouts/application
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 25]]
+  ↳ app/views/students/show.erb:13
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/students/show.erb:14
+  Rendered students/show.erb within layouts/application (Duration: 18.2ms | Allocations: 12079)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 1.2ms | Allocations: 16879)
+
+
+Started GET "/students/28" for ::1 at 2020-08-31 21:13:59 +0200
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:40:in `get_student'
+  Rendering students/show.erb within layouts/application
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 28]]
+  ↳ app/views/students/show.erb:13
+  Rendered students/show.erb within layouts/application (Duration: 2.1ms | Allocations: 1134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 5936)
+
+
+Started GET "/students/29" for ::1 at 2020-08-31 21:14:01 +0200
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:40:in `get_student'
+  Rendering students/show.erb within layouts/application
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 29]]
+  ↳ app/views/students/show.erb:13
+  Rendered students/show.erb within layouts/application (Duration: 1.9ms | Allocations: 1134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.3ms | Allocations: 5927)
+
+
+Started GET "/students/30" for ::1 at 2020-08-31 21:14:03 +0200
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:40:in `get_student'
+  Rendering students/show.erb within layouts/application
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 30]]
+  ↳ app/views/students/show.erb:13
+  Rendered students/show.erb within layouts/application (Duration: 2.4ms | Allocations: 1134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.4ms | Allocations: 5919)
+
+
+Started DELETE "/students/30" for ::1 at 2020-08-31 21:14:04 +0200
+Processing by StudentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xKGg8ucVbm/EIibP5daRYEgVPxPcforb/TNBWK87HQ8Aj3bCvdqhWjnFXtIQB/ZLUWXpd493X2xceSnTns38VQ==", "id"=>"30"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:40:in `get_student'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:34:in `destroy'
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 30]]
+  ↳ app/controllers/students_controller.rb:34:in `destroy'
+  [1m[36mStudent Destroy (7.7ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 30]]
+  ↳ app/controllers/students_controller.rb:34:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:34:in `destroy'
+Redirected to http://localhost:3000/students
+Completed 302 Found in 17ms (ActiveRecord: 8.8ms | Allocations: 4342)
+
+
+Started GET "/students" for ::1 at 2020-08-31 21:14:04 +0200
+Processing by StudentsController#index as HTML
+  Rendering students/index.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  ↳ app/views/students/index.erb:4:in `map'
+  Rendered students/index.erb within layouts/application (Duration: 1.6ms | Allocations: 915)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 4989)
+
+

@@ -28,10 +28,8 @@ In other words, how do we protect our database from the typical user:
 
 ## Outline
 - [ ] Discuss client vs server side validations
-  - Client-side validation
-  - Server-side validation
-- [ ] Add a new attribute to our model to practice `rails g migration`
-- [ ] Students brainstorm different kinds of validations
+  - Client-side validation: all the validations that happen before the user clicks "submit" (in the View file)
+  - Server-side validation: all the validations that happen after the user makes the request (it the controller file)
 - [ ] Add validations and review ActiveRecord documentation
 - [ ] Add custom validations
 - [ ] Use validations in our controller

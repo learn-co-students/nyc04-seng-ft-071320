@@ -12,7 +12,7 @@ class DefinitionsController < ApplicationController
     
     def create
       @definition = Definition.create(definition_params)
-      redirect_to definitions_path
+      redirect_to words_path
     end
 
     def edit
@@ -35,7 +35,7 @@ class DefinitionsController < ApplicationController
     end
   
     def definition_params
-      params.require(:student).permit(:content)
+      params.require(:definition).permit(:content)
     end
   
   end
