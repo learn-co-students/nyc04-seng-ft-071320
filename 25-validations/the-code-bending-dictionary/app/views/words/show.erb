@@ -1,0 +1,3 @@
+<h1> <%= @word.content.titleize %></h1>
+
+<%= button_to "say bye to '#{@word.content.downcase}'", @word, :method => :delete %>
