@@ -10,7 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_27_152129) do
+ActiveRecord::Schema.define(version: 2020_08_31_165314) do
+
+  create_table "definitions", force: :cascade do |t|
+    t.string "content"
+    t.integer "word_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["word_id"], name: "index_definitions_on_word_id"
+  end
+
+  create_table "favorites", force: :cascade do |t|
+    t.integer "priority_level"
+    t.integer "student_id", null: false
+    t.integer "word_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["student_id"], name: "index_favorites_on_student_id"
+    t.index ["word_id"], name: "index_favorites_on_word_id"
+  end
 
   create_table "students", force: :cascade do |t|
     t.string "first_name"
@@ -27,4 +45,7 @@ ActiveRecord::Schema.define(version: 2020_08_27_152129) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "definitions", "words"
+  add_foreign_key "favorites", "students"
+  add_foreign_key "favorites", "words"
 end

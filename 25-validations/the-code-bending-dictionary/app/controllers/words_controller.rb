@@ -8,7 +8,7 @@ class WordsController < ApplicationController
     def new
       @word = Word.new
     end
-    
+
     def create
       @word = Word.create(word_params)
       redirect_to words_path
@@ -16,7 +16,7 @@ class WordsController < ApplicationController
   
     def update
       @word.update(word_params)
-      redirect_to word_apth(@word)
+      redirect_to word_path(@word)
     end
   
     def destroy
