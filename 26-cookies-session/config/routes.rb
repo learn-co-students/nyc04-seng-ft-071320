@@ -5,6 +5,20 @@ Rails.application.routes.draw do
   resources :words
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
+  # GET THE USER THE LOGIN FORM
+  get "/login", to: "students#login", as: "login"
+  # HANDLE THE LOGIN FORM SUBMISSION
+  post "/send_the_form_here", to: "students#handle_login"
+
+
+
+
+
+
+
+
+
+  
   get "/students", to: "students#index", as: "students" #students_path
   get "/students/new", to: "students#new", as: "new_student"
   post "/students", to: "students#create"

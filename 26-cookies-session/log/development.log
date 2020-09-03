@@ -9025,3 +9025,1075 @@ SystemExit (exit):
 (byebug):1:in `exit'
 (byebug):1:in `new'
 app/controllers/definitions_controller.rb:12:in `new'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPasswordDigestToStudents (20200903180249)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "students" ADD "password_digest" varchar[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200903180249"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "definitions"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "definitions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX "index_definitions_on_word_id" ON "definitions" ("word_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "favorites"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "priority_level" integer, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_student_id" ON "favorites" ("student_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_word_id" ON "favorites" ("word_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "students"[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "nickname" varchar, "age" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "password_digest" varchar)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "words"[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "words" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "adefinitions" ("id" integer NOT NULL PRIMARY KEY, "content" varchar DEFAULT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_adefinitions_on_word_id" ON "adefinitions" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "adefinitions" ("id","content","word_id","created_at","updated_at")
+                     SELECT "id","content","word_id","created_at","updated_at" FROM "definitions"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "definitions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "definitions" ("id" integer NOT NULL PRIMARY KEY, "content" varchar DEFAULT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_3ad1edcbbb"
+FOREIGN KEY ("word_id")
+  REFERENCES "words" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_definitions_on_word_id" ON "definitions" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "definitions" ("id","content","word_id","created_at","updated_at")
+                     SELECT "id","content","word_id","created_at","updated_at" FROM "adefinitions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "adefinitions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "afavorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_word_id" ON "afavorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_student_id" ON "afavorites" ("student_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "afavorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "favorites"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "favorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_828a1f5b48"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_student_id" ON "favorites" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_word_id" ON "favorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "favorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "afavorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "afavorites"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "afavorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_word_id" ON "afavorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_student_id" ON "afavorites" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "afavorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "favorites"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "favorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_828a1f5b48"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+, CONSTRAINT "fk_rails_530cfb4652"
+FOREIGN KEY ("word_id")
+  REFERENCES "words" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_student_id" ON "favorites" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_word_id" ON "favorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "favorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "afavorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "afavorites"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200903180249)[0m
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200825175110),
+(20200827152129),
+(20200827174440),
+(20200831165314);
+
+[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-09-03 18:12:13.345390"], ["updated_at", "2020-09-03 18:12:13.345390"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "892270cff569f82c09fcc392924e240226cecf0a"], ["created_at", "2020-09-03 18:12:13.352195"], ["updated_at", "2020-09-03 18:12:13.352195"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "definitions"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "definitions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX "index_definitions_on_word_id" ON "definitions" ("word_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "favorites"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "priority_level" integer, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_student_id" ON "favorites" ("student_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_word_id" ON "favorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "students"[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "nickname" varchar, "age" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "password_digest" varchar)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "words"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "words" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "adefinitions" ("id" integer NOT NULL PRIMARY KEY, "content" varchar DEFAULT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_adefinitions_on_word_id" ON "adefinitions" ("word_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "adefinitions" ("id","content","word_id","created_at","updated_at")
+                     SELECT "id","content","word_id","created_at","updated_at" FROM "definitions"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "definitions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "definitions" ("id" integer NOT NULL PRIMARY KEY, "content" varchar DEFAULT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_3ad1edcbbb"
+FOREIGN KEY ("word_id")
+  REFERENCES "words" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_definitions_on_word_id" ON "definitions" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "definitions" ("id","content","word_id","created_at","updated_at")
+                     SELECT "id","content","word_id","created_at","updated_at" FROM "adefinitions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "adefinitions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "afavorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_word_id" ON "afavorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_student_id" ON "afavorites" ("student_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "afavorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "favorites"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "favorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_828a1f5b48"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_student_id" ON "favorites" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_word_id" ON "favorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "favorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "afavorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "afavorites"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "afavorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_word_id" ON "afavorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_student_id" ON "afavorites" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "afavorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "favorites"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "favorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_828a1f5b48"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+, CONSTRAINT "fk_rails_530cfb4652"
+FOREIGN KEY ("word_id")
+  REFERENCES "words" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_student_id" ON "favorites" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_word_id" ON "favorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "favorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "afavorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "afavorites"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200903180249)[0m
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200825175110),
+(20200827152129),
+(20200827174440),
+(20200831165314);
+
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-09-03 18:12:13.457370"], ["updated_at", "2020-09-03 18:12:13.457370"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-09-03 18:12:13.464420"], ["key", "environment"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "892270cff569f82c09fcc392924e240226cecf0a"], ["created_at", "2020-09-03 18:12:13.470229"], ["updated_at", "2020-09-03 18:12:13.470229"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  [1m[36mDefinition Load (0.1ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions"[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", "Eric"], ["LIMIT", 1]]
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", "Kim"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", "Eric"], ["LIMIT", 1]]
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", "Kim"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", "Eric"], ["LIMIT", 1]]
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", "Kim"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", "Eric"], ["LIMIT", 1]]
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", "Kim"], ["LIMIT", 1]]
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "nickname", "age", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Eric"], ["last_name", "Kim"], ["nickname", "Grandmaster slamma jamma"], ["age", 16], ["created_at", "2020-09-03 18:16:55.105389"], ["updated_at", "2020-09-03 18:16:55.105389"], ["password_digest", "$2a$12$sUaW9g1CMiDqDEBy.nm4UOHYf7Ek4oBxoAJDa5.uHScYHyVpx/N.S"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "definitions"[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "definitions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX "index_definitions_on_word_id" ON "definitions" ("word_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "favorites"[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "priority_level" integer, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_student_id" ON "favorites" ("student_id")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_word_id" ON "favorites" ("word_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "students"[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "nickname" varchar, "age" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "password_digest" varchar)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "words"[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "words" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "adefinitions" ("id" integer NOT NULL PRIMARY KEY, "content" varchar DEFAULT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "tindex_adefinitions_on_word_id" ON "adefinitions" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "adefinitions" ("id","content","word_id","created_at","updated_at")
+                     SELECT "id","content","word_id","created_at","updated_at" FROM "definitions"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "definitions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "definitions" ("id" integer NOT NULL PRIMARY KEY, "content" varchar DEFAULT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_3ad1edcbbb"
+FOREIGN KEY ("word_id")
+  REFERENCES "words" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_definitions_on_word_id" ON "definitions" ("word_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "definitions" ("id","content","word_id","created_at","updated_at")
+                     SELECT "id","content","word_id","created_at","updated_at" FROM "adefinitions"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "adefinitions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "afavorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_word_id" ON "afavorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_student_id" ON "afavorites" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "afavorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "favorites"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "favorites"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_828a1f5b48"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_student_id" ON "favorites" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_word_id" ON "favorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "favorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "afavorites"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "afavorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "afavorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_word_id" ON "afavorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_student_id" ON "afavorites" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "afavorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "favorites"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "favorites"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_828a1f5b48"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+, CONSTRAINT "fk_rails_530cfb4652"
+FOREIGN KEY ("word_id")
+  REFERENCES "words" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_student_id" ON "favorites" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_word_id" ON "favorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "favorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "afavorites"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "afavorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200903180249)[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200825175110),
+(20200827152129),
+(20200827174440),
+(20200831165314);
+
+[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-09-03 18:22:35.262750"], ["updated_at", "2020-09-03 18:22:35.262750"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "892270cff569f82c09fcc392924e240226cecf0a"], ["created_at", "2020-09-03 18:22:35.277632"], ["updated_at", "2020-09-03 18:22:35.277632"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "definitions"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "definitions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX "index_definitions_on_word_id" ON "definitions" ("word_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "favorites"[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "priority_level" integer, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_student_id" ON "favorites" ("student_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_word_id" ON "favorites" ("word_id")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "students"[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "nickname" varchar, "age" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "password_digest" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "words"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "words" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "adefinitions" ("id" integer NOT NULL PRIMARY KEY, "content" varchar DEFAULT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "tindex_adefinitions_on_word_id" ON "adefinitions" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "adefinitions" ("id","content","word_id","created_at","updated_at")
+                     SELECT "id","content","word_id","created_at","updated_at" FROM "definitions"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "definitions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "definitions" ("id" integer NOT NULL PRIMARY KEY, "content" varchar DEFAULT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_3ad1edcbbb"
+FOREIGN KEY ("word_id")
+  REFERENCES "words" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_definitions_on_word_id" ON "definitions" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "definitions" ("id","content","word_id","created_at","updated_at")
+                     SELECT "id","content","word_id","created_at","updated_at" FROM "adefinitions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "adefinitions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "afavorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_word_id" ON "afavorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_student_id" ON "afavorites" ("student_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "afavorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "favorites"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "favorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_828a1f5b48"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_student_id" ON "favorites" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_word_id" ON "favorites" ("word_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "favorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "afavorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "afavorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "afavorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_word_id" ON "afavorites" ("word_id")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "tindex_afavorites_on_student_id" ON "afavorites" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "afavorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "favorites"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "favorites"[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" integer NOT NULL PRIMARY KEY, "priority_level" integer DEFAULT NULL, "student_id" integer NOT NULL, "word_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_828a1f5b48"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+, CONSTRAINT "fk_rails_530cfb4652"
+FOREIGN KEY ("word_id")
+  REFERENCES "words" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_student_id" ON "favorites" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_word_id" ON "favorites" ("word_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "favorites" ("id","priority_level","student_id","word_id","created_at","updated_at")
+                     SELECT "id","priority_level","student_id","word_id","created_at","updated_at" FROM "afavorites"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "afavorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200903180249)[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200825175110),
+(20200827152129),
+(20200827174440),
+(20200831165314);
+
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-09-03 18:22:35.454745"], ["updated_at", "2020-09-03 18:22:35.454745"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-09-03 18:22:35.464298"], ["key", "environment"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "892270cff569f82c09fcc392924e240226cecf0a"], ["created_at", "2020-09-03 18:22:35.469497"], ["updated_at", "2020-09-03 18:22:35.469497"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  [1m[36mDefinition Load (0.2ms)[0m  [1m[34mSELECT "definitions".* FROM "definitions"[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", "Eric"], ["LIMIT", 1]]
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", "Kim"], ["LIMIT", 1]]
+  [1m[36mStudent Create (1.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Eric"], ["last_name", "Kim"], ["age", 50000], ["created_at", "2020-09-03 18:22:35.849753"], ["updated_at", "2020-09-03 18:22:35.849753"], ["password_digest", "$2a$12$Z0mzkjU6i476HBrK6maBXeTq9u0ZAEAwxKnvSxXgO9xkj/z74W1C2"]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", "Sylwia"], ["LIMIT", 1]]
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", "Vargas"], ["LIMIT", 1]]
+  [1m[36mStudent Create (0.6ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sylwia"], ["last_name", "Vargas"], ["age", 30], ["created_at", "2020-09-03 18:22:36.163710"], ["updated_at", "2020-09-03 18:22:36.163710"], ["password_digest", "$2a$12$Cg0tV460FUnXnVMwRMUpSegpwecrz9a5t0uNp2tTBDXHiPj/XSmya"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", "Annie"], ["LIMIT", 1]]
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", "Zheng"], ["LIMIT", 1]]
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Annie"], ["last_name", "Zheng"], ["age", 8999999], ["created_at", "2020-09-03 18:22:36.417743"], ["updated_at", "2020-09-03 18:22:36.417743"], ["password_digest", "$2a$12$5bXg9v4cxE8iRps9q9ObgOIoWbtvi1Zy9A1vSKP523WSCAu9iq0w6"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", "Isabel"], ["LIMIT", 1]]
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", "Lee"], ["LIMIT", 1]]
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Isabel"], ["last_name", "Lee"], ["age", 8999999], ["created_at", "2020-09-03 18:22:36.671912"], ["updated_at", "2020-09-03 18:22:36.671912"], ["password_digest", "$2a$12$Cq6MG1H4Lba9HO3VGPrtku6jgz5H86BhlYxdzwS1mCl7MIH6VNkH6"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", "Nunny"], ["LIMIT", 1]]
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", "Reyes"], ["LIMIT", 1]]
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Nunny"], ["last_name", "Reyes"], ["age", 8999999], ["created_at", "2020-09-03 18:22:36.919127"], ["updated_at", "2020-09-03 18:22:36.919127"], ["password_digest", "$2a$12$0YFYQ51h/gbmVX44ebvkyOdQ3FMmFDLRNLEBH46y9B2SpzgZJ.s5u"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.5ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Model"], ["created_at", "2020-09-03 18:22:36.929232"], ["updated_at", "2020-09-03 18:22:36.929232"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "controller"], ["created_at", "2020-09-03 18:22:36.935221"], ["updated_at", "2020-09-03 18:22:36.935221"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.4ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "params"], ["created_at", "2020-09-03 18:22:36.939574"], ["updated_at", "2020-09-03 18:22:36.939574"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.9ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "strong params"], ["created_at", "2020-09-03 18:22:36.945515"], ["updated_at", "2020-09-03 18:22:36.945515"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.4ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "request"], ["created_at", "2020-09-03 18:22:36.950787"], ["updated_at", "2020-09-03 18:22:36.950787"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.4ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "response"], ["created_at", "2020-09-03 18:22:36.973579"], ["updated_at", "2020-09-03 18:22:36.973579"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.4ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ice-cream cone"], ["created_at", "2020-09-03 18:22:36.978767"], ["updated_at", "2020-09-03 18:22:36.978767"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "angry squid"], ["created_at", "2020-09-03 18:22:36.983190"], ["updated_at", "2020-09-03 18:22:36.983190"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.4ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "route"], ["created_at", "2020-09-03 18:22:36.988022"], ["updated_at", "2020-09-03 18:22:36.988022"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.3ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "view"], ["created_at", "2020-09-03 18:22:36.994800"], ["updated_at", "2020-09-03 18:22:36.994800"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWord Create (0.4ms)[0m  [1m[32mINSERT INTO "words" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "mvc"], ["created_at", "2020-09-03 18:22:36.999224"], ["updated_at", "2020-09-03 18:22:36.999224"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.4ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 5], ["student_id", 1], ["word_id", 11], ["created_at", "2020-09-03 18:22:37.016219"], ["updated_at", "2020-09-03 18:22:37.016219"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.6ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 3], ["student_id", 1], ["word_id", 6], ["created_at", "2020-09-03 18:22:37.020932"], ["updated_at", "2020-09-03 18:22:37.020932"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.4ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 3], ["student_id", 1], ["word_id", 5], ["created_at", "2020-09-03 18:22:37.027792"], ["updated_at", "2020-09-03 18:22:37.027792"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.4ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 5], ["student_id", 2], ["word_id", 8], ["created_at", "2020-09-03 18:22:37.035534"], ["updated_at", "2020-09-03 18:22:37.035534"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.5ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 5], ["student_id", 2], ["word_id", 7], ["created_at", "2020-09-03 18:22:37.040741"], ["updated_at", "2020-09-03 18:22:37.040741"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFavorite Create (0.3ms)[0m  [1m[32mINSERT INTO "favorites" ("priority_level", "student_id", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["priority_level", 5], ["student_id", 2], ["word_id", 4], ["created_at", "2020-09-03 18:22:37.049406"], ["updated_at", "2020-09-03 18:22:37.049406"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.3ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "A blueprint for creating instances; manages data in the database"], ["word_id", 1], ["created_at", "2020-09-03 18:22:37.057553"], ["updated_at", "2020-09-03 18:22:37.057553"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.6ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Communicates between the model (database) and views (user interface/website/browser)"], ["word_id", 2], ["created_at", "2020-09-03 18:22:37.067857"], ["updated_at", "2020-09-03 18:22:37.067857"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.5ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "A controller is the waiter; between the model and the view. It determines what the user will be doing/seeing based on the request"], ["word_id", 2], ["created_at", "2020-09-03 18:22:37.075506"], ["updated_at", "2020-09-03 18:22:37.075506"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.4ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "A hash with all the spicy user's input from the url input field or forms"], ["word_id", 3], ["created_at", "2020-09-03 18:22:37.088995"], ["updated_at", "2020-09-03 18:22:37.088995"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.4ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Rails safeguard against the meanies of the world -- it's a nested hash"], ["word_id", 4], ["created_at", "2020-09-03 18:22:37.094529"], ["updated_at", "2020-09-03 18:22:37.094529"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.4ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Client sends a requests to get information to/from the server"], ["word_id", 5], ["created_at", "2020-09-03 18:22:37.100541"], ["updated_at", "2020-09-03 18:22:37.100541"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.3ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "What server sends back to the user (client) after it processes the data"], ["word_id", 6], ["created_at", "2020-09-03 18:22:37.108941"], ["updated_at", "2020-09-03 18:22:37.108941"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.4ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "'<% %>': Ice cream cone evaluates ruby code but does not print"], ["word_id", 7], ["created_at", "2020-09-03 18:22:37.113983"], ["updated_at", "2020-09-03 18:22:37.113983"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.3ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "'<%= %>': angry squid shoots ink or evaluates ruby code and prints"], ["word_id", 8], ["created_at", "2020-09-03 18:22:37.118718"], ["updated_at", "2020-09-03 18:22:37.118718"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.5ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "A route is a path that allows you access a page of your preference; it connects with an appropriate method and renders an appropriate view"], ["word_id", 9], ["created_at", "2020-09-03 18:22:37.125899"], ["updated_at", "2020-09-03 18:22:37.125899"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.3ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "The HTML files (what is displayed on the browser)"], ["word_id", 10], ["created_at", "2020-09-03 18:22:37.133180"], ["updated_at", "2020-09-03 18:22:37.133180"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDefinition Create (0.3ms)[0m  [1m[32mINSERT INTO "definitions" ("content", "word_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Model-View-Controller, its a design pattern for building web applications  (chef, waiter, serving/dining table)"], ["word_id", 11], ["created_at", "2020-09-03 18:22:37.138246"], ["updated_at", "2020-09-03 18:22:37.138246"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "students"."password_digest" FROM "students" ORDER BY "students"."first_name" ASC[0m
+Started GET "/students/new" for ::1 at 2020-09-03 14:26:26 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 13.8ms | Allocations: 3518)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 50.6ms | ActiveRecord: 0.8ms | Allocations: 19840)
+
+
+Started GET "/students/new" for ::1 at 2020-09-03 14:28:22 -0400
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 18.4ms | Allocations: 3626)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 8589)
+
+
+Started POST "/students" for ::1 at 2020-09-03 14:28:54 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"sgOMTxr43eg1e3OF75ntT6Nm3h5TWfFy8vgGWHclwSDNyly5VcYtE7ecoEzKGdMVTtTE94X0KhghC6Hqp8KuBg==", "student"=>{"first_name"=>"", "last_name"=>"", "age"=>"", "password"=>"[FILTERED]"}, "commit"=>"Ready!"}
+[31mUnpermitted parameter: :password[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `create'
+Redirected to http://localhost:3000/students/new
+Completed 302 Found in 23ms (ActiveRecord: 1.0ms | Allocations: 11473)
+
+
+Started GET "/students/new" for ::1 at 2020-09-03 14:28:54 -0400
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 3.9ms | Allocations: 994)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 5132)
+
+
+Started GET "/students/new" for ::1 at 2020-09-03 14:30:52 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.7ms | Allocations: 1049)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 18.8ms | ActiveRecord: 0.7ms | Allocations: 12081)
+
+
+Started POST "/students" for ::1 at 2020-09-03 14:31:03 -0400
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"61I6j+DcoszjNx1ogxAR6OwmvCGXrYQ7ZIdk+kBVGhqUm+p5r+JSN2HQzqGmkC+yAZSmyEEAX1G3dMNIkLJ1PA==", "student"=>{"first_name"=>"Michelle", "last_name"=>"Pathe", "age"=>"14", "password"=>"[FILTERED]"}, "commit"=>"Ready!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[36mStudent Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? LIMIT ?[0m  [["first_name", "Michelle"], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? LIMIT ?[0m  [["last_name", "Pathe"], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[36mStudent Create (0.6ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "age", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Michelle"], ["last_name", "Pathe"], ["age", 14], ["created_at", "2020-09-03 18:31:03.485474"], ["updated_at", "2020-09-03 18:31:03.485474"], ["password_digest", "$2a$12$YYJQUlGAIXpiFqiXq11.ae1y8ntxx82GQM/ZJO0mqboSLiql6Uu1G"]]
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:14:in `create'
+  [1m[36mStudent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."first_name" = ? AND "students"."id" != ? LIMIT ?[0m  [["first_name", "Michelle"], ["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `create'
+  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."last_name" = ? AND "students"."id" != ? LIMIT ?[0m  [["last_name", "Pathe"], ["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:15:in `create'
+Redirected to http://localhost:3000/students
+Completed 302 Found in 263ms (ActiveRecord: 3.6ms | Allocations: 7128)
+
+
+Started GET "/students" for ::1 at 2020-09-03 14:31:03 -0400
+Processing by StudentsController#index as HTML
+  Rendering students/index.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."first_name" ASC[0m
+  ↳ app/views/students/index.erb:4:in `map'
+  Rendered students/index.erb within layouts/application (Duration: 2.6ms | Allocations: 1096)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.3ms | Allocations: 5316)
+
+
+Started GET "/students/new" for ::1 at 2020-09-03 14:32:21 -0400
+Processing by StudentsController#new as HTML
+  Rendering students/new.erb within layouts/application
+  Rendered students/new.erb within layouts/application (Duration: 1.6ms | Allocations: 984)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 5096)
+
+
+Started GET "/tacos" for ::1 at 2020-09-03 14:36:04 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#login as HTML
+Completed 406 Not Acceptable in 15953ms (ActiveRecord: 0.0ms | Allocations: 41383)
+
+
+  
+ActionController::MissingExactTemplate (StudentsController#login is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.2) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/tacos" for ::1 at 2020-09-03 14:37:03 -0400
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 0.3ms | Allocations: 81)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4455ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 7551)
+
+
+Started GET "/login" for ::1 at 2020-09-03 14:37:33 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 4210)
+
+
+Started GET "/login" for ::1 at 2020-09-03 14:39:49 -0400
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 0.5ms | Allocations: 212)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5171)
+
+
+Started GET "/login" for ::1 at 2020-09-03 14:41:17 -0400
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 0.9ms | Allocations: 263)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 5212)
+
+
+Started GET "/login" for ::1 at 2020-09-03 14:41:42 -0400
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 1.0ms | Allocations: 326)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 5267)
+
+
+Started GET "/login" for ::1 at 2020-09-03 14:41:56 -0400
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 1.0ms | Allocations: 365)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 5308)
+
+
+Started GET "/login" for ::1 at 2020-09-03 14:43:32 -0400
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 1.8ms | Allocations: 432)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 5390)
+
+
+Started GET "/login" for ::1 at 2020-09-03 14:43:44 -0400
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 1.7ms | Allocations: 481)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 5429)
+
+
+Started POST "/send_the_form_here" for ::1 at 2020-09-03 14:44:03 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/send_the_form_here"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/login" for ::1 at 2020-09-03 14:45:07 -0400
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 0.8ms | Allocations: 481)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 5433)
+
+
+Started GET "/login" for ::1 at 2020-09-03 14:46:07 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 0.4ms | Allocations: 268)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 4465)
+
+
+Started GET "/send_the_form_here" for ::1 at 2020-09-03 14:46:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/send_the_form_here"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/send_the_form_here" for ::1 at 2020-09-03 14:46:36 -0400
+Processing by StudentsController#handle_login as HTML
+  Parameters: {"authenticity_token"=>"FV9MnisbMredoehhEOopEJpyTGWULYXZkXmgoThGzbJqlpxoZCXCTB9GO6g1ahdKd8BWjEKAXrNCigcT6KGilA==", "first_name"=>"Eric", "chicken"=>"abc123", "commit"=>"Login!"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."first_name" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["first_name", "Eric"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `handle_login'
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."first_name" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["first_name", "Eric"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `handle_login'
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."first_name" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["first_name", "grandmaster slamma jamma"], ["LIMIT", 1]]
+  ↳ (byebug):1:in `handle_login'
+Completed 500 Internal Server Error in 684191ms (ActiveRecord: 1.0ms | Allocations: 1708361)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `handle_login'
+app/controllers/students_controller.rb:9:in `handle_login'
+Started GET "/login" for ::1 at 2020-09-03 14:58:03 -0400
+  [1m[35m (11.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 18.5ms | Allocations: 101910)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 168ms (Views: 144.0ms | ActiveRecord: 0.0ms | Allocations: 912865)
+
+
+Started POST "/send_the_form_here" for ::1 at 2020-09-03 14:59:43 -0400
+Processing by StudentsController#handle_login as HTML
+  Parameters: {"authenticity_token"=>"p2ObQkdv3UjQi3NkmtiG0N09AZuL58VzJQhnxV8ndM/Yqku0CFEts1JsoK2/WLiKMI8bcl1KHhn2+8B3j8Ab6Q==", "first_name"=>"Eric", "chicken"=>"abc123kjgnrjkghzrjkfjhklrjhilrlhjf", "commit"=>"Login!"}
+  [1m[36mStudent Load (1.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."first_name" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["first_name", "Eric"], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:8:in `handle_login'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 698ms (ActiveRecord: 12.7ms | Allocations: 3399921)
+
+
+Started GET "/login" for ::1 at 2020-09-03 14:59:43 -0400
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 32.5ms | Allocations: 119529)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 161ms (Views: 136.7ms | ActiveRecord: 0.0ms | Allocations: 1022760)
+
+
+Started POST "/send_the_form_here" for ::1 at 2020-09-03 14:59:57 -0400
+Processing by StudentsController#handle_login as HTML
+  Parameters: {"authenticity_token"=>"NskH6gHNNV7Kw6fV8g0Voto9xBPL1th4VfNEKliSwJlJANccTvPFpUgkdBzXjSv4N4/e+h17AxKGAOOYiHWvvw==", "first_name"=>"Erick", "chicken"=>"abc123", "commit"=>"Login!"}
+  [1m[36mStudent Load (1.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."first_name" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["first_name", "Erick"], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:8:in `handle_login'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 96ms (ActiveRecord: 1.0ms | Allocations: 498018)
+
+
+Started GET "/login" for ::1 at 2020-09-03 14:59:58 -0400
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 25.0ms | Allocations: 119529)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 158ms (Views: 136.9ms | ActiveRecord: 0.0ms | Allocations: 1022763)
+
+
+Started POST "/send_the_form_here" for ::1 at 2020-09-03 15:00:07 -0400
+Processing by StudentsController#handle_login as HTML
+  Parameters: {"authenticity_token"=>"UOND/yGINZMA7Ed385D4JGvQjxno8qjfY7tJatbY0YcvKpMJbrbFaIILlL7WEMZ+hmKV8D5fc7WwSO7YBj++oQ==", "first_name"=>"Eric", "chicken"=>"abc123", "commit"=>"Login!"}
+  [1m[36mStudent Load (7.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."first_name" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["first_name", "Eric"], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:8:in `handle_login'
+Redirected to http://localhost:3000/students/1
+Completed 302 Found in 331ms (ActiveRecord: 7.2ms | Allocations: 519206)
+
+
+Started GET "/students/1" for ::1 at 2020-09-03 15:00:07 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:50:in `get_student'
+  Rendering students/show.erb within layouts/application
+  [1m[36mFavorite Load (1.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 1]]
+  ↳ app/views/students/show.erb:13
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/students/show.erb:14
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/students/show.erb:14
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/students/show.erb:14
+  Rendered students/show.erb within layouts/application (Duration: 626.1ms | Allocations: 3698601)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 822ms (Views: 705.0ms | ActiveRecord: 44.0ms | Allocations: 4894795)
+
+
+Started GET "/login" for ::1 at 2020-09-03 15:01:33 -0400
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 38.0ms | Allocations: 180292)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 219ms (Views: 184.2ms | ActiveRecord: 0.0ms | Allocations: 1428804)
+
+
+Started POST "/send_the_form_here" for ::1 at 2020-09-03 15:01:41 -0400
+Processing by StudentsController#handle_login as HTML
+  Parameters: {"authenticity_token"=>"SCaeya7L2Qo3FjY42/xzNLVHWFYBoFCMbMeA5jpU3t83704/4fUp8bXx5fH+fE1uWPVCv9cNi+a/NCdU6rOx+Q==", "first_name"=>"Eric", "chicken"=>"fegjlaeigagegegaegfzdfdfdaf", "commit"=>"Login!"}
+  [1m[36mStudent Load (7.8ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."first_name" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["first_name", "Eric"], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:9:in `handle_login'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 643ms (ActiveRecord: 30.7ms | Allocations: 2449795)
+
+
+Started GET "/login" for ::1 at 2020-09-03 15:01:42 -0400
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 19.5ms | Allocations: 139770)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 221ms (Views: 189.6ms | ActiveRecord: 0.0ms | Allocations: 1186028)
+
+
+Started POST "/send_the_form_here" for ::1 at 2020-09-03 15:01:50 -0400
+Processing by StudentsController#handle_login as HTML
+  Parameters: {"authenticity_token"=>"HXE6+jr+R/cbCqQHEidEIcdl28xwQ5G01WAPN7O4rZFiuOoMdcC3DJntd843p3p7KtfBJabuSt4Gk6iFY1/Ctw==", "first_name"=>"Eric", "chicken"=>"abc123", "commit"=>"Login!"}
+  [1m[36mStudent Load (2.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."first_name" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["first_name", "Eric"], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:9:in `handle_login'
+Redirected to http://localhost:3000/students/1
+Completed 302 Found in 368ms (ActiveRecord: 2.0ms | Allocations: 593093)
+
+
+Started GET "/students/1" for ::1 at 2020-09-03 15:01:50 -0400
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (2.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? ORDER BY "students"."first_name" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:52:in `get_student'
+  Rendering students/show.erb within layouts/application
+  [1m[36mFavorite Load (4.8ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."student_id" = ? ORDER BY priority_level DESC[0m  [["student_id", 1]]
+  ↳ app/views/students/show.erb:13
+  [1m[36mWord Load (6.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/students/show.erb:14
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/students/show.erb:14
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/students/show.erb:14
+  Rendered students/show.erb within layouts/application (Duration: 654.9ms | Allocations: 4136397)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 897ms (Views: 767.0ms | ActiveRecord: 44.1ms | Allocations: 5510356)
+
+
+Started GET "/login" for ::1 at 2020-09-03 15:02:18 -0400
+Processing by StudentsController#login as HTML
+  Rendering students/login.erb within layouts/application
+  Rendered students/login.erb within layouts/application (Duration: 31.2ms | Allocations: 134718)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 236ms (Views: 188.8ms | ActiveRecord: 0.0ms | Allocations: 1175758)
+
+

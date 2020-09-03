@@ -1,6 +1,22 @@
 class StudentsController < ApplicationController
   before_action :get_student, only: [:show, :edit, :update, :destroy]
 
+  def login
+    @error = flash[:error]
+  end
+
+  def handle_login
+    @student = Student.find_by(first_name: params[:first_name])
+
+    if @student && @student.authenticate(params[:password])
+      # If the student is found AND their password matches
+      redirect_to student_path(@student)
+    else
+      flash[:error] = "Incorrect username or password"
+      redirect_to login_path
+    end
+  end
+
   def index
     @students = Student.all
   end
@@ -37,7 +53,7 @@ class StudentsController < ApplicationController
   end
 
   def student_params
-    params.require(:student).permit(:first_name, :last_name, :age)
+    params.require(:student).permit(:first_name, :last_name, :age, :password)
   end
 
 end

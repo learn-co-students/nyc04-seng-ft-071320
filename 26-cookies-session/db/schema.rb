@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_31_165314) do
+ActiveRecord::Schema.define(version: 2020_09_03_180249) do
 
   create_table "definitions", force: :cascade do |t|
     t.string "content"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 2020_08_31_165314) do
     t.integer "age"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "password_digest"
   end
 
   create_table "words", force: :cascade do |t|

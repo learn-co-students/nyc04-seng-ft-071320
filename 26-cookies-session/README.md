@@ -18,8 +18,18 @@ Rails Authentication & Authorization
 - What's the difference between Authentication vs Authorization?
 - Why don't we want to save a user's password in plaintext?
 - What is hashing and how does it make password storage more secure?
+   - "abc123" -> "bablidjilbjdij.dguherughioz.ngiajgilj"
+   - "def321" -> "eiyjeisjyiljd/eghzdkuhgkhdxugh.egeihjlixhjild"
+
 - What are rainbow tables and how can they defeat a password hashing strategy?
+  - "password123" -> "bpjrahopirjkrsklr.bfjbslkfg.fsjakfs"
+  - "password1" -> "ghdgiadlgijdf.dgadgdgz.dfasdf"
+  - "abc123" -> "bablidjilbjdij.dguherughioz.ngiajgilj"
+
 - What is salting? What is a salt? How can it defeat a rainbow tables attack?
+  - "abc123" + "hgdfnj" -> "oihfshijdsljglid.dgdlisgjlds.dgjlda"
+  - "abc123" + "bdsz" -> "gijildjzfdfsdf.gdaegr.22sdz"
+
 
 ### Implemention
 0. Install the `bcrypt` gem
