@@ -19,7 +19,6 @@
 13:58:35	 From Franklin Bado : Same for other models right.. like if you go to /words
 13:58:59	 From ChenYun Zhang : application applies to all models i think
 13:59:09	 From Annie Zheng (she/her) : Yuppp
-14:01:01	 From Annie Zheng (she/her)  To  Eric Kim(privately) : 3 mins break soon
 14:02:19	 From ChenYun Zhang : helper
 14:02:20	 From Anna Kim : before action?
 14:02:25	 From Anna Kim : get current student
@@ -32,7 +31,6 @@
 14:17:05	 From Annie Zheng (she/her) : If you want to use a method own your application controller in another, you have to write helper_method. It allows you to call those methods in the view
 14:17:29	 From Annie Zheng (she/her) : In*
 14:18:17	 From Franklin Bado : You can have more than one ?
-14:18:54	 From Hortencia  To  Eric Kim(privately) : Just in the application controller? Before action?
 14:19:52	 From Kalkidan Taye : lol
 14:19:56	 From Anna Kim : lol
 14:19:59	 From Samir Triande : ehehe
@@ -42,9 +40,7 @@
 14:21:37	 From Franklin Bado : Points to a method
 14:22:16	 From Annie Zheng (she/her) : button_to give you a HTML form that makes a request-response
 14:22:48	 From Annie Zheng (she/her) : and in the process redirects you somewhere
-14:24:30	 From Hortencia  To  Eric Kim(privately) : But you already have a “say bye Eric button on the bottom? What is that one doing?
 14:28:15	 From David Felix : How do you exclude something from the before_action
-14:28:49	 From Annie Zheng (she/her)  To  Eric Kim(privately) : Let’s take another 3 min break soon~
 14:28:52	 From Jacinta (Jacie) Calixte : ok thanks!
 14:47:37	 From Anna Kim : can we just add it?
 14:55:51	 From vina : The h1 tag needs to be closed /
