@@ -1,0 +1,19 @@
+<h1> Add a new student! </h1>
+
+<% if @errors %>
+  <% @errors.each do |error|%>
+    <p style= "color: red"> <%= error %></p>
+  <% end %>
+<% end %>
+
+<%= form_for @student do |f| %>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %> <br/>
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %><br/>
+  <%= f.label :age %>
+  <%= f.number_field :age %><br/>
+  <%= f.label :password %>
+  <%= f.password_field :password %><br/>
+  <%= f.submit "Ready!" %>
+<% end %>
