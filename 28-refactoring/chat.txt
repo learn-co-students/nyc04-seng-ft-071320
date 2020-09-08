@@ -1,0 +1,47 @@
+13:36:36	 From Annie Zheng (she/her) : Flash is a hash the lasts for on response-request cycle
+13:36:41	 From Annie Zheng (she/her) : that*
+13:37:53	 From Annie Zheng (she/her) : Each request-response is stateless -> it behaves independently from one another, if you want a request at 10AM and you make it again at 11AM. These two request don’t know about each other.
+13:39:11	 From Annie Zheng (she/her) : If we want to keep track of information, we can store it in cookies and lives in your browser. With each request response, the cookie will be sent along with each request and response. Back and forth
+13:39:29	 From Annie Zheng (she/her) : My favorite extension for reading NYT articles hehe
+13:42:21	 From Annie Zheng (she/her) : Cookie is an instance of the CookieJar class and it functions similarly to a hash where you can use key to store values
+13:48:05	 From Annie Zheng (she/her) : Cookies can be easily manipulated by using a google chrome extension. It is saved as a string datatype.
+13:49:04	 From Annie Zheng (she/her) : Cookies, params, flash, session <— all reserved words in rails
+13:50:35	 From Jacinta (Jacie) Calixte : and that’s because of the auth right?
+13:51:03	 From Annie Zheng (she/her) : Yup, because we’re using sessions now
+13:51:09	 From ChenYun Zhang : are they all independent, just like params
+13:51:52	 From Annie Zheng (she/her) : @chenyun’s question, yes — you can name it whatever you want
+13:53:58	 From Franklin Bado : In session[:student_id] this preserve the datatype?
+13:55:19	 From Annie Zheng (she/her) : @Franklin’s question, sessions preserves datatype, cookies makes it in a string
+13:56:10	 From Wilson Ng : is sessions from the gem Bcrypt or built into rails?
+13:56:11	 From ChenYun Zhang : can you use find() here? Student.find()
+13:56:45	 From ChenYun Zhang : ok, thank you
+13:58:00	 From Annie Zheng (she/her) : @Wilson, it’s built into rails
+13:58:35	 From Franklin Bado : Same for other models right.. like if you go to /words
+13:58:59	 From ChenYun Zhang : application applies to all models i think
+13:59:09	 From Annie Zheng (she/her) : Yuppp
+14:02:19	 From ChenYun Zhang : helper
+14:02:20	 From Anna Kim : before action?
+14:02:25	 From Anna Kim : get current student
+14:02:59	 From Annie Zheng (she/her) : application.html.erb applies to all of the routes so you need the instance variables that you put in application.html.erb to be accessible from the every action
+14:09:34	 From Annie Zheng (she/her) : All Controllers inherits from the ApplicationController so whatever you write in the ApplicationController will apply for the other controllers
+14:10:07	 From Samantha Balgobin : What about when you go to login?
+14:11:37	 From Samantha Balgobin : What if you’re not logged in as anyone
+14:11:45	 From Samantha Balgobin : Lol yeah that’s my question
+14:15:59	 From Anna Kim : add angry squid on line 15
+14:17:05	 From Annie Zheng (she/her) : If you want to use a method own your application controller in another, you have to write helper_method. It allows you to call those methods in the view
+14:17:29	 From Annie Zheng (she/her) : In*
+14:18:17	 From Franklin Bado : You can have more than one ?
+14:19:52	 From Kalkidan Taye : lol
+14:19:56	 From Anna Kim : lol
+14:19:59	 From Samir Triande : ehehe
+14:21:06	 From Anna Kim : redirect?
+14:21:11	 From Franklin Bado : Send it somewhere
+14:21:13	 From Jacinta (Jacie) Calixte : isn’t it a button to do something
+14:21:37	 From Franklin Bado : Points to a method
+14:22:16	 From Annie Zheng (she/her) : button_to give you a HTML form that makes a request-response
+14:22:48	 From Annie Zheng (she/her) : and in the process redirects you somewhere
+14:28:15	 From David Felix : How do you exclude something from the before_action
+14:28:52	 From Jacinta (Jacie) Calixte : ok thanks!
+14:47:37	 From Anna Kim : can we just add it?
+14:55:51	 From vina : The h1 tag needs to be closed /
+15:03:55	 From Annie Zheng (she/her) : 🌟 🌟🌟Post Lecture Check-in Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
