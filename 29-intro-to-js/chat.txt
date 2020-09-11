@@ -1,0 +1,201 @@
+13:37:43	 From Jade Decordova : I like skeletons
+13:37:56	 From Jade Decordova : File skeletons^
+13:38:49	 From Sylwia Vargas (she/her) : Three parts of the web: https://commondenominator.email/wp-content/uploads/2017/06/javascript-seo-making-your-bot-experience-as-good-as-your-user-experience.gif
+13:38:53	 From Sylwia Vargas (she/her) : (Meme)
+13:39:20	 From Isabel K. Lee (they/them) : If you want to see your website in the browser, run `open index.html` in your terminal.
+13:40:01	 From Annie Zheng (she/her) : meme is on point! 😆
+13:40:21	 From Emmanuel Jose : How do we specify browser preference for open index.html? (It always opens in safari instead of Chrome)
+13:40:51	 From Sylwia Vargas (she/her) : @Emmanuel: https://support.apple.com/en-us/HT201607
+13:41:00	 From Emmanuel Jose : Thank you Sylwia!
+13:41:01	 From Kalkidan Taye : @sylwia I agree with Annie. I will never forget the visual, especially a dancing lego.
+13:41:10	 From Anna Kim : so we won’t be writing any  routes and controller methods anymore?
+13:41:32	 From Jade Decordova : Mod 4 most likely
+13:41:56	 From Sylwia Vargas (she/her) : @Emmanuel, you can also set the default browser through your terminal by running: defaultbrowser chrome
+13:42:12	 From Emmanuel Jose : Oooh, thank you!
+13:42:26	 From Sylwia Vargas (she/her) : Well, first: make install
+13:42:37	 From Sylwia Vargas (she/her) : and then: defaultbrowser chrome
+13:43:24	 From Sylwia Vargas (she/her) : Or you can add arguments to the “open” command:
+13:43:58	 From Sylwia Vargas (she/her) : open index.html -a safari
+13:44:11	 From Dong Xia : does the js script have to be in the header or can it be in the body?
+13:45:07	 From Alex E (she/her) : convention is to put it in the <header> or in the <head>?
+13:45:27	 From Sylwia Vargas (she/her) : <head> is a tag that communicates metadata with the browser
+13:46:08	 From Sylwia Vargas (she/her) : so everything that’s in the <head> tag is really info for the browser
+13:47:17	 From Alex E (she/her) : Was that Daisy who had a question?
+13:47:28	 From Isabel K. Lee (they/them) : sorry daisy!
+13:48:34	 From Jacinta (Jacie) Calixte : so script connects the html file to the js file?
+13:48:35	 From Sylwia Vargas (she/her) : You could also write the js in the <script> tag but that’s really bad practice if you have more than 5 lines of code :D
+13:48:43	 From Sylwia Vargas (she/her) : @Jacie: yes
+13:49:34	 From Sylwia Vargas (she/her) : <script> connects the html file with a script — it can be in a folder or external (e.g. if you want to implement google analytics, that would be an external script)
+13:50:38	 From Sylwia Vargas (she/her) : Good question!
+13:50:43	 From Sylwia Vargas (she/her) : @Franklin ++
+13:50:54	 From Sylwia Vargas (she/her) : Let’s park it until Monday
+13:53:11	 From Sylwia Vargas (she/her) : 0.1*0.1
+13:53:17	 From Sylwia Vargas (she/her) : Evaluates to funky numbers
+13:57:15	 From Sylwia Vargas (she/her) : -----
+13:58:07	 From Sylwia Vargas (she/her) : var is being now phased out. It is considered a legacy code — it will still be because 95% of the internet runs on javascript and much of it contains “var”. However, the general consensus is not to use var nowadays.
+13:58:08	 From Samir Triande : Is it okay to kind of remember var as global  or instance variable. And let and const local variables?
+13:58:25	 From Kalkidan Taye : Thank you Sylwia that was going to be my next question.
+13:58:28	 From Sylwia Vargas (she/her) : @Samir, nope, that’s too much of a stretch
+13:58:45	 From Samir Triande : Okay. Thank you
+13:58:51	 From Sylwia Vargas (she/her) : Especially that there’s also another globally-scoped vars
+13:58:54	 From Sylwia Vargas (she/her) : variables*
+14:00:35	 From Sylwia Vargas (she/her) : Initially, there was only “var” — because of that, you can both re-declare it and update it. “Let” and “const” forces you to be aware of what and why you want to use them and will hold you accountable of those decisions
+14:00:37	 From Sylwia Vargas (she/her) : :)
+14:01:34	 From ChenYun Zhang : if i declare a variable without var, let, and const, this variable will be global variable?
+14:01:55	 From Sylwia Vargas (she/her) : ChenYun -> yes
+14:02:01	 From Sylwia Vargas (she/her) : That trips many people up
+14:02:11	 From Sylwia Vargas (she/her) : ——————————
+14:02:26	 From Sylwia Vargas (she/her) : CONST: you cannot change the datatype
+14:02:29	 From ChenYun Zhang : even though i define it inside of the function?
+14:02:31	 From Sylwia Vargas (she/her) : LET: you can change the datatype
+14:02:47	 From ChenYun Zhang : ok
+14:02:50	 From ChenYun Zhang : ty
+14:02:51	 From Kalkidan Taye : Great questions Chenyun!
+14:02:58	 From Anna Kim : can you mutate const inside a function?
+14:03:28	 From Anna Kim : thank you
+14:04:18	 From Sylwia Vargas (she/her) : That’s also a difference with Ruby: in Ruby, CONST can be reassigned but will throw a warning; JS will throw an error and break the code if you try to reassign the const
+14:05:25	 From Anna Kim : no underscores in js function names
+14:05:29	 From Anna Kim : ?
+14:07:20	 From Wilson Ng : oh no
+14:07:25	 From Anna Kim : uhoh
+14:07:32	 From Waverley Leung : :(
+14:07:44	 From Kalkidan Taye : Modulo?
+14:08:20	 From Anna Kim : js getting mathy….
+14:08:30	 From Franklin Bado : === ? not just ==
+14:08:33	 From ChenYun Zhang : what’s the difference between == and ===
+14:09:00	 From Anna Kim : ^
+14:09:37	 From Christy Tropila : what is an example of == being true but === being false
+14:10:07	 From Christy Tropila : cool
+14:10:24	 From Waverley Leung : :0
+14:11:54	 From Patrick Pierre : @chenyun == converts that “0” to a number
+14:12:02	 From Waverley Leung : @ the video Sylwia shared last night 😂
+14:12:30	 From ChenYun Zhang : yep
+14:13:44	 From ChenYun Zhang : and the result returns the value?
+14:13:59	 From ChenYun Zhang : ok
+14:15:54	 From ChenYun Zhang : if you don’t use the return keyword in js, and the last line of your function is a variable, does js just return the  variable like ruby?
+14:16:19	 From ChenYun Zhang : ok ty
+14:16:22	 From Wilson Ng : what’s the equivalent of ‘ruby filename.rb’ in javascript?
+14:16:24	 From Waverley Leung : are we not using the terminal as a console anymore? so we need to use google’s?
+14:16:50	 From ChenYun Zhang : just use the dev tool
+14:17:04	 From Waverley Leung : thank you!
+14:17:08	 From Christy Tropila : I love this dev tool. so cool
+14:17:52	 From Sylwia Vargas (she/her) : js is a dynamically-typed language
+14:17:57	 From Alex E (she/her) : Number of elements in the array?
+14:18:00	 From Anna Kim : it doesn’t return typeerror
+14:18:07	 From Sylwia Vargas (she/her) : And so you do not need to specify datatype of arguments or vars
+14:18:10	 From Sylwia Vargas (she/her) : variables*
+14:18:30	 From Anna Kim : so we have to be more vigilant lol
+14:18:34	 From Sylwia Vargas (she/her) : yes
+14:18:46	 From Anna Kim : oh ruby how good you were to us with those error msgs
+14:18:51	 From Christy Tropila : when you passed in that array to the function was the array index's being summed before executing ? 
+14:19:11	 From Christy Tropila : cool
+14:19:20	 From Anna Kim : can we do isItEven(arr[3])?
+14:19:58	 From Sylwia Vargas (she/her) : ✨ For the curious souls ✨ 0 == [] is true because of a quirk: the [] (empty array that in reality is truthy in JS) is coerced to a number and the only number that an array has is its length, which is 0 in this case AND IN JS 0 IS FALSE
+14:26:53	 From Jacinta (Jacie) Calixte : ANNA! ur dog is cuteeee
+14:27:01	 From Sylwia Vargas (she/her) : ^^^
+14:27:04	 From Emmanuel Jose : ^^^
+14:27:07	 From Sylwia Vargas (she/her) : It also had enough of js
+14:27:15	 From Jacinta (Jacie) Calixte : LOL
+14:27:19	 From Kalkidan Taye : Lol
+14:27:24	 From Anna Kim : thank you Jacie !!
+14:27:41	 From Emmanuel Jose : Ruby is like Ms. Honey from Matilda. JS is like Trunchbull.
+14:27:47	 From Anna Kim : ^^^
+14:27:53	 From Anna Kim : i love that movie...
+14:27:57	 From Waverley Leung : ^^^^ omg 😂
+14:27:58	 From Kalkidan Taye : Nooo don’t say that
+14:28:06	 From Anna Kim : LOLomg
+14:28:08	 From Emmanuel Jose : YES ERIC!
+14:28:10	 From Sylwia Vargas (she/her) : yeah Eric is a JS.
+14:28:29	 From Kalkidan Taye : Ms. Trunchball was tough but I believe deep down she was just misunderstood.
+14:28:52	 From Sylwia Vargas (she/her) : ^ just like JS
+14:29:04	 From Christy Tropila : are semicolons not required at the end of the block?
+14:29:10	 From Waverley Leung : ^^
+14:29:15	 From Sylwia Vargas (she/her) : They are required only in some cases
+14:29:21	 From Sylwia Vargas (she/her) : e.g. in the for loop
+14:29:24	 From Christy Tropila : interesting
+14:29:35	 From Sylwia Vargas (she/her) : Otherwise, the interpreter will insert them
+14:29:40	 From Sylwia Vargas (she/her) : e.g. vs code or the browser
+14:29:50	 From Christy Tropila : js has our back too
+14:29:54	 From Sylwia Vargas (she/her) : no
+14:29:57	 From Sylwia Vargas (she/her) : The browser does
+14:30:05	 From Christy Tropila : oh lol yay browser
+14:30:37	 From Kalkidan Taye : FYI Matilda had me convinced I could move things with my mind, imagine the disappointment when I found out I couldn’t lol
+14:31:21	 From Emmanuel Jose : @Kalkidan, same! The cast had a reunion and they recreated the chocolate cake scene on YouTube :)
+14:31:22	 From Sylwia Vargas (she/her) : ‼ !! var bleeds out of the scope and mess up your code
+14:31:49	 From Christy Tropila : I still fantasize about eating a cake like that 
+14:31:56	 From Christy Tropila : someday
+14:32:23	 From Anna Kim : so if you define it inside the block, you have to call the variable within the block?
+14:32:30	 From Kalkidan Taye : Is that when the concept of hoisting hits? I always read about it but I don’t get it as much
+14:32:34	 From Sylwia Vargas (she/her) : DO NOT USE VAR.
+14:32:41	 From Sylwia Vargas (she/her) : VAR IS A RELIC OF THE PAST.
+14:33:02	 From Sylwia Vargas (she/her) : @Kalkidan: hoisting is another thing
+14:34:21	 From Kalkidan Taye : Ok.
+14:34:24	 From Sylwia Vargas (she/her) : About hoisting: JS reads the code twice (first it reads it, then it executes it); on the first go, it already notices all the functions declared with the “function” keyword; it is aware of them and because of that, you can call the functions e.g. at the top of the file and have them declared at the bottom (messy code)
+14:34:32	 From Sylwia Vargas (she/her) : (You can but you shouldn’t)
+14:34:54	 From Kalkidan Taye : Cool…thank you.
+14:35:59	 From ChenYun Zhang : if we put let thingtotoreturn inside of if statement, the variable name can’t be used again. because it is being declared, even though it’s undefined?
+14:38:10	 From Jade Decordova : Noted
+14:39:36	 From Sylwia Vargas (she/her) : Ruby would already tell you that you’re giving too many or too few args 😭
+14:39:50	 From Sylwia Vargas (she/her) : JS is like: “oh well, you’ll have to debug it yourself ¯\_(ツ)_/¯ "
+14:40:50	 From Maysoon : How about if you have 2 and 3
+14:41:01	 From ChenYun Zhang : JS: you are a grown up, figure it out yourself,
+14:41:12	 From Maysoon : I see thanks
+14:41:30	 From Sylwia Vargas (she/her) : (Whenever Eric says “is it even”, I subconsciously hope he’ll diss JS: “is it even a language?!”)
+14:41:43	 From Franklin Bado : Can you just add on the function then (num, num) and that way will work on the two arguments passed in ?
+14:42:07	 From Jade Decordova : LOL @Sylwia
+14:42:11	 From Wilson Ng : 😹😹😹 @sylwia
+14:43:03	 From Sylwia Vargas (she/her) : @Franklin -> I don’t understand your q, rephrase please
+14:44:50	 From Franklin Bado : Right now the function isItEven only takes one arg, and the arg is num, there is logic for it, so if we want to invoke the function with 2 args,  like isItEven(2,45) then we just add one more arg on the lines where the function was defined so the function will look like IsItEven( num, num) and then would that work?
+14:45:09	 From Sylwia Vargas (she/her) : yes
+14:45:13	 From Sylwia Vargas (she/her) : thx
+14:45:49	 From Maysoon : That was a good question Franklin
+14:47:23	 From Sylwia Vargas (she/her) : So in JS you can pass functions as arguments. You can either pass a function definition (e.g. put a function in a box and give it to the other function as a gift) or invoke it right away (and that’s called a callback)
+14:49:29	 From Jacinta (Jacie) Calixte : wow I actually remember this
+14:49:32	 From Samir Triande : I miss Algebra
+14:49:35	 From Samantha Balgobin : Good analogy
+14:49:37	 From Waverley Leung : oof a throwback
+14:49:53	 From Franklin Bado : 20
+14:55:49	 From Anna Kim : loop inside of loop is happening...
+14:56:28	 From Christy Tropila : Is this a better method than writing out a for loop?
+14:56:51	 From Sylwia Vargas (she/her) : In majority of cases yes
+14:57:58	 From Jade Decordova : Got it
+14:58:26	 From Christy Tropila : hmm but why? It seems like an extra step
+14:58:40	 From Sylwia Vargas (she/her) : @Christy, what is your q about?
+14:59:03	 From Christy Tropila : why we went about iterating through the array this way instead of writing out a function that includes a for loop
+14:59:23	 From Sylwia Vargas (she/her) : Because forEach is an optimized for loop
+14:59:34	 From Anna Kim : is forEach the only enumerable method for Js?
+14:59:42	 From Christy Tropila : ah okay I understand
+15:00:18	 From Anna Kim : ok that was what i was going to ask next. enumerable requires a call back functions
+15:04:05	 From Anna Kim : it is like | var | in ruby methods? how the name doesn’t matter
+15:05:33	 From Anna Kim : where did originalArray?
+15:05:35	 From Samantha Balgobin : Oh I see those 3 parameters are by convention?
+15:05:38	 From Anna Kim : come from*
+15:05:46	 From Samantha Balgobin : Thanks
+15:05:57	 From Christy Tropila : so the second parameter is always the index of the array?
+15:06:06	 From Anna Kim : originalArray is not reserved word right?
+15:06:17	 From Anna Kim : just takes unto 3 parameters
+15:06:29	 From Sylwia Vargas (she/her) : >so the second parameter is always the index of the array? No, that’s what Eric just wrote just now
+15:08:11	 From Christy Tropila : How does console.log("index:", idx) know to display an index number then
+15:08:31	 From Christy Tropila : that's why im confused on the parameter order
+15:08:41	 From Samantha Balgobin : ^ yeah im confused now, I thought that the second parameter for forEach is the index, even though you can name it whatever you want
+15:08:46	 From Anna Kim : ^
+15:08:48	 From Christy Tropila : yea
+15:08:56	 From Sylwia Vargas (she/her) : Ahhhhhh ok!
+15:09:14	 From Christy Tropila : ya that's what I thought! 
+15:09:14	 From Anna Kim : is it because it’s an array datatype?
+15:09:17	 From Christy Tropila : phew
+15:09:26	 From Franklin Bado : Is there like a binding.pry or byebug here in js?
+15:09:28	 From Sylwia Vargas (she/her) : I’m sorry, I was multitasking ;-;
+15:09:34	 From Sylwia Vargas (she/her) : @Franklin -> debugger
+15:09:35	 From Christy Tropila : omg don't be sorry lol
+15:09:38	 From Christy Tropila : I don't know how to word questions
+15:10:11	 From Samantha Balgobin : ^ I understood what you were asking :)
+15:10:41	 From Christy Tropila : @samantha  :)
+15:11:13	 From Anna Kim : so if we for get pass the 3rd argument for forEach, will it error?
+15:11:17	 From Anna Kim : forget*
+15:12:01	 From Anna Kim : ah yes that’s what i meant. sorry! forgot how to ask it to right wayy
+15:12:48	 From Samantha Balgobin : So for ruby whenever I want to find the return value of something, I use lots of “p” statements. Is there anything analogous to that for js
+15:12:51	 From Samantha Balgobin : Outside of a debugger
+15:13:05	 From Annie Zheng (she/her) : 🌟 🌟🌟Post Lecture Check-in Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+15:13:11	 From Samantha Balgobin : Oh in console
+15:13:19	 From Samantha Balgobin : thanks
