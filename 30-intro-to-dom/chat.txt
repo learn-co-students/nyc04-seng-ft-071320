@@ -1,0 +1,41 @@
+00:16:32	Patrick Pierre:	What does “stateless” mean in this context?
+00:19:41	Annie Zheng (she/her):	@patrick’s question, each request-response behaves independently from each other. the server doesn’t keep track of how many request-response you’ve made
+00:22:13	Christy Tropila:	coffee dad is probably so confused lol
+00:22:47	Anna Kim:	Will each of those events (input) need their own controller?
+00:22:53	Annie Zheng (she/her):	in mod2, the browser refreshes in order for the update the browser/dom (ex: likes) to increase 
+In mod3, we want to update the browser/dom (ex: likes) without a page refresh
+00:24:13	Annie Zheng (she/her):	@Anna’s question: for the js, each event handler will have it’s own function but no controller
+00:24:17	Anna Kim:	so, don’t think about MVC at the moment.
+00:24:32	Anna Kim:	ok thank you
+00:32:47	Bella Evalle:	Peach mango pie lol
+00:33:14	Anna Kim:	🥧yum
+00:45:32	Emmanuel Jose:	Is the window variable something we ever manipulate?
+00:46:02	Emmanuel Jose:	Thank you!
+00:56:17	Patrick Pierre:	What’s the difference between null and undefined?
+00:56:46	Anna Kim:	something can exist without being undefined^
+00:58:38	Franklin Bado:	You can pass the .bad as well right?
+00:59:07	Anna Kim:	since there is only one body, can you do body.querySelector?
+00:59:16	Anna Kim:	ah okay
+00:59:19	ChenYun Zhang:	can you do querySelector(“ul li”)
+01:00:40	Eric Kim:	https://www.w3schools.com/cssref/css_selectors.asp
+01:01:22	Franklin Bado:	If you do querySelector(‘ul li’) then it means that ul has to exist right? Like if you have the li wrap with ol instead, then it will say null?
+01:05:58	Emmanuel Jose:	Can we see the DevTools Elements tab?
+01:10:10	Patrick Pierre:	Is there any difference between a nodelist and an html collection?
+01:34:56	ChenYun Zhang:	what the difference between innerHTML and innerText
+01:35:03	Anna Kim:	^^
+01:35:10	Anna Kim:	textContent too
+01:37:52	Patrick Pierre:	What is the difference between append and appendChild?
+01:39:24	Dong Xia:	what about prepend()?
+01:40:12	Anna Kim:	same concept for remove vs removeChild?
+01:44:52	Samantha Balgobin:	Power thru
+01:44:52	Patrick Pierre:	break
+02:00:45	ChenYun Zhang:	forEach?
+02:06:57	Annie Zheng (she/her):	🌟 🌟🌟Post Lecture Check-in Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+02:07:13	Isabel K. Lee (they/them):	don’t forget to fill out the mod 2 survey plz!
+02:07:43	Isabel K. Lee (they/them):	https://forms.gle/SYuNni87PrhBceeJ8
+02:08:04	Anna Kim:	@annie, is today the starting day of alto club?
+02:08:08	Anna Kim:	algo*
+02:08:12	Annie Zheng (she/her):	No it’s in 3 weeks
+02:08:14	Annie Zheng (she/her):	lol
+02:08:17	Anna Kim:	lolll my bad
+02:08:29	Annie Zheng (she/her):	Nahh, thanks for the interest :)
