@@ -1,0 +1,46 @@
+01:07:11	Maysoon:	I happy to see CodePen being used!
+01:07:20	Hortencia:	^^^^^
+01:27:31	Anna Kim:	querySelector?
+01:27:47	Waverley Leung:	Anna ++
+01:27:54	ChenYun Zhang:	^^^^^
+01:27:58	David Felix:	getElementById?
+01:28:01	Christy Tropila:	++++
+01:29:09	Alex E (she/her):	can we document.getElementByClass(“nav-button”) ?
+01:32:42	David Felix:	Dom is not loaded yet
+01:33:14	Franklin Bado:	What is type = “text/js” for? along script tag
+01:35:01	Maysoon:	As a rule should we always put defer in the script automatically
+01:35:13	Maysoon:	Ty
+01:35:22	Anna Kim:	is defer similar to DOMContentLoaded? defer seems simpler to use
+01:36:40	Anna Kim:	learn co should update this info. add ‘defer’!
+01:46:43	ChenYun Zhang:	without
+01:47:03	Patrick Pierre:	How do you know that you have hit your debugger?
+01:48:56	Patrick Pierre:	Thank you
+01:49:20	Maysoon:	Is it true to say that you would always only use a function def when creating an Event?
+01:50:19	Maysoon:	I see thanks!
+02:01:29	Wilson Ng:	eric, if you explicitly return it, would it appear on the console?
+02:02:17	Anna Kim:	if you set a function variable on line 24, can you call tacoLi through the first variable?
+02:02:57	Anna Kim:	ohh
+02:03:27	Franklin Bado:	Append it to a new guy
+02:06:57	Franklin Bado:	Append is kinda like push?
+02:11:56	Lida:	Can you repeat what a stable element is?
+02:13:49	Maysoon:	Can you go over what you meant by variables can go downwards but not upwards?
+02:13:52	Lida:	got it - thank you
+02:14:47	Maysoon:	I get it now thank you
+02:15:10	Franklin Bado:	If you want to remove one of the unstable elements, you will do this in the function on like 26?
+02:15:41	Wilson Ng:	i see, thank you
+02:16:55	David Felix:	What would we get if we used innerHTML instead of innerTEXT?
+02:17:36	Wilson Ng:	tin foil hats are in for 2020
+02:25:04	Alex E (she/her):	is evt just shorthand for “event”?
+02:25:08	Anna Kim:	is form default action always refreshing the page?
+02:26:00	Anna Kim:	thank you
+02:26:35	Franklin Bado:	With preventDefault() you get no calls on the network tab?
+02:26:45	Alex E (she/her):	thanks
+02:28:13	Wilson Ng:	good question franklin
+02:28:27	Franklin Bado:	Me ++
+02:29:38	Anna Kim:	input?
+02:41:20	Annie Zheng (she/her):	:star2: :star2::star2:Post Lecture Check-in Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+02:41:41	Annie Zheng (she/her):	Look the stars are supposed to be 🌟
+02:41:45	Annie Zheng (she/her):	lol*
+02:41:55	Anna Kim:	should we move line 40 to the top of the page?
+02:42:08	Anna Kim:	does that work
+02:42:16	Anna Kim:	ah.. evt. ok
