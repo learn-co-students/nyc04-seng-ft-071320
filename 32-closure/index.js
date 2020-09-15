@@ -52,7 +52,16 @@ function turnStringIntoEmojiLi(emojiStr){
 
 
 
-// DELEGATION:
+
+
+
+
+
+
+
+
+
+// DELEGATION (OPTIONAL):
 // 1) Find a stable element
 // 2) Add an event listener
 // 3) Add an if statement, checking for what the children have in common

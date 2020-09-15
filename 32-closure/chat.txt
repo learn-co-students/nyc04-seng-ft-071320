@@ -1,0 +1,66 @@
+00:10:25	Isabel K. Lee (they/them):	We get the ‘evt’ object for free because we’re using a callback function.
+00:11:03	Isabel K. Lee (they/them):	Using ‘debugger’ will give us access to the lines of code above it.
+00:11:39	Isabel K. Lee (they/them):	We can then open the console in the browser and enter the local variables to see what they return.
+00:12:30	Isabel K. Lee (they/them):	A form itself doesn’t have a value — but the input fields inside the form have their own values.
+00:15:31	Alex E (she/her):	What is “razzamatazz”?
+00:15:45	Waverley Leung:	the target on evt is what comes with it right?
+00:15:48	Alex E (she/her):	👍
+00:15:52	Isabel K. Lee (they/them):	@eric: razzamatazz means personalize the element to whatever you need!
+00:16:05	Waverley Leung:	thank you!
+00:16:19	Isabel K. Lee (they/them):	The attribute of “target” is built into “event” — it’s a keyword.
+00:16:26	ChenYun Zhang:	what if you don’t have name and id, do you use set attribute?
+00:17:09	Anna Kim:	is blankLi accessible from the console
+00:17:47	Isabel K. Lee (they/them):	variable.setAttribute(“className”, “list-item”)
+00:18:01	Isabel K. Lee (they/them):	OR variable.className = “list-item”
+00:19:01	ChenYun Zhang:	why do people use data-, the custom date attribute? what’s special about it?
+00:19:14	ChenYun Zhang:	ok
+00:19:18	Wilson Ng:	when does event.target.value gets assigned the value?
+00:20:37	Isabel K. Lee (they/them):	Form -> Input -> Value
+00:20:41	Isabel K. Lee (they/them):	Form -x-> Value
+00:21:13	Isabel K. Lee (they/them):	Form + Submit + event.preventDefault() = <3
+00:24:23	Isabel K. Lee (they/them):	JS doesn’t have an implicit return.
+00:28:15	Anna Kim:	does it matter whether it’s innerText or innerHTML when you put in an emoji as a string?
+00:28:54	Isabel K. Lee (they/them):	Using innerHTML is a security concern. Use innerText instead!
+00:29:17	Anna Kim:	^ i got that part, i just wasn’t sure if it would error if you try to put an emoji in a text field
+00:29:46	Anna Kim:	ty
+00:31:38	Isabel K. Lee (they/them):	Unstable elements = elements that are not part of the index.html
+00:32:11	Isabel K. Lee (they/them):	If you want to add an event listener to an unstable element, you should write a function that takes in a JS object (like a string or an integer) and it turns it into HTML on the page.
+00:37:26	Isabel K. Lee (they/them):	You can declare a function definition within a function definition.
+00:37:42	Isabel K. Lee (they/them):	Example: Declaring an addEventListener() within a helper method.
+00:39:09	Isabel K. Lee (they/them):	Variables can go outside <> in, but not the other way around
+00:39:26	Isabel K. Lee (they/them):	For example, don’t declare an event listener on an object you don’t have access to.
+00:45:31	Emmanuel Jose:	Closure is the same as scope chain?
+00:46:24	Anna Kim:	is it convention to add closure?
+00:48:11	Patrick Pierre:	Why does it go against convention to use closure?
+00:50:55	Isabel K. Lee (they/them):	@eric: I would rather have you be able to WRITE the code, than TALK about it.
+00:52:23	Isabel K. Lee (they/them):	Lecture after the break will be OPTIONAL.
+00:52:33	Isabel K. Lee (they/them):	You can leave and work on labs, etc. The optional part will still be recorded.
+00:53:14	Isabel K. Lee (they/them):	Task Lister Lite is a good practice lab to work on.
+00:56:41	Franklin Bado:	ok
+00:59:00	Isabel K. Lee (they/them):	Come back at 2:45pm!
+
+01:18:38	Isabel K. Lee (they/them):	Delegation = juice is not worth the squeeze.
+01:19:13	Isabel K. Lee (they/them):	Delegation is easy to implement if what you want to achieve is simple, but it becomes a pain once you start adding more complex functionalities.
+01:21:31	Isabel K. Lee (they/them):	If you use closure, each child element can sustain itself. Delegation on the other hand, forces the parent element to know everything about the child elements.
+01:23:32	Isabel K. Lee (they/them):	CLOSURE IS NICE
+01:24:21	Isabel K. Lee (they/them):	You have to worry about scope more with closure, but it reads a lot nicer than with delegation.
+01:24:34	Anna Kim:	both has nothing to do with slowing things down right?
+01:24:58	Anna Kim:	ooh ty
+01:25:21	Emmanuel Jose:	Closure brings peace
+01:25:26	Anna Kim:	^
+01:25:28	Christy Tropila:	^^
+01:25:31	Nunny (she/her):	^^^^
+01:25:42	Isabel K. Lee (they/them):	bro i don’t even use delegation
+01:25:47	Isabel K. Lee (they/them):	😇
+01:25:52	Isabel K. Lee (they/them):	plz don’t make me read it
+01:25:54	Anna Kim:	i like closures
+01:25:55	Isabel K. Lee (they/them):	😇
+01:25:58	Waverley Leung:	😂
+01:26:01	Dong Xia:	lol
+01:26:03	Isabel K. Lee (they/them):	if you make me read it
+01:26:05	Emmanuel Jose:	Franklin’s writing a blog about delegation
+01:26:06	Isabel K. Lee (they/them):	you will make me learn it
+01:26:08	Isabel K. Lee (they/them):	and i will not like it
+01:26:09	Maysoon:	Thank you
+01:26:11	Isabel K. Lee (they/them):	😇
+
