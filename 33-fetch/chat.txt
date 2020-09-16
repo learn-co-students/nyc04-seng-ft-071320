@@ -1,0 +1,114 @@
+00:11:38	Isabel K. Lee (they/them):	Eric: You shouldn’t trust anyone, not even yourself. Use console.log.
+00:15:57	Isabel K. Lee (they/them):	You can look up the documentation for default event actions to see if they need to be prevented or not.
+00:17:15	Isabel K. Lee (they/them):	For example, we can disable the right click for a button by suppressing the default behavior of `contextmenu`.
+00:21:41	Isabel K. Lee (they/them):	We’re going to make fetch happen today!!!
+00:21:53	Isabel K. Lee (they/them):	“Fetch” is a reserved word, just like “document.”
+00:22:16	Isabel K. Lee (they/them):	The “document” is the result of the window => window.document
+00:22:38	Isabel K. Lee (they/them):	There’s a method called “fetch” that we can call on the window. It allows us to make requests on the provided resources and get a response back.
+00:22:51	Isabel K. Lee (they/them):	Today, we’re going to be working with an external API — the Dog API!!
+00:24:47	Annie Zheng (she/her):	JSON - javascript object notation, language agnostic
+00:25:41	Isabel K. Lee (they/them):	wow this is my new fave API
+00:25:46	Annie Zheng (she/her):	^^
+00:25:56	Lida:	lol
+00:25:59	Emmanuel Jose:	^^^
+00:26:20	Isabel K. Lee (they/them):	Our new goal: click on the “doge” button and display a new dog in the browser!
+00:26:26	Eric Kim:	https://dog.ceo/api/breeds/image/random
+00:26:31	Isabel K. Lee (they/them):	(by getting the dog’s info from the dog API)
+00:28:03	Annie Zheng (she/her):	https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh/related?hl=en-US
+00:28:32	Isabel K. Lee (they/them):	Download the google chrome extension for a JSON viewer!
+00:28:40	Isabel K. Lee (they/them):	It’ll make your life easier for this mod and mod 4.
+00:30:03	Isabel K. Lee (they/them):	Let’s make a fetch request inside of your event listener for the doge button.
+00:30:36	Isabel K. Lee (they/them):	1. Write “fetch” and then pass in the URL.
+00:31:17	Isabel K. Lee (they/them):	1 click = 1 request/response cycle
+00:32:11	Isabel K. Lee (they/them):	Save the return value of fetch in a new variable and let’s console.log it to see what it returns.
+00:32:39	Isabel K. Lee (they/them):	It returned a Promise object!
+00:32:41	Patrick Pierre:	What is a promise?
+00:32:47	Isabel K. Lee (they/them):	But what is a Promise? 🤔
+00:32:50	Isabel K. Lee (they/them):	^ great question patrick hehe
+00:34:57	Isabel K. Lee (they/them):	Promise object: JS object (just like how the document is also a JS object) that allows us to work with asynchronous JS code (code that doesn’t necessarily happen from top to bottom).
+00:37:28	Isabel K. Lee (they/them):	Promise objects allow certain parts of code to be executed at a later time!
+00:38:28	Isabel K. Lee (they/them):	Example: When you brew coffee, you don’t have to pause your whole life to wait for it to finish brewing. If you use a coffee maker, it’ll let you know when it’s starting the process, and then it’ll beep later when it’s done.
+00:38:36	Nunny (she/her):	That was a great example
+00:38:53	Emmanuel Jose:	^^^
+00:40:21	Isabel K. Lee (they/them):	annie goes to the dog api store~~
+00:40:36	Isabel K. Lee (they/them):	and eric is waiting for annie to come back because he knows that she’ll keep her promise~~
+00:40:55	Isabel K. Lee (they/them):	BREAK: come back at 11:39!
+
+
+00:49:09	Isabel K. Lee (they/them):	There’s a method built into the Promise object called .then()
+00:49:18	Isabel K. Lee (they/them):	.then() expects a callback function!
+00:51:19	Isabel K. Lee (they/them):	OooOoooOOoooh the console.log that we wrote AFTER the first console.log shows up first in the browser.
+00:51:22	ChenYun Zhang:	11 is waiting for Annie to get the dog?
+00:51:29	Isabel K. Lee (they/them):	^^^^^^^^^^^^
+00:51:49	Emmanuel Jose:	ChenYun +++
+00:51:51	Isabel K. Lee (they/them):	And that’s because the Promise object takes some time to execute! Therefore, the console.log later down in the code block gets executed first.
+00:54:00	Isabel K. Lee (they/them):	AJAX = Asynchronous JavaScript and XML
+00:54:08	Isabel K. Lee (they/them):	XML is a markup language, just like HTML
+00:56:46	Isabel K. Lee (they/them):	Callback functions are at the mercy of the function receiving said callback.
+00:57:10	Isabel K. Lee (they/them):	ahh yes, exactly what i’m having for lunch.
+00:57:20	Isabel K. Lee (they/them):	NOOOO
+00:57:26	Isabel K. Lee (they/them):	eric no, that’s so sad
+00:58:03	Isabel K. Lee (they/them):	** no dogs were harmed in this lecture **
+00:58:33	Waverley Leung:	@Isabel lol
+00:58:38	Isabel K. Lee (they/them):	Fetch ALWAYS returns a Promise with a Response object inside of it.
+00:58:39	Isabel K. Lee (they/them):	hehe
+00:59:27	Isabel K. Lee (they/them):	** suspense **
+00:59:29	Emmanuel Jose:	Fetch Eric!
+00:59:33	Isabel K. Lee (they/them):	is eric gonna bring out a DOG?????
+00:59:33	Annie Zheng (she/her):	LOOOOL
+00:59:43	Waverley Leung:	Yay!
+00:59:47	Nunny (she/her):	100% heard cheese
+00:59:52	Hortencia:	^^^^
+00:59:54	Patrick Pierre:	^^^
+01:00:04	Sayana Nimaeva:	^^^
+01:01:02	Emmanuel Jose:	Lol, we have thieves stealing promises in our lobby all the time.
+01:01:12	Annie Zheng (she/her):	Omg Manny!
+01:01:17	Lida:	Ooh no lol
+01:01:25	Franklin Bado:	Lol, UPS got your addresss correct…
+01:01:55	Isabel K. Lee (they/them):	Example: Eric ordered shoes. They eventually arrived in a brown box with a Nike box inside that. The brown box is the Response object, and the Nike box inside it is the actual thing that we want.
+01:02:23	Isabel K. Lee (they/them):	We can call .json() on a Response object and get back something that we can actually work with.
+01:02:49	Waverley Leung:	lolol
+01:02:57	Hortencia:	^^^^^
+01:03:07	Isabel K. Lee (they/them):	JS will eventually become your friend~~ but maybe not right away~ 😭
+01:03:24	Wilson Ng:	good use of props LOL
+01:03:31	Waverley Leung:	^^ props ++
+01:03:32	Nunny (she/her):	Need more props ++
+01:03:51	Franklin Bado:	[[PromiseState]]: “fulfilled”?
+01:07:53	Patrick Pierre:	Is it possible for the first promise to get back to you but the second promise fails?
+01:10:05	Isabel K. Lee (they/them):	~~ promise chaining ~~
+01:10:44	Isabel K. Lee (they/them):	fetch -> .then() -> .then() -> get the actual data that you want
+01:11:57	Isabel K. Lee (they/them):	BREAK: come back at 12:10!
+
+
+01:19:50	Isabel K. Lee (they/them):	Arrow functions can implicitly return if you don’t have curly braces.
+01:21:52	Franklin Bado:	Can you repeat all that again plz
+01:22:39	Patrick Pierre:	If you need to invoke that arrow function, how do you do that?
+01:25:55	Patrick Pierre:	@Eric these explanations are on point!
+01:25:58	Isabel K. Lee (they/them):	arrow functions are great~~
+01:26:05	Emmanuel Jose:	Can you show the console tab again?
+01:27:41	Isabel K. Lee (they/them):	if you have not been paying attention up until this point, plz pay attention NOW~~~
+01:35:53	Emmanuel Jose:	Can you demonstrate the chicken arrow function again with and without ()?
+01:35:55	Anna Kim:	is console.log on line 23 running before fetch is completed?
+01:36:53	Emmanuel Jose:	Thank you!
+01:38:49	ChenYun Zhang:	no
+01:39:20	David Felix:	Can you declare a var variable inside and get it to show in the console.log?
+01:39:38	Wilson Ng:	that’s a lot of poop
+01:39:39	Hortencia:	coool
+01:39:40	ChenYun Zhang:	lol
+01:39:41	Waverley Leung:	omg lol
+01:39:43	vina:	lol
+01:39:44	Nunny (she/her):	Frontend skills I need
+01:39:48	Annie Zheng (she/her):	LOOL
+01:40:02	Waverley Leung:	“stop trying to make fetch happen"
+01:40:07	Christy Tropila:	lol
+01:40:12	Emmanuel Jose:	^^^
+01:40:13	Annie Zheng (she/her):	lol
+01:43:08	Anna Kim:	can you have make multiple fetch request for one event listener?
+01:43:11	Anna Kim:	maek*
+01:44:47	Annie Zheng (she/her):	promises is better than getting stuck in a callback hell~
+01:45:00	Nunny (she/her):	Facts ^^^
+01:48:59	Anna Kim:	debugger;
+01:50:42	Annie Zheng (she/her):	Post Lecture Check-in Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+01:51:04	Emmanuel Jose:	Is lectures after lunch or at 3?
+01:51:10	ChenYun Zhang:	the schedule says at 3
+01:52:16	vina:	ty
