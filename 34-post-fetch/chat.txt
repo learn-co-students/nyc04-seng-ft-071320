@@ -1,0 +1,91 @@
+00:06:27	Annie Zheng (she/her):	LOOOL
+00:07:16	Patrick Pierre:	Created an API during lunch….
+00:07:30	Jade Decordova:	Pat++
+00:07:31	Samir Triande:	For real ^^^
+00:07:42	Patrick Pierre:	Not me I mean Eric
+00:07:48	Patrick Pierre:	He said it so casually
+00:07:51	Waverley Leung:	^^^^
+00:07:51	Annie Zheng (she/her):	sounds like eric
+00:07:56	Jade Decordova:	Oh lol
+00:08:04	Samir Triande:	Too casual with it
+00:10:23	Annie Zheng (she/her):	information is sent between the back and from end through render json: fox
+00:10:30	Jade Decordova:	That’s actually really cool
+00:10:37	Emmanuel Jose:	^^^^^
+00:13:51	Jade Decordova:	Nice convention
+00:14:57	Nunny (she/her):	^^
+00:15:03	Annie Zheng (she/her):	stable elements are those that are hard-corded into the index.HTML
+00:16:31	Anna Kim:	what is the datatype of singleFoxObj?
+00:17:35	Annie Zheng (she/her):	Anna’s q: singleFoxObj is a POJO ( plain old js object)
+00:22:55	Annie Zheng (she/her):	** whenever you’re adding an unable element to the page, have a helper function do that job **
+00:23:05	Annie Zheng (she/her):	unstable*
+00:25:01	Annie Zheng (she/her):	29
+00:25:01	Christy Tropila:	4
+00:25:04	Ekaterina Zarudnaya:	7
+00:28:58	Annie Zheng (she/her):	***whenever you add an event listener on a stable element, make sure you’re not doing it inside of another event listener*** b/c it will only get called when the outer event is executed, on a stable element, the eventlistener should be on the global level
+00:31:41	Annie Zheng (she/her):	A form doesn’t have a value, and input + select does, so you can’t pull out the value of a form
+00:32:51	Annie Zheng (she/her):	event.target.f_name <— f_name is the name of an input and will pull out the corresponding input
+00:33:17	Annie Zheng (she/her):	doraaaa the explorer
+00:35:25	Jade Decordova:	Learn Js feels like wielding Excalibur
+00:35:35	Patrick Pierre:	^^^
+00:35:47	Emmanuel Jose:	^^^ a heavy-ass Excalibur
+
+
+00:41:22	Waverley Leung:	woohoo
+00:42:52	Annie Zheng (she/her):	FETCH — request through the frontend
+00:43:01	Annie Zheng (she/her):	REST — request through the backend
+00:43:46	Annie Zheng (she/her):	Restclient*
+00:46:38	Annie Zheng (she/her):	Outside of a get request, you’ll need add a second arg to the fetch. It will be a obj with key value pairs of method — HTTP request type, headers — object, and body
+00:47:08	Annie Zheng (she/her):	🌟 headers (plural) not header
+00:49:34	Christy Tropila:	Stringify sounds like a Harry Potter spell
+00:49:45	Emmanuel Jose:	^^^
+00:49:47	Jacinta (Jacie) Calixte:	^^lol
+00:49:48	Christy Tropila:	lol
+00:53:25	Nunny (she/her):	Lololol
+00:53:28	Waverley Leung:	omg lololol
+00:53:42	Franklin Bado:	Blg is on fire within 5 minutes
+00:53:47	Nunny (she/her):	Travis Scott burger
+00:53:52	Annie Zheng (she/her):	wearing multiple hats — write it on your resume
+00:53:54	Jade Decordova:	^^^
+00:54:12	Christy Tropila:	sso much work for a little burger
+00:54:19	Emmanuel Jose:	^^^
+00:54:23	Bella Evalle:	lol
+00:54:23	Annie Zheng (she/her):	LOL
+00:54:35	Jade Decordova:	HYPE BEAST +1
+00:54:52	Jacinta (Jacie) Calixte:	lmaooooo not the Travis Scott 🍔 burger
+00:55:24	Waverley Leung:	oh byebug
+00:55:34	Annie Zheng (she/her):	🐛
+00:55:34	Emmanuel Jose:	I forget yesterday, lol
+00:55:37	Wilson Ng:	my best friend, byebug
+00:55:50	Christy Tropila:	Same Emmanuel lol
+00:56:08	Waverley Leung:	@Manny I was just thinking about having takeout for dinner Friday but realized it’s only Wednesday
+00:56:26	Emmanuel Jose:	It’s Wednesday? lol
+00:56:40	Christy Tropila:	^^^
+00:57:18	Jade Decordova:	Too restricting?
+00:58:48	Wilson Ng:	everything makes sense now
+00:59:04	ChenYun Zhang:	^^^^^^^^^^^^
+01:02:35	Emmanuel Jose:	Do we use a schema with a Rails API?
+01:02:54	Annie Zheng (she/her):	What we entered into our body enters our backend as params and saved to the db
+01:03:05	Annie Zheng (she/her):	@manny’s q: yup
+01:04:05	ChenYun Zhang:	depends on if the  params is permitted
+01:05:25	Anna Kim:	^^^
+01:05:33	Annie Zheng (she/her):	params are independent from our models, the frontend doesn’t care about what is entered into the body for the backend as params
+01:08:29	Annie Zheng (she/her):	chenyun++
+01:11:14	Wilson Ng:	thank you
+01:15:02	Anna Kim:	the arrow function has the implicit return right?
+01:15:13	Annie Zheng (she/her):	arrow function w/o the {}
+01:15:29	Anna Kim:	@annie thank you
+01:16:01	Annie Zheng (she/her):	“swiper, no swiping!”
+
+01:23:10	Franklin Bado:	Fox.find(img…./24)
+01:26:02	Annie Zheng (she/her):	closure -> each event listener has information about itself
+01:27:16	Christy Tropila:	why are we adding this event inside the turnFoxObjToLi function and not creating its own function
+01:27:43	Patrick Pierre:	Can yo explain what you said about closures again and how it is relevant to what you just did
+01:27:49	Patrick Pierre:	you*
+01:27:55	Christy Tropila:	ohh okay unstable I get it
+01:31:18	Patrick Pierre:	When you use the fetch request to get access to an API’s data can you store the result of the promise or can you only store the promise object itself?
+01:35:34	Emmanuel Jose:	We don’t hate you Eric.
+01:35:54	ChenYun Zhang:	no, i don’t hate, you failed, lol
+01:36:01	Emmanuel Jose:	LOL
+01:36:01	Nunny (she/her):	^^^^
+01:36:08	Waverley Leung:	I appreciate that you care so much to warn us!
+01:36:09	Christy Tropila:	LOL
