@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Making Fetch happen</title>
+    <meta charset="UTF-8" />
+    <link rel="Stylesheet" href="index.css" />
+    <script defer type="text/javascript" src="index.js"></script>
+  </head>
+
+    <button id="hello-button">Add Doge</button>
+
+    <h1>Here is a way, <em>way</em> nicer list, Grandma</h1>
+
+    <ul id="dogs" class="dogs js-dogs">
+    </ul>
+
+    <footer>
+      <div class="gif-container">
+        <img id="image-wun" src="https://media.giphy.com/media/5G98t8QjqBLK8/giphy.gif" />
+        <img id="image-too" src="https://media.giphy.com/media/jSnQGLHBrgbRK/giphy.gif" />
+      </div>
+      <script>
+        var oldLogFunction = console.log;
+        console.log = function(){}; // noop
+      </script>
+      <script src="https://threejs.org/build/three.js"></script>
+      <script type="text/javascript" src="src/efire.js"></script>
+      <script type="text/javascript" src="src/easter-egg.js"></script>
+      <script type="text/javascript">
+        console.log = oldLogFunction; // reset console.log
+      </script>
+    </footer>
+  </body>
+</html>
