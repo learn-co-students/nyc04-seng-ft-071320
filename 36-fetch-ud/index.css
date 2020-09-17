@@ -1,0 +1,54 @@
+.container {
+  max-width: 420px;
+  padding: 20px;
+}
+.delete-button {
+  width: 68px;
+}
+#grocery-list {
+  margin-left: 0;
+}
+ol.ui.list li:before {
+  display: none;
+}
+.item {
+  /*transition: transform .05s ease-in-out;*/
+  backface-visibility: hidden;
+  display: inline;
+}
+.item:hover {
+  /*transform: scale(1.1)*/
+}
+.done {
+  /*transform: rotateX(360deg);*/
+}
+.item label {
+  position: relative;
+}
+.item label::after {
+  position: absolute;
+  content: "";
+  width: calc(100% + 6px);
+  height: 5px;
+  top: 50%;
+  left: -3px;
+  border-radius: 50%;
+  background: red;
+  mix-blend-mode: multiply;
+  transform: scale(0, 1);
+  transform-origin: center center;
+  transition: transform 0s .5s, opacity .5s, border-radius 0s .5s;
+  opacity: 0;
+}
+.done.item label::after {
+  border-radius: 5px;
+  display: block;
+  transform: none;
+  transform-origin: left center;
+  transition: transform 1s, opacity .5s, border-radius 1s;
+  opacity: 1;
+}
+
+.js-food {
+  display: inline;
+}

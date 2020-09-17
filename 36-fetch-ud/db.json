@@ -1,0 +1,19 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Cinnamon",
+      "count": 23
+    },
+    {
+      "id": 2,
+      "name": "Chicken",
+      "count": 8
+    },
+    {
+      "name": "PSL",
+      "count": 7,
+      "id": 4
+    }
+  ]
+}
