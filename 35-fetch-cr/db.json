@@ -1,0 +1,34 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Cinnamon",
+      "count": 5
+    },
+    {
+      "id": 2,
+      "name": "Chicken",
+      "count": 4
+    },
+    {
+      "name": "Coleslaw",
+      "count": 1,
+      "id": 3
+    },
+    {
+      "name": "Chicken Sandwich",
+      "count": 1,
+      "id": 4
+    },
+    {
+      "name": "PSL",
+      "count": 1,
+      "id": 5
+    },
+    {
+      "name": "Candy Corn",
+      "count": 1,
+      "id": 6
+    }
+  ]
+}

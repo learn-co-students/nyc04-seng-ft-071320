@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Grocery List</title>
+    <meta charset="UTF-8" />
+    <script defer type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+
+    <main class="container">
+      <form id="new-food" class="ui fluid action input">
+        <input type="text" name="food_name" placeholder="Grocery List" autocomplete="off" />
+        <button id="new-food-submit" type="submit" class="ui primary button">Add</button>
+      </form>
+
+      <ol id="grocery-list" class="ui massive list">
+        <!-- buttons will be in here -->
+      </ol>
+    </main>
+  </body>
+</html>
