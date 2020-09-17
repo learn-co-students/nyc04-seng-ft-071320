@@ -1,0 +1,49 @@
+00:07:20	Annie Zheng (she/her):	But betterr
+00:07:22	Jade Decordova:	^^^
+00:07:51	Alex E (she/her):	crisp air smells like hope, “maybe I’ll have friends this school year”
+00:07:57	Annie Zheng (she/her):	LOOL
+00:09:26	Eric Kim:	npm i -g json-server
+00:09:46	Annie Zheng (she/her):	Installing json-server ^
+00:09:52	Alex E (she/her):	do we need to do this in a folder?
+00:10:18	Annie Zheng (she/her):	nope, you can do it outside of any folder
+00:11:03	Annie Zheng (she/her):	json-server — allows you to mimic an api
+00:11:59	Annie Zheng (she/her):	for you project you’ll be expected to have a rails backend as an api but for now we’ll be using json-server
+00:13:06	Annie Zheng (she/her):	How to run json-server: `json-server —watch <file path you want it to read>`
+00:13:44	Annie Zheng (she/her):	dash dash watch not em dash watch*
+00:14:18	ChenYun Zhang:	✧*｡٩(ˊᗜˋ*)و✧*｡
+00:15:36	Franklin Bado:	Can you run rails s and json s at the same time?
+00:16:14	Annie Zheng (she/her):	json-server — the lift is less compared to getting rails api set up
+00:16:42	Annie Zheng (she/her):	@franklin’s q: yes but best to just have one
+00:19:51	Waverley Leung:	chicken has same id as cinnamon?
+00:20:00	Annie Zheng (she/her):	Waverley ++
+00:24:27	Dong Xia:	GET
+00:30:42	ChenYun Zhang:	how to get out of the debugger?
+00:31:43	ChenYun Zhang:	ok
+00:32:14	Annie Zheng (she/her):	@chenyun’s q: you can get out of debugger by going in to the console, click the play button
+00:34:14	Annie Zheng (she/her):	anf + tab —> shortcut for an arrow function in vscode
+00:35:23	Jade Decordova:	Back to front 🤯🤯
+00:38:42	Annie Zheng (she/her):	***always double check to see what data type you’re getting back from an api by console.logging it
+
+00:55:01	Annie Zheng (she/her):	innerHTML opens you up to HTML inject — not good
+00:58:17	Nunny (she/her):	Appendddd
+00:59:52	Annie Zheng (she/her):	+= messes up with innerHTML — don’t use it
+00:59:55	Nunny (she/her):	Interpolation?
+01:00:09	ChenYun Zhang:	^^^^^^^^^
+01:00:20	Annie Zheng (she/her):	`${}` string interpolation in js
+01:00:36	Annie Zheng (she/her):	“#{}” string interpolation in ruby
+01:04:33	Franklin Bado:	When you do POJO.key it is case sensitive right?
+01:05:53	Annie Zheng (she/her):	@franklin’s q: yes
+01:07:31	Wilson Ng:	I’m still hoping for the classic Eric “There has to be an easier way!!!”
+01:10:22	ChenYun Zhang:	the .target is only for form?
+01:11:07	ChenYun Zhang:	ok, thank you
+01:11:09	Annie Zheng (she/her):	***v important: understanding how to get information/input values out of a form. forms are how users interact with your website.
+01:20:18	Franklin Bado:	Id is auto?
+01:20:44	ChenYun Zhang:	it’s not safe at all
+01:21:24	Annie Zheng (she/her):	@franklin’s q: yup, it looks for the highest id that’s in the db.json file and adds 1 to it for the next object inputted
+01:21:30	Nunny (she/her):	cooooooooool
+01:23:09	Annie Zheng (she/her):	.then needs to be called on a promise not a string so call the .then after the fetch
+01:26:25	Nunny (she/her):	🤯
+01:26:49	Waverley Leung:	🤯
+01:28:45	Annie Zheng (she/her):	evt.target.reset() — gets rid of any input of a form aka resets whatever the event happened on
+01:31:28	Annie Zheng (she/her):	Post Lecture Check-in Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+01:31:40	Annie Zheng (she/her):	^^^ please fill it out!
