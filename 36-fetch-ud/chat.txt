@@ -1,0 +1,93 @@
+00:10:26	Isabel K. Lee (they/them):	what’s PSL?
+00:10:51	Isabel K. Lee (they/them):	Run `json-server --watch db.json` to fire up the server!
+00:10:59	Eric Kim:	Pumpkin spice latte
+00:11:03	Isabel K. Lee (they/them):	oh LOL
+00:11:18	Isabel K. Lee (they/them):	So when you go to localhost:3000, it will serve up the data inside the `db.json` file.
+00:12:15	Isabel K. Lee (they/them):	We’re able to see the array of foods in the browser because we made a fetch request to the data inside `db.json`.
+00:13:38	Isabel K. Lee (they/them):	How to submit new data in a form:
+00:13:52	Isabel K. Lee (they/them):	1. Stop the page from refreshing — the default event action.
+00:14:02	Isabel K. Lee (they/them):	2. Make a fetch request.
+00:14:09	Isabel K. Lee (they/them):	3. Write the method, headers, and body.
+00:14:26	Isabel K. Lee (they/them):	4. Write a .then statement and turn the response into a JSON object.
+00:14:36	Isabel K. Lee (they/them):	5. Write another .then statement to do SOMETHING with that data.
+00:15:03	Isabel K. Lee (they/them):	(We’re probably going to want to turn that new data into an HTML object so that we can see it in the browser.)
+00:23:38	Isabel K. Lee (they/them):	querySelector can be called on any HTML element! not just the document.
+00:24:48	Isabel K. Lee (they/them):	Calling query selector on the document to find a specific delete button won’t work, because it’ll just return the FIRST delete button that it finds.
+00:25:24	Isabel K. Lee (they/them):	Therefore, we have to call it on the outermost element for the delete button. Which would be the <li> tag that includes the food item, increment button, and delete button.
+00:25:29	Nunny (she/her):	So querySelector always returns the first instance?
+00:25:43	Isabel K. Lee (they/them):	^^^^^ yup
+00:30:06	Isabel K. Lee (they/them):	some extra reading on POJOs: https://g-liu.com/blog/2015/08/object-oriented-programming-javascript-using-pojos-for-good/
+00:33:11	Anna Kim:	would be make a difference if we used appendChild vs append for foodLi?
+00:33:31	Anna Kim:	ty
+00:34:13	Isabel K. Lee (they/them):	Adding delete functionality to the delete button:
+00:34:25	Isabel K. Lee (they/them):	1) Make sure the event type is set to “click”, not “submit”.
+00:35:05	Isabel K. Lee (they/them):	2) Write a fetch request which points to the specific food item in the database. For example, http://localhost:3000/foods/1.
+00:35:26	Isabel K. Lee (they/them):	3. Set the “method” to “DELETE”. The delete functionality doesn’t require any headers or body.
+00:35:37	Isabel K. Lee (they/them):	4. Write a .then statement that turns the response into a JSON object.
+00:36:42	Isabel K. Lee (they/them):	5. Write another .then statement that removes the food item from the DOM. AKA removes the specific <li> tag from the page.
+00:37:11	Isabel K. Lee (they/them):	REMEMBER: we have to delete both the food item as a POJO AND the HTML object from the browser.
+00:37:23	Isabel K. Lee (they/them):	**** delete from the database AND the browser ****
+00:39:13	David Felix:	If you reload the page would it go away?
+00:42:03	Waverley Leung:	can you explain the emptyObject again?
+00:46:43	Isabel K. Lee (they/them):	We should be creating our event listeners in the same function as turning our JSON objects into an HTML element.
+00:47:43	Waverley Leung:	ohh thanks for clarifying!
+
+00:56:20	Isabel K. Lee (they/them):	Create a separate event listener for the increase button.
+00:59:41	Isabel K. Lee (they/them):	UNSTABLE ELEMENTS NEED TO HAVE THEIR EVENT LISTENERS ADDED AT THE SAME TIME AS THEIR CREATION~~~
+01:00:03	Isabel K. Lee (they/them):	stable elements should have their event listeners defined on a global level. 😇
+01:03:51	Isabel K. Lee (they/them):	For creating a full-stack Rails + JS app: create the schema first!
+01:04:51	Nunny (she/her):	Good q
+01:05:15	Waverley Leung:	Christy ++
+01:05:16	Isabel K. Lee (they/them):	The request goes to a controller action, and then the controller brings back SOMETHING. What do you want to do with that?
+01:06:08	Isabel K. Lee (they/them):	Controller, routes, and fetch requests all go hand in hand.
+01:06:17	Isabel K. Lee (they/them):	And don’t forget to create seed data. (:
+01:07:16	Isabel K. Lee (they/them):	How to write the event listener for the increase button:
+01:07:45	Isabel K. Lee (they/them):	1) Create a new variable that stores the count + 1.
+01:08:06	Isabel K. Lee (they/them):	2) Write a fetch request for that specific food object. Write the method (“PATCH)
+01:08:14	Isabel K. Lee (they/them):	, headers, and body.
+01:09:43	Isabel K. Lee (they/them):	3) Write a .then statement where we turn the response into a JSON object.
+01:11:33	Isabel K. Lee (they/them):	4) Write another .then statement where we take the updated food object and display the new information in the browser.
+01:12:29	Anna Kim:	can you use foodLi again and update the count?
+01:14:41	Franklin Bado:	.reset?
+01:17:00	Isabel K. Lee (they/them):	You need to update the object in memory to make the like button work more than once without refreshing the page.
+01:17:51	Isabel K. Lee (they/them):	3 THINGS TO UPDATE: POJO (plain old JS object) in memory, HTML element, and backend
+01:18:35	Isabel K. Lee (they/them):	— fetch request updates the backend
+01:18:44	Isabel K. Lee (they/them):	— food.count + 1 updates the object in memory
+01:19:22	Isabel K. Lee (they/them):	— changing countSpan.innerText (which is inside the foodLi) updates the HTML element
+01:23:36	Patrick Pierre:	In order to update more than once you have to update the count in the event listener’s memory of the count before pressing the button?
+01:24:30	Anna Kim:	so food.count = updatedFoodObj.count sets a continuous state of grabbing the after update version of (food) and setting it as a before version ready to be updated?
+01:26:13	Anna Kim:	thank you for that clarity. reading >> writing
+01:28:16	Waverley Leung:	^^ follow up to Anna’s q: you can’t just refer to theNewNumber instead of food.count on 112? Or why is it food.count?
+01:28:50	Waverley Leung:	ohhh okay
+01:28:54	Waverley Leung:	thank you!
+01:31:21	Patrick Pierre:	Is that what state means, an object in memory?
+01:31:56	Anna Kim:	is updatedFoodObj not an object in memory until it overwrites food.count?
+01:33:54	Waverley Leung:	lol
+01:34:03	Patrick Pierre:	That was a great question
+01:34:14	Nunny (she/her):	I feel alive.
+01:34:27	Christy Tropila:	I need a NAP
+01:34:28	Christy Tropila:	lol
+01:34:33	Nunny (she/her):	That too^^^^
+01:34:44	Patrick Pierre:	I feel like he’s showing us Narnia right now
+01:34:47	Waverley Leung:	^^^
+01:35:06	Anna Kim:	^^^
+01:35:28	Patrick Pierre:	What is the difference between JSX syntax and regular JS syntax?
+01:35:37	Christy Tropila:	I can't watch this . its too much 
+01:35:41	Anna Kim:	no more EventListener… it seems like it’s handleSomething
+01:36:15	Franklin Bado:	I miss RoR
+01:37:01	Patrick Pierre:	Mod 3 is pretty cool imo
+01:37:54	Waverley Leung:	yay!
+01:37:57	Nunny (she/her):	Yass
+01:38:07	Anna Kim:	Redux!
+01:38:11	Jade Decordova:	yessss
+01:38:27	Jacinta (Jacie) Calixte:	what is redux?
+01:38:36	Patrick Pierre:	It is for state management
+01:38:44	Jacinta (Jacie) Calixte:	ok 😁
+01:39:40	Anna Kim:	Yess
+01:39:45	Waverley Leung:	oooo~
+01:40:26	Isabel K. Lee (they/them):	post-lecture check-in: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+01:40:30	Patrick Pierre:	What should we focus on in terms of labs today?
+01:41:12	Anna Kim:	callbacks, arrow functions, scoping, crud everything
+01:41:15	Anna Kim:	yep yep
+01:41:35	Nunny (she/her):	Up until today?
+01:42:25	Jacinta (Jacie) Calixte:	note taken
