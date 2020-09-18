@@ -1,0 +1,58 @@
+00:10:43	Isabel K. Lee (they/them):	please, please, PLEASE manage your time for this take-home code challenge
+00:10:50	Isabel K. Lee (they/them):	— work on the core deliverables over the weekend
+00:10:58	Isabel K. Lee (they/them):	— try tackling the advanced deliverables after the mock CC on monday
+00:11:17	Waverley Leung:	when is the code challenge due?
+00:11:53	Eric Kim:	Wednesday morning
+00:18:25	Alex E (she/her):	in line 5, are the parenthesis around arrayOfToys necessary?
+00:24:23	Ekaterina Zarudnaya:	Shouldn’t we use ; in the end of the line?
+00:24:33	Isabel K. Lee (they/them):	it’s not necessary in the latest version of JS! :D
+00:24:42	Waverley Leung:	Oooo
+00:24:42	Ekaterina Zarudnaya:	Thank you!
+00:29:33	Christy Tropila:	why do we save this to variable instead of creating function turnToyToHtml(toy){}
+00:29:49	Nunny (she/her):	Thank u both
+00:29:51	Isabel K. Lee (they/them):	** only the document can create an element **
+00:30:14	Isabel K. Lee (they/them):	@chenyun: it’s easier for us to identify and use the HTML elements if we save them to a local variable. (:
+00:30:19	Christy Tropila:	gotcha
+00:30:23	ChenYun Zhang:	???
+00:30:32	Isabel K. Lee (they/them):	(oh woops, sorry i just saw “ch” LOL)
+00:30:38	Isabel K. Lee (they/them):	thanks for the great question @christy! :D
+00:30:39	ChenYun Zhang:	lol
+00:30:50	Christy Tropila:	:)
+00:32:08	Alex E (she/her):	if all these variables are defined inside of turnToyToHTML and not in the global scope, why are we able to call them in the browser console?
+00:32:33	Patrick Pierre:	Is it convention to declare variables storing stable elements globally?
+00:32:40	Alex E (she/her):	Oh I thought you did and I was confused
+00:32:48	Alex E (she/her):	thank you
+00:34:05	Isabel K. Lee (they/them):	If we declare stable variables at the top of the file, we can invoke them in any of the functions we create! Since the scope for them will be wide.
+00:34:10	Christy Tropila:	Ok cool thanks
+00:34:14	Isabel K. Lee (they/them):	For the CC: please don’t hardcode any elements in your index.html!!!!
+00:34:30	Isabel K. Lee (they/them):	For your projects: put the skeleton of what you want to show the user in your index.html.
+00:35:14	Isabel K. Lee (they/them):	Basically: if it’s a consistent element that you want to show on all pages —> index.html
+00:35:39	Isabel K. Lee (they/them):	Any element that’s being generated from your backend —> create an unstable element in your index.js
+00:41:43	Isabel K. Lee (they/them):	plz just use innerText and avoid innerHTML~~
+00:42:00	Jade Decordova:	GOT it
+00:42:54	Isabel K. Lee (they/them):	ALSO, trying to read a block of HTML in a JS file is kinda weird!
+00:44:58	Isabel K. Lee (they/them):	BREAK: come back at 2:13pm plz!
+
+
+00:53:20	Isabel K. Lee (they/them):	all APIs are created differently + by humans!!
+00:53:28	Isabel K. Lee (they/them):	therefore, they may not all follow RESTful conventions
+00:53:46	Jade Decordova:	API’s are unruly
+00:53:59	Isabel K. Lee (they/them):	SO, make sure to look at the data that it’s returning and become familiar with it. don’t just assume that every API will return the same type of data.
+00:54:24	Isabel K. Lee (they/them):	for this instance, we can look at the db.json file and see that the likes attribute for each toy instance is an INTEGER.
+01:08:20	Patrick Pierre:	Oh ok so one object from before the fetch call and an object from after it
+01:12:49	Jade Decordova:	Nuances in coding
+01:23:47	Emmanuel Jose:	Today is actually National Cheeseburger Day 🍔
+01:24:50	Ekaterina Zarudnaya:	Mmmm.. ^^
+01:25:54	Waverley Leung:	you wouldn’t have to invoke with () if you didn’t have createdToy?
+01:26:30	Waverley Leung:	oooo 👍
+01:27:17	Annie Zheng (she/her):	@waverley’s q: to be callback confident, you have to pass in the function definition not the function invocation
+01:29:46	Annie Zheng (she/her):	*** be intentional with the code that you write -Eric
+01:29:55	Eric Kim:	^pls
+01:32:11	Patrick Pierre:	How do you reverse the action that an event took on your web page (ex:the event opens a pop up)
+01:32:56	Annie Zheng (she/her):	@patrick’s q: you can use toggle but no undos
+01:34:32	Christy Tropila:	Is there a difference between instance methods and functions in Javscript?
+01:36:58	Nunny (she/her):	Eric what were you going to say……you could only call remove on…..…?
+01:37:30	Annie Zheng (she/her):	@nunny’s q: You can only call remove on HTML object but not POJOs
+01:37:35	Jade Decordova:	Thanks for the clarity Eric!
+01:40:32	Annie Zheng (she/her):	please fill out the post-lecture check-in form!
+https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
