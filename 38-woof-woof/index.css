@@ -1,0 +1,53 @@
+#filter-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: skyblue;
+
+}
+
+#good-dog-filter {
+  margin-top: 1vh;
+  width: 35vw;
+  font-size: 1em;
+  height: 5vh;
+  border-radius: 3em;
+}
+
+#dog-bar {
+  height: 15vh;
+  background: skyblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#dog-bar span {
+  height: 80%;
+  width: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2em;
+  border: 1px solid blue;
+}
+
+#dog-summary-container {
+  height: 75vh;
+  text-align: center;
+}
+
+#dog-info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#dog-info img {
+  max-width: 75vw;
+  max-height: 25vw;
+}
+
+body {
+  margin: 0;
+}
