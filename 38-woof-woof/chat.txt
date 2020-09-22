@@ -1,0 +1,32 @@
+00:07:15	Jade Decordova:	Mod 3 plot twist
+00:17:02	Sylwia Vargas (she/her):	“Callback confident” ⭐️
+00:17:25	Sylwia Vargas (she/her):	Be like Eric. Be callback-confident.
+00:17:45	Dong Xia:	Its math LCM
+00:23:54	Waverley Leung:	🤯 whoa
+00:25:46	Nunny (she/her):	Makes more sense now. Thank you!
+00:25:57	Waverley Leung:	^^^
+00:36:16	Sylwia Vargas (she/her):	So many valid strong opinions!
+00:41:06	Sylwia Vargas (she/her):	reminder on ternaries"
+00:41:09	Sylwia Vargas (she/her):	This is how ternaries work:
+{Question ?} {if true} {: if false}
+areYouFeelingSick ? stayHome() : goHangOutWithYourLovelyFriends()
+00:41:15	Sylwia Vargas (she/her):	————————
+00:41:26	Sylwia Vargas (she/her):	TEMPLATE:
+{Question ?} {if true} {: if false}
+00:41:30	Sylwia Vargas (she/her):	———----
+00:41:34	Sylwia Vargas (she/her):	EXAMPLE:
+00:41:35	Sylwia Vargas (she/her):	areYouFeelingSick ? stayHome() : goHangOutWithYourLovelyFriends()
+00:43:01	Nunny (she/her):	@Sylwia stayHome() and goHang() are helper functions which we can pass as values here?
+00:44:24	Sylwia Vargas (she/her):	^ yes
+01:00:56	Ekaterina Zarudnaya:	How would you do interpolation in the url if you declare it as a variable on top?
+01:01:36	Ekaterina Zarudnaya:	Thank you!
+01:03:51	Sylwia Vargas (she/her):	URL + “/something”
+01:04:11	Eric Kim:	`${url}/something`
+01:30:20	Nunny (she/her):	🤯🤯🤯
+01:32:12	Ekaterina Zarudnaya:	Which one is the preferred way?
+01:33:10	Sylwia Vargas (she/her):	either ¯\_(ツ)_/¯
+01:33:48	Ekaterina Zarudnaya:	OK, thank you
+01:37:59	Dong Xia:	🌟
+01:38:14	Maysoon:	Thank you!
+01:38:17	Nunny (she/her):	Thank uuuuu
+01:38:19	Ekaterina Zarudnaya:	Thank you!
