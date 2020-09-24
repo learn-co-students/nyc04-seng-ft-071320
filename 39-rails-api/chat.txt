@@ -1,0 +1,101 @@
+00:07:36	Waverley Leung:	Wow a throwback haha
+00:10:04	Sylwia Vargas (she/her):	how sad
+00:10:17	Sylwia Vargas (she/her):	“Failed to fetch” such a js phrasing
+00:10:44	Sylwia Vargas (she/her):	full of contempt and condescending
+00:11:16	Wilson Ng:	😹 ^
+00:11:17	Sylwia Vargas (she/her):	Ruby would be like “hey friend, you’re trying to fetch from a source that does not exist!”
+00:12:07	Sylwia Vargas (she/her):	Rails comes with love ❤️ and magic ✨
+00:12:52	Wilson Ng:	^what I will say during an interview
+00:13:25	Emmanuel Jose:	^ You’re hired!
+00:14:25	Sylwia Vargas (she/her):	“I won’t be mad, I will just be disappointed” Eric
+00:15:41	Isabel K. Lee (they/them):	rails new <insert project name here> --api --database=postgresql
+00:15:46	Sylwia Vargas (she/her):	What a crossover: Toy Tales and Rails ❤️ two most wholesome parts of the curriculum ❤️
+00:15:52	Isabel K. Lee (they/them):	^^^^^^^^^^^^^^^ we’re adding a new API flag when we create our rails app
+00:16:36	Isabel K. Lee (they/them):	and we’re setting up the database to be run on postgreSQL
+00:17:39	Isabel K. Lee (they/them):	our project folder is going to have AT LEAST these 2 things: a folder for JS frontend code + a folder for our rails API
+00:18:27	Anna Kim:	what’s the difference between adding —database=postgresql and just doing —api?
+00:18:59	Isabel K. Lee (they/them):	if you want to be able to easily deploy your project, you should use postgreSQL, rather than using SQL lite 3
+00:19:54	Anna Kim:	if we dont specify, is it sql lite 3 by default?
+00:20:16	Anna Kim:	thank you! that clarifies  everything.
+00:21:32	Sylwia Vargas (she/her):	And snake case ;-;
+00:21:53	Nunny (she/her):	😬^^
+00:22:01	Maysoon:	Did we already download PostgreSQL when we did the initial set up in mod 0?
+00:22:25	Sylwia Vargas (she/her):	Yes, you already have postgressql
+00:22:29	Maysoon:	Great ty
+00:22:31	Anna Kim (she/her):	i believe we did that Mod 2 project ^
+00:23:03	Maysoon:	Thank you
+00:25:12	Isabel K. Lee (they/them):	~~~~GeNeRaTe~~~~
+00:25:16	Isabel K. Lee (they/them):	GENERATE!!!!!!!!!!!!!!!
+00:25:23	Sylwia Vargas (she/her):	B R I L L I A N T
+00:25:35	Isabel K. Lee (they/them):	rails g model <insert model name> <add attributes here>
+00:25:45	Isabel K. Lee (they/them):	EXAMPLE: rails g model Toy name image likes:integer
+00:25:57	Isabel K. Lee (they/them):	attributes will default to a string!!!
+00:26:27	Isabel K. Lee (they/them):	`rails g resource` gives us the model, controller, and routes
+00:26:42	Isabel K. Lee (they/them):	BUT THERE AREN’T ANY VIEW FILES!!
+00:26:56	Isabel K. Lee (they/them):	~~ bye bye view files ~~
+00:27:34	Patrick Pierre:	When we call the -api flag, does that stop it from generating views with rails g resource?
+00:28:24	Isabel K. Lee (they/them):	~~ plz write your own routes inside the routes.rb file ~~
+00:29:38	Sylwia Vargas (she/her):	@Patrick -> yes
+00:29:52	ChenYun Zhang:	with fetch, we don’t need to write the route anymore?
+00:30:04	ChenYun Zhang:	ok
+00:33:54	Jade Decordova:	:O
+00:33:56	Jade Decordova:	:O
+00:35:02	Isabel K. Lee (they/them):	this is simply ActiveRecord magic!! doesn’t have to do with the fact that we are now treating the rails backend like an API
+00:35:50	Patrick Pierre:	Is .pluck an active record method?
+00:37:08	Isabel K. Lee (they/them):	we are marrying the backend and frontend by using fetch!! otherwise they don’t care about each other~~
+00:41:05	Isabel K. Lee (they/them):	a controller is responsible for handling any request/response!!
+00:43:39	Isabel K. Lee (they/them):	204 is a very common error and we’ll later talk about how to fix it~~
+00:44:37	Isabel K. Lee (they/them):	our ApplicationController now inherits from ActionController::API because we used the —api flag when we made our rails backend 👀
+00:48:09	Isabel K. Lee (they/them):	~~JSON representation of a ruby instance~~
+00:48:25	Waverley Leung:	and the ruby instance is of the database?
+00:48:34	Isabel K. Lee (they/them):	yes!!
+00:48:53	Isabel K. Lee (they/them):	right now, the data in our database is coming from the seeds.rb (:
+00:49:40	Isabel K. Lee (they/them):	you can also create your data by running `rails c` and then manually creating all your Toy instances!
+00:50:02	Isabel K. Lee (they/them):	render json: @toys is the magic that’s showing the JSON representation of our ruby data when we look at localhost:3000/toys
+
+00:56:43	Isabel K. Lee (they/them):	for some reason our fetch request is not working 🤔
+00:56:51	Isabel K. Lee (they/them):	this is because of CORS!
+00:57:11	Isabel K. Lee (they/them):	~~ Cross Reference Resource Sharing ~~
+00:57:25	Isabel K. Lee (they/them):	it’s in bad practice for a script of a website to make a request to an external source ‼️
+00:59:01	Isabel K. Lee (they/them):	SOLUTION: set up our rails API properly on the rails side!!!!
+01:00:24	Isabel K. Lee (they/them):	SOLUTION: install the `rack-cors` gem!!!!
+01:00:49	Isabel K. Lee (they/them):	GEMFILE > gem ‘rack-cors’ > uncomment that bad boy! > run ‘bundle install’ in your terminal
+01:02:02	Isabel K. Lee (they/them):	config > initializers > cors.rb > UNCOMMENT THE CODE BLOCK THAT STARTS WITH ‘Rails.application.config.middleware’
+01:02:16	Isabel K. Lee (they/them):	restart your server after you uncomment this part so that it actually works!!!!
+01:03:20	Isabel K. Lee (they/them):	if you decide to deploy your project, change your origins in `cors.rb` to match the URL for your frontend!
+01:04:44	Isabel K. Lee (they/them):	NOW, our fetch request in the frontend should work!!!!!!!!!!!! 🌟
+01:05:26	Isabel K. Lee (they/them):	⚠️ EVERY FETCH REQUEST NEEDS TO CORRESPOND TO A ROUTE IN OUR RAILS BACKEND!! ⚠️
+01:08:27	Isabel K. Lee (they/them):	remember our friend byebug?? 😁
+01:08:43	Jade Decordova:	^^^^OFC
+01:10:53	Waverley Leung:	:0
+01:12:40	Nunny (she/her):	It expects one argument that is a hash??
+01:14:21	Patrick Pierre:	We don’t need a new action because of the form on our front end already right?
+01:14:59	Nunny (she/her):	Good q ^^
+01:15:16	Waverley Leung:	^^
+01:15:27	Isabel K. Lee (they/them):	we don’t need a ‘new’ action and ‘edit’ action because they returned HTML forms! we don’t need that anymore because we’re building our frontend in javascript. 😇
+01:16:07	Isabel K. Lee (they/them):	you will still need to create actions for INDEX, CREATE, UPDATE, and DESTROY though! ‼️
+01:18:49	ChenYun Zhang:	@Isabel, how about show? do we need it?
+01:19:44	Isabel K. Lee (they/them):	^ oh woops, yes you are right hehe
+01:19:53	Isabel K. Lee (they/them):	you also need to create an action for SHOW!!!
+01:22:21	Isabel K. Lee (they/them):	1. Write validations for a model.
+01:22:44	Isabel K. Lee (they/them):	2. In the CREATE action for that model’s controller, write an if/else statement.
+01:23:04	Isabel K. Lee (they/them):	3. IF the new toy instance is valid, render that toy as a JSON
+01:23:38	Isabel K. Lee (they/them):	4. ELSE, throw an error message to the user.
+01:26:22	Jade Decordova:	Will the presence validation fix the blank output?
+01:26:52	Patrick Pierre:	Wouldn’t the response have to have an id to be sent back to us from fetch
+01:27:01	Isabel K. Lee (they/them):	we should do an if/else statement for the validation on both the frontend AND the backend!
+01:28:29	Anna Kim (she/her):	we don’t check the response by the http response # 3/4/500?
+01:30:28	Isabel K. Lee (they/them):	now that we’re full-stack developers, there are more steps for handling the request/response cycle!! 🌪
+01:31:27	Nunny (she/her):	daisy++
+01:31:31	Isabel K. Lee (they/them):	🔥🔥🔥
+01:32:12	Isabel K. Lee (they/them):	we will talk about user authentication on monday~~
+01:32:14	Waverley Leung:	strong params vs params? params is everything the user inputs/what we have in the body of our fetch. But with strong params because of .permit we’re only taking what we want/need, in this case, to create a toy?
+01:33:31	Isabel K. Lee (they/them):	^^^^^^^^^^^^^^^^^^
+01:33:45	Isabel K. Lee (they/them):	yessss, we want to make sure the user only submits valid data!
+01:34:36	Waverley Leung:	Thank you! I just needed a refresher :)
+01:35:10	Jade Decordova:	Wavey ++
+01:35:49	Isabel K. Lee (they/them):	https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+01:35:57	Isabel K. Lee (they/them):	post-lecture check-in form!!!!!!!!!!!!
+01:36:08	Patrick Pierre:	How did you get the status code 422 to show up in the browser?
+01:36:42	Nunny (she/her):	Line 13 ^^
+01:38:46	Dong Xia:	when we delete, do we still render json?
