@@ -1,0 +1,63 @@
+00:16:04	Christy Tropila:	Is it possible to build our project without OOJS?
+00:16:29	Annie Zheng (she/her):	**please don’t code / do other things during lecture!
+00:17:03	Isabel K. Lee (they/them):	^ this is also because it’s actually more time efficient for you to pay attention during lecture, so that you don’t have to spend another hour rewatching it
+00:17:45	Annie Zheng (she/her):	@christy: it’s very difficult to do so unless you’re programming in another language. what we’re doing right now is basically object-oriented js
+00:19:10	Christy Tropila:	ahh okay
+00:23:33	Emmanuel Jose:	How do we set up frontend js index?
+00:24:04	Annie Zheng (she/her):	rails new < project name > --api --database=postgresql   <— creating a rails api
+00:24:08	Emmanuel Jose:	Thank you!
+00:25:28	Annie Zheng (she/her):	the ends of the chicken feet determines the placement of the foreign key
+00:37:37	Annie Zheng (she/her):	run rails db:create before rails db:migrate for Postgres
+00:42:17	ChenYun Zhang:	erb
+00:42:19	Wilson Ng:	to render in view
+00:42:21	Dong Xia:	for view
+00:42:26	Annie Zheng (she/her):	chenyun++ dong++
+00:42:35	Annie Zheng (she/her):	wilson++
+00:49:35	Sylwia Vargas (she/her):	Callback hell.
+00:49:49	Sylwia Vargas (she/her):	https://miro.medium.com/max/721/1*zxx4iQAG4HilOIQqDKpxJw.jpeg
+00:50:13	Annie Zheng (she/her):	**serializers: control what information is being sent out from your rails backend
+00:50:14	Wilson Ng:	in the show action, can I just do @teacher.(associated instances)
+00:50:27	Christy Tropila:	ew^^^^ that looks like a headache!
+00:50:38	Wilson Ng:	LOL yes
+00:51:10	Dong Xia:	fastJSON
+00:53:31	Jade Decordova:	That makes things very organized!!
+00:54:27	Patrick Pierre:	When you say everything being requested is organized together what does that look like in terms of the response?
+00:54:42	Patrick Pierre:	Oh ok
+
+
+01:03:30	Sylwia Vargas (she/her):	“Deprecated” means that it is no longer maintained but it is still a valid tool!
+01:03:38	Sylwia Vargas (she/her):	many companies use it still :)
+01:05:10	Annie Zheng (she/her):	Write `gem active_model_serializers` in your gem file
+01:05:16	Annie Zheng (she/her):	Bundle install
+01:09:02	Jacinta (Jacie) Calixte:	the generator was “rails g serializer Teacher” ?
+01:09:24	Eric Kim:	`spring stop` if you don’t see rails g serializer
+01:10:13	ChenYun Zhang:	you can only use it after you seed your data, right?
+01:10:43	ChenYun Zhang:	ok
+01:11:35	Franklin Bado:	If you pass the wrong attribute on the serializers, what happens?
+01:11:41	Patrick Pierre:	Oh….
+01:13:07	Emmanuel Jose:	Serializers are cool
+01:13:18	Nunny (she/her):	^^
+01:13:21	Patrick Pierre:	^^^
+01:13:37	Sylwia Vargas (she/her):	@EMMANUEL: YES YES YES
+01:13:44	Sylwia Vargas (she/her):	Serializers are cool!
+01:15:51	Patrick Pierre:	I can see how serializers can help you cut down on the number of fetch requests that you will have to make
+01:16:34	Emmanuel Jose:	^^^ I like how they can be chained too
+01:16:38	Nunny (she/her):	^^^^^^
+01:17:37	Christy Tropila:	increases your chance of death
+01:17:47	Sylwia Vargas (she/her):	I usually write the instance methods in serializers when I need to map/select over other models in this specific serializer
+01:18:06	Hortencia:	@christy ha ha
+01:18:35	Sylwia Vargas (she/her):	So e.g. say you want to have a list of all the course names (not the whole objects) in the Teacher serializer
+01:18:54	Sylwia Vargas (she/her):	———
+01:19:03	Sylwia Vargas (she/her):	it’s hard and also not ok according to the style guide
+01:19:10	Sylwia Vargas (she/her):	Write methods.
+01:19:11	ChenYun Zhang:	fat model
+01:26:00	Wilson Ng:	FastJSONApi can’t do that right?
+01:26:13	Dong Xia:	do you have to write belong_to in the classroom Serializer?
+01:26:31	Wilson Ng:	thank you
+01:26:35	Emmanuel Jose:	In this backend file for grade book, is there a json file in the file tree directory (aside from the localhost)?
+01:27:17	Emmanuel Jose:	Ok, thank you!
+01:28:32	Franklin Bado:	Can you do it with the has many : thorough
+01:29:50	ChenYun Zhang:	call teacher just call assignment?
+01:38:59	Anna Kim:	what if your relationships aren’t formed in one linear direction..
+01:39:25	Wilson Ng:	I feel like this takes a way the need to iterate through instances in the controller ?
+01:49:41	Ekaterina Zarudnaya:	Thank you!
