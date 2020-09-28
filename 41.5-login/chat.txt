@@ -1,0 +1,32 @@
+13:39:11	 From Isabel K. Lee (they/them) : the login form only shows up when it’s appended to the page
+13:42:44	 From Nunny (she/her) : Rails params
+13:42:56	 From Waverley Leung : Nunny ++
+13:43:32	 From Isabel K. Lee (they/them) : submit event listener for login form -> make a POST request and pass in the user’s in put in the body of the request
+13:44:42	 From ChenYun Zhang : after you logged in, if you refresh the page, are you still logged in, or you need to login again?
+13:45:02	 From Isabel K. Lee (they/them) : ^^^ great question!
+13:45:19	 From Nunny (she/her) : 🧐 ^^
+13:45:43	 From Isabel K. Lee (they/them) : we need to figure out a way to handle the route for the login POST request
+13:47:16	 From Isabel K. Lee (they/them) : -> let’s go over to our rails backend
+13:47:23	 From Isabel K. Lee (they/them) : -> open up the routes.rb file
+13:47:34	 From Isabel K. Lee (they/them) : -> write a new route for login POST request
+13:47:46	 From Isabel K. Lee (they/them) : post “/login”, to: “teachers#login”
+13:49:01	 From Isabel K. Lee (they/them) : -> create a new method in the teachers controller called “login
+13:49:25	 From Isabel K. Lee (they/them) : if you put a byebug in side “def login” you can see that params with the user’s input got passed in
+13:51:38	 From Isabel K. Lee (they/them) : inside the login method, let’s look for a Teacher instance that matches the user’s input, and save it to a variable
+13:52:01	 From Isabel K. Lee (they/them) : @found_teacher = Teacher.find_by(name: params[:key])
+13:52:20	 From Isabel K. Lee (they/them) : *** eric is only using an instance variable because he likes the colors in the code ***
+13:52:34	 From Isabel K. Lee (they/them) : @found_teacher will either return: nil or an existing Teacher instance
+13:53:05	 From Isabel K. Lee (they/them) : we’re using “find_by” because just “find” will error out if an instance is not found
+13:56:52	 From Isabel K. Lee (they/them) : write a conditional statement that… either renders the json for @found_teacher IF it’s valid, OTHERWISE, it displays an error message if it’s not valid
+13:58:26	 From Isabel K. Lee (they/them) : *** logging in is just like making another a request/response cycle ***
+13:59:17	 From Isabel K. Lee (they/them) : *** serializers have nothing to do with making fetch requests ***
+13:59:43	 From Isabel K. Lee (they/them) : if you get an error, it’s most likely because of the way you wrote the fetch, rather than the serializer itself!
+14:02:12	 From Isabel K. Lee (they/them) : *** you can also create a global teacher object that changes every time someone logs in ***
+14:12:22	 From Isabel K. Lee (they/them) : woohoo!!
+14:17:12	 From Franklin Bado : Button?
+14:20:49	 From Franklin Bado : Do you have access to console.log the teacher too?
+14:22:02	 From Anna : theres teacher id inside classroom 
+14:28:24	 From Franklin Bado : classroom_id singular for the controller
+14:30:13	 From Nunny (she/her) : @everyone bc serializers handle the response right?
+14:42:25	 From Nunny (she/her) : Thank uuuuu
+14:42:26	 From Anna : thank you
