@@ -1,0 +1,28 @@
+10:16:09	 From Sylwia Vargas (she/her) : 🌞
+10:16:10	 From Annie Zheng (she/her) : Morning y’all~
+10:16:22	 From Nunny (she/her) : Morning ☀️
+10:18:58	 From Wilson Ng : 🌻
+10:27:48	 From Sylwia Vargas (she/her) : Kalkidan ++
+10:28:30	 From Annie Zheng (she/her) : Ahhh what is `this`?
+10:28:54	 From Nunny (she/her) : 👀 ^^
+10:28:55	 From Annie Zheng (she/her) : Miss this
+10:30:08	 From Annie Zheng (she/her) : ** y’all can think or `this` similar to  ruby`self`
+10:30:11	 From Annie Zheng (she/her) : of*
+10:46:51	 From Annie Zheng (she/her) : Comeback at 10:51!
+11:01:35	 From Patrick Pierre : How are instance variables done with js?
+11:06:11	 From Anna Kim : how do we save all instructor objects in a class variable?
+11:14:19	 From Sylwia Vargas (she/her) : Which is why [] === [] is false
+11:14:33	 From Sylwia Vargas (she/her) : ^ objects
+11:24:22	 From Wilson Ng : oooh is it because arrow functions are expressions instead of definitions?
+11:24:46	 From Eric Kim : ^
+11:25:17	 From Lida : Can you explain again what the main purpose of the class is?
+11:25:30	 From Patrick Pierre : What’s the difference between this in arrow functions
+11:25:35	 From Patrick Pierre : And in regular functions
+11:26:14	 From Lida : thanks
+11:27:36	 From ChenYun Zhang : why in the call back function when you use arrow function, the “this” is the window?
+11:30:42	 From ChenYun Zhang : thank you
+11:32:00	 From Sylwia Vargas (she/her) : @ChenYun and Patrick
+11:32:01	 From Sylwia Vargas (she/her) : https://dev.to/sylwiavargas/arrow-functions-a-walkthrough-and-gotchas-4p4p
+11:32:05	 From Sylwia Vargas (she/her) : Read the gotchas
+11:36:58	 From Sylwia Vargas (she/her) : @Nunny: you could also use mixins
+11:36:59	 From Sylwia Vargas (she/her) : https://dev.to/bhagatparwinder/what-are-mixins-2a3p
