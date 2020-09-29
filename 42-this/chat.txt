@@ -1,0 +1,98 @@
+10:18:35	 From Christy Tropila : Sylwia do you have an internet crush on Dan?
+10:18:40	 From Nunny (she/her) : Dan abramov ++++
+10:18:43	 From Sylwia Vargas (she/her) : You all should follow Dan 🤩
+10:18:47	 From Christy Tropila : <3
+10:18:58	 From Emmanuel Jose : Dan <3 Sylwia +++++
+10:19:04	 From Isabel K. Lee (they/them) : my cohort surprised sylwia on her birthday by requesting dan abramov to DM her on twitter lmaooooo
+10:19:11	 From Christy Tropila : OMG
+10:19:13	 From Nunny (she/her) : Noooo wayyyyy ^^^^^
+10:19:15	 From Christy Tropila : that is amazinng
+10:19:25	 From Isabel K. Lee (they/them) : or wait it wasn’t her birthday, some other special occasion?? but ya hehe
+10:19:38	 From Emmanuel Jose : We should do that again. Shh, don’t tell her!
+10:19:53	 From Christy Tropila : ^^
+10:20:00	 From Isabel K. Lee (they/them) : ~~ we are going to be talking about a keyword called THIS ~~
+10:20:17	 From Nunny (she/her) : Whatta compliment
+10:20:20	 From Franklin Bado : Wow, the troll is real
+10:20:21	 From Nunny (she/her) : Wowowowow
+10:20:24	 From Isabel K. Lee (they/them) : they’re both married to different people, eric LMAOOO
+10:20:28	 From Emmanuel Jose : 🤣
+10:20:32	 From Sylwia Vargas (she/her) : I run a ReactLadies NYC meetup and so he retweeted me a couple of times
+10:20:36	 From Isabel K. Lee (they/them) : ^^^^^^^^^^^^^^^^^^^^
+10:20:41	 From Jade Decordova : SWEEEEEET
+10:20:43	 From Christy Tropila : +++
+10:21:11	 From Sylwia Vargas (she/her) : Facebook has dropped some good donation to the meetup thanks to Dan ✨
+10:24:27	 From Isabel K. Lee (they/them) : the return value of these 2 functions is different 🤔
+10:24:40	 From Isabel K. Lee (they/them) : this is because of “this” keyword in the function definition
+10:25:02	 From Isabel K. Lee (they/them) : “this” is similar to “self” from ruby!
+10:25:34	 From Isabel K. Lee (they/them) : THEREFORE, “this” will behave differently depending on the context that it’s invoked
+10:27:14	 From Isabel K. Lee (they/them) : -> functions written with the keyword “function” get their “this” value from the execution context
+10:29:03	 From Emmanuel Jose : +++++
+10:29:05	 From Sylwia Vargas (she/her) : Pierogi 🤤
+10:29:10	 From ChenYun Zhang : the second one is equal to window.functionName()?
+10:29:49	 From Isabel K. Lee (they/them) : ^^^^^
+10:29:53	 From Nunny (she/her) : The global window object is the execution context?
+10:30:50	 From Isabel K. Lee (they/them) : -> “this” becomes the global window object if we invoke a regular function by itself
+10:33:04	 From Isabel K. Lee (they/them) : 🤓🤓🤓
+10:33:24	 From Sylwia Vargas (she/her) : real friends share their functions 👯‍♂️
+10:33:51	 From Sylwia Vargas (she/her) : (Which are called methods, in fact, if they are a behavior of an object in OOP)
+10:38:09	 From Isabel K. Lee (they/them) : -> callbacks are function definitions where we are at the mercy of when it executes because it depends on the function receiving the callback
+10:38:55	 From Isabel K. Lee (they/them) : -> if you console.log “this” inside the “click” event listener, it becomes the event.currentTarget
+10:39:44	 From Nunny (she/her) : So the vet.currentTarget is the function receiving it?
+10:42:33	 From Nunny (she/her) : Bc the arr.forEach is a regular function by itself?
+10:42:40	 From Nunny (she/her) : Thats why its the global window object?
+10:47:34	 From Nunny (she/her) : Function introduce() was the regular baseless function ?
+10:52:14	 From Isabel K. Lee (they/them) : BREAK: come back at 10:57
+
+10:58:03	 From Isabel K. Lee (they/them) : let’s get started~!!!
+11:00:24	 From Nunny (she/her) : This us ***
+11:02:22	 From Nunny (she/her) : Could we essentially separate event listeners in different js files too?
+11:02:26	 From Nunny (she/her) : Nvm lol
+11:04:21	 From Isabel K. Lee (they/them) : we’re defining a new class called ButtonJS in `button.js`!
+11:04:35	 From Isabel K. Lee (they/them) : and then in `index.js`, we can create a new instance of our ButtonJS class
+11:07:31	 From Isabel K. Lee (they/them) : -> we have to append the new button objects in order for them to show up in the browser
+11:14:55	 From Waverley Leung : so button.js and index.js are linked because of them both being listed in the index.html?
+11:15:50	 From Wilson Ng : does this help improve scoping issues?
+11:15:51	 From Isabel K. Lee (they/them) : ^^ script tags inside index.html!
+11:15:58	 From Waverley Leung : oooo thank you!
+11:16:27	 From Isabel K. Lee (they/them) : ** the variable has to come first **
+11:16:38	 From Isabel K. Lee (they/them) : ** you have to be intentional with the order of the script tags **
+11:16:41	 From Nunny (she/her) : ^^^^^^
+11:16:55	 From Isabel K. Lee (they/them) : ** this is also an option for organizing your project if you don’t want an index.js file that has a million lines of code **
+11:17:13	 From Isabel K. Lee (they/them) : ~~ ARROW FUNCTIONS TIME TO SHINE ~~
+11:18:09	 From Isabel K. Lee (they/them) : let’s create a helper function that’s going to act as a callback for the “click” event listener!
+11:18:48	 From Sylwia Vargas (she/her) : constructor is like initialize in ruby
+11:20:46	 From Isabel K. Lee (they/them) : what happens if we console.log(this)?????
+11:21:05	 From ChenYun Zhang : the instance?
+11:21:10	 From Nunny (she/her) : The global window object 🧐
+11:25:18	 From Patrick Pierre : So when you execute a baseless function globally the this would be the Window?
+11:30:19	 From Nunny (she/her) : And now we can get the color
+11:31:13	 From Wilson Ng : oooooooohh
+11:31:21	 From Nunny (she/her) : 🤯
+11:31:27	 From Waverley Leung : :O
+11:32:04	 From ChenYun Zhang : ⟹
+11:33:24	 From Patrick Pierre : Wow I had it until just now, now I’m confused again
+11:36:25	 From Nunny (she/her) : Valid
+11:36:28	 From Nunny (she/her) : Thank u
+11:37:23	 From Isabel K. Lee (they/them) : use arrow functions when working with classes in mod 4 ~~
+11:37:41	 From Isabel K. Lee (they/them) : -> the alternative to using arrow function is bind, call, apply
+11:38:38	 From Christy Tropila : lol
+11:38:44	 From Waverley Leung : Christy ++ !!!
+11:38:45	 From Emmanuel Jose : Christy +++
+11:38:45	 From Isabel K. Lee (they/them) : ~~ some fun existential crises in JS ~~
+11:38:52	 From Christy Tropila : existential crises ++++
+11:38:58	 From Waverley Leung : lolol
+11:40:01	 From Kalkidan Taye : In other words use..arrow functions lol
+11:40:11	 From Isabel K. Lee (they/them) : ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+11:40:12	 From Isabel K. Lee (they/them) : ^^^^^^^^^^^^^^^^^^^^^^
+11:40:18	 From Isabel K. Lee (they/them) : yuppppppppp 😅
+11:40:28	 From Isabel K. Lee (they/them) : just use arrow functions plz~~
+11:40:30	 From ChenYun Zhang : 🤯
+11:40:41	 From Nunny (she/her) : 🤯
+11:41:06	 From Kalkidan Taye : Whhhhhyyyyyyy
+11:42:41	 From ChenYun Zhang : when you use bind, you can use both arrow function and regular function?
+11:46:03	 From Nunny (she/her) : 🤯🤯🤯🤯🤯🤯
+11:46:07	 From Kalkidan Taye : My mind is blown……
+11:46:40	 From Lida : lol
+11:49:06	 From Isabel K. Lee (they/them) : post-lecture check-in form: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+11:50:52	 From Waverley Leung : Thank you Eric!!!
+11:50:56	 From Kalkidan Taye : ^^^
