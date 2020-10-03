@@ -1,0 +1,82 @@
+13:37:07	 From Christy Tropila : Thank u!
+13:37:50	 From Lida : thx
+13:39:13	 From Maysoon (She/Her) : lol
+13:44:44	 From Isabel K. Lee (they/them) : ✨ES6 magic✨
+13:44:59	 From Isabel K. Lee (they/them) : let eric = { name, age, eating }
+13:45:05	 From Isabel K. Lee (they/them) : is the same as lines 11 - 15!!
+13:45:47	 From Isabel K. Lee (they/them) : as long as the keys of the POJO match the variables, you can do something like this.
+13:45:59	 From Isabel K. Lee (they/them) : remember that const is unassignable!!!
+13:55:41	 From Isabel K. Lee (they/them) : ~~ learn how to use bracket notation inside of an object ~~
+13:58:50	 From Isabel K. Lee (they/them) : 🚧 destructuring 🚧
+13:59:46	 From Isabel K. Lee (they/them) : const { name, population, founded } = mod3
+14:00:05	 From Isabel K. Lee (they/them) : collapse lines 12-14 into one!!!
+14:00:34	 From Patrick Pierre : The variable names have to match the keys or no?
+14:00:40	 From Isabel K. Lee (they/them) : the other that you destructure doesn’t matter~~
+14:00:49	 From Isabel K. Lee (they/them) : *order
+14:00:51	 From Franklin Bado : Does order matter here like if you do mod 3 = {.  } would that work?
+14:01:29	 From Isabel K. Lee (they/them) : @patrick yup!
+14:01:34	 From Patrick Pierre : Can you do a partial destructure?
+14:02:00	 From Patrick Pierre : Thank you eric
+14:02:18	 From Isabel K. Lee (they/them) : const {name, founded, population} = mod3 is destructuring, whereas let mod3 = {name, founded, population} is reassigning the value of mod3
+14:02:33	 From Isabel K. Lee (they/them) : @patrick yes! you can decide which values you want to pull out. (:
+14:04:01	 From Isabel K. Lee (they/them) : if we do let {languages_mastered: languages} = mod3, we can access lanaguages
+14:04:23	 From Isabel K. Lee (they/them) : any questions???????
+14:08:05	 From Lida : noted
+14:10:23	 From Patrick Pierre : What’s a hook?
+14:23:48	 From Isabel K. Lee (they/them) : ~~ it’s going to be v important knowing how to use the spread operator ~~
+14:25:01	 From Isabel K. Lee (they/them) : oh, poor pandemic eric
+14:25:05	 From Waverley Leung : lol
+14:25:47	 From Isabel K. Lee (they/them) : 🙍🏻‍♂️newEric != 🧟‍♂️ pandemicEric
+14:26:50	 From Isabel K. Lee (they/them) : newEric and pandemicEric are 2 separate objects, but they have almost the same key/value pairs!
+14:27:22	 From Isabel K. Lee (they/them) : ~ we want to add the pandemicEric to the newEric ~
+14:27:52	 From Isabel K. Lee (they/them) : ~~ ahhh love to eat some junk and garbage ~~
+14:29:08	 From Isabel K. Lee (they/them) : it matters the order in which you spread your objects!!
+14:30:53	 From Waverley Leung : ooooo
+14:31:18	 From Wilson Ng : can you keep the order of the keys the same?
+14:31:22	 From Franklin Bado : Is there a way you can the two eating arrays on the newEric?
+14:31:38	 From Isabel K. Lee (they/them) : @wilson the order of the keys is not too important!
+14:31:55	 From Wilson Ng : tyty
+14:32:03	 From Isabel K. Lee (they/them) : @franklin not really! there can only be 1 key of the same name
+14:32:12	 From Franklin Bado : Got it
+14:32:16	 From Lida : “Their can only be one”
+14:32:52	 From Isabel K. Lee (they/them) : ^^^^^^^^^^^
+14:33:19	 From Isabel K. Lee (they/them) : ❌👯‍♂️
+14:35:54	 From Isabel K. Lee (they/them) : ~we should avoid using .push() because react cares about the objects in memories~
+14:36:06	 From Isabel K. Lee (they/them) : ~ basically, we should avoid DIRECTLY mutating objects ~
+14:36:41	 From Emmanuel Jose : Will we ever use slice operator in React?
+14:37:12	 From Isabel K. Lee (they/them) : ✅ spread operator lets us safely update objects (by creating a new object and spreading new objects into that) ✅
+14:37:14	 From Patrick Pierre : When using the spread operator can we control how much of that data structure is spread into a new data structure?
+14:37:17	 From Emmanuel Jose : Thank you!
+14:37:33	 From Isabel K. Lee (they/them) : @patrick not really!
+14:38:03	 From Isabel K. Lee (they/them) : you can spread a sliced array!
+14:38:17	 From Kalkidan Taye : So the key message: do not mutate?
+14:38:37	 From Isabel K. Lee (they/them) : ~ key message: don’t mutate state directly!!! ~
+14:38:59	 From Isabel K. Lee (they/them) : HENCE, functions like this.setState() exist
+14:39:17	 From Isabel K. Lee (they/them) : ~~ if you have no what state is yet, don’t worry ~~
+14:42:42	 From Isabel K. Lee (they/them) : an arrow function will implicitly return if… 1) it’s single-lined, and 2) doesn’t have curly braces
+14:44:04	 From Isabel K. Lee (they/them) : ‼️ wrapping a single-lined arrow function in () will make it implicitly return‼️
+14:44:17	 From Isabel K. Lee (they/them) : let functionSomething = () => ({hello: “this is eric”})
+14:44:26	 From Isabel K. Lee (they/them) : let functionNum = () => (3)
+14:47:59	 From Isabel K. Lee (they/them) : ~~ plz get comfortable with using .map() ~~
+14:50:10	 From ChenYun Zhang : filter in js is kinda like select in ruby?
+14:50:45	 From Isabel K. Lee (they/them) : ~~ map and filter ~~
+14:52:01	 From Isabel K. Lee (they/them) : ‼️ when using sort(), spread the original array, THEN call sort() on that new variable. ‼️
+14:52:42	 From Patrick Pierre : Why do we have to do num1 - num2?
+14:52:48	 From Isabel K. Lee (they/them) : let copyArr = […originalArr]
+14:52:58	 From Patrick Pierre : Oh ok
+14:58:10	 From Hortencia  To  Eric Kim(privately) : Can you please explain filter again
+15:01:15	 From Isabel K. Lee (they/them) : mod 4 will be more fun tho ~~
+15:01:27	 From Isabel K. Lee (they/them) : now javascript is not totally new for you!!
+15:01:33	 From Isabel K. Lee (they/them) : eric: you will never be ready lololol
+15:01:43	 From Isabel K. Lee (they/them) : but the best thing you can do is to prepare!!!
+15:02:54	 From Isabel K. Lee (they/them) : ~~ if anything, read the README labs over the weekend ~~
+15:03:01	 From Isabel K. Lee (they/them) : smelly?????????????????????????????????????????????
+15:03:01	 From Emmanuel Jose : Smelly?!?
+15:03:07	 From Isabel K. Lee (they/them) : stanky???????????????????
+15:03:10	 From Kalkidan Taye : Forgot pandemic Eric…we always get reality check eric
+15:03:14	 From Isabel K. Lee (they/them) : LMAO
+15:03:20	 From Kalkidan Taye : True
+15:03:23	 From Maysoon (She/Her) : lol
+15:03:23	 From Emmanuel Jose : Facts
+15:03:26	 From Isabel K. Lee (they/them) : shtanky code
+15:03:33	 From Isabel K. Lee (they/them) : ~~~~~ BREAK! then come back at 3:08 for feelings ~~~~~
