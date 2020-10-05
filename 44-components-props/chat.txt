@@ -1,0 +1,95 @@
+10:33:59	 From Kalkidan Taye : Welcome back Sylwia!
+10:34:00	 From Hortencia : Welcome back ..
+10:34:00	 From Lida : Welcome back Sylwia!
+10:34:05	 From Anna Kim : ^^^ welcome back!
+10:34:06	 From Emmanuel Jose : Welcome Back!
+10:35:23	 From Christy Tropila : candy corn is perfect the way it is~
+10:35:33	 From Lida : ditto
+10:35:55	 From Kalkidan Taye : I hate candy corn too.
+10:35:55	 From Hortencia : Pretty much Christy ! Waxy and weird
+10:39:31	 From Anna Kim : React Doc ++
+10:39:43	 From Annie Zheng (she/her) : https://reactjs.org/docs/getting-started.html — react docs: we’ll be covering everything during the `Main Concepts` this week
+10:40:49	 From Annie Zheng (she/her) : under*
+10:41:11	 From Sylwia Vargas (she/her) : React Docs are ones of the best written docs out there (not joking) + they are available in many languages, even those that are not very popular in the tech world (e.g. Azerbaijani)
+10:41:24	 From Sylwia Vargas (she/her) : Please please please start building asap
+10:44:11	 From Anna Kim : will we be using babel while building react app?
+10:44:39	 From Sylwia Vargas (she/her) : create-react-app sets everything up for you <3
+10:44:46	 From Anna Kim : yay. whew. thank you
+10:47:15	 From Annie Zheng (she/her) : `npm i -g create-react-app` : package that allows you to install create react app
+10:47:51	 From Annie Zheng (she/her) : ^ only need to do this once
+10:49:04	 From Annie Zheng (she/her) : `create-react-app <project name>` : create a new react app for you similar to `rails new <project app>`
+10:51:10	 From Jacinta (Jacie) Calixte : list of stores
+10:51:13	 From David Felix : Objects?
+10:51:15	 From Dong Xia : a list of bubble tea
+10:51:30	 From Emmanuel Jose : +++++
+10:51:37	 From Jacinta (Jacie) Calixte : YES
+10:51:40	 From Jacinta (Jacie) Calixte : Bubble teaaaa
+10:51:44	 From Lida : ++++++
+10:52:21	 From Alex E (she/her) : story time is spelled wrong… storeytime
+10:52:32	 From Anna Kim : pun intended hehe
+10:52:35	 From Alex E (she/her) : oh lol
+10:52:56	 From Jacinta (Jacie) Calixte : does it install like this every time?
+11:14:17	 From Nunny (she/her) : Did you say both ports are at 3000?
+11:14:30	 From Sylwia Vargas (she/her) : yes^
+11:14:57	 From Sylwia Vargas (she/her) : A trick for that is opening Rails first and then opening react server
+11:15:04	 From Sylwia Vargas (she/her) : it will prompt you to change the port :)
+11:15:24	 From Christy Tropila : ^^ cool!
+11:16:18	 From Sylwia Vargas (she/her) : You can also change the package.json and specify a different port there
+11:16:26	 From Sylwia Vargas (she/her) : but that feels like an overkill for labs :)
+11:22:11	 From Sylwia Vargas (she/her) : Service workers are for your app to be available offline
+11:22:21	 From Sylwia Vargas (she/her) : For e.g. push notifications
+11:30:24	 From Nunny (she/her) : 🔥 +++
+11:31:01	 From Anna Kim : is there a script tag index.js inside index.html?
+11:32:34	 From Annie Zheng (she/her) : @anna’s q: react is using web pack to send out all of the js files, you don’t have to make sure if your script is deferred
+11:35:25	 From Patrick Pierre : What’s the difference between the DOM and ReactDOM?
+11:38:12	 From Sylwia Vargas (she/her) : here’s a nice and approachable blog post on the virtual Dom: https://dev.to/maulik/the-best-example-to-understand-virtual-dom-4lfn
+11:38:34	 From Sylwia Vargas (she/her) : Read read ^
+11:39:37	 From Nunny (she/her) : amazing.
+11:41:25	 From Dong Xia : what about img tag?
+11:41:43	 From Sylwia Vargas (she/her) : img tag is self-closing :)
+11:41:59	 From Annie Zheng (she/her) : 1. Anywhere you’re writing JSX — you have to `import React from “react”`
+2. You have to be very careful as to how you write your JSX tags, it will throw an error if you forget to close tags
+11:42:29	 From Sylwia Vargas (she/her) : While we are on img tags: React really cares about accessibility and will shout at you if you don’t include a proper alt attribute
+11:42:39	 From Patrick Pierre : If it is self closing do you need the slash?
+11:43:24	 From Sylwia Vargas (she/her) : self closing means it’s <something/> and not <something> </something>
+11:45:15	 From Annie Zheng (she/her) : Pls come back at 11:50~
+11:59:50	 From Patrick Pierre : So we don’t have to build out the components themselves using OOP?
+12:00:15	 From ChenYun Zhang : can we use export name here?
+12:00:39	 From ChenYun Zhang : ok
+12:00:41	 From Anna Kim : so we only have to import ReactDOM on the file that we are rendering everything to the DOM?
+12:03:03	 From Sylwia Vargas (she/her) : ^ yes
+12:03:59	 From Sylwia Vargas (she/her) : ✨ React is awesome — it’s like playing with Lego, you just connect different blocks
+12:04:13	 From Sylwia Vargas (she/her) : Think about reusability!
+12:05:32	 From Christy Tropila : Is the styling that we see for that header a default style?
+12:08:02	 From Sylwia Vargas (she/her) : ^ default for the browser
+12:09:17	 From Anna Kim : Daisy ++
+12:10:57	 From Emmanuel Jose : Render is always a return value?
+12:11:18	 From Emmanuel Jose : Ok, thanks!
+12:15:37	 From Christy Tropila : would the fetch request be above the return statement?
+12:17:31	 From Sylwia Vargas (she/her) : @Christy: I love the question and how you think about it! Actually, the answer will be: yes and no.
+12:18:04	 From Anna Kim : Quicklys… the old days
+12:18:22	 From Christy Tropila : @Sylwia thank you!
+12:18:53	 From Sylwia Vargas (she/her) : (We’ll use a so-called lifecycle method, a tool given to us by React, to have the fetch work for us when we need it and when the component is ready to get the data :) )
+12:19:17	 From Sylwia Vargas (she/her) : (That’s in the class components)
+12:19:25	 From Christy Tropila : Sounds convenient
+12:20:06	 From Sylwia Vargas (she/her) : (In the functional components, you will have it above the render but I think it will not be too often that you will have a fetch in functional components for the reason you will see later today and tomorrow)
+12:24:19	 From Sylwia Vargas (she/her) : ✨think about props like a gift from a parent to their children: “here, my Store1 child, is my gift to you, a name: Quicklys”, “here, my Store2 child, is my gift to you,  a name: Vivis”
+12:24:46	 From Sylwia Vargas (she/her) : “Here, my Header child, is my gift for you: nothing, I don’t like you too much”
+12:25:02	 From Sylwia Vargas (she/her) : 💔
+12:25:08	 From Emmanuel Jose : Sylwia 🤣
+12:25:21	 From Kalkidan Taye : lol
+12:26:19	 From Anna Kim : {} ?
+12:26:23	 From Kalkidan Taye : ^^^
+12:27:12	 From Kalkidan Taye : Anna++
+12:28:28	 From Emmanuel Jose : Props can never be stated without “this,” correct?
+12:29:15	 From ChenYun Zhang : if it’s in a function, you can use props without this
+12:29:26	 From Kalkidan Taye : Who doesn’t love all their children lol?? Can you imagine Christmas? You get a gift, you get a gift…not you I don’t like you lololol
+12:29:43	 From Sylwia Vargas (she/her) : this.props -> class components
+12:29:49	 From Sylwia Vargas (she/her) : Props -> functional components
+12:30:12	 From Sylwia Vargas (she/her) : @Kalkidan -> now you will remember how to explain the props for your whole life
+12:30:35	 From Emmanuel Jose : Props to you, Kalkidan +++
+12:30:47	 From Christy Tropila : +++
+12:31:32	 From Kalkidan Taye : Lol….
+12:31:56	 From Nunny (she/her) : ^^
+12:32:02	 From Franklin Bado : hehe
+12:37:21	 From Annie Zheng (she/her) : 🌟Post Lecture Check-in Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
