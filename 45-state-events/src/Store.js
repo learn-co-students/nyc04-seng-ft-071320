@@ -29,16 +29,12 @@ class Store extends React.Component{
 
 
 
-
-
-
-
+        // NICE TO KNOW:
 
         // SECOND ARGUMENT OF this.setState is a callback
         // this.setState({}, () => {
             // What to do after state has changed
         // })
-
 
 
 
@@ -68,7 +64,6 @@ class Store extends React.Component{
 
 
     render(){
-        console.log("STATE", this.state)
         return(
             <li className="container">
                 <img src="https://ih1.redbubble.net/image.1006770049.1439/flat,750x1000,075,f.jpg" alt='bubble tea' />

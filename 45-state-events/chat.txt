@@ -1,0 +1,50 @@
+14:01:58	 From David Felix : Everything with enough ketchup tastes good
+14:05:02	 From Christy Tropila : ^^^
+14:12:21	 From Jacinta (Jacie) Calixte : so on click is an event listener?? no need to write it out anymore??
+14:12:39	 From Annie Zheng (she/her) : Yup!
+14:12:56	 From Jacinta (Jacie) Calixte : wow 🤯🤯
+14:13:30	 From Samir Triande : React documentation+++
+14:13:33	 From Annie Zheng (she/her) : 1. Find the JSX that we want an event to happen on 
+2. Pass in an attribute the’s specifically named the event that we want ex: `onClick`
+14:13:46	 From Annie Zheng (she/her) : that’s*
+14:14:26	 From Eric Kim : https://reactjs.org/docs/events.html
+14:16:17	 From Sylwia Vargas (she/her) : No one likes doing that. Inline event handlers are just really frowned upon (unless it’s a functional component that’s just like 10 lines)
+14:19:41	 From Christy Tropila : can you explain again why handleOrderClick() won't work
+14:21:18	 From Christy Tropila : thx
+14:22:07	 From Annie Zheng (she/her) : @christy’s q: When you’re working inside of the render function, you don’t have access to the outer scope so you have to use the `this` to refer to something in the outer scope
+14:22:32	 From Franklin Bado : You can have a module that holds all event listener and then import the file here in Store.js right?
+14:24:18	 From Waverley Leung : can you repeat the difference between evt.target and evt.currentTarget?
+14:24:23	 From Anna Kim : ^^^
+14:25:49	 From Waverley Leung : thank you!
+14:30:58	 From Anna Kim : i was just about to ask, arrow func replaces .bind?
+14:33:23	 From Annie Zheng (she/her) : Come back at 2:38~
+14:42:41	 From Annie Zheng (she/her) : Sylwia ++
+14:44:14	 From Emmanuel Jose : This is initial state?
+14:46:21	 From Anna Kim : curly
+14:46:31	 From Annie Zheng (she/her) : Anna ++
+14:48:56	 From ChenYun Zhang : with these, you don’t need to write the constructor function?
+14:49:13	 From ChenYun Zhang : ok
+14:49:26	 From Franklin Bado : Do we need both, like at the same time? Wht if you only want to have state?
+14:55:03	 From Sylwia Vargas (she/her) : DO NOT MUTATE STATE
+15:00:16	 From Emmanuel Jose : setState is how children communicate back to parent?
+15:00:43	 From Emmanuel Jose : Ok, thank you!
+15:03:57	 From ChenYun Zhang : setState is used to change props?
+15:05:24	 From Anna Kim : can you write this.state +1 inside handleOrderClick?
+15:08:37	 From Sylwia Vargas (she/her) : Remember to use console.log!!
+15:08:44	 From Anna Kim : thank you
+15:11:18	 From Annie Zheng (she/her) : React dev tools : https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en
+15:15:21	 From Anna Kim : but this doesn’t get saved in our backend right?
+15:16:10	 From Anna Kim : i thought setState was going to be the answer to replace fetch... in my dreams…
+15:23:30	 From Patrick Pierre : Don’t they both use a value from our previous state?
+15:24:50	 From Wilson Ng : so that functional setState example you have there is the same as line 25-26? functionally speaking
+15:25:11	 From Anna Kim : oldState is undefined no?
+15:25:26	 From Anna Kim : ah. ok
+15:26:07	 From Patrick Pierre : What makes it better?
+15:26:59	 From Anna Kim : should we use setState for every state key attributes?
+15:32:21	 From Anna Kim : can a parent component can have state?
+15:32:27	 From Eric Kim : https://reactjs.org/docs/faq-state.html
+15:33:02	 From Sylwia Vargas (she/her) : @Anna -> yes!
+15:33:14	 From Sylwia Vargas (she/her) : And you can pass the state value down to a child as props
+15:33:37	 From Eric Kim : https://reactjs.org/docs/thinking-in-react.html#step-3-identify-the-minimal-but-complete-representation-of-ui-state
+15:34:06	 From Anna Kim : @sylwia ty!
+15:35:21	 From Annie Zheng (she/her) : 🌟Post Lecture Check-in Link: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
