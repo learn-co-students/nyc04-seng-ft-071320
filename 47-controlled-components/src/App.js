@@ -6,11 +6,6 @@ import Form from './Form'
 
 import './App.css';
 
-// arrayOfStores -> [{}, {}, {}]
-  // arrayOfStores needs to be saved to state somewhere, so we can dynamically decide on the number of stores to render
-  // Only class components can have state
-
-
   // Parent's state can be sent down as props
     // state -> props (OK)
   // Child's props should not become child's state

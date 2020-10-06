@@ -1,21 +1,57 @@
-11:41:36	 From Anna Kim : yesssssss
-11:41:37	 From Waverley Leung : gong cha ++
-11:41:44	 From Annie Zheng (she/her) : My fav ++
-11:53:38	 From Samir Triande : Do we have to extend React. Component or we can just extend Component
-11:54:56	 From Samir Triande : Ooh yeah true. Thank you
-11:55:11	 From Emmanuel Jose : Can state ever be declared globally?
-11:55:12	 From Samir Triande : I’m using the extension.
-11:55:40	 From Emmanuel Jose : Thank you!
-11:56:09	 From Lida : state is the place were you store the properties?
-11:57:03	 From Nunny (she/her) : Mmm ok
-11:58:14	 From Lida : Cool - thx
-11:58:14	 From Anna Kim : could you re-explain the difference btw class component vs functional component?
-11:59:47	 From Anna Kim : thank you clarifying!
-12:00:54	 From Emmanuel Jose : ^^^^^
-12:03:07	 From Anna Kim : give props
-12:03:09	 From Dong Xia : props
-12:07:30	 From Anna Kim : so we have to pass props as an argument for functional component but not necessary for children class component?
-12:07:58	 From Anna Kim : i meant to have access inside the functional component*
-12:24:27	 From Anna Kim : LOL i was just going to ask about index..
-12:24:46	 From Anna Kim : it was in the learn co lab :(
-12:40:01	 From Lida : Good question Dasiy +++
+14:22:50	 From Anna Kim : could you repeat that concept one more time
+14:23:12	 From Anna Kim : thank you
+14:39:40	 From Emmanuel Jose : I wouldn’t want a Burger King-flavored bubble tea.
+14:39:54	 From Dong Xia : lol
+14:40:14	 From ChenYun Zhang : Impossible BubbleTea
+14:40:50	 From Emmanuel Jose : lol ChenYun
+14:42:43	 From Waverley Leung : wow thank you for that explanation!
+14:43:28	 From Kalkidan Taye : Awesome!!!
+14:43:51	 From Kalkidan Taye : TY!
+14:55:59	 From Annie Zheng (she/her) : Come back at 3:00~
+15:04:26	 From Christy Tropila : I hate when my sister uses my shampoo
+15:04:39	 From Maysoon (She/Her) : lol
+15:04:46	 From Hortencia : ^^^
+15:05:54	 From ChenYun Zhang : ! ! ! @my parents
+15:05:58	 From Waverley Leung : lol wow he looks so excited for that credit card
+15:06:07	 From Annie Zheng (she/her) : ;-;
+15:06:16	 From Emmanuel Jose : “Why is there a $12,000 bill on bubble tea?!?”
+15:06:19	 From Nunny (she/her) : Whoa Annie big spender
+15:06:20	 From Annie Zheng (she/her) : LOOOL
+15:06:37	 From Franklin Bado : She is not leaving the bubble tea like ever
+15:07:04	 From Hortencia : What !
+15:07:06	 From Emmanuel Jose : !!!
+15:07:16	 From Franklin Bado : Oh no,, bad Annie
+15:07:24	 From Waverley Leung : lol should have just bought the store
+15:07:33	 From Emmanuel Jose : ^^^^
+15:07:53	 From Hortencia : lol
+15:08:41	 From Anna Kim : this is some beautiful storytelling
+15:08:50	 From Emmanuel Jose : These slides +++
+15:09:03	 From ChenYun Zhang : ^^^^^^^^
+15:09:06	 From Nunny (she/her) : Annie please blink if you need help in this family
+15:09:17	 From Kalkidan Taye : lol
+15:09:32	 From Anna Kim : prop was a trap...
+15:10:47	 From Anna Kim : credit card == adult traps
+15:13:06	 From Franklin Bado : Let one child be happy, it is ok
+15:14:58	 From Hortencia : Like telephone
+15:15:21	 From Emmanuel Jose : Hortencia +++
+15:17:58	 From Emmanuel Jose : If a child is also a parent, can the grandchild talk directly to the grandparent?
+15:20:25	 From Sylwia Vargas (she/her) : 💸 💸 💸
+15:20:38	 From Nunny (she/her) : Information up is the state AND the props?
+15:21:15	 From Sylwia Vargas (she/her) : It’s the national “pay your daughter day” today, btw (why is this a thing, America?!)
+15:21:46	 From Annie Zheng (she/her) : Gonna bring it up with my parents today ^^
+15:21:51	 From Sylwia Vargas (she/her) : “National Transfer Money to Your Daughter Day “, actually — sorry!
+15:26:32	 From Anna Kim : infofromChild is POJO?
+15:30:24	 From Anna Kim : are we going to making fetch request for parent state?
+15:35:29	 From Annie Zheng (she/her) : Post Lecture Check-in Form: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+15:38:23	 From Eric Kim : Sylwia is literally the GOAT when it comes to blogging.
+15:38:33	 From Annie Zheng (she/her) : ^^^
+15:38:41	 From Emmanuel Jose : Charging 2 credit cards in 1 store.
+15:38:57	 From Annie Zheng (she/her) : Blogging is part of career prep~
+15:39:45	 From Eric Kim : She earns money and swag (shirts/sweaters/etc)
+15:39:53	 From Hortencia : ^^^
+15:39:55	 From Eric Kim : She’s being modest
+15:40:13	 From Christy Tropila : Its also a great source of side income. I have earned 31 cents this month from my  blogs on medium lol
+15:40:16	 From Lida : Nice!
+15:40:19	 From Emmanuel Jose : $$$
+15:40:22	 From Wilson Ng : ;OOO
+15:40:23	 From Christy Tropila : $$$$$$

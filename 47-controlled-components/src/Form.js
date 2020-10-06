@@ -4,7 +4,6 @@ import React from 'react'
     // State controlling input - `value`
     // Input controlling state - `onChange`
 
-
 // For you to use `evt.target.name`, the keys of your state has to match the name of your inputs
 
 class Form extends React.Component{
@@ -14,11 +13,10 @@ class Form extends React.Component{
         orders: 0
     }
 
-
     handleInputChange = (evt) => {
         // if(evt.target.type === "number"){
         // }
-        
+
             this.setState({
                 [evt.target.name] : evt.target.value
             })
@@ -31,7 +29,7 @@ class Form extends React.Component{
 
     handleSubmit = (evt) => {
         evt.preventDefault()
-        // `this` is an instance of a Form <Form/>
+        // `this` is an instance of a <Form/>
         this.props.creditCard(this.state)
     }
 
