@@ -1,0 +1,21 @@
+11:41:36	 From Anna Kim : yesssssss
+11:41:37	 From Waverley Leung : gong cha ++
+11:41:44	 From Annie Zheng (she/her) : My fav ++
+11:53:38	 From Samir Triande : Do we have to extend React. Component or we can just extend Component
+11:54:56	 From Samir Triande : Ooh yeah true. Thank you
+11:55:11	 From Emmanuel Jose : Can state ever be declared globally?
+11:55:12	 From Samir Triande : I’m using the extension.
+11:55:40	 From Emmanuel Jose : Thank you!
+11:56:09	 From Lida : state is the place were you store the properties?
+11:57:03	 From Nunny (she/her) : Mmm ok
+11:58:14	 From Lida : Cool - thx
+11:58:14	 From Anna Kim : could you re-explain the difference btw class component vs functional component?
+11:59:47	 From Anna Kim : thank you clarifying!
+12:00:54	 From Emmanuel Jose : ^^^^^
+12:03:07	 From Anna Kim : give props
+12:03:09	 From Dong Xia : props
+12:07:30	 From Anna Kim : so we have to pass props as an argument for functional component but not necessary for children class component?
+12:07:58	 From Anna Kim : i meant to have access inside the functional component*
+12:24:27	 From Anna Kim : LOL i was just going to ask about index..
+12:24:46	 From Anna Kim : it was in the learn co lab :(
+12:40:01	 From Lida : Good question Dasiy +++
