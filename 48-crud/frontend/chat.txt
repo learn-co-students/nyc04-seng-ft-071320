@@ -1,0 +1,64 @@
+11:05:37	 From Christy Tropila : Hey Eric do you mind making sure the video banner is moved far over to the side, it was covering the code in the previous lectures
+11:05:57	 From Maysoon (She/Her) : GM love the hair Isabel!
+11:06:02	 From Isabel K. Lee (they/them) : thanks maysoon!!
+11:06:25	 From Maysoon (She/Her) : YW
+11:06:36	 From Isabel K. Lee (they/them) : backend -> localhost:3000
+11:08:18	 From Isabel K. Lee (they/them) : frontend -> localhost:3001
+11:08:54	 From Isabel K. Lee (they/them) : goal for this lecture: take the info from the rails backend and CRUD on it in the react frontend
+11:10:12	 From Isabel K. Lee (they/them) : our seed data is created in seeds.rb in our rails backend!
+11:11:15	 From Isabel K. Lee (they/them) : fetch makes it possible for our backend server to communicate with our frontend server 😍
+11:11:22	 From Kalkidan Taye : no…my laptop can’t take anymore
+11:11:31	 From Lida : lol
+11:11:32	 From Isabel K. Lee (they/them) : ⚠️ combooter may get hot 🔥
+11:12:17	 From Lida : 😸
+11:12:17	 From Isabel K. Lee (they/them) : in our frontend directory, we’re going to delete the database file because we’re going to be fetching our data from the rails backend
+11:12:42	 From Isabel K. Lee (they/them) : in the state in app.js, we’re going to make stores equal an empty array
+11:12:52	 From Isabel K. Lee (they/them) : state = { stores: [ ] }
+11:13:16	 From Isabel K. Lee (they/them) : we’re then sending this data down to the StoreContainer component, but it’s still going to be an empty array
+11:14:07	 From Kalkidan Taye : fetch
+11:14:15	 From Isabel K. Lee (they/them) : ❓ how do we get the info from localhost:3000 ❓
+11:14:26	 From Isabel K. Lee (they/them) : make a fetch request using a react lifecycle method!!!!!!!!!!
+11:14:37	 From Isabel K. Lee (they/them) : ✨ componentDidMount() ✨
+11:14:56	 From Isabel K. Lee (they/them) : lifecycle methods are only available in class components
+11:15:32	 From Isabel K. Lee (they/them) : shortcomings of functional components: you can’t use state and lifecycle methods
+11:17:46	 From Isabel K. Lee (they/them) : componentDidMount() and render() are both lifecycle methods! ♼
+11:26:48	 From Kalkidan Taye : cool
+11:27:15	 From Anna Kim : can componentDidMount have multiple fetch requests? or just one?
+11:29:14	 From Isabel K. Lee (they/them) : write our fetch request to localhost:3000 inside the componentDidMount() method!
+11:29:47	 From Isabel K. Lee (they/them) : syntactically, it’s the same as the fetch requests we wrote in mod 3!! 🦜
+11:31:12	 From Isabel K. Lee (they/them) : in the 2nd then statement, set the local state with the new data from our fetch GET request!!!!
+11:31:36	 From Isabel K. Lee (they/them) : this.setState({ stores: arrayOfStores })
+11:33:04	 From Isabel K. Lee (they/them) : @anna yes!! you can have more than one fetch. (:
+11:38:05	 From Isabel K. Lee (they/them) : you should only have 1 componentDidMount() method!! in the 2nd then statement, you can add as much as logic as you want.
+11:38:07	 From ChenYun Zhang : does that mean we should put all the delete, update, and get inside the componentDidMount
+11:38:59	 From Isabel K. Lee (they/them) : componentDidMount() is independent from fetch requests!
+11:51:26	 From Isabel K. Lee (they/them) : let’s come back!!!
+11:52:34	 From Isabel K. Lee (they/them) : @anna does that make sense? (:
+11:53:26	 From Anna Kim : i’ll think of it as putting chips inside the pringles container and taking it out lol
+11:53:32	 From Anna Kim : @isabel yes thank you
+11:54:02	 From Isabel K. Lee (they/them) : omg yes!!! that’s a great way to think about it hehe
+11:54:53	 From ChenYun Zhang : method, body,header
+11:56:29	 From Emmanuel Jose : Do all class components in the frontend (form.js, app.js, store.js, etc.) require componentDidMount ?
+11:56:56	 From Emmanuel Jose : Thank you!
+12:05:09	 From Emmanuel Jose : Can we see backend routes?
+12:05:25	 From Emmanuel Jose : That’s ok, Eric!
+12:05:25	 From Isabel K. Lee (they/them) : 😱
+12:06:18	 From Waverley Leung : Daisy ++
+12:07:59	 From Anna Kim : is creditCard going to bring back the data?
+12:13:03	 From Isabel K. Lee (they/them) : create a new object by using the spread operator!
+12:13:19	 From Isabel K. Lee (they/them) : ⚠️ don’t mutate the state directly ⚠️
+12:14:27	 From Isabel K. Lee (they/them) : push the new store instance into copyOfStores so that we’re not directly mutating the state!!
+12:14:47	 From Isabel K. Lee (they/them) : and then use this.setState() to update the value of stores in the state
+12:28:48	 From Isabel K. Lee (they/them) : ~~ props are like magical elevators ~~
+12:30:12	 From Isabel K. Lee (they/them) : post-lecture check-in form: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+12:39:59	 From Ekaterina Zarudnaya : Shall we get the code for backend as well?
+12:40:08	 From Isabel K. Lee (they/them) : id is always going to be unique, so it’s a good way of finding a specific instance!
+12:40:38	 From Anna Kim : how many models will we be working with on the code challenge
+12:41:14	 From Isabel K. Lee (they/them) : ^ it’s going to be 1 model with JSON server for backend!
+12:42:23	 From Isabel K. Lee (they/them) : you can have attributes in your state that don’t exist in the backend!
+12:42:34	 From Isabel K. Lee (they/them) : for example, having a selectedState attribute that you can change in the frontend
+12:46:11	 From Isabel K. Lee (they/them) : ✨ if it’s easier to think about it like this, you can think about render housing all the components that you want to display on the page and the functions that are passed down to each of those components ✨
+12:46:31	 From Nunny (she/her) : ^^^^ thank u
+12:47:17	 From Isabel K. Lee (they/them) : ✨ you can create as many helper methods inside body of a component, and then send them down to specific components inside the render method ✨
+12:49:16	 From Nunny (she/her) : Thank youuu
+12:49:33	 From Isabel K. Lee (they/them) : take a full hour for lunch!!!!!!!!
