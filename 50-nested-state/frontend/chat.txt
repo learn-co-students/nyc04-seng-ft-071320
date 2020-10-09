@@ -1,32 +1,29 @@
-10:36:30	 From Anna Kim : thank you eric
-10:47:12	 From Wilson Ng : quick refresher - what does Rails API return after destroy action in JSON format again?
-10:47:24	 From ChenYun Zhang : ok
-10:47:48	 From Wilson Ng : oooh thank you
-10:48:21	 From Isabel K. Lee (they/them) : hehe happens to the best of us
-10:50:12	 From Christy Tropila : Can you go over why we don't have a constructor in our class with super(props)? 
-10:50:57	 From Lida : ^^^^^^
-10:52:07	 From Christy Tropila : yep in so many youtube videos
-10:52:16	 From Christy Tropila : yhank u
-11:02:35	 From Nunny (she/her) : So state should always be in app.js?
-11:03:10	 From Nunny (she/her) : Right thats the state I had in mind bc it lives in the Form.js
-11:04:24	 From Nunny (she/her) : Oh ok
-11:04:42	 From Nunny (she/her) : Thank you
-11:05:27	 From Nunny (she/her) : That helped a lot
-11:07:56	 From Christy Tropila : Can you just go over quick why you are creating a functional component and not a class for Search.js
-11:08:28	 From Christy Tropila : cool thx
-11:10:12	 From Anna Kim : shouldn’t we send down func definition?
-11:14:13	 From Annie Zheng (she/her) : Come back at 11:19~
-11:22:55	 From Anna Kim : is the const making sure event data persists?
-11:32:12	 From ChenYun Zhang : propname
-11:32:24	 From Kalkidan Taye : object
-11:32:29	 From Wilson Ng : key-value
-11:37:24	 From Anna Kim : why do 2 states get console logged?
-11:43:17	 From Kalkidan Taye : Yess!!! I suddenly got excited lol
-11:51:52	 From Nunny (she/her) : It got removed bc that was the filter we wrote?
-11:55:27	 From Waverley Leung : can you repeat why componentWillUnmount is in Store.js?
-11:56:44	 From Waverley Leung : oooo thank you!
-12:04:41	 From Annie Zheng (she/her) : Post Lecture Check-in Form => https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
-12:05:25	 From Kalkidan Taye : When is it due? Wednesday?
-12:05:45	 From Kalkidan Taye : Cool ty
-12:05:47	 From Waverley Leung : are we having a mock challenge too?
-12:06:01	 From Waverley Leung : thank you!
+10:36:33	 From Waverley Leung : Evening Enlightenment ++
+10:41:45	 From Waverley Leung : props!
+10:41:45	 From ChenYun Zhang : props
+10:47:14	 From Anna Kim : react is so good telling us to use every variables we create lol…
+10:47:42	 From Emmanuel Jose : ^^^
+10:47:44	 From Kalkidan Taye : You can add the index as a key right?
+10:47:56	 From Anna Kim : ^^ eric says avoid number
+10:48:14	 From Kalkidan Taye : Ok thank you Anna. I saw it as one of the labs.
+10:48:43	 From Anna Kim : ^^ i did too!
+10:53:36	 From Kalkidan Taye : Thank you
+10:57:24	 From Christy Tropila : I thought state was used  for dynamic information so if the amount of drinks is changing wouldn't it be state?
+10:58:52	 From Christy Tropila : ah ok forgot that part
+11:17:18	 From Anna Kim : ooh the useful detail. thanks franklin
+11:18:41	 From Franklin Bado : 👉
+11:25:09	 From ChenYun Zhang : app -> storecontiner -> store -> DrinkContainer-> newDrinkForm, DrinkFrom: got it, let me invoke it.
+11:28:22	 From Waverley Leung : the drinks are coming from the store because it’s nested right?
+11:29:14	 From Waverley Leung : oooo okay!
+11:29:17	 From Anna Kim : you won’t be using setState in app right?
+11:35:55	 From Anna Kim : 🤯reviews..
+11:36:06	 From Hortencia : ^^^^^
+11:38:02	 From Emmanuel Jose : Will we create migrations for React projects?
+11:38:23	 From ChenYun Zhang : how many model this time?
+11:38:27	 From Anna Kim : ^^^
+11:39:00	 From Ekaterina Zarudnaya : Algo Club!
+11:39:32	 From Ekaterina Zarudnaya : Thank you Eric!!!
+11:39:34	 From ChenYun Zhang : great lecture, thank you Eric!
+11:39:36	 From Anna Kim : thank you for doing this optional lecture!
+11:39:41	 From Hortencia : ^^
+11:39:42	 From Christy Tropila : Thanks!
