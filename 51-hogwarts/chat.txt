@@ -1,0 +1,79 @@
+13:33:26	 From Dong Xia : there is no magic
+13:46:42	 From Christy Tropila : wow that just cleared up so much confusion
+13:46:44	 From Christy Tropila : thank u
+13:47:11	 From Waverley Leung : Thank you for the clarification! Christy good question!
+13:55:15	 From Wilson Ng : Eric, I guess I am still kind of iffy on the syntax. Would it be okay to move line 7-8 outside of the render() method, but still inside the class component?
+13:55:40	 From Waverley Leung : ^^^
+13:57:37	 From Christy Tropila : So every return needs to use JSX . we couldn't do key=pigObj.name
+13:57:38	 From Christy Tropila : ?
+14:00:25	 From Christy Tropila : So in classes we have automatic access to props unlike functional components we have to pass props in as a parameter
+14:01:15	 From Christy Tropila : Thank u
+14:03:52	 From Waverley Leung : oooo
+14:05:28	 From ChenYun Zhang : 🤯
+14:06:07	 From Anna Kim : he just wrote my 30 lines of code… in 2
+14:06:10	 From Christy Tropila : can we put imageName in the h2
+14:06:43	 From Emmanuel Jose : These chosen images were..not good
+14:07:00	 From Waverley Leung : ^^
+14:07:13	 From Christy Tropila : I love MudBlood lol
+14:07:13	 From Wilson Ng : cherub the cutest
+14:07:19	 From Bella Evalle : honestly
+14:07:28	 From Emmanuel Jose : LOL
+14:07:29	 From Waverley Leung : lolol
+14:07:33	 From Kalkidan Taye : lol
+14:08:36	 From Kalkidan Taye : I was so excited…that it was a Harry Potter lab…when I looked at the images with the blurred out human faces…I felt like I walked into a Criminal minds for pig shows…shook lol.
+14:09:09	 From Emmanuel Jose : ^^^ It was like one of those falling dreams, I like cute piggies but I wanted to go to Hogwarts.
+14:09:12	 From Ekaterina Zarudnaya : lol 
+14:11:13	 From Kalkidan Taye : @Emmanuel agreed…
+14:19:15	 From Christy Tropila : Such a weird attribute lol
+14:22:34	 From Annie Zheng (she/her) : Let’s come back at 2:27~
+14:31:43	 From Isabel K. Lee (they/them) : pigs are naturally very clean animals~~
+14:31:59	 From Isabel K. Lee (they/them) : they’re also very smart and affectionate 😭
+14:32:23	 From Isabel K. Lee (they/them) : plz don’t let this lab make you think negatively about pigs
+14:32:40	 From Anna Kim : did you remove import port data form app?
+14:32:43	 From Anna Kim : pork*
+14:32:55	 From Anna Kim : ah okay thank you
+14:33:46	 From Isabel K. Lee (they/them) : ** select tag has to be controlled, just like an input! **
+14:36:26	 From Isabel K. Lee (they/them) : we’re going to set the value for the select tag by invoking the helper method from our props
+14:36:57	 From Isabel K. Lee (they/them) : the helper method is defined in App.js and sent down to the Search component as props!
+14:40:18	 From Isabel K. Lee (they/them) : ultimately, we’re saving the selected category in App.js where the state is
+14:41:26	 From Isabel K. Lee (they/them) : define helper method in App.js -> send this method down to the Search component -> pick the category -> send the selected category back up to App.js -> update the state so that it captures the selected category
+14:42:56	 From Isabel K. Lee (they/them) : now that we know what the selected category is, we have to filter out the pigs that we want to show in PigPen
+14:43:06	 From Isabel K. Lee (they/them) : ** create a helper method that has an explicit return value **
+14:43:29	 From Isabel K. Lee (they/them) : ** invoke that helper method as props for the PigPen component **
+14:44:42	 From Isabel K. Lee (they/them) : ‼️ whenever you want to invoke a function in render() — i.e. get the return value, not just the function definition — you need to add () after the function name ‼️
+14:45:02	 From Isabel K. Lee (they/them) : this.changeSelectedCategory vs. this.helperFunctionThatReturnsAnArray()
+14:45:53	 From Isabel K. Lee (they/them) : ** inside the helper method that filters out the pigs array, use if / elsif / else statements to compare the pigs array to the selected categry **
+14:46:41	 From Emmanuel Jose : Could lines 26-29 be refactored as a ternary?
+14:47:17	 From Isabel K. Lee (they/them) : ternary is best used when there’s a clear TRUE vs. FALSE outcome
+14:47:23	 From Emmanuel Jose : Thank you!
+14:47:45	 From Isabel K. Lee (they/them) : and you need to use ternary inside render() { return() }
+14:48:03	 From Isabel K. Lee (they/them) : but above the render() method, it’s up to you if you want to use ternary OR if / else type condition
+14:48:41	 From Christy Tropila : Note to self -create small drop down menus~
+14:48:50	 From Isabel K. Lee (they/them) : ^^^^^^^^^^^^^^^
+14:49:05	 From Kalkidan Taye : I heard that Christy…lol
+14:49:08	 From Emmanuel Jose : Christy +++++
+14:49:10	 From Christy Tropila : lol
+14:49:11	 From Isabel K. Lee (they/them) : sort() is a built-in JS method that you can look up on how the syntax works~
+14:49:26	 From Christy Tropila : My apple eating became much more aggressive watching this
+14:49:36	 From Isabel K. Lee (they/them) : ^^^^^^^^^^
+14:49:39	 From Waverley Leung : ^^^
+14:50:24	 From Franklin Bado : Where is name on value?
+14:50:48	 From Isabel K. Lee (they/them) : don’t y’all just LOVE the error messages in react
+14:50:49	 From Isabel K. Lee (they/them) : lololol
+14:51:11	 From Annie Zheng (she/her) : ^^^^
+14:51:11	 From Christy Tropila : I haven't decided yet lol
+14:51:18	 From Anna Kim : it was just working!!
+14:51:52	 From Annie Zheng (she/her) : It’s casper
+14:51:55	 From Waverley Leung : ^^
+14:52:00	 From Emmanuel Jose : ^^^
+14:52:10	 From Kalkidan Taye : You know it…there is one haunting this cohort lol
+14:53:00	 From Isabel K. Lee (they/them) : YAY!
+14:55:07	 From Isabel K. Lee (they/them) : the state of App.js is what’s controlling the dropdown!!!!!!!!!!
+14:59:54	 From Isabel K. Lee (they/them) : ** since sort() is destructive, we need to create a copy of our state and then mutating THAT **
+15:00:11	 From Isabel K. Lee (they/them) : POST-LECTURE CHECK-IN FORM: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+15:00:40	 From Waverley Leung : so you’re not re-rendering here?
+15:01:34	 From Waverley Leung : ooooo okay I needed to hear that
+15:01:36	 From Waverley Leung : Thank you!
+15:01:40	 From ChenYun Zhang : everytime state change will trigger render()?
+15:02:14	 From ChenYun Zhang : thank you
+15:02:21	 From Isabel K. Lee (they/them) : come back at 3:10pm!!!!!!!!!!!!!!
