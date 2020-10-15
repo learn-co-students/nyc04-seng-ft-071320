@@ -1,0 +1,36 @@
+10:48:34	 From Jade Decordova : Cat in the Hat!
+10:48:36	 From Kalkidan Taye : Here is the list of places to volunteer: catchafire.org, flexjobs.com
+10:48:47	 From Kalkidan Taye : To get you started on your volunteering
+10:49:03	 From Kalkidan Taye : And it was informative.
+10:49:35	 From Wilson Ng : thank you thank you
+10:49:49	 From Jade Decordova : Thanks daisy
+10:49:59	 From Emmanuel Jose : Thank you Daisy!
+10:50:09	 From Kalkidan Taye : Anytime! I will send out a link of all the info I made notes on
+10:54:07	 From Wilson Ng : thank you
+10:55:02	 From Wilson Ng : I’m surprised that didn’t break the app
+10:55:07	 From Anna Kim : ^^^
+10:59:20	 From ChenYun Zhang : react is super cooooooooooool, so i can always have the header, and footer there
+10:59:28	 From Annie Zheng (she/her) : ^^^^
+11:08:56	 From Anna Kim : { BrowserRouter as Router, Route}  learn.co is using a <Router> as a alias right?
+11:09:31	 From Emmanuel Jose : Chicken +++++
+11:09:55	 From Anna Kim : 👌🏼
+11:27:36	 From David Felix : Can you do something like <Route path=“/thing” component={thing1,thing2} /> ?
+11:29:29	 From Annie Zheng (she/her) : Let’s come back at 11:34~
+11:38:39	 From Waverley Leung : lol that gif
+11:38:46	 From Franklin Bado : ^^^
+11:46:35	 From Kalkidan Taye : Lol where do you get this names?
+11:46:59	 From Waverley Leung : lol
+11:47:00	 From Kalkidan Taye : Foreigner
+11:47:15	 From Kalkidan Taye : I never get all references.
+11:47:24	 From Anna Kim : ^^
+11:48:36	 From Kalkidan Taye : What are you using for styling?
+11:49:52	 From Kalkidan Taye : cool
+11:52:42	 From Wilson Ng : gg
+11:52:56	 From Jade Decordova : ^^
+11:53:05	 From Nunny (she/her) : ^^
+12:04:42	 From Maysoon (She/Her) : A side question where is the image coming from on the 404 page?
+12:05:08	 From Kalkidan Taye : The component notFound
+12:05:21	 From Maysoon (She/Her) : Oh ok thank you!
+12:12:31	 From Kalkidan Taye : When would we use pushState?
+12:24:09	 From Kalkidan Taye : omg
+12:24:24	 From Hortencia Cisneros : ^^^^^
