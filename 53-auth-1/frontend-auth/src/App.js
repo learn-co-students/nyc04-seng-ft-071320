@@ -1,26 +1,86 @@
 import React from 'react';
-import {Switch, Route} from 'react-router-dom'
 import Form from './components/Form'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
 import ProfileContainer from './ProfileComponents/ProfileContainer'
 
+import {Switch, Route, withRouter, Redirect} from 'react-router-dom'
+// withRouter is a function that takes in a component and returns a component
+  // Sprinkles in additional props to the original component
+  // Higher Ordered Component (Higher Ordered Functions)
+
+// Redirect is a component 
+  // When it's rendered to the page, it'll redirect the page
 
 class App extends React.Component {
 
   state = {
-   
+    id: 0,
+    username: "",
+    snacks: []
   }
+
+
 
   handleLoginSubmit = (userInfo) => {
     console.log("Login form has been submitted")
-    
+
+    fetch("http://localhost:3000/users/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "Application/json"
+      },
+      body: JSON.stringify({
+        username: userInfo.username,
+        password: userInfo.password
+      })
+    })
+      .then(res => res.json())
+      .then((resp) => {
+        if(resp.error){
+          console.error(resp.error)
+        } else {
+
+          this.setState({
+            id: resp.id,
+            username: resp.username,
+            snacks: resp.snacks
+          })
+          this.props.history.push("/profile")
+        }
+      })
+
+
   }
 
 
   handleRegisterSubmit = (userInfo) => {
     console.log("Register form has been submitted")
 
+    fetch("http://localhost:3000/users", {
+      method: "POST",
+      headers: {
+        "Content-Type": "Application/json"
+      },
+      body: JSON.stringify({
+        username: userInfo.username,
+        password: userInfo.password
+      })
+    })
+    .then(res => res.json())
+    .then(resp => {
+      if(resp.error){
+        console.error(resp.error)
+      } else {
+
+        this.setState({
+          id: resp.id,
+          username: resp.username,
+          snacks: resp.snacks
+        })
+        this.props.history.push("/profile")
+      }
+    })
   
   }
 
@@ -44,7 +104,17 @@ class App extends React.Component {
 
 
   renderProfile = (routerProps) => {
-    return <ProfileContainer user={this.state.user}/>
+    // return <Redirect/> in render of <Route/>
+    if(this.state.id){
+      return <ProfileContainer 
+        username={this.state.username} 
+        snacks={this.state.snacks} 
+        id={this.state.id}
+      />
+    } else {
+      return <Redirect to="/login" />
+    }
+
   }
 
 
@@ -69,7 +139,10 @@ class App extends React.Component {
 
 }
 
-export default App
+
+
+let magicalComponent = withRouter(App)
+export default magicalComponent
 
 
 

@@ -5,14 +5,18 @@ import NewSnackForm from './NewSnackForm'
 class ProfileContainer extends Component {
 
   render() {
+    let {username, id, snacks} = this.props
+
+    let allSnacks = snacks.map(snackObj => {
+      return <Snack key={snackObj.id} snack={snackObj} />
+    })
     
     return (
       <div>
-        <h2>{""}&apos;s Profile</h2>
-        <h3></h3>
+        <h2>{username}&apos;s Profile</h2>
 
         <ol>
-          {/* RENDER SNACKS HERE */}
+          {allSnacks}
         </ol>
 
         <NewSnackForm />

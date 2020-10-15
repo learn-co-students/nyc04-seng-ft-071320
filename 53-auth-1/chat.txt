@@ -1,0 +1,36 @@
+14:10:31	 From Jade Decordova : :O
+14:13:28	 From Samir Triande : Rich Dad Poor Dad
+14:13:55	 From ChenYun Zhang : was thinking that too, lol
+14:24:08	 From Waverley Leung : good question Christy!
+14:24:49	 From Christy Tropila : Thx!
+14:26:29	 From Samir Triande : It’s so weird that I still confused on react but still remember rails. Might be the only one
+14:26:45	 From Emmanuel Jose : Samir +++++
+14:26:50	 From Franklin Bado : Console.log(rails) Samir
+14:28:20	 From Anna Kim : ???
+14:28:29	 From Waverley Leung : ooo
+14:28:57	 From Patrick Pierre : Can you repeat that
+14:34:11	 From Anna Kim : in the form, did you use password_digest?
+14:35:33	 From Anna Kim : oh so it knows the specific type “password”?
+14:36:00	 From Anna Kim : thank you
+14:45:51	 From Sayana Nimaeva : What was the silence?
+15:02:59	 From Waverley Leung : whoaaaa
+15:03:07	 From Jade Decordova : ^^^^
+15:09:45	 From Jade Decordova : snaackobj
+15:17:52	 From Wilson Ng : please explain the part about redirect vs this.props.history again if you can later
+15:17:58	 From Waverley Leung : ^^^
+15:21:15	 From Wilson Ng : thank you
+15:21:42	 From Waverley Leung : lol
+15:26:13	 From Christy Tropila : Is it better practice creating our backend controllers as we create our frontend  like you are doing ? Or should we write out the backend completely and edit as needed. 
+15:26:38	 From Christy Tropila : sounds good
+15:26:51	 From Patrick Pierre : Is it best practice to use status codes as we render json
+15:27:34	 From Christy Tropila : If you are a hired as a frontend developer, how would this be possible if your backend is being build by someone else
+15:29:41	 From Jade Decordova : thx
+15:30:53	 From Jade Decordova : <3
+15:31:03	 From Christy Tropila : Awesome resource . Thanks !
+15:31:03	 From Jade Decordova : Thats amazing
+15:31:08	 From Anna Kim : 🤯
+15:31:20	 From Kalkidan Taye : I had issues with the lab. I had to update my ruby version, and nokogiri. Also once I ran db:create, db:migrate. It started working and then it had issues with the faker gem….anybody else.
+15:34:26	 From Anna Kim : could you tell us a gist of JWT
+15:35:07	 From Anna Kim : sounds magical
+15:35:36	 From Franklin Bado : So far we done just the name tag?
+15:35:56	 From Anna Kim : stuck in a long line… can’t get in…
