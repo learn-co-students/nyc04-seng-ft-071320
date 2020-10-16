@@ -1,36 +1,81 @@
-14:10:31	 From Jade Decordova : :O
-14:13:28	 From Samir Triande : Rich Dad Poor Dad
-14:13:55	 From ChenYun Zhang : was thinking that too, lol
-14:24:08	 From Waverley Leung : good question Christy!
-14:24:49	 From Christy Tropila : Thx!
-14:26:29	 From Samir Triande : It’s so weird that I still confused on react but still remember rails. Might be the only one
-14:26:45	 From Emmanuel Jose : Samir +++++
-14:26:50	 From Franklin Bado : Console.log(rails) Samir
-14:28:20	 From Anna Kim : ???
-14:28:29	 From Waverley Leung : ooo
-14:28:57	 From Patrick Pierre : Can you repeat that
-14:34:11	 From Anna Kim : in the form, did you use password_digest?
-14:35:33	 From Anna Kim : oh so it knows the specific type “password”?
-14:36:00	 From Anna Kim : thank you
-14:45:51	 From Sayana Nimaeva : What was the silence?
-15:02:59	 From Waverley Leung : whoaaaa
-15:03:07	 From Jade Decordova : ^^^^
-15:09:45	 From Jade Decordova : snaackobj
-15:17:52	 From Wilson Ng : please explain the part about redirect vs this.props.history again if you can later
-15:17:58	 From Waverley Leung : ^^^
-15:21:15	 From Wilson Ng : thank you
-15:21:42	 From Waverley Leung : lol
-15:26:13	 From Christy Tropila : Is it better practice creating our backend controllers as we create our frontend  like you are doing ? Or should we write out the backend completely and edit as needed. 
-15:26:38	 From Christy Tropila : sounds good
-15:26:51	 From Patrick Pierre : Is it best practice to use status codes as we render json
-15:27:34	 From Christy Tropila : If you are a hired as a frontend developer, how would this be possible if your backend is being build by someone else
-15:29:41	 From Jade Decordova : thx
-15:30:53	 From Jade Decordova : <3
-15:31:03	 From Christy Tropila : Awesome resource . Thanks !
-15:31:03	 From Jade Decordova : Thats amazing
-15:31:08	 From Anna Kim : 🤯
-15:31:20	 From Kalkidan Taye : I had issues with the lab. I had to update my ruby version, and nokogiri. Also once I ran db:create, db:migrate. It started working and then it had issues with the faker gem….anybody else.
-15:34:26	 From Anna Kim : could you tell us a gist of JWT
-15:35:07	 From Anna Kim : sounds magical
-15:35:36	 From Franklin Bado : So far we done just the name tag?
-15:35:56	 From Anna Kim : stuck in a long line… can’t get in…
+    11:21:56	 From Sylwia Vargas (she/her) : we need a t-shirt that says {chicken: “bawk”} to always remind us of the jolly time we spent in Eric’s lectures
+11:22:12	 From Annie Zheng (she/her) : ^^
+11:22:15	 From Ekaterina Zarudnaya : ^^
+11:22:15	 From ChenYun Zhang : ^^
+11:22:34	 From Lida : 😸
+11:22:50	 From Dong Xia : (^.^)b
+11:24:58	 From Anna Kim : 2nd argument for encode is the key for decoding>
+11:25:00	 From ChenYun Zhang : the secret code has to be string?
+11:25:32	 From Anna Kim : thank you
+11:39:30	 From Wilson Ng : thank you for the refresher
+11:39:34	 From Waverley Leung : can you explain again why you’re doing UserSerializer.new?
+11:41:17	 From Waverley Leung : thank you!
+11:44:29	 From Waverley Leung : helpHandleResponse?
+11:48:52	 From Annie Zheng (she/her) : Let’s come back at 11:53~
+11:57:07	 From Kalkidan Taye : Of course lol
+11:57:13	 From Nunny (she/her) : Classic
+11:57:17	 From Franklin Bado : Looping back on chicken
+11:57:21	 From Kalkidan Taye : lol
+11:57:24	 From Hortencia Cisneros : ^^^^^
+11:57:26	 From Emmanuel Jose : Chicken FTW
+11:57:26	 From Sylwia Vargas (she/her) : bawk
+11:57:31	 From Hortencia Cisneros : ^^
+11:59:21	 From Emmanuel Jose : Can we also get a bawk back hoodie along with our Flatiron hoodie?
+11:59:41	 From Waverley Leung : whoa
+12:00:41	 From Kalkidan Taye : Walk into all my interviews, with all my variables named chicken lol…them: where did you learn this?Me: my instructor Eric lol
+12:01:02	 From Emmanuel Jose : They will hire you immediately, Daisy!
+12:01:08	 From Kalkidan Taye : Lol at popeyes
+12:02:43	 From Nunny (she/her) : A black hole
+12:04:17	 From Nunny (she/her) : @wilson this you #cybersecurity
+12:04:20	 From Waverley Leung : ^^^^
+12:04:28	 From Emmanuel Jose : Wilson +++++
+12:04:52	 From Kalkidan Taye : I appreciate the honesty and the analogy
+12:04:56	 From Waverley Leung : ^^^
+12:05:03	 From Ekaterina Zarudnaya : There is a Cyber Security course in Flatiron
+12:05:15	 From Wilson Ng : 🙈🙈🙈
+12:05:26	 From Franklin Bado : Wilson is already teaching>?
+12:05:33	 From Emmanuel Jose : Wilson, you better apply to be the next cybersecurity coach!
+12:05:42	 From Waverley Leung : ^^ waiting for these lessons!
+12:06:01	 From Sylwia Vargas (she/her) : jwt specifically has been around for a decade
+12:06:06	 From Franklin Bado : What are you going to name your variables Wilson?
+12:06:32	 From Wilson Ng : cyberChicken, securedChicken
+12:06:37	 From Kalkidan Taye : lol
+12:06:42	 From Nunny (she/her) : Security I need ^^
+12:07:05	 From Nunny (she/her) : @sylwia tyyy
+12:07:34	 From Kalkidan Taye : lol..best analogies!
+12:09:34	 From Kalkidan Taye : So this is essentially the same as @current_user= session[;id] but for the front end
+12:12:58	 From Kalkidan Taye : Thank you.
+12:13:11	 From Emmanuel Jose : Thank you, Eric!
+12:13:19	 From Annie Zheng (she/her) : Been there, done that
+12:13:20	 From Annie Zheng (she/her) : lol
+12:13:28	 From Kalkidan Taye : lol
+12:14:04	 From Lida : ^^
+12:16:17	 From Kalkidan Taye : yes
+12:23:57	 From Sylwia Vargas (she/her) : You do know
+12:23:59	 From Sylwia Vargas (she/her) : instinctively
+12:24:11	 From Sylwia Vargas (she/her) : You are now a true pole
+12:27:26	 From Franklin Bado : No user _id on strong params for snack?
+12:28:18	 From Sylwia Vargas (she/her) : send me back a snack 🎶
+12:28:50	 From Sylwia Vargas (she/her) : 🥟🥟🥟🥟
+12:29:17	 From Nunny (she/her) : ♻️
+12:33:21	 From Annie Zheng (she/her) : Popcorn chicken
+12:33:55	 From Waverley Leung : this. is. AWESOME!
+12:35:32	 From Waverley Leung : whoaaaaa
+12:35:36	 From Nunny (she/her) : ^^^^^
+12:36:40	 From Kalkidan Taye : I didn’t question it lol...
+12:37:04	 From Nunny (she/her) : Hopes?
+12:37:05	 From Nunny (she/her) : dreams?
+12:37:09	 From Kalkidan Taye : lol
+12:38:28	 From ChenYun Zhang : takeway from this lecture: it’s optional
+12:38:33	 From Sylwia Vargas (she/her) : ^
+12:38:41	 From Anna Kim : can we implement auth after we have crud?
+12:38:44	 From Franklin Bado : Bawk bawk
+12:38:45	 From Sylwia Vargas (she/her) : yes
+12:38:54	 From Sylwia Vargas (she/her) : You can make a fake auth, too
+12:39:36	 From Nunny (she/her) : Thank you both
+12:40:13	 From Nunny (she/her) : how
+12:41:35	 From ChenYun Zhang : ok, thank you!
+12:42:50	 From Annie Zheng (she/her) : oooooo
+12:42:54	 From Ekaterina Zarudnaya : Thank you!
+12:43:09	 From Annie Zheng (she/her) : MVP check-in is on Wednesday
+12:43:21	 From Ekaterina Zarudnaya : And Career services?
