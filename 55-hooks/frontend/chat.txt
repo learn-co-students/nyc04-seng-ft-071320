@@ -1,29 +1,32 @@
-10:36:33	 From Waverley Leung : Evening Enlightenment ++
-10:41:45	 From Waverley Leung : props!
-10:41:45	 From ChenYun Zhang : props
-10:47:14	 From Anna Kim : react is so good telling us to use every variables we create lol…
-10:47:42	 From Emmanuel Jose : ^^^
-10:47:44	 From Kalkidan Taye : You can add the index as a key right?
-10:47:56	 From Anna Kim : ^^ eric says avoid number
-10:48:14	 From Kalkidan Taye : Ok thank you Anna. I saw it as one of the labs.
-10:48:43	 From Anna Kim : ^^ i did too!
-10:53:36	 From Kalkidan Taye : Thank you
-10:57:24	 From Christy Tropila : I thought state was used  for dynamic information so if the amount of drinks is changing wouldn't it be state?
-10:58:52	 From Christy Tropila : ah ok forgot that part
-11:17:18	 From Anna Kim : ooh the useful detail. thanks franklin
-11:18:41	 From Franklin Bado : 👉
-11:25:09	 From ChenYun Zhang : app -> storecontiner -> store -> DrinkContainer-> newDrinkForm, DrinkFrom: got it, let me invoke it.
-11:28:22	 From Waverley Leung : the drinks are coming from the store because it’s nested right?
-11:29:14	 From Waverley Leung : oooo okay!
-11:29:17	 From Anna Kim : you won’t be using setState in app right?
-11:35:55	 From Anna Kim : 🤯reviews..
-11:36:06	 From Hortencia : ^^^^^
-11:38:02	 From Emmanuel Jose : Will we create migrations for React projects?
-11:38:23	 From ChenYun Zhang : how many model this time?
-11:38:27	 From Anna Kim : ^^^
-11:39:00	 From Ekaterina Zarudnaya : Algo Club!
-11:39:32	 From Ekaterina Zarudnaya : Thank you Eric!!!
-11:39:34	 From ChenYun Zhang : great lecture, thank you Eric!
-11:39:36	 From Anna Kim : thank you for doing this optional lecture!
-11:39:41	 From Hortencia : ^^
-11:39:42	 From Christy Tropila : Thanks!
+10:04:00	 From Sylwia Vargas (she/her) : @christy -> ;-;
+10:04:06	 From Sylwia Vargas (she/her) : The tacos are amazing here though
+10:04:16	 From Christy Tropila : lol :)
+10:04:47	 From Sylwia Vargas (she/her) : and it was my husband’s grandma’s bd yesterday so I did get to eat quality Dominican food 🌝
+10:05:17	 From Waverley Leung : ^ oooooo 😋
+10:06:50	 From Sylwia Vargas (she/her) : The best of both worlds ✨
+10:07:01	 From Sylwia Vargas (she/her) : class component -> state + lifecycle methods
+10:07:21	 From Sylwia Vargas (she/her) : Function components can’t but hooks are the trick that makes it all possible ✨
+10:08:10	 From Sylwia Vargas (she/her) : (But almost all the legacy code in companies is not written with hooks so don’t panic yet)
+10:11:49	 From Sylwia Vargas (she/her) : Also, nothing will happen if you just change App.js into a functional component (but Eric wants to show you creating the app from scratch)
+10:22:47	 From Sylwia Vargas (she/her) : The son file. You could have on the frontend will be only a getter, not setter
+10:23:00	 From Sylwia Vargas (she/her) : hson*
+10:23:04	 From Sylwia Vargas (she/her) : json*
+10:23:49	 From Kalkidan Taye : ^^Thank you Sylwia.
+10:45:10	 From Patrick Pierre : Why can’t we use handleInputChange ?
+10:46:12	 From Sylwia Vargas (she/her) : useState REPLACES the objects entirely, does not merge them like setState does
+10:46:53	 From Patrick Pierre : Is this the only downside when it comes to using hooks?
+10:47:09	 From Sylwia Vargas (she/her) : It’s not a downside! It’s just different design.
+10:47:37	 From Patrick Pierre : Oh ok thanks Sylwia
+10:47:51	 From ChenYun Zhang : how about use a spread operator.
+10:48:25	 From Sylwia Vargas (she/her) : with spread op you may end up with an error about doubling same keys
+10:48:39	 From ChenYun Zhang : ok, thank you
+10:49:04	 From Sylwia Vargas (she/her) : e.g. if you already have in the state a key for name and then the user came back to re-fill out the name field, you will try to add the name key again
+10:52:57	 From Sylwia Vargas (she/her) : (There’s also a library for handling forms with hooks: react-hook-form )
+10:57:03	 From Patrick Pierre : That chunk of code that we cut with hooks is great for load time right?
+11:01:01	 From Kalkidan Taye : I trust you and your teachings Eric…anything you say goes. Even the chicken examples.
+11:01:24	 From Waverley Leung : ^^
+11:02:58	 From Patrick Pierre : How does javascript know the difference between them?
+11:16:23	 From Waverley Leung : do you need to build out everything with hooks? Or if we want, can we try out just one?
+11:16:29	 From Christy Tropila : Thank you Eric
+11:18:28	 From Waverley Leung : thank you! 😁
+11:18:34	 From Kalkidan Taye : Compliments: Thank you Eric.
