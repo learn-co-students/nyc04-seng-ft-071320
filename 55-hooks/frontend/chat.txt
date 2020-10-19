@@ -1,0 +1,29 @@
+10:36:33	 From Waverley Leung : Evening Enlightenment ++
+10:41:45	 From Waverley Leung : props!
+10:41:45	 From ChenYun Zhang : props
+10:47:14	 From Anna Kim : react is so good telling us to use every variables we create lol…
+10:47:42	 From Emmanuel Jose : ^^^
+10:47:44	 From Kalkidan Taye : You can add the index as a key right?
+10:47:56	 From Anna Kim : ^^ eric says avoid number
+10:48:14	 From Kalkidan Taye : Ok thank you Anna. I saw it as one of the labs.
+10:48:43	 From Anna Kim : ^^ i did too!
+10:53:36	 From Kalkidan Taye : Thank you
+10:57:24	 From Christy Tropila : I thought state was used  for dynamic information so if the amount of drinks is changing wouldn't it be state?
+10:58:52	 From Christy Tropila : ah ok forgot that part
+11:17:18	 From Anna Kim : ooh the useful detail. thanks franklin
+11:18:41	 From Franklin Bado : 👉
+11:25:09	 From ChenYun Zhang : app -> storecontiner -> store -> DrinkContainer-> newDrinkForm, DrinkFrom: got it, let me invoke it.
+11:28:22	 From Waverley Leung : the drinks are coming from the store because it’s nested right?
+11:29:14	 From Waverley Leung : oooo okay!
+11:29:17	 From Anna Kim : you won’t be using setState in app right?
+11:35:55	 From Anna Kim : 🤯reviews..
+11:36:06	 From Hortencia : ^^^^^
+11:38:02	 From Emmanuel Jose : Will we create migrations for React projects?
+11:38:23	 From ChenYun Zhang : how many model this time?
+11:38:27	 From Anna Kim : ^^^
+11:39:00	 From Ekaterina Zarudnaya : Algo Club!
+11:39:32	 From Ekaterina Zarudnaya : Thank you Eric!!!
+11:39:34	 From ChenYun Zhang : great lecture, thank you Eric!
+11:39:36	 From Anna Kim : thank you for doing this optional lecture!
+11:39:41	 From Hortencia : ^^
+11:39:42	 From Christy Tropila : Thanks!
