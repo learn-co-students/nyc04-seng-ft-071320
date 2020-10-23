@@ -1,0 +1,56 @@
+13:36:10	 From Annie Zheng (she/her) : Yasssss!!
+13:36:17	 From Kalkidan Taye : YAYYYYYYYYYYYY!
+13:36:58	 From Nunny (she/her) : Wow
+13:37:03	 From Kalkidan Taye : #blessed…
+13:37:11	 From Emmanuel Jose : Thank you, Eric!
+13:37:11	 From Jade Decordova : ^^^^^
+13:37:15	 From Nunny (she/her) : 😱🥳
+13:39:54	 From Anna Kim : so we’ should be submitting a project pitch over the weekend?
+13:40:35	 From Christy Tropila : wow no break lol
+13:42:03	 From Emmanuel Jose : Will family and friends be invited?
+13:42:05	 From Emmanuel Jose : To graduation
+13:42:12	 From Emmanuel Jose : Thank you!
+13:45:17	 From Anna Kim : do we have specific project requirements?
+13:48:50	 From Anna Kim : we don’t need wireframes until it’s approved right?
+13:50:58	 From Sylwia Vargas (she/her) : You will need rough wireframes!
+13:51:17	 From Sylwia Vargas (she/her) : we don’t need colors etc, just seeing how stuff connects
+13:54:53	 From Jade Decordova : I Appreciated that perspective Sylwia
+13:55:43	 From Annie Zheng (she/her) : Yup, I also had to fill out goals for all three week on the day my MVP pitch was approved
+13:56:13	 From Annie Zheng (she/her) : It might be overwhelming at first but it really comes in handy
+14:05:10	 From Anna Kim : goodbye props?
+14:06:32	 From Sylwia Vargas (she/her) : Still props <3
+14:07:53	 From Sylwia Vargas (she/her) : You will have some local state still — but also, on top of that, there will be a GLOBAL state
+14:08:06	 From Lida : So in a sense you can skip the middle man?
+14:09:55	 From Lida : Ah okay
+14:10:40	 From Anna Kim : does the global state keep track of all the changes in the local state?
+14:13:57	 From Anna Kim : ohhh thank you for clarifying that
+14:15:22	 From Anna Kim : ✨right right
+14:28:38	 From Anna Kim : is the syntax similar to setState as well?
+14:29:49	 From Anna Kim : new jargons…
+14:32:24	 From Emmanuel Jose : Are reducers more powerful controllers?
+14:33:13	 From Emmanuel Jose : Thank you!
+
+14:37:57	 From Nunny (she/her) : Plz type that @daisy
+14:38:41	 From Waverley Leung : ^^
+14:39:05	 From Anna Kim : reducer is kind of like spread op + setState combined..
+14:45:36	 From Waverley Leung : ^^^ Daisy ++ Eric ++
+14:45:45	 From Nunny (she/her) : ^^^^^
+14:46:36	 From Waverley Leung : lol that head shake
+14:46:51	 From Nunny (she/her) : Like starting with auth? But different….
+14:47:12	 From Emmanuel Jose : If we use Redux, does it require separate backend and frontend repos?
+14:50:58	 From Nunny (she/her) : Which is the rerender?
+14:51:01	 From Nunny (she/her) : When you update state?
+14:52:27	 From Anna Kim : oh no
+14:54:22	 From Nunny (she/her) : But not what?
+14:54:45	 From Anna Kim : eek. ok thank you
+14:57:06	 From Nunny (she/her) : What does it look like?
+14:58:10	 From Anna Kim : quizzz 🌈
+15:00:11	 From Nunny (she/her) : *screenshot*
+15:04:28	 From Ekaterina Zarudnaya : Does Redux work with both class and functional components well?
+15:04:35	 From Anna Kim : ^ great question
+15:04:46	 From Anna Kim : whaaaa
+15:04:53	 From Ekaterina Zarudnaya : Thank you!
+15:05:00	 From Anna Kim : 🍋🍋🍋🍋🍋
+15:06:45	 From Kalkidan Taye : I really appreciate that. Thank you Eric.
+15:08:14	 From Anna Kim : Thank you very much Eric
+15:08:21	 From Waverley Leung : ^^^
