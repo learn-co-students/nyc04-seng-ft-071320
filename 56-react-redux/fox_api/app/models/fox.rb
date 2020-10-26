@@ -1,0 +1,2 @@
+class Fox < ApplicationRecord
+end

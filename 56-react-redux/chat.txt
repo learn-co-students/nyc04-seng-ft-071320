@@ -1,0 +1,32 @@
+11:05:22	 From Lida : me either
+11:23:31	 From Jade Decordova : My nerves are itchy
+11:23:58	 From Annie Zheng (she/her) : signe++
+11:24:05	 From Jade Decordova : Thank you
+11:32:11	 From Jade Decordova : Detailed ++
+11:43:02	 From Anna Kim : what’s the difference between setting it up with nom versus npx ?
+11:46:33	 From Emmanuel Jose : Live coding +++++
+11:46:41	 From Anna Kim : ^^^
+11:46:44	 From Waverley Leung : ^^^
+
+11:47:11	 From Anna Kim : when Eric typed nvm, i thought he was legit talking to his terminal (“never mind)
+11:47:12	 From Ekaterina Zarudnaya : It's better to see errors together <3
+11:49:47	 From Emmanuel Jose : Does it need the save line?
+11:50:01	 From Hortencia : Learning  totally fine
+12:04:34	 From Anna Kim : could you explain line 17 one more time?
+12:05:34	 From Anna Kim : thank you!
+12:07:25	 From Emmanuel Jose : Do we need to install Redux devTools?
+12:07:51	 From Anna Kim : ^^^
+12:10:41	 From Jade Decordova : Woooohoooo!
+12:13:50	 From Eric Kim : https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+12:14:40	 From Jade Decordova : nice
+12:17:07	 From Annie Zheng (she/her) : Come back at 12:20~
+12:17:26	 From Annie Zheng (she/her) : 12:21*
+
+12:31:09	 From Nunny (she/her) : class
+12:37:51	 From Waverley Leung : so the set up needs to live in index.js? we can’t have it in app.js?
+12:40:37	 From Anna Kim : do we only have to write this at the lowest level? or at every component level passing down
+12:41:17	 From Anna Kim : thank you
+12:42:14	 From Anna Kim : withrouter
+12:54:25	 From Wilson Ng : does it have to be named mapStateToProps?
+13:11:32	 From Nunny (she/her) : So that props can go up?
+13:20:15	 From Annie Zheng (she/her) : Post Lecture Check-in Form: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
