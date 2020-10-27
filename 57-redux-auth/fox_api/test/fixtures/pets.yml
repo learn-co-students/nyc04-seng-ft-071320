@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  fox: one
+  nickname: MyString
+  health: 1
+
+two:
+  user: two
+  fox: two
+  nickname: MyString
+  health: 1
