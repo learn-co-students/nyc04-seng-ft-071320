@@ -1,0 +1,234 @@
+html {
+  font-size: 16px;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+}
+body {
+  background-color: #efefef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+#header {
+  background: red;
+  background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+}
+
+form {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+input, label {
+  display: block;
+  margin: auto;
+}
+
+input[type="submit"].auth {
+  width: 10rem;
+  margin-top: 2rem;
+  height: 1.5rem;
+}
+
+ol {
+  width: 50%;
+  margin: auto;
+
+}
+
+ol li {
+  width: 20%;
+  margin: auto;
+
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #333;
+}
+
+ul.nav li {
+  float: left;
+}
+
+ul.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav li a:hover {
+  background-color: #111;
+}
+
+
+
+#burger-menu {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+#ordersDiv {
+  text-align: center;
+}
+
+.deleteButton{
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.burger {
+  display: grid;
+}
+
+.burger .button {
+  align-self: end;
+}
+
+.burger {
+  box-shadow: 0px 1px 5px #555;
+  background-color: white;
+}
+
+.burger_title {
+  font-size: 2rem;
+}
+
+.burger_description{
+  padding: .5rem;
+  line-height: 1.6em;
+}
+
+.button {
+  display: block;
+  background-color: tomato;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: .3s ease-out;
+  &:hover {
+      background-color: darken(tomato, 10%);
+  }
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 350px 50px;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m m c c c c c c c o o o "
+}
+
+.header {
+  grid-area: h;
+  text-align: center;
+
+}
+.order {
+  text-align: center;
+  grid-area: m;
+}
+.menu {
+  grid-area: c;
+}
+
+.custom {
+  grid-area: o;
+}
+
+.menu h2{
+  text-align: center;
+}
+
+.footer{
+  text-align: center;
+}
+
+li{
+  text-align: center;
+  list-style: none;
+}
+
+#heading {
+  background: red;
+  background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.category {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: .5em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#custom-burger{
+  text-align: center;
+}
+
+input[type=submit].submit , .submit {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 1.2em 2em;
+  margin: 1em 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#order-list {
+  padding: 0;
+}
+
+.burgersList {
+  padding: 0;
+}

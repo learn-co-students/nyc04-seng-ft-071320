@@ -1,0 +1,3 @@
+class BurgerOrdersController < ApplicationController
+
+end
