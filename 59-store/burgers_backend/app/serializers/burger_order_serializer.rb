@@ -1,3 +1,3 @@
 class BurgerOrderSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :burger_name_plx, :burger_price
 end

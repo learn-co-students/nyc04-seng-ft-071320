@@ -8,9 +8,11 @@ function BurgerContainer(props){
 
     return(
       <div className="container">
-        <CurrentOrder />
-        <MenuContainer burgers={props.burgers}/>
-        <PastOrders />
+        <CurrentOrder 
+          current_cart={props.current_cart} 
+          makeCurrentCartIntoPastOrderAndGetNewCart={props.makeCurrentCartIntoPastOrderAndGetNewCart}/>
+        <MenuContainer burgers={props.burgers} creatingBurgerOrder={props.creatingBurgerOrder}/>
+        <PastOrders past_orders={props.past_orders}/>
       </div>
     )
 }

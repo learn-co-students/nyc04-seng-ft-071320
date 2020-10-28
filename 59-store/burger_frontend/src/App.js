@@ -14,7 +14,11 @@ class App extends React.Component{
     burgers: [],
     token: "",
     username: "",
-    // Set up the backend first
+    current_cart: {
+      id: 0,
+      burger_orders: []
+    },
+    past_orders: []
   }
 
   componentDidMount(){
@@ -56,20 +60,81 @@ class App extends React.Component{
 
   helpHandleResponse = (resp) => {
     if(resp.error){
-      console.resp(resp.error)
+      console.log(resp.error)
     } else {
       localStorage.token = resp.token
+      this.setState({
+        token: resp.token,
+        username: resp.user.username,
+        current_cart: resp.user.current_cart_pls,
+        past_orders: resp.user.past_orders_plz
+      })
       // What else do we do with the response?
     }
   }
 
   renderForm = (routerProps) => {
-    return <LoginForm handleSubmit={this.handleLogin}/>
+    return <LoginForm handleSubmit={this.handleLoginSubmit}/>
   }
 
   renderBurgerContainer = (routerProps) => {
-    return <BurgerContainer burgers={this.state.burgers} token={this.state.token}/>
+    return <BurgerContainer 
+      burgers={this.state.burgers} 
+      token={this.state.token} 
+      past_orders={this.state.past_orders}
+      current_cart={this.state.current_cart}
+      creatingBurgerOrder={this.creatingBurgerOrder}
+      makeCurrentCartIntoPastOrderAndGetNewCart={this.makeCurrentCartIntoPastOrderAndGetNewCart}
+    />
   }
+
+
+  creatingBurgerOrder = (burger_id) => {
+    fetch("http://localhost:3000/burger_orders", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json"
+      },
+      body: JSON.stringify({
+        burger_id: burger_id,
+        order_id: this.state.current_cart.id
+      })
+    })
+    .then(res => res.json())
+    .then(newlyCreatedBurgerOrder => {
+      let copyOfBurgerOrdersForCart = [...this.state.current_cart.burger_orders, newlyCreatedBurgerOrder]
+      let copyOfCart = {
+        ...this.state.current_cart, 
+        burger_orders: copyOfBurgerOrdersForCart
+      }
+      this.setState({
+        current_cart: copyOfCart
+      })
+
+    })
+  }
+
+
+
+  makeCurrentCartIntoPastOrderAndGetNewCart = () => {
+    fetch(`http://localhost:3000/orders/${this.state.current_cart.id}/transform`, {
+      method: "PATCH",
+      headers: {
+        "Authorization": this.state.token
+      }
+    })
+      .then(res => res.json())
+      .then((resp) => {
+        let copyOfPastOrders = [...this.state.past_orders, resp.transformed_cart]
+        this.setState({
+          current_cart: resp.current_cart,
+          past_orders: copyOfPastOrders
+        })
+      })
+  }
+
+
+
 
   render(){
     return(

@@ -30,6 +30,8 @@ class UsersController < ApplicationController
     # BAD PRACTICE TO INCLUDE A SHOW ACTION
     def show
         @user = User.find(params[:id])
+        wristband_token = encode_token({user_id: @user.id})
+
         render json: {
             user: UserSerializer.new(@user), 
             token: wristband_token

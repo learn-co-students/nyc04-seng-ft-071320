@@ -4,7 +4,10 @@ import Burger from './Burger'
 
 function MenuContainer(props) {
     let arrayOfBurgers = props.burgers.map(burgerObj => {
-        return <Burger key={burgerObj.id} burger={burgerObj} />
+        return <Burger key={burgerObj.id} 
+            burger={burgerObj} 
+            creatingBurgerOrder={props.creatingBurgerOrder}
+        />
     })
 
     return (

@@ -4,7 +4,7 @@ const Burger = (props) => {
   let {burger, token} = props
 
   const handleClick = (e) => {
-    console.log("Add", burger.id)
+    props.creatingBurgerOrder(burger.id)
   }
 
   return (
