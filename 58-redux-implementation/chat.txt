@@ -1,16 +1,37 @@
-09:33:26	 From Alex E (she/her) : Oh just checking, are these mod 5 lectures going to be posted on Learn.co ?
-09:33:58	 From Alex E (she/her) : thank you
-09:48:54	 From Kalkidan Taye : So the switch statements are the ones that tell which reducer should be used?
-09:51:41	 From Nunny (she/her) : Could you go over again how the global state changed with 2 different keys? When you had the map undefined error
-09:53:01	 From Nunny (she/her) : Ty
-10:03:01	 From Annie Zheng (she/her) : Come back at 10:07~
-
-10:13:29	 From Anna Kim : isn’t id, pet_id?
-10:23:25	 From Franklin Bado : For password in the form, don’t we need value {this.state.password } ?
-10:34:00	 From Franklin Bado : Since the user info is on global scope now, are we still going to need localStorage?
-11:04:19	 From Annie Zheng (she/her) : Post Lecture Check-in Form: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
-11:06:02	 From Wilson Ng : mine’s on github
-11:07:51	 From Jade Decordova : https://medium.com/better-programming/learn-reacts-lifecycle-methods-through-an-analogy-9fc82b990ece
-11:08:03	 From Jade Decordova : Sylwia’s blog
-11:08:21	 From Emmanuel Jose : Thank you Jade and Sylwia!
-11:08:55	 From Jade Decordova : Yayyyy Will do!
+09:47:33	 From Patrick Pierre : Can you quickly go over how you get access to router props again, my internet cut out just now
+09:54:52	 From Waverley Leung : do you need to pass in props (for a functional component) to have access to ownProps?
+09:58:56	 From Anna Kim : yayy
+09:59:17	 From Anna Kim : thank you so much
+10:02:51	 From Anna Kim : MSTP?
+10:07:45	 From Anna Kim : is there a way to stall the function so it doesn’t error out?
+10:09:25	 From Annie Zheng (she/her) : Come back at 10:15~
+10:19:35	 From Anna Kim : local
+10:19:37	 From Nunny (she/her) : Local since its a form?
+10:23:48	 From Jade Decordova : joiner
+10:23:51	 From Waverley Leung : global state for user?
+10:23:59	 From Anna Kim : ^
+10:24:02	 From Franklin Bado : Own props
+10:24:32	 From Anna Kim : routerprops?
+10:24:39	 From Jade Decordova : ownprops
+10:24:43	 From ChenYun Zhang : props
+10:24:53	 From Anna Kim : ChenYun+_
+10:25:03	 From Nunny (she/her) : ShowFox
+10:30:59	 From Wilson Ng : what’s the attributes for this joiner again?
+10:32:18	 From ChenYun Zhang : Is the authorization used when we want the user to login in order to do something.
+10:33:05	 From ChenYun Zhang : ok, thank you
+10:35:09	 From Wilson Ng : how come you don’t have to pass in a user_id in the body?
+10:35:31	 From Anna Kim : will you convert that into id in the backend?
+10:37:12	 From Waverley Leung : oooo
+10:38:59	 From Anna Kim : before action?
+10:40:19	 From ChenYun Zhang : Anna+++
+10:40:38	 From Anna Kim : so glad we have his blessing to use the code
+10:41:25	 From Nunny (she/her) : Truly the gift of mod4
+10:41:42	 From ChenYun Zhang : ^^
+10:45:56	 From Anna Kim : could you show the create method again?
+10:46:28	 From ChenYun Zhang : why you use user.pet.create() instead of Pet.create()
+10:47:31	 From Anna Kim : ^^ good question
+10:49:26	 From Lida : To be clear if you have joiners in the backend - that is how you go about creating that joiner.
+10:50:15	 From Anna Kim : do we have pet reducer already?
+11:04:16	 From Anna Kim : could you show what ownProps looks like console logged?
+11:04:37	 From Anna Kim : thank you
+11:06:27	 From Anna Kim : true, props is what is being passed down from the parent hierarchy, not what it is by itself
