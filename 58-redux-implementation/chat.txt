@@ -1,0 +1,16 @@
+09:33:26	 From Alex E (she/her) : Oh just checking, are these mod 5 lectures going to be posted on Learn.co ?
+09:33:58	 From Alex E (she/her) : thank you
+09:48:54	 From Kalkidan Taye : So the switch statements are the ones that tell which reducer should be used?
+09:51:41	 From Nunny (she/her) : Could you go over again how the global state changed with 2 different keys? When you had the map undefined error
+09:53:01	 From Nunny (she/her) : Ty
+10:03:01	 From Annie Zheng (she/her) : Come back at 10:07~
+
+10:13:29	 From Anna Kim : isn’t id, pet_id?
+10:23:25	 From Franklin Bado : For password in the form, don’t we need value {this.state.password } ?
+10:34:00	 From Franklin Bado : Since the user info is on global scope now, are we still going to need localStorage?
+11:04:19	 From Annie Zheng (she/her) : Post Lecture Check-in Form: https://docs.google.com/forms/d/e/1FAIpQLSd1t5khOZLtqz-uGVuRcf3EffxwyrN8GcZNQnvVVHQY9Wm3nA/viewform
+11:06:02	 From Wilson Ng : mine’s on github
+11:07:51	 From Jade Decordova : https://medium.com/better-programming/learn-reacts-lifecycle-methods-through-an-analogy-9fc82b990ece
+11:08:03	 From Jade Decordova : Sylwia’s blog
+11:08:21	 From Emmanuel Jose : Thank you Jade and Sylwia!
+11:08:55	 From Jade Decordova : Yayyyy Will do!
