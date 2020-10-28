@@ -1,0 +1,30 @@
+11:32:14	 From Jade Decordova : Double lecture Eeric ++
+11:32:42	 From Dong Xia : bob’s burger
+11:36:11	 From Emmanuel Jose : Does Order model handle transactions/charges?
+11:41:19	 From ChenYun Zhang : yes
+11:45:06	 From Patrick Pierre : Why are we passing it through OrderSearializer again?
+11:45:47	 From Patrick Pierre : Ah ok
+11:52:27	 From Ekaterina Zarudnaya : They are powerful indeed..
+11:55:55	 From Emmanuel Jose : Can we see Rails C connections for Order?
+11:56:17	 From Emmanuel Jose : Thank you!
+12:00:23	 From Ekaterina Zarudnaya : pls or plz?
+12:00:37	 From Ekaterina Zarudnaya : Ah, ok. Thanks!
+12:07:49	 From Nunny (she/her) : Time has always been my struggle
+12:09:39	 From ChenYun Zhang : Eric, do you know how to setup the timezone? if you want to have specific hour/min/sec
+12:10:08	 From Patrick Pierre : How would we implement a show page for the past orders when a user clicks on an order?
+12:11:14	 From ChenYun Zhang : ohhhhh, got it, i tried to setup inside the development, didn’t work, thank you!!!
+12:11:57	 From Nunny (she/her) : Yes @chenyun I never knew!
+12:13:03	 From ChenYun Zhang : ^^
+12:15:17	 From Samir Triande : When will we get so smooth lol
+12:18:50	 From Ekaterina Zarudnaya : If you want to see this info on another page we’ll have to include routes?
+12:19:12	 From Ekaterina Zarudnaya : Thank you!
+12:19:57	 From ChenYun Zhang : can you have more than one tags inside of your ternary?
+12:20:38	 From ChenYun Zhang : i see, thank you.
+12:20:49	 From Emmanuel Jose : Is the burger app using semantic ui?
+12:21:10	 From Emmanuel Jose : Nice, thank you!
+12:37:16	 From Patrick Pierre : Do you mind showing your schema again
+12:42:52	 From Patrick Pierre : Will you be pushing this code up during lunch?
+12:48:22	 From Nunny (she/her) : Wait what makes it not restful again?
+13:00:21	 From Waverley Leung : you have 2 s - Order vs Orders
+13:00:57	 From Kalkidan Taye : wavey++
+13:01:01	 From Sylwia Vargas (she/her) : ++
