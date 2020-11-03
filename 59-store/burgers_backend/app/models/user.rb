@@ -1,5 +1,6 @@
 class User < ApplicationRecord
     has_secure_password
+    after_create :set_current_cart
 
     has_many :orders
 
@@ -14,6 +15,12 @@ class User < ApplicationRecord
         all_past_orders.map do |order|
             OrderSerializer.new(order)
         end
+    end
+    
+    private
+    
+    def set_current_cart
+        self.orders.create
     end
 
 end
