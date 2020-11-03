@@ -4,7 +4,7 @@ class User < ApplicationRecord
     has_many :orders
 
     def current_cart_pls
-        current_cart = self.orders.find_by(checked_out: false)
+        current_cart = self.orders.find_or_create_by(checked_out: false)
         OrderSerializer.new(current_cart)
     end
 
